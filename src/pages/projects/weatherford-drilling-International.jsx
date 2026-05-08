@@ -36,7 +36,7 @@ export default function WeatherfordDrillingInternational() {
               Inventory maintained by OSS for all Entry & Exit stocks
             </li>
             <li>
-              Customs clearance process completed by OSS
+              Customs clearance process completed 
             </li>
           </ol>
         </div>
@@ -52,7 +52,7 @@ export default function WeatherfordDrillingInternational() {
             start={6}
           >
             <li>
-              Safe & secure stored Rig equipment for a long-time basis with OSS
+              Safe & secure stored Rig equipment for a long-time basis.
             </li>
           </ol>
         </div>

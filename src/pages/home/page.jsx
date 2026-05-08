@@ -21,23 +21,12 @@ import { useNavigate } from "react-router-dom";
 
 const projects = [
   {
-    title: "Weatherford",
-    subtitle: "Drilling International",
+    title: "Rig Moment Storage",
+    subtitle: " sss",
     image: "/images/project-1.jpg",
     slug: "weatherford-drilling-International",
   },
-  {
-    title: "APACHE",
-    subtitle: "",
-    image: "/images/project-2.jpg",
-    slug: "apache",
-  },
-  {
-    title: "TRINIDAD",
-    subtitle: "DRILLING",
-    image: "/images/project-3.jpg",
-    slug: "trinidad-drilling",
-  },
+  
 ];
 
 
@@ -144,7 +133,7 @@ const services = [
     {
       title: "Open Yard Storage",
       image: "/images/openyardstorage-home.png",
-      link: "/services/storage-facility-abu-dhabi",
+      link: "/services/logistics-transport-sharjah",
     },
     {
       title: "Customs Clearance",
