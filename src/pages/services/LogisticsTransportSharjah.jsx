@@ -33,7 +33,7 @@ export default function LogisticsTransportSharjah() {
         subtitle="Contact Us Now for Customized Solutions that Propel Your Business Forward"
         buttonText="Get Started With Us Today"
         buttonLink="/contact-us"
-        backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
+        backgroundImage="/images/services/Open-yard-storage.jpeg"s
       />
 
       <TrustedSlider />

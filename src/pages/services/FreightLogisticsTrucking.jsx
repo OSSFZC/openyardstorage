@@ -105,29 +105,29 @@ export default function FreightLogisticsTrucking() {
         title="Our Comprehensive Logistics Services"
         services={[
           {
-            title: "Freight Management",
+            title: "Full Truckload (FTL) Shipping",
             image: "/images/services/flexible-yard.jpg",
-            description: "Expert oversight to streamline shipping operations."
+            description: "Dedicated truckload solutions for large-volume freight transportation."
           },
           {
-            title: "Supply Chain Integration",
+            title: "Less-Than-Truckload (LTL) Solutions",
             image: "/images/services/custom-storage.jpg",
-            description: "Connect logistics networks for seamless operations."
+            description: "Cost-effective shipping options for smaller freight consignments."
           },
           {
-            title: "Regulatory Compliance",
+            title: "Freight Management",
             image: "/images/services/security.jpg",
-            description: "Navigate complex transportation regulations easily."
+            description: "Efficient coordination and handling of cargo movement operations."
           },
           {
-            title: "Predictive Analytics",
+            title: "Route Optimization & Dispatch",
             image: "/images/services/logistics.jpg",
-            description: "Forecast trends and optimize logistics planning."
+            description: "Smart route planning for timely and fuel-efficient deliveries."
           },
           {
-            title: "Sustainability Initiatives",
+            title: "Real-Time Shipment Tracking",
             image: "/images/services/maintenance.jpg",
-            description: "Eco-friendly logistics practices to reduce emissions."
+            description: "Live tracking systems for complete shipment visibility and updates."
           }
         ]}
       />

@@ -33,7 +33,7 @@ export default function WarehouseStorageSpace() {
         subtitle="Discover Our Spaces for Your Business Needs"
         buttonText="Contact Us Today"
         buttonLink="/contact-us"
-        backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
+        backgroundImage="/images/services/warehousing.jpeg"
       />
 
       <TrustedSlider />

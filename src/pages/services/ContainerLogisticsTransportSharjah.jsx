@@ -33,7 +33,7 @@ export default function ContainerLogisticsTransportSharjah() {
         subtitle="Experience Hassle-Free Logistics Today – Contact Us Now!"
         buttonText="Contact Us"
         buttonLink="/contact-us"
-        backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
+        backgroundImage="/images/services/containe-certification-ISO-tank-service.jpeg"
       />
 
       <TrustedSlider />
@@ -107,27 +107,27 @@ export default function ContainerLogisticsTransportSharjah() {
           {
             title: "End-to-End Container Transport",
             image: "/images/services/flexible-yard.jpg",
-            description: "Seamless transition from origin to destination."
+            description: "Reliable container movement from pickup to final delivery."
           },
           {
             title: "Customs Clearance Services",
             image: "/images/services/custom-storage.jpg",
-            description: "Navigating regulatory landscapes with ease."
+            description: "Smooth handling of shipping documentation and compliance procedures."
           },
           {
-            title: "Real-Time Tracking",
+            title: "Real-Time Shipment Tracking",
             image: "/images/services/security.jpg",
-            description: "Stay informed with up-to-date location and status updates."
+            description: "Live container tracking with timely delivery updates."
           },
           {
-            title: "Logistics Consulting",
+            title: "Container Handling & Coordination",
             image: "/images/services/logistics.jpg",
-            description: "Expert advice to streamline your supply chain processes."
+            description: "Efficient scheduling, loading, and transport management solutions."
           },
           {
-            title: "Warehousing Solutions",
+            title: "Warehousing & Storage Solutions",
             image: "/images/services/maintenance.jpg",
-            description: "Secure, efficient storage for all your cargo needs."
+            description: "Secure storage facilities to support cargo distribution and transit."
           }
         ]}
       />

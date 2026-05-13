@@ -33,7 +33,7 @@ export default function InternationalShippingAir() {
         subtitle="Experience seamless global transportation—contact us today!"
         buttonText="Contact Us"
         buttonLink="/contact-us"
-        backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
+        backgroundImage="/images/services/freight.jpeg  "
       />
 
       <TrustedSlider />

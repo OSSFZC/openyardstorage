@@ -33,7 +33,7 @@ export default function FreightShippingService() {
         subtitle="Discover the Difference—Request Your Free Quote Today!"
         buttonText="Get Started with a Custom Freight Shipping Quote!"
         buttonLink="/contact-us"
-        backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
+        backgroundImage="/images/services/sea.jpeg"
       />
 
       <TrustedSlider />

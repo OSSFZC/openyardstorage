@@ -33,7 +33,7 @@ export default function ContainerCrossStuffing() {
         subtitle="Unlock streamlined solutions for your cargo today. Contact us now!"
         buttonText="Contact Us for Tailored Solutions Today!"
         buttonLink="/contact-us"
-        backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
+        backgroundImage="/images/services/container-cross-stuffing.jpeg"
       />
 
       <TrustedSlider />
@@ -102,37 +102,37 @@ export default function ContainerCrossStuffing() {
       {/* SERVICES */}
       <ServiceGridSection
         eyebrow="Our Services"
-        title="Comprehensive Solutions for Cargo Mastery"
+        title="Comprehensive Container Cross Stuffing Solutions"
         services={[
           {
             title: "Container Cross Stuffing",
             image: "/images/services/flexible-yard.jpg",
             description:
-              "Precision handling for every cargo dimension.",
+              "Safe and efficient cargo transfer between containers.",
           },
           {
-            title: "Cargo Management Consulting",
+            title: "Cargo Consolidation & Deconsolidation",
             image: "/images/services/custom-storage.jpg",
             description:
-              "Expertise-driven strategies for operational excellence.",
+              "Optimized handling for mixed and bulk shipments.",
           },
           {
-            title: "Supply Chain Optimization",
+            title: "Customs Coordination Support",
             image: "/images/services/security.jpg",
             description:
-              "Streamlining processes for seamless logistics.",
+              "Smooth documentation and compliance assistance for cargo movement.",
           },
           {
-            title: "Customs Handling Support",
+            title: "Warehouse & Storage Support",
             image: "/images/services/logistics.jpg",
             description:
-              "Navigating regulations with ease and compliance.",
+              "Secure temporary storage during cross stuffing operations.",
           },
           {
-            title: "Inventory Storage Solutions",
+            title: "Cargo Inspection & Securing",
             image: "/images/services/maintenance.jpg",
             description:
-              "Secure, spacious, and accessible storage options.",
+              "Professional cargo checking, palletizing, and load stabilization services.",
           },
         ]}
       />

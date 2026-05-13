@@ -34,7 +34,7 @@ export default function BreakBulkCargoClearance() {
         subtitle="Get Started with a Free Consultation"
         buttonText="Contact Us for Expert Solutions"
         buttonLink="/contact-us"
-        backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
+        backgroundImage="/images/services/custom-clerance.jpeg"
       />
 
       <TrustedSlider />
@@ -103,32 +103,32 @@ export default function BreakBulkCargoClearance() {
       {/* SERVICES */}
       <ServiceGridSection
         eyebrow="Our Services"
-        title="Our Break Bulk Clearance Offerings"
+        title="Break Bulk Cargo Clearance Services"
         services={[
           {
             title: "Customs Brokerage",
             image: "/images/services/flexible-yard.jpg",
-            description: "Swift and accurate document handling.",
+            description: "Fast and accurate customs clearance for break bulk and project cargo.",
+          },
+          {
+            title: "Port Handling & Coordination",
+            image: "/images/services/custom-storage.jpg",
+            description: "Efficient vessel discharge, cargo handling, and terminal coordination.",
           },
           {
             title: "Freight Forwarding",
-            image: "/images/services/custom-storage.jpg",
-            description: "Coordinated logistics from start to finish.",
+            image: "/images/services/security.jpg",
+            description: "Seamless transportation planning for oversized and non-containerized cargo",
           },
           {
             title: "Regulatory Compliance",
-            image: "/images/services/security.jpg",
-            description: "Ensuring full adherence to all regulations.",
-          },
-          {
-            title: "Supply Chain Optimization",
             image: "/images/services/logistics.jpg",
-            description: "Maximizing efficiency and cost-effectiveness.",
+            description: "Complete documentation and compliance management for international shipments",
           },
           {
-            title: "Consulting Services",
+            title: "Project Cargo Logistics",
             image: "/images/services/maintenance.jpg",
-            description: "Strategic insights to enhance cargo operations.",
+            description: "Specialized logistics solutions for heavy, oversized, and complex cargo movements.",
           },
         ]}
       />
