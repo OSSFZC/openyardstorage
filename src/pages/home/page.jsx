@@ -117,12 +117,12 @@ useEffect(() => {
 const services = [
     {
       title: "Ship Freight",
-      image: "/images/ship-freight.jpg",
+      image: "/images/ship-s1.png",
       link: "/services/freight-shipping-service",
     },
     {
       title: "Air Freight",
-      image: "/images/air-freight.png",
+      image: "/images/Air-s1.png",
       link: "/service/international-shipping-air",
     },
     {
@@ -132,27 +132,27 @@ const services = [
     },
     {
       title: "Open Yard Storage",
-      image: "/images/openyardstorage-home.png",
+      image: "/images/Open-yard-storage-s6.png",
       link: "/services/logistics-transport-sharjah",
     },
     {
       title: "Customs Clearance",
-      image: "/images/custom.png",
+      image: "/images/Customer-clearance-s3.png",
       link: "/services/break-bulk-cargo-clearance",
     },
     {
       title: "Warehousing",
-      image: "/images/wareh.jpg",
+      image: "/images/warehousing-s7.png",
       link: "/service/warehouse-storage-space-for-rent",
     },
     {
       title: "Cross Stuffing & Port Handling Services",
-      image: "/images/port-handling.jpg",
+      image: "/images/container-cross-stuffing-s4.png",
       link: "/services/container-cross-stuffing",
     },
     {
       title: "Container Certification & ISO Tank Decanting",
-      image: "/images/container.jpg",
+      image: "/images/container-certification-ISO-tank-s5.png",
       link: "/service/container-logistics-transport-sharjah",
     },
     {

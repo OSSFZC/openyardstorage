@@ -110,24 +110,24 @@ export default function InventoryManagementSolutions() {
             description: "Smart strategies for perfect balance and efficiency.",
           },
           {
-            title: "Supply Chain Sync",
+            title: "Supply Chain Integration",
             image: "/images/services/custom-storage.jpg",
-            description: "Harmonize all links for seamless operations.",
+            description: "Streamlined coordination across procurement, storage, and distribution.",
           },
           {
-            title: "Real-Time Monitoring",
+            title: "Real-Time Inventory Monitoring",
             image: "/images/services/security.jpg",
-            description: "Immediate updates keep you ahead.",
+            description: "Live inventory tracking for improved visibility and control.",
           },
           {
-            title: "Data-Driven Insights",
+            title: "Data-Driven Analytics",
             image: "/images/services/logistics.jpg",
-            description: "Make informed decisions with comprehensive analytics.",
+            description: "Actionable insights to support smarter inventory decisions..",
           },
           {
-            title: "Custom Implementation",
+            title: "Custom System Implementation",
             image: "/images/services/maintenance.jpg",
-            description: "Tailored to suit your unique needs.",
+            description: "Tailored inventory management solutions designed for your business needs.",
           },
         ]}
       />
