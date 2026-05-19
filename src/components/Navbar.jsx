@@ -39,7 +39,8 @@ export default function Navbar() {
   { name: "Shipping Companies in Sharjah", slug: "shipping-companies-in-sharjah" },
   { name: "Hamriyah Port Sharjah", slug: "hamriyah-port-sharjah" },
   { name: "Cargo Service To Dubai", slug: "cargo-service-to-dubai" },
-  { name: "Storage Facility In Abu Dhabi", slug: "storage-facility-in-abu-dhabi" }
+  { name: "Storage Facility In Sharjah", slug: "storage-facility-in-sharjah" },
+
 ];
 
 const [locationsOpen, setLocationsOpen] = useState(false);

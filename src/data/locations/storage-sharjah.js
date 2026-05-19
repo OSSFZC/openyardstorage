@@ -5,11 +5,11 @@ import {
   FiDollarSign
 } from "react-icons/fi";
 
-const storageAbuDhabi = {
+const storageSharjah = {
 
-metaTitle:"Storage Facility in Abu Dhabi | Secure Industrial Yard & Logistics Storage | Open Yard Storage",
+metaTitle:"Storage Facility in Sharjah | Secure Industrial Yard & Logistics Storage | Open Yard Storage",
 
-metaDescription:"Looking for a reliable storage facility in Abu Dhabi? Open Yard Storage offers secure open yard storage, cargo handling, and logistics support for industrial operations.",
+metaDescription:"Looking for a reliable storage facility in Sharjah? Open Yard Storage offers secure open yard storage, cargo handling, and logistics support for industrial operations.",
 
 
 hero:{
@@ -22,10 +22,10 @@ backgroundImage:"/images/locations/storageAbuDhabi.webp"
 
 
 challenge:{
-title:"Facing Storage and Logistics Challenges in Abu Dhabi",
+title:"Facing Storage and Logistics Challenges in Sharjah",
 subtitle:"When Storage Limitations Start Affecting Operations",
 
-description:"Abu Dhabi’s rapid industrial and infrastructure growth has created a rising demand for dependable storage facilities. However, many businesses struggle with limited yard space, operational inefficiencies, and security concerns when managing equipment, materials, or project inventory.",
+description:"Sharjah’s rapid industrial and infrastructure growth has created a rising demand for dependable storage facilities. However, many businesses struggle with limited yard space, operational inefficiencies, and security concerns when managing equipment, materials, or project inventory.",
 
 description2:"Without a reliable storage partner, companies often experience logistical delays, inefficient inventory tracking, and increased operational costs.",
 
@@ -60,15 +60,15 @@ text:"Inefficient storage solutions can disrupt project timelines and supply cha
 
 features:{
 eyebrow:"Designed for Industrial Storage and Logistics Efficiency",
-title:"Secure and Efficient Storage Solutions in Abu Dhabi",
+title:"Secure and Efficient Storage Solutions in Sharjah",
 
-description:"Open Yard Storage delivers comprehensive open yard storage solutions in Abu Dhabi, helping businesses store large materials, heavy equipment, containers, and cargo safely while maintaining operational efficiency. Our facilities are designed to support industries such as construction, logistics, oil and gas, marine services, and manufacturing.",
+description:"Open Yard Storage delivers comprehensive open yard storage solutions in Sharjah, helping businesses store large materials, heavy equipment, containers, and cargo safely while maintaining operational efficiency. Our facilities are designed to support industries such as construction, logistics, oil and gas, marine services, and manufacturing.",
 
 features:[
 {
 image:"/images/services/reliable.png",
 title:"Strategic Industrial Location",
-description:"Positioned to support industrial operations across Abu Dhabi with access to key transport routes."
+description:"Positioned to support industrial operations across Sharjah with access to key transport routes."
 },
 {
 image:"/images/services/handling.png",
@@ -91,7 +91,7 @@ description:"Organized layouts improve accessibility and streamline logistics op
 
 services:{
 eyebrow:"Our Services",
-title:"Comprehensive Storage Services in Abu Dhabi",
+title:"Comprehensive Storage Services in Sharjah",
 
 services: [
 {
@@ -150,11 +150,11 @@ description:"Our team brings expertise in industrial storage, yard management, a
 
 faq:{
 eyebrow:"FAQ",
-title:"Your Storage Facility in Abu Dhabi Questions Answered",
+title:"Your Storage Facility in Sharjah Questions Answered",
 
 faqs: [
 {
-question:"What types of items can be stored in your Abu Dhabi storage facility?",
+question:"What types of items can be stored in your Sharjah storage facility?",
 answer:"Businesses commonly store construction materials, heavy equipment, containers, machinery, and project inventory."
 },
 {
@@ -198,7 +198,7 @@ answer:"Businesses can contact our team to discuss storage requirements and get 
 
 
 cta:{
-title:"Looking for a Reliable Storage Facility in Abu Dhabi?",
+title:"Looking for a Reliable Storage Facility in Sharjah?",
 buttonText:"Contact OSS Today",
 buttonLink:"/contact-us",
 backgroundImage:"/images/services/Explore-More.jpg"
@@ -206,4 +206,4 @@ backgroundImage:"/images/services/Explore-More.jpg"
 
 };
 
-export default storageAbuDhabi;
+export default storageSharjah;
