@@ -13,15 +13,15 @@ const { name, email, phone, message } = req.body;
 const transporter = nodemailer.createTransport({
  service: "gmail",
  auth: {
-  user: "development@syspreedigital.com",
-  pass: "ajwf ugjc hhnp mnuw"
+  user: "ossfzcenergylogistics@gmail.com",
+  pass: "khwf lwxu jhlo bhau"
  }
 });
 
 const mailOptions = {
- from: "development@syspreedigital.com",
+ from: "ossfzcenergylogistics@gmail.com",
  replyTo: email,
- to: "development@syspreedigital.com",
+ to: "ossfzcenergylogistics@gmail.com",
  subject: "New Contact Message",
  html: `
  <h3>Contact Form</h3>
