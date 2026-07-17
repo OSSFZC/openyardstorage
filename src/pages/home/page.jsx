@@ -426,7 +426,10 @@ const services = [
         <p className="text-sm text-gray-500 leading-relaxed">
           We are available to support our clients <br />
           24/7, 365 days. Call us anytime <br />
-          +971 50 9322 335
+          <a
+                href="tel:+971509322335"
+                className="text-gray-500 hover:text-red-600"
+              >+971 50 9322 335</a>
         </p>
       </div>
 

@@ -121,7 +121,10 @@ export default function Footer() {
 
             <p className="text-sm mb-2">
               <span className="text-red-600">Call us:</span><br />
-              <span className="text-gray-500">+971 50 9322 335</span>
+              <span className="text-gray-500"><a
+                href="tel:>+971509322335"
+                className="text-gray-500 hover:text-red-600"
+              >+971 50 9322 335</a></span>
             </p>
 
             <p className="text-sm">

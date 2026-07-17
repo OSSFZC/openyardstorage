@@ -133,12 +133,20 @@ loading="lazy"
 <div className="space-y-3 text-sm">
 <p>
 <span className="text-red-600 font-medium">Call us:</span><br />
-+971 50 9322 335
+<a
+                href="tel:+971509322335"
+                className="text-gray-500 hover:text-red-600"
+              >+971 50 9322 335</a>
 </p>
 
 <p>
 <span className="text-red-600 font-medium">Email us:</span><br />
-sales@oss-me.com
+<a
+                href="mailto:sales@oss-me.com"
+                className="text-gray-500 hover:text-red-600"
+              >
+                sales@oss-me.com
+              </a>
 </p>
 </div>
 </div>
