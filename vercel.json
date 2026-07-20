@@ -1,5 +1,496 @@
 {
+  "redirects": [
+    {
+      "source": "/services/",
+      "destination": "https://www.openyardstorage.com/services",
+      "statusCode": 301,
+      "preserveQueryParams": true
+    },
+    {
+      "source": "/projects/weatherford-drilling-International",
+      "destination": "https://www.openyardstorage.com/projects/weatherford-drilling-international",
+      "statusCode": 301,
+      "preserveQueryParams": true
+    },
+    {
+      "source": "/services/storage-warehouse-for-rent",
+      "destination": "https://www.openyardstorage.com/services/storage-warehouse-for-rent",
+      "statusCode": 301,
+      "preserveQueryParams": true,
+      "has": [
+        {
+          "type": "host",
+          "value": "openyardstorage.com"
+        }
+      ]
+    },
+    {
+      "source": "/Contact-us",
+      "destination": "https://www.openyardstorage.com/contact-us",
+      "statusCode": 301,
+      "preserveQueryParams": true
+    },
+    {
+      "source": "/about/Inspiration",
+      "destination": "https://www.openyardstorage.com/about/inspiration",
+      "statusCode": 301,
+      "preserveQueryParams": true
+    },
+    {
+      "source": "/about/Founder",
+      "destination": "https://www.openyardstorage.com/about/founder",
+      "statusCode": 301,
+      "preserveQueryParams": true
+    },
+    {
+      "source": "/industries/warehousing",
+      "destination": "https://www.openyardstorage.com/industries/warehousing",
+      "statusCode": 301,
+      "preserveQueryParams": true,
+      "has": [
+        {
+          "type": "host",
+          "value": "openyardstorage.com"
+        }
+      ]
+    },
+    {
+      "source": "/industries/shipspares",
+      "destination": "https://www.openyardstorage.com/industries/shipspares",
+      "statusCode": 301,
+      "preserveQueryParams": true,
+      "has": [
+        {
+          "type": "host",
+          "value": "openyardstorage.com"
+        }
+      ]
+    },
+    {
+      "source": "/industries/offshorelogistics",
+      "destination": "https://www.openyardstorage.com/industries/offshorelogistics",
+      "statusCode": 301,
+      "preserveQueryParams": true,
+      "has": [
+        {
+          "type": "host",
+          "value": "openyardstorage.com"
+        }
+      ]
+    },
+    {
+      "source": "/industries/pharmaceuticals",
+      "destination": "https://www.openyardstorage.com/industries/pharmaceuticals",
+      "statusCode": 301,
+      "preserveQueryParams": true,
+      "has": [
+        {
+          "type": "host",
+          "value": "openyardstorage.com"
+        }
+      ]
+    },
+    {
+      "source": "/industries/metals",
+      "destination": "https://www.openyardstorage.com/industries/metals",
+      "statusCode": 301,
+      "preserveQueryParams": true,
+      "has": [
+        {
+          "type": "host",
+          "value": "openyardstorage.com"
+        }
+      ]
+    },
+    {
+      "source": "/industries/medical",
+      "destination": "https://www.openyardstorage.com/industries/medical",
+      "statusCode": 301,
+      "preserveQueryParams": true,
+      "has": [
+        {
+          "type": "host",
+          "value": "openyardstorage.com"
+        }
+      ]
+    },
+    {
+      "source": "/industries/manufacturing",
+      "destination": "https://www.openyardstorage.com/industries/manufacturing",
+      "statusCode": 301,
+      "preserveQueryParams": true,
+      "has": [
+        {
+          "type": "host",
+          "value": "openyardstorage.com"
+        }
+      ]
+    },
+    {
+      "source": "/industries/inventorymanagement",
+      "destination": "https://www.openyardstorage.com/industries/inventorymanagement",
+      "statusCode": 301,
+      "preserveQueryParams": true,
+      "has": [
+        {
+          "type": "host",
+          "value": "openyardstorage.com"
+        }
+      ]
+    },
+    {
+      "source": "/industries/heavyequipment",
+      "destination": "https://www.openyardstorage.com/industries/heavyequipment",
+      "statusCode": 301,
+      "preserveQueryParams": true,
+      "has": [
+        {
+          "type": "host",
+          "value": "openyardstorage.com"
+        }
+      ]
+    },
+    {
+      "source": "/industries/foodbeverages",
+      "destination": "https://www.openyardstorage.com/industries/foodbeverages",
+      "statusCode": 301,
+      "preserveQueryParams": true,
+      "has": [
+        {
+          "type": "host",
+          "value": "openyardstorage.com"
+        }
+      ]
+    },
+    {
+      "source": "/industries/distribution",
+      "destination": "https://www.openyardstorage.com/industries/distribution",
+      "statusCode": 301,
+      "preserveQueryParams": true,
+      "has": [
+        {
+          "type": "host",
+          "value": "openyardstorage.com"
+        }
+      ]
+    },
+    {
+      "source": "/industries/construction",
+      "destination": "https://www.openyardstorage.com/industries/construction",
+      "statusCode": 301,
+      "preserveQueryParams": true,
+      "has": [
+        {
+          "type": "host",
+          "value": "openyardstorage.com"
+        }
+      ]
+    },
+    {
+      "source": "/industries/chemicals",
+      "destination": "https://www.openyardstorage.com/industries/chemicals",
+      "statusCode": 301,
+      "preserveQueryParams": true,
+      "has": [
+        {
+          "type": "host",
+          "value": "openyardstorage.com"
+        }
+      ]
+    },
+    {
+      "source": "/industries/automotive",
+      "destination": "https://www.openyardstorage.com/industries/automotive",
+      "statusCode": 301,
+      "preserveQueryParams": true,
+      "has": [
+        {
+          "type": "host",
+          "value": "openyardstorage.com"
+        }
+      ]
+    },
+    {
+      "source": "/locations/hamriyah-port-sharjah",
+      "destination": "https://www.openyardstorage.com/locations/hamriyah-port-sharjah",
+      "statusCode": 301,
+      "preserveQueryParams": true,
+      "has": [
+        {
+          "type": "host",
+          "value": "openyardstorage.com"
+        }
+      ]
+    },
+    {
+      "source": "/services/TransportLogisticSharjah",
+      "destination": "https://www.openyardstorage.com/services/logistics-transport-sharjah",
+      "statusCode": 301,
+      "preserveQueryParams": true
+    },
+    {
+      "source": "/services/StorageWarehouseDubai",
+      "destination": "https://www.openyardstorage.com/services/storage-warehouse-dubai",
+      "statusCode": 301,
+      "preserveQueryParams": true
+    },
+    {
+      "source": "/services/StorageSpaceSharjah",
+      "destination": "https://www.openyardstorage.com/services/storage-space-sharjah",
+      "statusCode": 301,
+      "preserveQueryParams": true
+    },
+    {
+      "source": "/services/StorageFacilityAbuDhabi",
+      "destination": "https://www.openyardstorage.com/services/storage-facility-abu-dhabi",
+      "statusCode": 301,
+      "preserveQueryParams": true
+    },
+    {
+      "source": "/services/SmallStorageWarehouse",
+      "destination": "https://www.openyardstorage.com/services/small-storage-warehouse-for-rent",
+      "statusCode": 301,
+      "preserveQueryParams": true
+    },
+    {
+      "source": "/services/ShippingLogisticManagement",
+      "destination": "https://www.openyardstorage.com/services/shipping-logistic-management",
+      "statusCode": 301,
+      "preserveQueryParams": true
+    },
+    {
+      "source": "/services/ShippingCompaniesSharjah",
+      "destination": "https://www.openyardstorage.com/service/shipping-companies-sharjah",
+      "statusCode": 301,
+      "preserveQueryParams": true
+    },
+    {
+      "source": "/services/MedicalEquipmentHealthcareStorage",
+      "destination": "https://www.openyardstorage.com/services/medical-equipment-healthcare-storage",
+      "statusCode": 301,
+      "preserveQueryParams": true
+    },
+    {
+      "source": "/services/MarineLogisticsSharjah",
+      "destination": "https://www.openyardstorage.com/projects/marine-logistics-sharjah",
+      "statusCode": 301,
+      "preserveQueryParams": true
+    },
+    {
+      "source": "/services/LogisticTruckCompanySharjah",
+      "destination": "https://www.openyardstorage.com/service/logistic-truck-company-sharjah",
+      "statusCode": 301,
+      "preserveQueryParams": true
+    },
+    {
+      "source": "/services/LogisticsTransportSharjah",
+      "destination": "https://www.openyardstorage.com/services/logistics-transport-sharjah",
+      "statusCode": 301,
+      "preserveQueryParams": true
+    },
+    {
+      "source": "/services/InventoryManagementSolutions",
+      "destination": "https://www.openyardstorage.com/services/inventory-management-solutions",
+      "statusCode": 301,
+      "preserveQueryParams": true
+    },
+    {
+      "source": "/services/InternationalTruckShipping",
+      "destination": "https://www.openyardstorage.com/services/international-truck-shipping",
+      "statusCode": 301,
+      "preserveQueryParams": true
+    },
+    {
+      "source": "/services/InternationalShippingForwarder",
+      "destination": "https://www.openyardstorage.com/services/international-shipping-forwarder",
+      "statusCode": 301,
+      "preserveQueryParams": true
+    },
+    {
+      "source": "/services/InternationalShippingAir",
+      "destination": "https://www.openyardstorage.com/service/international-shipping-air",
+      "statusCode": 301,
+      "preserveQueryParams": true
+    },
+    {
+      "source": "/services/HealthCareStorageSolutions",
+      "destination": "https://www.openyardstorage.com/services/health-care-storage-solutions",
+      "statusCode": 301,
+      "preserveQueryParams": true
+    },
+    {
+      "source": "/services/HamriyahPortSharjah",
+      "destination": "https://www.openyardstorage.com/service/hamriyah-port-sharjah",
+      "statusCode": 301,
+      "preserveQueryParams": true
+    },
+    {
+      "source": "/services/FreightShippingService",
+      "destination": "https://www.openyardstorage.com/services/freight-shipping-service",
+      "statusCode": 301,
+      "preserveQueryParams": true
+    },
+    {
+      "source": "/services/FreightLogisticsTrucking",
+      "destination": "https://www.openyardstorage.com/services/freight-logistics-trucking",
+      "statusCode": 301,
+      "preserveQueryParams": true
+    },
+    {
+      "source": "/services/FreightLogisticsServices",
+      "destination": "https://www.openyardstorage.com/service/freight-logistics-services",
+      "statusCode": 301,
+      "preserveQueryParams": true
+    },
+    {
+      "source": "/services/FreightForwardingCompaniesSharjah",
+      "destination": "https://www.openyardstorage.com/services/freight-forwarding-companies-sharjah",
+      "statusCode": 301,
+      "preserveQueryParams": true
+    },
+    {
+      "source": "/services/ForwardingFreightCompanies",
+      "destination": "https://www.openyardstorage.com/services/forwarding-freight-companies",
+      "statusCode": 301,
+      "preserveQueryParams": true
+    },
+    {
+      "source": "/services/ContainerLogisticsTransportSharjah",
+      "destination": "https://www.openyardstorage.com/service/container-logistics-transport-sharjah",
+      "statusCode": 301,
+      "preserveQueryParams": true
+    },
+    {
+      "source": "/services/ContainerFreightLogistics",
+      "destination": "https://www.openyardstorage.com/service/container-freight-logistics",
+      "statusCode": 301,
+      "preserveQueryParams": true
+    },
+    {
+      "source": "/services/ContainerCrossStuffing",
+      "destination": "https://www.openyardstorage.com/services/container-cross-stuffing",
+      "statusCode": 301,
+      "preserveQueryParams": true
+    },
+    {
+      "source": "/services/ChillerStorageWarehouse",
+      "destination": "https://www.openyardstorage.com/services/chiller-storage-warehouse",
+      "statusCode": 301,
+      "preserveQueryParams": true
+    },
+    {
+      "source": "/services/CargoServiceDubai",
+      "destination": "https://www.openyardstorage.com/services/cargo-service-dubai",
+      "statusCode": 301,
+      "preserveQueryParams": true
+    },
+    {
+      "source": "/services/BreakBulkCargoClearance",
+      "destination": "https://www.openyardstorage.com/services/break-bulk-cargo-clearance",
+      "statusCode": 301,
+      "preserveQueryParams": true
+    },
+    {
+      "source": "/about/VisionMission",
+      "destination": "https://www.openyardstorage.com/about/vision-mission",
+      "statusCode": 301,
+      "preserveQueryParams": true
+    },
+    {
+      "source": "/about/OurStory",
+      "destination": "https://www.openyardstorage.com/about/our-story",
+      "statusCode": 301,
+      "preserveQueryParams": true
+    },
+    {
+      "source": "/locations/shipping-sharjah",
+      "destination": "https://www.openyardstorage.com/locations/shipping-companies-in-sharjah",
+      "statusCode": 301,
+      "preserveQueryParams": true
+    },
+    {
+      "source": "/locations/cargo-dubai",
+      "destination": "https://www.openyardstorage.com/locations/cargo-service-to-dubai",
+      "statusCode": 301,
+      "preserveQueryParams": true
+    },
+    {
+      "source": "/warehousing-distribution",
+      "destination": "https://www.openyardstorage.com/industries/warehousing",
+      "statusCode": 301,
+      "preserveQueryParams": true
+    },
+    {
+      "source": "/about-us",
+      "destination": "https://www.openyardstorage.com/about/our-story",
+      "statusCode": 301,
+      "preserveQueryParams": true
+    },
+    {
+      "source": "/contacts",
+      "destination": "https://www.openyardstorage.com/contact-us",
+      "statusCode": 301,
+      "preserveQueryParams": true
+    },
+    {
+      "source": "/offshore-logistics",
+      "destination": "https://www.openyardstorage.com/industries/offshorelogistics",
+      "statusCode": 301,
+      "preserveQueryParams": true
+    },
+    {
+      "source": "/ship-spares-clearance",
+      "destination": "https://www.openyardstorage.com/industries/shipspares",
+      "statusCode": 301,
+      "preserveQueryParams": true
+    },
+    {
+      "source": "/services/WarehouseStorageSpace",
+      "destination": "https://www.openyardstorage.com/service/warehouse-storage-space-for-rent",
+      "statusCode": 301,
+      "preserveQueryParams": true
+    },
+    {
+      "source": "/services/StorageSpaceDubai",
+      "destination": "https://www.openyardstorage.com/services/storage-space-rent-dubai",
+      "statusCode": 301,
+      "preserveQueryParams": true
+    },
+    {
+      "source": "/services/HamriyahWarehouse",
+      "destination": "https://www.openyardstorage.com/services/hamriyah-free-zone-warehouse-rent",
+      "statusCode": 301,
+      "preserveQueryParams": true
+    },
+    {
+      "source": "/services/FreightForwardingManagement",
+      "destination": "https://www.openyardstorage.com/service/freight-forwarding-management",
+      "statusCode": 301,
+      "preserveQueryParams": true
+    },
+    {
+      "source": "/home/",
+      "destination": "https://www.openyardstorage.com/",
+      "statusCode": 301,
+      "preserveQueryParams": true
+    },
+    {
+      "source": "/locations/storage-abu-dhabi",
+      "destination": "https://www.openyardstorage.com/services/storage-facility-abu-dhabi",
+      "statusCode": 301,
+      "preserveQueryParams": true
+    },
+    {
+      "source": "/open-yard-storage-facility",
+      "destination": "https://www.openyardstorage.com/",
+      "statusCode": 301,
+      "preserveQueryParams": true
+    }
+  ],
   "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
+    {
+      "source": "/(.*)",
+      "destination": "/"
+    }
   ]
 }
