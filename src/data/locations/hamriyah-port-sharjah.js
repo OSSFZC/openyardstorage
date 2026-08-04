@@ -19,7 +19,6 @@ const hamriyahPortSharjah = {
     title: "Why Distance from the Port Slows Down Cargo Operations",
     description:
       "Businesses storing cargo far from Hamriyah Port commonly run into four problems",
-   
 
     rightBg: "#F8FFEA",
 
@@ -31,7 +30,7 @@ const hamriyahPortSharjah = {
       },
       {
         icon: FiShield,
-        title: "Higher transport costs",
+        title: "Higher transport",
         text: "Longer drives between storage and port facilities increase fuel and labor costs per shipment.",
       },
       {
@@ -82,7 +81,6 @@ const hamriyahPortSharjah = {
     ],
   },
 
-
   features: {
     eyebrow: "The OSS Difference",
     title: " Warehousing Positioned for Port-Side Efficiency",
@@ -115,12 +113,12 @@ const hamriyahPortSharjah = {
         description:
           "space scales with import and export volume tied to port activity.",
       },
-       {
+      {
         image: "/images/locations/radar.png",
         title: "End-to-end coordination",
         description:
           "inbound cargo from the port connects directly to OSS storage without added transfer points.",
-      }
+      },
     ],
   },
 
@@ -170,8 +168,7 @@ const hamriyahPortSharjah = {
 
   solutions: {
     eyebrow: "Tailored Solutions for Hamriyah Port Logistics",
-    title:
-      "Storage Near Hamriyah Port Configured for Five Business Sectors",
+    title: "Storage Near Hamriyah Port Configured for Five Business Sectors",
     description:
       "OSS operates contract logistics and storage services in Sharjah that give businesses access to enterprise-grade warehousing without the cost of buying or building their own facility. OSS is a storage and logistics company in Sharjah. Each client contract is built around a specific cargo type, storage volume, and shipping timeline.",
 
@@ -217,45 +214,45 @@ const hamriyahPortSharjah = {
   },
 
   stats: {
-  title: "Operational Performance That Businesses Trust",
-  subtitle: "Supporting Logistics Operations Across the Region",
+    title: "Operational Performance That Businesses Trust",
+    subtitle: "Supporting Logistics Operations Across the Region",
 
-  stats: [
-    {
-      value: 8,
-      unit: "km",
-      label: "Distance from Hamriyah Port",
-      description: "Approximately a 13-minute drive.",
-    },
-    {
-      value: 260000,
-      suffix: "+",
-      unit: "sq ft",
-      label: "Total Managed Footprint",
-      description: "Of storage capacity.",
-    },
-    {
-      value: 140,
-      suffix: "+",
-      unit: "Clients",
-      label: "Enterprise Client Base",
-      description: "Active manufacturing, trading, and retail clients.",
-    },
-    {
-      value: 24,
-      suffix: "/7",
-      label: "Facility Security",
-      description: "Video surveillance with automated fire suppression.",
-    },
-    {
-      value: 12000,
-      suffix: "+",
-      unit: "Pallets",
-      label: "Monthly Freight Throughput",
-      description: "Processed and dispatched monthly.",
-    },
-  ],
-},
+    stats: [
+      {
+        value: 8,
+        unit: "km",
+        label: "Distance from Hamriyah Port",
+        description: "Approximately a 13-minute drive.",
+      },
+      {
+        value: 260000,
+        suffix: "+",
+        unit: "sq ft",
+        label: "Total Managed Footprint",
+        description: "Of storage capacity.",
+      },
+      {
+        value: 140,
+        suffix: "+",
+        unit: "Clients",
+        label: "Enterprise Client Base",
+        description: "Active manufacturing, trading, and retail clients.",
+      },
+      {
+        value: 24,
+        suffix: "/7",
+        label: "Facility Security",
+        description: "Video surveillance with automated fire suppression.",
+      },
+      {
+        value: 12000,
+        suffix: "+",
+        unit: "Pallets",
+        label: "Monthly Freight Throughput",
+        description: "Processed and dispatched monthly.",
+      },
+    ],
+  },
 
   about: [
     {
