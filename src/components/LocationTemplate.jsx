@@ -8,9 +8,10 @@ import DualInfoSection from "./DualInfoSection";
 import FAQSection from "./FAQSection";
 import CTASection from "./CTASection";
 import useMeta from "../hooks/useMeta";
+import CardsFeatures from "./CardsFeatures";
+import LeftalignedCards from "./LeftalignedCards";
 
 export default function LocationTemplate({ data }) {
-
   useMeta(data.metaTitle, data.metaDescription);
 
   return (
@@ -27,10 +28,29 @@ export default function LocationTemplate({ data }) {
       <TrustedSlider />
 
       <ChallengeSection {...data.challenge} />
+      
+      {/*key benefits section*/}
+      {data.keyBenefits && (
+        <LeftalignedCards
+          {...data.keyBenefits}
+        />
+      )}
 
       <FeatureSection {...data.features} />
 
       <ServiceGridSection {...data.services} />
+
+
+      {/* /Solutions Section */}
+      {data.solutions && (
+        <CardsFeatures
+          {...data.solutions}
+          features={data.solutions.features || data.solutions.solutions || []}
+        />
+      )}
+
+      {/* /Free Zone Storage Section */}
+      <FeatureSection {...data.FreeZoneStorage} />
 
       <StatsSection {...data.stats} />
 

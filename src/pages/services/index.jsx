@@ -20,10 +20,10 @@ const services = [
     title: "International Truck Shipping",
     link: "/services/international-truck-shipping",
   },
-  {
-    title: "Health Care Storage Solutions",
-    link: "/services/health-care-storage-solutions",
-  },
+  // {
+  //   title: "Health Care Storage Solutions",
+  //   link: "/services/health-care-storage-solutions",
+  // },
   {
     title: "Freight Shipping Service",
     link: "/services/freight-shipping-service",

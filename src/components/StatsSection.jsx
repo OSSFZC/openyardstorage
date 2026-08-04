@@ -1,49 +1,63 @@
 import { useEffect, useRef, useState } from "react";
 
-function Counter({ value, duration = 2000 }) {
+function Counter({
+  value,
+  suffix = "",
+  unit = "",
+  decimals = 0,
+  duration = 2000,
+}) {
   const [count, setCount] = useState(0);
   const ref = useRef(null);
 
   useEffect(() => {
     const element = ref.current;
-    let observer;
 
     const startCounter = () => {
       let start = 0;
-      const end = parseInt(value.replace(/\D/g, ""));
-      const suffix = value.replace(/[0-9]/g, "");
-
-      const increment = Math.ceil(end / (duration / 16));
+      const end = Number(value);
+      const increment = end / (duration / 16);
 
       const timer = setInterval(() => {
         start += increment;
+
         if (start >= end) {
-          setCount(end + suffix);
+          setCount(end);
           clearInterval(timer);
         } else {
-          setCount(start + suffix);
+          setCount(start);
         }
       }, 16);
     };
 
-    observer = new IntersectionObserver(
+    const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
           startCounter();
           observer.disconnect();
         }
       },
-      { threshold: 0.4 }
+      { threshold: 0.4 },
     );
 
     observer.observe(element);
 
-    return () => observer && observer.disconnect();
+    return () => observer.disconnect();
   }, [value, duration]);
 
   return (
-    <div ref={ref} className="text-4xl md:text-5xl font-bold text-black">
-      {count}
+    <div ref={ref} className="text-3xl md:text-4xl font-bold text-black">
+      {count.toLocaleString(undefined, {
+        minimumFractionDigits: decimals,
+        maximumFractionDigits: decimals,
+      })}
+      {suffix}
+
+      {unit && (
+        <span className="ml-1 text-base md:text-lg font-semibold align-middle">
+          {unit}
+        </span>
+      )}
     </div>
   );
 }
@@ -52,32 +66,27 @@ export default function StatsSection({ title, subtitle, stats = [] }) {
   return (
     <section className="py-16 bg-white">
       <div className="max-w-6xl mx-auto px-4 text-center">
-        {/* Title */}
         <h2 className="text-3xl md:text-4xl font-semibold text-gray-800">
           {title}
         </h2>
 
-        {/* Subtitle */}
-        {subtitle && (
-          <p className="text-gray-500 mt-2">
-            {subtitle}
-          </p>
-        )}
+        {subtitle && <p className="text-gray-500 mt-2">{subtitle}</p>}
 
-        {/* Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-10 mt-12">
           {stats.map((item, index) => (
             <div key={index}>
-              <Counter value={item.value} />
-              <p className="text-gray-500 mt-2 text-sm md:text-base">
+              <Counter
+                value={item.value}
+                suffix={item.suffix}
+                unit={item.unit}
+                decimals={item.decimals ?? 0}
+              />
+
+              <p className="text-gray-500 mt-2 text-sm md:text-base font-medium">
                 {item.label}
               </p>
-<<<<<<< HEAD
-=======
-              <p>
-                {item.description}
-              </p>
->>>>>>> 326c163 (Initial commit)
+
+              <p className="text-sm text-gray-600 mt-1">{item.description}</p>
             </div>
           ))}
         </div>

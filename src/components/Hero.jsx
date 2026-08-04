@@ -63,8 +63,8 @@ export default function Hero() {
 </h1>
 
           <p className="mt-5 max-w-md text-base text-gray-200">
-            Agile logistics solutions built for scale, speed, and seamless
-            delivery across the globe.
+            As one of the established shipping companies in UAE, OSS moves cargo at scale, on schedule, with full shipment visibility from origin to delivery.
+
           </p>
 
           <Link to="/contact-us">

@@ -7,30 +7,27 @@ import StatsSection from "../../components/StatsSection";
 import DualInfoSection from "../../components/DualInfoSection";
 import FAQSection from "../../components/FAQSection";
 import CTASection from "../../components/CTASection";
+import CardsFeatures from "../../components/CardsFeatures";
+import LeftalignedCards from "../../components/LeftalignedCards";
 
-import {
-  FiFileText,
-  FiClock,
-  FiShield,
-  FiMap
-} from "react-icons/fi";
+import { FiFileText, FiClock, FiShield, FiMap } from "react-icons/fi";
 
 import useMeta from "../../hooks/useMeta";
+import { sub } from "framer-motion/client";
 
 export default function CargoServiceDubai() {
-
   useMeta(
-    "Reliable Cargo Service to Dubai | OSS FZC",
-    "OSS FZC provides efficient and secure cargo service to Dubai with advanced logistics solutions and seamless shipping management."
+    "Cargo Service Dubai | Openyard Storage FZC Logistics UAE",
+    "Move your shipments with confidence. Openyard Storage FZC provides professional Cargo Service- Dubai backed by secure handling & timely delivery. Enquire today!",
   );
 
   return (
     <>
       {/* HERO */}
       <InnerHero
-        eyebrow="Effortless Cargo Transition to Dubai"
-        title="Experience Seamless Cargo Service to Dubai with Unmatched Reliability"
-        subtitle="Transform Your Logistics Today – Get a Free Quote!"
+        // eyebrow="Effortless Cargo Transition to Dubai"
+        title="Cargo Service to Dubai from Sharjah, UAE"
+        subtitle="OSS provides a reliable cargo service to Dubai, connecting its 260,000+ square-ft Sharjah storage network to Dubai's ports, free zones, and business districts. Businesses use OSS for scheduled freight runs, cross-docking, and full-load or part-load cargo movement between the two Emirates, backed by real-time shipment tracking and a dedicated fleet."
         buttonText="Get a Free Quote"
         buttonLink="/contact-us"
         backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
@@ -40,107 +37,237 @@ export default function CargoServiceDubai() {
 
       {/* PROBLEM SECTION */}
       <ChallengeSection
-        subtitle="Navigating Cargo Complexities?"
-        title="Why Traditional Cargo Services Fall Short"
-        description="Shipping cargo to Dubai can involve complex documentation, unexpected delays, and coordination challenges."
-        description2="OSS FZC simplifies logistics with streamlined shipping processes, real-time tracking, and expert cargo management for businesses shipping to Dubai."
-        rightTitle="Simplifying Your Cargo Journey"
+        // subtitle="Navigating Cargo Complexities?"
+        title="Why Businesses Struggle with Moving Shipping Cargo Services Between Dubai and Sharjah"
+        description="Companies without a dedicated cargo service to Dubai commonly face four recurring problems"
+        // description2="OSS FZC simplifies logistics with streamlined shipping processes, real-time tracking, and expert cargo management for businesses shipping to Dubai."
+        rightTitle="Problem Statement"
         rightBg="#C5F7FF"
         cards={[
           {
             icon: FiMap,
-            title: "Logistical Maze",
-            text: "Navigate complex customs and logistics requirements."
+            title: "Unreliable transit schedules",
+            text: "Ad hoc freight bookings cause delays that disrupt delivery commitments in Dubai.",
           },
           {
             icon: FiClock,
-            title: "Time Delays",
-            text: "Optimized shipping ensures timely delivery."
+            title: "No shipment visibility",
+            text: "Without tracking, businesses can't confirm cargo location or estimated arrival time.",
           },
           {
             icon: FiShield,
-            title: "Security Concerns",
-            text: "Advanced cargo protection systems."
+            title: "Inconsistent handling standards",
+            text: " Cargo passed between multiple third parties increases the risk of damage or loss in transit.",
           },
           {
             icon: FiFileText,
-            title: "Inefficient Tracking",
-            text: "Real-time tracking for complete transparency."
-          }
+            title: "High per-trip costs",
+            text: "Businesses paying for one-off freight runs lose the cost efficiency of scheduled, consolidated shipping.",
+          },
+        ]}
+      />
+
+      {/* Solving Your Storage Challenges */}
+      <LeftalignedCards
+        // eyebrow="Solving Your Storage Challenges"
+        title="Simplifying Your Cargo Journey"
+        description="OSS addresses each of these directly through its cargo service to Dubai"
+        features={[
+          {
+            image: "/images/services/time-manager.png",
+            title: "Fixed and on-demand transit schedules  ",
+            description:
+              " cargo moves on a set routing between Sharjah and Dubai, with additional capacity available for urgent shipments.",
+          },
+          {
+            image: "/images/services/real-time-strategy.png",
+            title: "Real-time shipment tracking",
+            description:
+              "clients monitor cargo status from dispatch to delivery through a digital portal.",
+          },
+          {
+            image: "/images/services/distribution.png",
+            title: "Single-operator handling ",
+            description:
+              " cargo stays within the OSS network from warehouse to final delivery, reducing handling risk.",
+          },
+          {
+            image: "/images/services/risk-management.png",
+            title: "Consolidated freight options ",
+            description:
+              "part-load and full-load cargo services in Dubai lower per-shipment costs for smaller consignments.",
+          },
         ]}
       />
 
       {/* SOLUTIONS */}
       <FeatureSection
-        eyebrow="Efficiency Meets Excellence"
-        title="Innovative Solutions Tailored for Dubai Cargo Services"
-        description="OSS FZC delivers reliable cargo service to Dubai by combining advanced logistics technology with expert shipping coordination."
+        eyebrow="The OSS Difference"
+        title="Cargo Service to Dubai Built Around Delivery Reliability"
+        description="OSS operates a dedicated cargo service to Dubai that connects its Sharjah warehousing network directly to Dubai's ports, free zones, and commercial areas. This removes the need for businesses to coordinate separate storage and transport providers.
+OSS is a storage and logistics company based in Sharjah, and cargo movement to Dubai is managed as an extension of that warehousing network. Each shipping schedule is set around cargo type, delivery deadline, and consignment volume."
         features={[
           {
+            image: "/images/services/track.png",
+            title: "Direct highway routing",
+            description:
+              "access to the E311 and E611 corridors shortens transit time between Sharjah and Dubai.",
+          },
+          {
+            image: "/images/services/tracking.png",
+            title: "Barcode and RFID tracking",
+            description:
+              "cargo status is logged at each handling point, reducing manual tracking errors.",
+          },
+          {
+            image: "/images/services/logistic.png",
+            title: "Trained freight staff",
+            description:
+              "dispatch coordinators and drivers manage loading, transit, and delivery confirmation.",
+          },
+          {
+            image: "/images/services/delivery-truck.png",
+            title: "Flexible load sizes ",
+            description:
+              "businesses can book full-truckload, part-load, or pallet-level cargo service to Dubai depending on shipment volume.",
+          },
+          {
             image: "/icons/Real-time.png",
-            title: "Real-Time Updates",
-            description: "Stay informed at every step of the shipment journey."
+            title: "End-to-end coordination  ",
+            description:
+              "inbound storage at Sharjah connects directly to outbound delivery in Dubai without added transfer points.",
           },
-          {
-            image: "/icons/timely-Delivery.png",
-            title: "Customized Solutions",
-            description: "Shipping strategies tailored to your business."
-          },
-          {
-            image: "/icons/Regulatory-exper.png",
-            title: "Expert Guidance",
-            description: "Professional support navigating shipping regulations."
-          },
-          {
-            image: "/icons/Real-time.png",
-            title: "Advanced Tracking",
-            description: "Cutting-edge shipment traceability systems."
-          }
         ]}
       />
 
       {/* SERVICES */}
       <ServiceGridSection
         eyebrow="Cargo Services"
-        title="Comprehensive Cargo Solutions"
+        title="Cargo and Freight Services Offered Between Sharjah and Dubai"
         services={[
           {
-            title: "Complete Customs Assistance",
-            image: "/images/services/security.jpg",
-            description: "Professional handling of export paperwork and procedures."
+            title: "Scheduled Cargo Service to Dubai",
+            image: "/images/services/schedule.jpg",
+            description:
+              "Regular freight runs on fixed routes and timings for businesses with recurring shipment needs.",
           },
           {
-            title: "Sea Freight Services",
-            image: "/images/services/logistics.jpg",
-            description: "Cost-effective shipping for large cargo volumes."
+            title: "On-Demand Freight Dispatch",
+            image: "/images/services/dispatch.jpg",
+            description:
+              "Urgent or one-off cargo movement to Dubai for time-sensitive orders and stock transfers.",
           },
           {
-            title: "Air Freight Services",
+            title: "Full-Load and Part-Load Shipping",
             image: "/images/services/flexible-yard.jpg",
-            description: "Fast delivery for urgent shipments."
+            description:
+              "Flexible load options so businesses only pay for the freight capacity they use.",
           },
           {
-            title: "Warehousing Solutions",
+            title: "Cross-Docking to Dubai",
             image: "/images/services/custom-storage.jpg",
-            description: "Safe and flexible storage for cargo management."
+            description:
+              "Cargo moves from inbound container arrival at Sharjah directly to outbound Dubai delivery, cutting handling time.",
           },
           {
-            title: "Personalized Cargo Solutions",
+            title: "Warehouse-to-Delivery Coordination",
             image: "/images/services/maintenance.jpg",
-            description: "Tailored shipping strategies for unique business needs."
-          }
+            description:
+              "Storage and cargo shipping are managed under a single contract, removing the need to coordinate separate providers.",
+          },
+          {
+            title: "Shipment Tracking and Reporting",
+            image: "/images/services/shipment-tracking.jpg",
+            description:
+              "Digital tracking gives clients visibility into cargo location, transit status, and delivery confirmation.",
+          },
         ]}
+      />
+
+      <CardsFeatures
+        eyebrow="Storage Solutions by Industry Section"
+        title="Warehousing Configured for Five Business Sectors"
+        features={[
+          {
+            image: "/images/services/truck.png",
+            title: "FMCG and General Trading",
+            description:
+              "high-density racking and picking lanes support faster product rotation.",
+          },
+          {
+            image: "/images/services/industrial-park.png",
+            title: "Industrial Manufacturing ",
+            description:
+              "staging areas hold raw materials, production tools, and finished machinery before scheduled distribution.",
+          },
+          {
+            image: "/images/services/online-store.png",
+            title: "Retail and E-Commerce Fulfillment",
+            description:
+              "space scales to handle high order volumes during peak sales periods.",
+          },
+          {
+            image: "/images/services/engineer.png",
+            title: "Construction and Infrastructure ",
+            description:
+              " open-yard and covered storage hold building materials, machinery, and structural components.",
+          },
+          {
+            image: "/images/services/world.png",
+            title: "Import and Export Operators ",
+            description:
+              "cross-docking and customs-compliant processing support fast ocean and air freight transit.",
+          },
+        ]}
+      />
+
+      {/* /Free Zone Storage Section */}
+      <FeatureSection
+        // eyebrow="The OSS FZC Difference"
+        title="Free Zone Storage Access for Import-Export Businesses"
+        description="Companies handling international trade need reliable Freezone Storage Space in Sharjah that supports duty suspension and simplifies customs processing. OSS facilities are located near the Sharjah International Airport Free Zone (SAIF Zone) and Hamriyah Free Zone, giving trading firms efficient, strategically positioned storage close to major shipping and logistics hubs."
       />
 
       {/* STATS */}
       <StatsSection
         title="Proven Success in Numbers"
-        subtitle="Reinforcing Confidence with Every Shipment"
+        subtitle="Thousands of items securely stored and satisfied clients across Sharjah."
         stats={[
-          { value: "30%", label: "Reduced Transit Time" },
-          { value: "500+", label: "Successful Cargo Deliveries" },
-          { value: "24/7", label: "Shipment Monitoring" },
-          { value: "99%", label: "Client Satisfaction" }
+          {
+            value: 100,
+            suffix: "%",
+            label: "Sharjah–Dubai Route Coverage",
+            description:
+              "Scheduled freight runs connecting all major Dubai business districts.",
+          },
+          {
+            value: 140,
+            suffix: "+",
+            unit: "Clients",
+            label: "Enterprise Client Base",
+            description: "Active manufacturing, trading, and retail clients.",
+          },
+          {
+            value: 99.9,
+            suffix: "%",
+            decimals: 1,
+            label: "On-Time Delivery Rate",
+            description: "For scheduled cargo service to Dubai shipments.",
+          },
+          {
+            value: 12000,
+            suffix: "+",
+            unit: "Pallets",
+            label: "Monthly Freight Throughput",
+            description: "Processed and dispatched monthly.",
+          },
+          {
+            value: 100,
+            suffix: "%",
+            label: "Fleet Availability",
+            description:
+              "Dedicated vehicles for both scheduled and on-demand freight.",
+          },
         ]}
       />
 
@@ -149,78 +276,87 @@ export default function CargoServiceDubai() {
         items={[
           {
             title: "About Us",
+            subtitle: "Cargo Shipping Experience Based in the UAE",
             description:
-              "Open Yard Storage leads the logistics industry with reliable cargo services to Dubai, built on trust, expertise, and operational excellence."
+              "OSS provides cargo service to Dubai as part of its broader storage and 3PL logistics operation across the United Arab Emirates. OSS invests in fleet management, digital tracking systems, and trained dispatch staff to keep freight moving on schedule. OSS is a storage and logistics company based in Sharjah. Clients using OSS's shipping cargo services in Dubai get dedicated account management, flexible shipping schedules, and a logistics team focused on delivery reliability.",
           },
           {
             title: "Our Team",
+            subtitle: "Logistics Staff Managing Cargo Movement to Dubai",
             description:
-              "Our logistics professionals combine expertise and precision to deliver efficient cargo service solutions tailored for Dubai shipping."
-          }
+              "OSS freight operations are run by dispatch coordinators, drivers, and logistics analysts. The team manages load planning, route scheduling, and delivery confirmation to keep cargo service to Dubai shipments on time.",
+          },
         ]}
       />
 
       {/* FAQ */}
       <FAQSection
-  eyebrow="FAQ"
-  title="Your Cargo Service to Dubai Questions Answered"
-  faqs={[
-    {
-      question: "What documentation is required for cargo service to Dubai?",
-      answer:
-        "Generally, you'll need commercial invoices, packing lists, certificates of origin, and shipping instructions. At Open Yard Storage, our experts handle the paperwork for you, ensuring compliance and accuracy, allowing you to focus on your core business activities while we manage the complexities of exporting to Dubai."
-    },
-    {
-      question: "How long does it take for cargo to reach Dubai?",
-      answer:
-        "Transit times vary based on the mode of transportation. Sea freight typically takes a few weeks, while air freight can be completed in a few days. Our team provides a tailored timeline for your shipments, offering you the best options based on urgency and budget."
-    },
-    {
-      question: "Can I track my cargo in real-time?",
-      answer:
-        "Absolutely! Our advanced tracking technology allows you to monitor your shipment's progress at any time. This transparency ensures you're always informed about the whereabouts and condition of your cargo, bolstering your confidence and satisfaction."
-    },
-    {
-      question: "What about cargo insurance for shipments to Dubai?",
-      answer:
-        "We strongly recommend cargo insurance for added protection. It covers unforeseen events during transit, such as theft or damage. At Open Yard Storage, we provide guidance and options to secure the necessary insurance, minimizing risks associated with any unforeseeable incidents."
-    },
-    {
-      question: "Are there size limitations for shipments to Dubai?",
-      answer:
-        "We handle a wide range of cargo sizes, from small parcels to oversized shipments. Our fleet and partnerships allow us to accommodate your specific shipping needs efficiently without restrictions, making us a versatile and reliable choice for all your cargo requirements."
-    },
-    {
-      question: "What security measures are in place for cargo?",
-      answer:
-        "With our cutting-edge technology and protocols, your cargo is under stringent security. From GPS tracking to secured facilities, we prioritize protection, offering robust security protocols to ensure your cargo's safety throughout its journey to Dubai."
-    },
-    {
-      question: "What customs regulations should I be aware of?",
-      answer:
-        "Customs regulations can be complex, but with our expert guidance, navigating them becomes effortless. We stay updated with the latest compliance requirements, ensuring smooth customs clearance and avoiding unnecessary delays or complications."
-    },
-    {
-      question: "How can Open Yard Storage optimize my shipping costs to Dubai?",
-      answer:
-        "We offer competitive pricing models tailored to your needs, utilizing consolidation, and choosing the most cost-effective routes and modes. Our strategies are aimed at driving down costs while maintaining prompt delivery and service excellence."
-    },
-    {
-      question: "Does Open Yard Storage offer warehousing solutions in Dubai?",
-      answer:
-        "Yes, we provide comprehensive warehousing solutions, including storage, handling, and distribution. Whether you need short-term or long-term facilities, our flexible options ensure your cargo is stored safely with easy accessibility."
-    },
-    {
-      question: "What makes Open Yard Storage different from other cargo services?",
-      answer:
-        "Our bespoke approach, advanced technology integration, and client-centric solutions distinguish us from other cargo services. We prioritize efficiency, reliability, and seamless delivery to ensure that your cargo service experience with us is exceptional, providing unmatched dedication to your needs."
-    }
-  ]}
-/>
+        eyebrow="FAQ"
+        title="Common Questions About Cargo Service to Dubai"
+        faqs={[
+          {
+            question: "What types of cargo does OSS transport to Dubai?",
+            answer:
+              "OSS moves general trading commodities, retail stock, electronics, industrial raw materials, and palletized commercial goods as part of its cargo service to Dubai. Non-hazardous cargo follows standard handling; specialized items follow separate safety procedures.",
+          },
+          {
+            question:
+              "Does OSS offer scheduled or on-demand shipping cargo services in Dubai?",
+            answer:
+              "Both. OSS runs fixed-schedule freight for recurring shipments and on-demand dispatch for urgent or one-off cargo movement to Dubai.",
+          },
+          {
+            question:
+              "Can businesses book part-load shipments instead of full-truckload freight?",
+            answer:
+              "Yes. OSS offers full-load and part-load options, so smaller consignments don't require booking full freight capacity.",
+          },
+          {
+            question: "How does OSS track cargo in transit to Dubai?",
+            answer:
+              "Cargo status is logged digitally at each handling point. Clients can monitor shipment location and delivery status through a tracking portal.",
+          },
+          {
+            question:
+              "Does OSS handle both storage and cargo shipping under one contract?",
+            answer:
+              "Yes. Warehousing at Sharjah and cargo service to Dubai are managed together, removing the need to coordinate separate storage and transport providers.",
+          },
+          {
+            question:
+              "How is OSS different from a standalone Dubai freight forwarder?",
+            answer:
+              "A standalone freight forwarder typically handles transport only. OSS combines warehousing, inventory tracking, and shipping cargo services in Dubai under a single logistics provider.",
+          },
+          {
+            question: "Can shipment volume scale during peak sales periods?",
+            answer:
+              "Yes. Freight capacity adjusts to order volume, so retail and e-commerce clients can increase shipment frequency during high-demand periods.",
+          },
+          {
+            question:
+              "Does OSS's cargo service to Dubai connect with free zones?",
+            answer:
+              "Yes. Routes connect to major Dubai free zones and shipping points, supporting duty-efficient handling for international trade.",
+          },
+          {
+            question: "How does OSS reduce total shipping costs to Dubai?",
+            answer:
+              "Consolidated freight options, direct highway routing via the E311 and E611, and combined storage-and-transport contracts reduce per-shipment costs compared to booking separate providers.",
+          },
+          {
+            question:
+              "What operational standards does OSS follow for cargo handling?",
+            answer:
+              "OSS follows standard freight safety protocols, using trained drivers, defined load handling procedures, and regular vehicle safety checks.",
+          },
+        ]}
+      />
 
       {/* CTA */}
       <CTASection
-        title="Ready to Revolutionize Your Cargo Journey?"
+        title="Move Cargo to Dubai with a Dedicated Logistics Partner"
+        description="Whether you need scheduled freight runs, on-demand dispatch, or full-load shipping cargo services in Dubai, OSS has the fleet and warehouse network to support it. Contact the OSS logistics team for a shipping schedule and quote."
         buttonText="Contact Us Today for Customized Solutions"
         buttonLink="/contact-us"
         backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"

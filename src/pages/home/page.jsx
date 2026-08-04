@@ -34,17 +34,17 @@ const faqs = [
   {
     question: "What services do you offer?",
     answer:
-      "We offer secure open yard storage solutions for businesses that need outdoor space for equipment, vehicles, containers, machinery, and bulk materials.",
+      "OSS offers open yard storage, warehousing, freight shipping, air freight, land transport, customs clearance, and international logistics and transport services for businesses across the UAE.",
   },
   {
     question: "How do I book a shipment?",
     answer:
-      "You can book a shipment by contacting our support team or by submitting a booking request through our website.",
+      "Contact the OSS team through the website or by phone to share your cargo details, including load type, volume, and destination. A logistics coordinator will confirm scheduling and provide a quote before dispatch.",
   },
   {
     question: "What types of goods do you handle?",
     answer:
-      "We handle a wide range of goods including industrial equipment, oil & gas materials, construction machinery, containers, and bulk cargo.",
+      "OSS handles general trading commodities, industrial equipment, machinery, containers, bulk materials, and palletized cargo. As one of the shipping companies in UAE working across multiple sectors, OSS follows standard handling procedures for non-hazardous cargo and separate safety procedures for specialized loads.",
   },
 ];
 
@@ -78,8 +78,8 @@ useEffect(() => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   useMeta(
-    "Global Logistics & Warehousing Solutions UAE | OSS",
-    "OSS delivers scalable logistics solutions including freight, warehousing, transport, and yard storage across UAE with speed, precision, and reliability."
+    "Shipping Companies in UAE | Openyard Storage FZC Logistics ",
+    "Openyard Storage FZC is among the most trusted Shipping Companies in UAE, delivering reliable international logistics & transport solutions.Contact us today!"
   );
 
   const [blogs, setBlogs] = useState([]);
@@ -193,13 +193,12 @@ const services = [
             </div>
 
             <h2 className="mt-3 text-5xl font-bold text-gray-900">
-              We Provide <br />
-              <span className="text-red-600">Logistics Solutions</span>
+              We Provide Complete Logistics Solutions<br />
+              <span className="text-red-600">Under One Roof</span>
             </h2>
 
             <p className="mt-6 max-w-lg text-gray-600">
-              At OSS, we are striving to redefine storage as a service by
-              delivering a complete logistics solution to our customers.
+             Since 2006, OSS has been a trusted international logistics, transport and storage provider in the UAE, supporting trading companies, manufacturers, and import-export businesses with reliable warehousing, freight, and international logistics solutions.
             </p>
 
             <div className="mt-8 flex items-center gap-6">
@@ -229,7 +228,7 @@ const services = [
         </div>
       </section>
 
-      {/* OUR SERVICES */}
+    
       {/* OUR SERVICES */}
  <section className="py-24 text-center bg-[linear-gradient(90deg,#ffffff_0%,#ffffff_55%,#FFC5C5_100%)]">
       <div className="mx-auto max-w-[1400px] px-10">
@@ -245,9 +244,14 @@ const services = [
 
         {/* Title */}
         <h2 className="mt-4 text-4xl font-bold text-gray-800">
-          Enhancing Your Productivity, <br />
+         International Logistics and Transport – Enhancing Your Productivity, <br />
           <span className="text-red-600">Increasing Your Efficiency</span>
         </h2>
+
+        <p className="mt-4 text-gray-500">
+         OSS operates as one of the full-service shipping companies in UAE, offering the following
+
+        </p>
 
         {/* Services Grid */}
         <div className="mt-16 grid grid-cols-2 md:grid-cols-3 gap-y-16 gap-x-8 justify-items-center">
@@ -405,7 +409,7 @@ const services = [
       </div>
 
       <h2 className="text-4xl font-bold text-gray-800">
-        Built on Excellence, <br />
+       Shipping Company in UAE Built on Excellence, <br />
         <span className="text-red-600">Delivered with Precision.</span>
       </h2>
     </div>
@@ -424,8 +428,7 @@ const services = [
           24/7 SUPPORT
         </h4>
         <p className="text-sm text-gray-500 leading-relaxed">
-          We are available to support our clients <br />
-          24/7, 365 days. Call us anytime <br />
+          OSS is available to support clients 24/7, 365 days a year. Call anytime at 
           <a
                 href="tel:+971509322335"
                 className="text-gray-500 hover:text-red-600"
@@ -444,9 +447,8 @@ const services = [
           QUALITY ASSURANCE
         </h4>
         <p className="text-sm text-gray-500 leading-relaxed">
-          We ensure that utmost quality is <br />
-          maintained in all our operations and <br />
-          adhere to quality processes.
+          OSS maintains consistent quality standards across all storage
+          and international logistics and transport operations. <br />
         </p>
       </div>
 
@@ -461,9 +463,8 @@ const services = [
           STRATEGICALLY LOCATED
         </h4>
         <p className="text-sm text-gray-500 leading-relaxed">
-          We are strategically located at one of <br />
-          the most geographically convenient <br />
-          locations.
+         SS maintains consistent quality standards across all storage
+          and international logistics and transport operations. <br />
         </p>
       </div>
 
