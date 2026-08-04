@@ -269,7 +269,7 @@ export default function StorageSpaceSharjah() {
             value: 24,
             suffix: "/7",
             label: "Facility Security",
-            description: "Video surveillance with automated fire suppression",
+            description: "Video surveillance with automated fire suppression.",
           },
         ]}
       />
