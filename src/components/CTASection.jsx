@@ -3,6 +3,10 @@ export default function CTASection({
   buttonText,
   buttonLink,
   backgroundImage,
+<<<<<<< HEAD
+=======
+  description,
+>>>>>>> 326c163 (Initial commit)
   overlay = true,
 }) {
   return (
@@ -21,6 +25,13 @@ export default function CTASection({
           {title}
         </h4>
 
+<<<<<<< HEAD
+=======
+        <p className="text-white text-lg mb-8">
+          {description}
+        </p>
+
+>>>>>>> 326c163 (Initial commit)
         <a
           href={buttonLink}
           className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-md font-medium transition"

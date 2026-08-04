@@ -72,6 +72,12 @@ export default function StatsSection({ title, subtitle, stats = [] }) {
               <p className="text-gray-500 mt-2 text-sm md:text-base">
                 {item.label}
               </p>
+<<<<<<< HEAD
+=======
+              <p>
+                {item.description}
+              </p>
+>>>>>>> 326c163 (Initial commit)
             </div>
           ))}
         </div>
