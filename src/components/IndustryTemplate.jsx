@@ -8,6 +8,8 @@ import DualInfoSection from "./DualInfoSection";
 import FAQSection from "./FAQSection";
 import CTASection from "./CTASection";
 import useMeta from "../hooks/useMeta";
+import CardsFeatures from "./CardsFeatures";
+import LeftalignedCards from "./LeftalignedCards";
 
 export default function IndustryTemplate({ data }) {
 
@@ -28,9 +30,16 @@ export default function IndustryTemplate({ data }) {
 
       <ChallengeSection {...data.challenge} />
 
+      <LeftalignedCards {...data.leftAlignedCards} />
+
       <FeatureSection {...data.features} />
 
       <ServiceGridSection {...data.services} />
+
+      {/* /Free Zone Storage Section */}
+      <FeatureSection {...data.FreeZoneStorage} />
+
+      <CardsFeatures {...data.cardsFeature} />
 
       <StatsSection {...data.stats} />
 
