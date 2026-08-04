@@ -4,10 +4,10 @@ import useMeta from "../../hooks/useMeta";
 
 
 const services = [
-  {
-    title: "Medical Equipment Healthcare Storage",
-    link: "/services/medical-equipment-healthcare-storage",
-  },
+  // {
+  //   title: "Medical Equipment Healthcare Storage",
+  //   link: "/services/medical-equipment-healthcare-storage",
+  // },
   {
     title: "Logistics Transport Sharjah",
     link: "/services/logistics-transport-sharjah",
@@ -60,10 +60,10 @@ const services = [
     title: "Storage Space Dubai",
     link: "/services/storage-space-rent-dubai",
   },
-  {
-    title: "Storage Facility Abu Dhabi",
-    link: "/services/storage-facility-abu-dhabi",
-  },
+  // {
+  //   title: "Storage Facility Abu Dhabi",
+  //   link: "/services/storage-facility-abu-dhabi",
+  // },
   {
     title: "Chiller Storage Warehouse",
     link: "/services/chiller-storage-warehouse",
