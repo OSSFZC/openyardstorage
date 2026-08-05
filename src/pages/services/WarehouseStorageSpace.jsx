@@ -7,21 +7,17 @@ import StatsSection from "../../components/StatsSection";
 import DualInfoSection from "../../components/DualInfoSection";
 import FAQSection from "../../components/FAQSection";
 import CTASection from "../../components/CTASection";
+import LeftalignedCards from "../../components/LeftalignedCards";
+import CardsFeatures from "../../components/CardsFeatures";
 
-import {
-  FiBox,
-  FiShield,
-  FiClock,
-  FiDollarSign
-} from "react-icons/fi";
+import { FiBox, FiShield, FiClock, FiDollarSign } from "react-icons/fi";
 
 import useMeta from "../../hooks/useMeta";
 
 export default function WarehouseStorageSpace() {
-
   useMeta(
-    "Reliable Warehouse Storage Space For Rent | OSS FZC",
-    "Find the perfect storage warehouse for rent with OSS FZC Storage. Flexible leases, secure facilities, and tailored solutions for all your storage needs."
+    "Warehouse Storage Space for Rent Sharjah|Openyard Storage FZC",
+    "Openyard Storage FZC provides storage warehouse for rent in Sharjah with temperature-controlled storage,secure facilities & flexible solutions.Contact us today!",
   );
 
   return (
@@ -29,9 +25,9 @@ export default function WarehouseStorageSpace() {
       {/* HERO */}
       <InnerHero
         eyebrow="Maximize Your Warehousing Efficiency"
-        title="Unlock Versatile and Secure Warehouse Storage Space For Rent"
-        subtitle="Discover Our Spaces for Your Business Needs"
-        buttonText="Contact Us Today"
+        title="Warehouse Storage Space for Rent in Sharjah"
+        subtitle="OSS offers a storage warehouse for rent with flexible, secure warehouse storage space for startups, traders, and growing businesses. Standard racking and temperature control warehouse storage options scale easily as inventory requirements increase."
+        buttonText="Request a Small Storage Warehouse Quote"
         buttonLink="/contact-us"
         backgroundImage="/images/services/warehousing.jpeg"
       />
@@ -40,107 +36,226 @@ export default function WarehouseStorageSpace() {
 
       {/* PROBLEM SECTION */}
       <ChallengeSection
-        subtitle="Is Your Current Storage Solution Holding You Back?"
-        title="Common Challenges in Finding the Perfect Storage Warehouse For Rent"
-        description="Many businesses face significant challenges when looking for the perfect warehouse storage space. Space constraints, security concerns, and flexibility needs often complicate efficient inventory management and business operations."
-        description2="At OpenYard Storage, we understand these hurdles and offer solutions designed to align with your storage needs. Our warehouse spaces provide superior security measures, flexible lease terms, and a variety of size options."
+        // subtitle="Is Your Current Storage Solution Holding You Back?"
+        title="Why Small Businesses Struggle to Find the Right Storage Fit"
+        description="Small and growing businesses commonly run into four storage problems:"
+        // description2="At OpenYard Storage, we understand these hurdles and offer solutions designed to align with your storage needs. Our warehouse spaces provide superior security measures, flexible lease terms, and a variety of size options."
         rightTitle="Solutions to Your Storage Dilemmas"
         rightBg="#C5F7FF"
         cards={[
           {
             icon: FiBox,
-            title: "Limited Space Limitations",
-            text: "Expand your capacity with our diverse range of storage sizes."
+            title: "Oversized space requirements.",
+            text: "Standard industrial warehouses often require minimum footprints too large for small inventory volumes.",
           },
           {
             icon: FiShield,
-            title: "Security Concerns",
-            text: "Top-tier security systems protect your assets 24/7."
+            title: "Rigid long-term contracts.",
+            text: "Many warehouse providers require multi-year leases that don't suit early-stage or seasonal businesses.",
           },
           {
             icon: FiClock,
-            title: "Rigid Leases",
-            text: "Enjoy flexibility with customizable lease terms."
+            title: "High overhead for low volume",
+            text: "Paying for unused square footage eats into margins for smaller operations.",
           },
           {
             icon: FiDollarSign,
-            title: "High Costs",
-            text: "Affordable storage solutions to fit your budget."
-          }
+            title: "No room to scale.",
+            text: "Fixed small units can't expand when a business grows, forcing a disruptive move to a new provider.",
+          },
+        ]}
+      />
+
+      <LeftalignedCards
+        // eyebrow="The OSS Difference "
+        title="Solutions to Your Storage Dilemmas"
+        subtitle="OSS addresses each of these through its premium warehouse storage space"
+        // description="What businesses get from renting small storage with OSS:"
+        features={[
+          {
+            image: "/images/services/stock.png",
+            title: "Right-sized space ",
+            description:
+              "units are scaled to small inventory volumes instead of forcing a large minimum footprint.",
+          },
+          {
+            image: "/images/services/api.png",
+            title: "Flexible rental terms",
+            description:
+              "short-term and month-to-month options suit early-stage and seasonal businesses.",
+          },
+          {
+            image: "/images/services/insurance.png",
+            title: "Lower overhead",
+            description: "businesses pay only for the space they actually use.",
+          },
+          {
+            image: "/images/services/speed.png",
+            title: "Built-in scalability ",
+            description:
+              "a storage warehouse at OSS can expand within the same facility network as the business grows.",
+          },
         ]}
       />
 
       {/* SOLUTIONS */}
       <FeatureSection
         eyebrow="The OSS FZC Difference"
-        title="Tailored Storage Solutions for Every Business"
-        description="At OSS FZC Storage, we redefine warehouse storage space for rent by prioritizing customization and security. Our framework offers unmatched flexibility and scalable storage options to support business growth."
+        title="Temperature Control Warehouse Storage Without Losing Enterprise-Grade Infrastructure"
+        subtitle="OSS offers an adaptable warehouse storage space for rent that still includes the same security, tracking, and facility standards used across its larger industrial storage clients. Small businesses aren't limited to lower-quality infrastructure or denied advanced features like temperature control warehouse storage simply because their footprint is smaller. Every storage warehouse for rent through OSS is set up around actual inventory volume, cargo type, and expected growth, ensuring businesses don't overpay for space they don't need."
+        description="What businesses get from renting small storage with OSS"
         features={[
           {
             image: "/icons/custom.png",
-            title: "Flexibility",
-            description: "Custom leases and expansive storage solutions."
+            title: "Barcode and RFID tracking ",
+            description:
+              "even small units benefit from digital inventory logging. ",
           },
           {
             image: "/icons/security.png",
-            title: "Security",
-            description: "Advanced surveillance and access controls."
+            title: "24/7 security ",
+            description:
+              "CCTV monitoring and access control apply to all storage sizes, not just large accounts.",
           },
           {
             image: "/icons/Real-time.png",
-            title: "Scalability",
-            description: "Easily expand as your business grows."
+            title: "Highway access ",
+            description:
+              "proximity to the E311 and E611 corridors supports fast distribution regardless of unit size.",
           },
           {
             image: "/icons/support.png",
-            title: "Support",
-            description: "Expert assistance every step of the way."
-          }
+            title: "Flexible upgrade path ",
+            description:
+              "businesses can move into larger space within the same OSS network without switching providers.",
+          },
+          {
+            image: "/icons/support.png",
+            title: "Trained facility staff ",
+            description:
+              "the same logistics team supporting large clients also manages small storage accounts.",
+          },
         ]}
       />
 
       {/* SERVICES */}
       <ServiceGridSection
         eyebrow="Storage Services"
-        title="Innovative Storage Services Catered to You"
+        title="Warehouse Storage Space for Rent Options"
         services={[
           {
-            title: "Custom Storage Solutions",
+            title: "Compact Unit Storage",
             image: "/images/services/flexible-yard.jpg",
-            description: "Tailored spaces that fit your exact business needs."
+            description:
+              "storage warehouse in sizes suited to startups, small trading firms, and low-volume inventory.",
           },
           {
-            title: "Flexible Lease Options",
+            title: "Temperature Control Warehouse Storage",
             image: "/images/services/custom-storage.jpg",
-            description: "Adjust your lease terms as your demands change."
+            description:
+              "Climate-controlled storage options for pharmaceuticals, cosmetics, food products, electronics, and other temperature-sensitive inventory requiring stable environmental conditions.",
           },
           {
-            title: "Secure Warehousing",
+            title: "Inventory Tracking for Small Units",
             image: "/images/services/security.jpg",
-            description: "State-of-the-art security to ensure peace of mind."
+            description:
+              "WMS-based tracking so small businesses get the same visibility as larger accounts.",
           },
           {
-            title: "E-Commerce Fulfillment Storage",
+            title: "Scalable Storage Path",
             image: "/images/services/logistics.jpg",
-            description: "Ideal setups for online retail and distribution needs."
+            description:
+              "A clear upgrade route from small storage to larger warehouse space as inventory grows.",
           },
           {
-            title: "Logistic Support Add-ons",
+            title: "Pallet-Level Storage",
             image: "/images/services/maintenance.jpg",
-            description: "Enhance operations with additional support services."
-          }
+            description:
+              "Rent by pallet position for businesses that don't need a full warehouse unit.",
+          },
         ]}
       />
 
-      {/* STATS */}
+      <CardsFeatures
+        eyebrow="Storage Solutions by Industry Section"
+        title="Warehouse Storage Space Across Five Business Types"
+        features={[
+          {
+            image: "/images/services/truck.png",
+            title: "Startups and New Businesses",
+            description:
+              "low-commitment storage while inventory volume is still being established.",
+          },
+          {
+            image: "/images/services/industrial-park.png",
+            title: "Small E-Commerce Sellers ",
+            description:
+              "compact space for fast-moving retail SKUs without large minimum footprints.",
+          },
+          {
+            image: "/images/services/online-store.png",
+            title: "Independent Trading Firms ",
+            description:
+              "flexible short-term storage for smaller import-export volumes.",
+          },
+          {
+            image: "/images/services/engineer.png",
+            title: "Seasonal Retailers ",
+            description:
+              "storage warehouse for rent during peak seasons without committing to a year-round lease.",
+          },
+          {
+            image: "/images/services/world.png",
+            title: "Service and Contracting Businesses ",
+            description:
+              "compact space for equipment, spare parts, and project materials between job sites.",
+          },
+        ]}
+      />
+
+      <FeatureSection
+        // eyebrow="The OSS FZC Difference"
+        title="Free Zone-Adjacent Access for Small Businesses"
+        description="Small trading businesses handling international shipments still need customs-efficient storage. A storage warehouse for rent through OSS is conveniently located near SAIF Zone and Hamriyah Free Zone, allowing smaller operators to benefit from efficient import, export, and distribution logistics."
+      />
+
       <StatsSection
-        title="Proven Success in Numbers"
-        subtitle="See the Impact of Our Services"
+        title="Flexible Storage Solutions for Every Business"
+        subtitle="Scalable warehousing with secure facilities and flexible rental options."
         stats={[
-          { value: "30%", label: "Operational Efficiency Increase" },
-          { value: "24/7", label: "Security Monitoring" },
-          { value: "500+", label: "Businesses Served" },
-          { value: "100%", label: "Client Satisfaction Focus" }
+          {
+            value: 260000,
+            suffix: "+",
+            unit: "sq ft",
+            label: "Total Managed Footprint",
+            description: "Across the OSS facility network.",
+          },
+          {
+            value: 1,
+            unit: "Month",
+            label: "Minimum Rental Commitment",
+            description: "Month-to-month rental options available.",
+          },
+          {
+            value: 140,
+            suffix: "+",
+            unit: "Clients",
+            label: "Enterprise Client Base",
+            description: "Active manufacturing, trading, and retail clients.",
+          },
+          {
+            value: 24,
+            suffix: "/7",
+            label: "Facility Security",
+            description: "Video surveillance with automated fire suppression.",
+          },
+          {
+            value: 100,
+            suffix: "%",
+            label: "Scalability",
+            description:
+              "Direct upgrade path from small units to full warehouse space.",
+          },
         ]}
       />
 
@@ -149,80 +264,91 @@ export default function WarehouseStorageSpace() {
         items={[
           {
             title: "About Us",
+            subtitle: "Storage Experience That Scales With Your Business",
             description:
-              "At OpenYard Storage, our leadership ensures excellence by molding transformative storage solutions that meet industry standards."
+              "OSS has operated as a storage and logistics provider in Sharjah since 2006, supporting businesses from single-pallet accounts to full industrial warehousing. A flexible warehouse storage space for rent through OSS gives smaller businesses access to the same facility standards trusted by larger enterprises. OSS prioritises flexible contracts and predictable pricing, allowing businesses renting small storage today to expand into larger warehouse space tomorrow without changing providers.",
           },
           {
             title: "Our Team",
+            subtitle: "Staff Supporting Every Account Size",
             description:
-              "Our team specializes in creativity and precision, delivering unmatched expertise in warehouse storage space solutions."
-          }
+              "OSS storage facilities are managed by experienced logistics managers, inventory analysts, warehouse supervisors, and trained warehouse technicians who maintain consistent handling standards across every account, regardless of storage size.",
+          },
         ]}
       />
 
       {/* FAQ (EXACT DOCUMENT TEXT) */}
       {/* FAQ */}
-<FAQSection
-  eyebrow="FAQ"
-  title="Your Warehouse Storage Space For Rent Questions Answered"
-  faqs={[
-    {
-      question: "What types of warehouse storage spaces do you offer for rent?",
-      answer:
-        "We provide a wide range of warehouse storage spaces for rent, varying in size from small units to large bulk storage areas. Our facilities are equipped with cutting-edge security systems and flexible lease options to suit diverse business requirements. Whether you need space for inventory, machinery, or fulfillment operations, our offerings are designed for optimal functionality and convenience."
-    },
-    {
-      question: "How secure are your warehouse storage facilities?",
-      answer:
-        "Our storage warehouses for rent are fortified with comprehensive security measures, including 24/7 surveillance, controlled access points, and robust security protocols. This commitment to safety ensures that your assets remain protected, providing you with peace of mind. We prioritize security to ensure that our clients can trust in the integrity of their stored goods."
-    },
-    {
-      question: "Can I customize my lease terms?",
-      answer:
-        "Yes, at OpenYard Storage, we believe flexibility is key. We offer customizable lease terms to accommodate your unique operational needs. Whether you require short-term storage solutions or long-term commitments, our team is dedicated to crafting lease agreements that provide you with the flexibility necessary for your business to thrive."
-    },
-    {
-      question: "Is climate control available in your storage warehouses?",
-      answer:
-        "Select storage facilities offer climate-controlled environments to safeguard sensitive items from extreme temperatures and humidity. This specialized service is particularly beneficial for businesses dealing with perishable goods or climate-sensitive products. At OpenYard Storage, we strive to meet all the storage requirements of our clients."
-    },
-    {
-      question: "Are there additional services available for logistics and inventory management?",
-      answer:
-        "Indeed, we offer a range of ancillary services, including logistics support and inventory management, to enhance your storage solutions. Our goal is to facilitate improved efficiency and effectiveness in your supply chain processes, enabling smooth and seamless operations."
-    },
-    {
-      question: "How do you ensure the scalability of your storage solutions?",
-      answer:
-        "Our storage solutions are designed with scalability in mind. As your business grows, you can expand your storage capacity effortlessly with our flexible options. This adaptability ensures that your storage resources evolve in lockstep with your business needs, delivering consistent value over time."
-    },
-    {
-      question: "What industries benefit most from your storage warehouse for rent services?",
-      answer:
-        "Our services cater to a variety of industries, including retail, manufacturing, e-commerce, and distribution. We're equipped to address the unique storage needs of each sector, helping businesses manage their inventory and logistical operations efficiently."
-    },
-    {
-      question: "How do I schedule a tour to view your warehouse storage spaces?",
-      answer:
-        "Scheduling a tour is simple. Contact us through our website or via phone, and our dedicated team will assist you in arranging a visit at your convenience. We welcome you to experience our facilities and explore the possibilities available to your business."
-    },
-    {
-      question: "Do you accommodate businesses with fluctuating storage needs?",
-      answer:
-        "Absolutely. With our flexible storage solutions, we can accommodate fluctuations in your storage needs, whether seasonal or long-term changes. Our adaptable facilities and lease terms ensure your business remains agile, regardless of demand shifts."
-    },
-    {
-      question: "How do I start the process of leasing a warehouse storage space?",
-      answer:
-        "Starting the leasing process is straightforward. Reach out to us through our inquiry form or call our representatives. We'll guide you through a seamless onboarding process, from selecting the right space to signing a lease agreement, ensuring a tailored fit for your business needs."
-    }
-  ]}
-/>
+      <FAQSection
+        eyebrow="FAQ"
+        title="Your Warehouse Storage Space For Rent Questions Answered"
+        faqs={[
+          {
+            question:
+              "What is the minimum rental term for a small storage warehouse at OSS?",
+            answer:
+              "OSS offers month-to-month rental options alongside longer-term contracts, allowing businesses to avoid lengthy lease commitments for smaller storage requirements.",
+          },
+          {
+            question: "How small can a storage unit be at OSS?",
+            answer:
+              "Storage can be rented by pallet position, enabling businesses to pay only for the storage capacity they actually require.",
+          },
+          {
+            question: "Does a storage warehouse for rent include the same security as larger units?",
+            answer:
+              "Yes. Every storage unit includes 24/7 CCTV monitoring, controlled access, and comprehensive security systems regardless of storage size.",
+          },
+          {
+            question:
+              "Can a business upgrade from small storage to a larger warehouse later?",
+            answer:
+              "Yes. Businesses can expand into larger warehouse space within the OSS facility network without relocating to another provider.",
+          },
+          {
+            question:
+              "Is small storage tracked the same way as larger inventory accounts?",
+            answer:
+              "Yes. All storage units utilise the same WMS-based barcode and inventory tracking systems used across larger warehouse operations.",
+          },
+          {
+            question:
+              "What businesses typically rent small storage warehouses from OSS?",
+            answer:
+              "Startups, e-commerce sellers, trading companies, seasonal retailers, distributors, and contracting businesses commonly utilise OSS storage solutions.",
+          },
+          {
+            question:
+              "Is small storage available near free zone areas?",
+            answer:
+              "Yes. OSS storage facilities are strategically located near SAIF Zone and Hamriyah Free Zone, supporting efficient customs and logistics operations.",
+          },
+          {
+            question:
+              "How is pricing structured for small storage warehouse rentals?",
+            answer:
+              "Pricing is based on the warehouse space or pallet positions utilised, helping businesses avoid paying for unnecessary storage capacity.",
+          },
+          {
+            question:
+              "Can seasonal businesses rent storage only during peak periods?",
+            answer:
+              "Yes. Flexible short-term rental options are available for businesses requiring additional storage during seasonal demand.",
+          },
+          {
+            question:
+              "What operational standards apply to small storage units?",
+            answer:
+              "All storage units follow the same professional warehouse procedures, certified handling practices, inventory controls, safety protocols, and regular facility inspections applied across the OSS warehouse network.",
+          },
+        ]}
+      />
 
       {/* CTA */}
       <CTASection
-        title="Ready to Redefine Your Storage Strategy?"
-        buttonText="Get in Touch with Us Today"
+        title="Rent the Right Amount of Storage, Not More Than You Need"
+        description="Whether you need a flexible warehouse storage space for rent for a short-term project or temperature control warehouse storage that grows alongside your business, OSS has the infrastructure and flexibility to support your operations."
+        buttonText="Contact OSS for a Storage Warehouse Quote"
         buttonLink="/contact-us"
         backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
       />

@@ -418,7 +418,7 @@
     },
     {
       "source": "/open-yard-storage-facility",
-      "destination": "https://www.openyardstorage.com/",
+      "destination": "https://www.openyardstorage.com/open-yard-storage-facility",
       "statusCode": 301
     }
   ],

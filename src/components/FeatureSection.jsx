@@ -1,6 +1,7 @@
 export default function FeatureSection({
   eyebrow,
   title,
+  subtitle,
   description,
   features = [],
   bgColor = "#f7f7f7",
@@ -24,6 +25,10 @@ export default function FeatureSection({
           {title}
         </h3>
 
+        <p className="mt-4 text-gray-600 text-sm md:text-base leading-relaxed">
+          {subtitle}
+        </p>
+
         {/* Divider */}
         <div className="flex justify-center gap-2 my-4">
           <span className="w-8 h-[2px] bg-gray-300" />
@@ -31,7 +36,7 @@ export default function FeatureSection({
         </div>
 
         {/* Description */}
-        <p className="max-w-4xl mx-auto text-gray-600 text-sm md:text-base leading-relaxed">
+        <p className="max-w-4xl mx-auto text-gray-900 text-sm md:text-base leading-relaxed">
           {description}
         </p>
 

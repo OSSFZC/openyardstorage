@@ -56,6 +56,7 @@ import ServicesPage from "./pages/services";
 import BlogDetail from "./pages/BlogDetail";
 import News from "./pages/News";
 import Terms from "./pages/Terms";
+import OpenYardStorage from "./pages/home/openyardstorangefacility";
 
 
 import ThankYou from "./pages/thank-you";
@@ -214,6 +215,7 @@ export default function App() {
         <Route path="/blogs/:slug" element={<BlogDetail />} />
         <Route path="/news" element={<News />} />
         <Route path="/terms" element={<Terms />} />
+        <Route path="/open-yard-storage-facility" element={<OpenYardStorage />} />
         
     </Routes>
     

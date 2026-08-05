@@ -7,21 +7,17 @@ import StatsSection from "../../components/StatsSection";
 import DualInfoSection from "../../components/DualInfoSection";
 import FAQSection from "../../components/FAQSection";
 import CTASection from "../../components/CTASection";
+import LeftalignedCards from "../../components/LeftalignedCards";
+import CardsFeatures from "../../components/CardsFeatures";
 
-import {
-  FiBox,
-  FiShield,
-  FiDollarSign,
-  FiClock
-} from "react-icons/fi";
+import { FiBox, FiShield, FiDollarSign, FiClock } from "react-icons/fi";
 
 import useMeta from "../../hooks/useMeta";
 
 export default function StorageWarehouseDubai() {
-
   useMeta(
-    "Premier Storage Warehouse in Dubai | OSS FZC",
-    "Explore secure, spacious storage warehouse solutions in Dubai with OSS FZC. Tailored, reliable services designed to fit your needs. Contact us today!"
+    "Storage Warehouse Near Dubai|Openyard Storage FZC Logistics ",
+    "Openyard Storage FZC provides storage warehouse solutions in Dubai with secure facilities,flexible storage options & secure inventory handling.Contact us today!",
   );
 
   return (
@@ -29,9 +25,9 @@ export default function StorageWarehouseDubai() {
       {/* HERO */}
       <InnerHero
         eyebrow="Your Trusted Partner in Dubai Storage Solutions"
-        title="Premium Storage Warehouse Dubai Services that Exceed Expectations"
-        subtitle="Start Your Storage Journey with Us - Contact Today!"
-        buttonText="Contact Today"
+        title="Storage Warehouse in Dubai"
+        subtitle="OSS provides storage warehouse space in Dubai through its Sharjah facility network, giving businesses secure, scalable storage minutes from Dubai's ports, free zones, and commercial districts. Trading firms, manufacturers, and e-commerce businesses use OSS to store inventory close to Dubai without the cost of leasing standalone Dubai real estate."
+        buttonText="Request a Dubai Storage Warehouse Quote"
         buttonLink="/contact-us"
         backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
       />
@@ -40,107 +36,235 @@ export default function StorageWarehouseDubai() {
 
       {/* PROBLEM SECTION */}
       <ChallengeSection
-        subtitle="Navigating Dubai's Storage Challenges"
-        title="Struggling to Find Secure Storage in Dubai?"
-        description="In a bustling city like Dubai, finding reliable and secure storage warehouse solutions can be a daunting task. Businesses often grapple with inadequate space, security concerns, and logistical nightmares."
-        description2="OSS FZC provides dependable storage solutions that integrate seamlessly into your operations, ensuring asset protection and operational efficiency."
-        rightTitle="Overcome Your Storage Challenges"
+        // subtitle="Navigating Dubai's Storage Challenges"
+        title="Why Businesses Struggle to Find the Right Storage Warehouse in Dubai"
+        description="Businesses searching for warehouse space near Dubai commonly run into four problems"
+        // description2="OSS FZC provides dependable storage solutions that integrate seamlessly into your operations, ensuring asset protection and operational efficiency."
+        rightTitle="Problem Statement for Dubai Storage"
         rightBg="#C5F7FF"
         cards={[
           {
             icon: FiBox,
-            title: "Lack of Space",
-            text: "Struggling with overcrowded facilities?"
+            title: "High real estate costs",
+            text: "Leasing standalone warehouse space directly in Dubai carries a higher cost than nearby regional alternatives.",
           },
           {
             icon: FiShield,
-            title: "Security Concerns",
-            text: "Worried about asset safety?"
+            title: "Limited availability",
+            text: "Prime Dubai storage locations often have long waitlists or restrictive minimum footprints.",
           },
           {
             icon: FiDollarSign,
-            title: "High Costs",
-            text: "Watching your budget go sky-high?"
+            title: "No real-time stock visibility",
+            text: "Manual tracking systems cause inventory discrepancies and delayed order fulfillment.",
           },
           {
             icon: FiClock,
-            title: "Poor Accessibility",
-            text: "Frustrated by inconvenient storage access?"
-          }
+            title: "Slow transfer to delivery points",
+            text: "Storage located too far from Dubai's core business districts adds unnecessary transit time.",
+          },
         ]}
       />
 
-      {/* SOLUTIONS */}
-      <FeatureSection
-        eyebrow="The OSS FZC Difference"
-        title="Experience Superior Storage Solutions"
-        description="OSS FZC offers unmatched security and efficiency with strategically located facilities across Dubai. Our advanced infrastructure ensures safe, flexible, and cost-effective storage."
+      <LeftalignedCards
+        // eyebrow="The OSS Difference "
+        title="We Help Overcome Your Storage Challenges"
+        subtitle="OSS addresses each of these with a storage warehouse positioned close to Dubai:"
+        // description="What businesses get from renting small storage with OSS:"
         features={[
           {
-            image: "/icons/cost.png",
-            title: "Strategic Locations",
-            description: "Accessible storage in prime Dubai locations."
+            image: "/images/locations/money.png",
+            title: "Lower-cost regional storage.",
+            description:
+              "Sharjah-based warehousing costs less than direct Dubai real estate while remaining minutes away",
           },
           {
-            image: "/icons/timely-Delivery.png",
-            title: "Advanced Security",
-            description: "Cutting-edge technology protects your assets."
+            image: "/images/services/grow.png",
+            title: "Available capacity ",
+            description:
+              "flexible unit sizes without the long waitlists common to prime Dubai storage locations.",
           },
           {
-            image: "/icons/Regulatory-exper.png",
-            title: "Flexible Options",
-            description: "Tailor-made storage solutions for businesses."
+            image: "/images/services/online-test.png",
+            title: "WMS digital tracking  ",
+            description:
+              "real-time visibility into SKU counts, batch numbers, and stock levels through a client portal.",
+          },
+          {
+            image: "/images/services/speed.png",
+            title: "Fast transfer to Dubai ",
+            description:
+              "direct highway access keeps transit time between storage and Dubai delivery points short.",
+          },
+        ]}
+      />
+
+      <FeatureSection
+        eyebrow="The OSS FZC Difference"
+        title="A Storage Warehouse in Dubai's Reach, Without Dubai's Overhead"
+        subtitle="OSS operates a storage warehouse network in Sharjah built to serve Dubai-based businesses directly. Companies get enterprise-grade storage infrastructure and fast access to Dubai without the capital cost of securing warehouse space inside the city itself.
+Every storage warehouse contract through OSS is built around cargo type, volume, and delivery timeline into Dubai, so businesses don't overpay for space or transit flexibility they don't need."
+        description="What businesses get from OSS as their storage warehouse in Dubai"
+        features={[
+          {
+            image: "/images/services/stock.png",
+            title: "Scalable pallet allocations ",
+            description:
+              "storage footage adjusts to match import cycles and Dubai order volume.",
+          },
+          {
+            image: "/images/services/tracking.png",
+            title: "Barcode and RFID tracking ",
+            description:
+              "reduces manual processing errors across all inventory.",
+          },
+          {
+            image: "/images/services/track.png",
+            title: "Direct highway connectivity ",
+            description:
+              "access to the E311 and E611 corridors supports fast transit into Dubai.",
+          },
+          {
+            image: "/images/services/logistic.png",
+            title: "Trained logistics workforce ",
+            description:
+              "coordinators and technicians manage inbound storage and outbound delivery scheduling.",
           },
           {
             image: "/icons/Real-time.png",
-            title: "Cost-Effective",
-            description: "Save money without compromising quality."
-          }
+            title: "End-to-end freight management ",
+            description:
+              "inbound container de-stuffing connects directly to outbound delivery into Dubai.",
+          },
         ]}
       />
 
       {/* SERVICES */}
       <ServiceGridSection
         eyebrow="Our Services"
-        title="Exceptional Storage Solutions Await You"
+        title="Storage Warehouse Services Supporting Dubai Businesses"
         services={[
           {
-            title: "Customizable Storage Solutions",
+            title: "Secure Commercial Warehousing",
             image: "/images/services/flexible-yard.jpg",
-            description: "Tailored storage to meet diverse business needs."
+            description:
+              "Storage for raw materials, industrial equipment, and finished goods in reinforced, high-clearance facilities near Dubai.",
           },
           {
-            title: "24/7 Secure Access",
+            title: "WMS Inventory Tracking",
             image: "/images/services/custom-storage.jpg",
-            description: "Round-the-clock access for convenience."
+            description:
+              "Real-time stock control through a warehouse management system with batch tracking and replenishment alerts.",
           },
           {
-            title: "Temperature Controlled Storage",
-            image: "/images/services/security.jpg",
-            description: "Ideal for sensitive goods and products."
+            title: "Long-Term Storage",
+            image: "/images/services/images.jpg",
+            description:
+              "Fixed pallet positions for manufacturing components and seasonal overstock destined for Dubai distribution.",
           },
           {
-            title: "Short & Long-term Lease Options",
+            title: "Short-Term Warehousing",
+            image: "/images/services/short-term.jpg",
+            description:
+              "Temporary space for sudden inbound shipments or promotional inventory spikes ahead of Dubai sales periods.",
+          },
+          {
+            title: "Cross-Docking to Dubai",
+            image: "/images/services/cross-docking.jpg",
+            description:
+              "Cargo moves from container arrival directly to outbound delivery into Dubai, cutting storage time.",
+          },
+          {
+            title: "Scalable B2B and E-Commerce Storage",
             image: "/images/services/logistics.jpg",
-            description: "Flexible leasing plans to suit your business."
+            description:
+              "Dedicated picking zones and sorting stations for high-SKU inventory serving Dubai retail channels.",
+          },
+        ]}
+      />
+
+      <CardsFeatures
+        eyebrow="Storage Solutions by Industry Section"
+        title="Storage Warehouse in Dubai Configured for Five Business Sectors"
+        features={[
+          {
+            image: "/images/services/truck.png",
+            title: "FMCG and General Trading  ",
+            description:
+              "high-density racking supports faster product rotation into Dubai markets.",
           },
           {
-            title: "Logistical Support",
-            image: "/images/services/maintenance.jpg",
-            description: "Smooth storage and retrieval management."
-          }
+            image: "/images/services/industrial-park.png",
+            title: "Industrial Manufacturing  ",
+            description:
+              "staging areas hold raw materials and machinery before Dubai distribution.",
+          },
+          {
+            image: "/images/services/online-store.png",
+            title: "Retail and E-Commerce",
+            description:
+              "storage scales to handle high order volumes during Dubai peak sales periods.",
+          },
+          {
+            image: "/images/services/engineer.png",
+            title: "Construction and Infrastructure",
+            description:
+              "open-yard and covered storage for building materials headed to Dubai project sites.",
+          },
+          {
+            image: "/images/services/world.png",
+            title: "Import and Export Operators ",
+            description:
+              "cross-docking supports fast ocean and air freight transit connected to Dubai.",
+          },
         ]}
+      />
+
+      <FeatureSection
+        // eyebrow="The OSS FZC Difference"
+        title="Free Zone-Adjacent Access for Dubai-Bound Trade"
+        description="Businesses trading internationally through Dubai need storage that supports duty suspension and simplified customs processing. OSS's storage warehouse network sits close to the SAIF Zone and Hamriyah Free Zone, giving Dubai-focused trading firms duty-efficient storage without added customs delays."
       />
 
       {/* STATS */}
       <StatsSection
-        title="Proud of Our Proven Track Record"
-        subtitle="Numbers That Reflect Our Excellence"
+        title="Operational Performance That Businesses Trust"
+        subtitle="Enterprise-grade warehousing backed by proven operational excellence."
         stats={[
-          { value: "30%", label: "Operational Efficiency Boost" },
-          { value: "500+", label: "Businesses Served" },
-          { value: "24/7", label: "Security & Access" },
-          { value: "99%", label: "Client Satisfaction" }
+          {
+            value: 260000,
+            suffix: "+",
+            unit: "sq ft",
+            label: "Total Managed Footprint",
+            description: "Of storage capacity.",
+          },
+          {
+            value: 140,
+            suffix: "+",
+            unit: "Clients",
+            label: "Enterprise Client Base",
+            description: "Active manufacturing, trading, and retail clients.",
+          },
+          {
+            value: 99.98,
+            suffix: "%",
+            decimals: 2,
+            label: "Inventory Accuracy Rating",
+            description: "Maintained via automated WMS barcode processing.",
+          },
+          {
+            value: 12000,
+            suffix: "+",
+            unit: "Pallets",
+            label: "Monthly Freight Throughput",
+            description: "Processed and dispatched monthly.",
+          },
+          {
+            value: 24,
+            suffix: "/7",
+            label: "Facility Security",
+            description: "Video surveillance with automated fire suppression.",
+          },
         ]}
       />
 
@@ -149,82 +273,87 @@ export default function StorageWarehouseDubai() {
         items={[
           {
             title: "About Us",
+            subtitle: "Warehousing Experience Serving Dubai and the Wider UAE",
             description:
-              "At OSS FZC, our leadership's visionary approach has been central to our growth and success in Dubai's storage industry."
+              "OSS has operated as a storage and logistics provider in the UAE since 2006, giving Dubai-based businesses access to a storage warehouse network without requiring a Dubai-based facility. OSS invests in facility infrastructure, digital inventory software, and trained staff to support fast, reliable storage close to Dubai. Clients using OSS as their storage warehouse in Dubai get dedicated account management, flexible contracts, and a logistics team focused on keeping operations moving without interruption.",
           },
           {
             title: "Our Team",
+            subtitle: "Logistics Staff Supporting Dubai-Bound Storage Operations",
             description:
-              "Our experienced team delivers creative, precise storage solutions designed around your business needs."
-          }
+              "OSS storage facilities are managed by certified logistics managers, inventory analysts, and warehouse technicians who coordinate inbound container unloading, pallet placement, and outbound delivery scheduling into Dubai.",
+          },
         ]}
       />
 
       {/* FAQ */}
       <FAQSection
         eyebrow="FAQ"
-        title="Your Storage Warehouse Dubai Questions Answered"
+        title="Common Questions About Storage Warehouse Space Near Dubai"
         faqs={[
           {
-            question: "What makes OSS FZC unique among warehouse providers in Dubai?",
+            question:
+              "Does OSS operate a storage warehouse directly inside Dubai?",
             answer:
-              "OSS FZC stands out due to its strategic locations across Dubai, advanced security systems, flexible storage options, and dedicated customer support."
+              "OSS operates its storage warehouse network in Sharjah, positioned close to Dubai's ports, free zones, and business districts for fast access without the cost of Dubai-based real estate.",
           },
           {
-            question: "Can OSS FZC facilities accommodate sensitive goods?",
+            question: "What cargo types can be stored at OSS's storage warehouse serving Dubai?",
             answer:
-              "Yes, our warehouses include temperature-controlled environments for sensitive items like pharmaceuticals or electronics."
+              "OSS stores general trading commodities, retail stock, electronics, industrial raw materials, and palletized commercial goods. Non-hazardous cargo follows standard handling; specialized items follow separate safety procedures.",
           },
           {
-            question: "How secure are the storage facilities?",
+            question: "What are the lease terms for storage warehouse space near Dubai?",
             answer:
-              "Our facilities include 24-hour surveillance, gated access, and onsite personnel ensuring top-tier asset protection."
+              "OSS offers monthly short-term storage for seasonal demand and multi-year contracts for steady, ongoing enterprise storage needs.",
           },
           {
-            question: "Are flexible leasing options available?",
+            question: "How does OSS track inventory for Dubai-bound shipments?",
             answer:
-              "Yes, we offer both short-term and long-term leasing options tailored to business needs."
+              "A cloud-based WMS logs every item by barcode, giving clients portal access to monitor stock levels, batch numbers, and dispatch history in real time.",
           },
           {
-            question: "Do you support logistics operations?",
+            question: "Does OSS handle transport from storage into Dubai?",
             answer:
-              "Yes, we provide inventory coordination and logistical support for smooth storage and retrieval."
+              "Yes. OSS manages cross-docking, fleet sorting, and delivery scheduling to move cargo from storage directly into Dubai.",
           },
           {
-            question: "Where are OSS FZC storage facilities located?",
+            question: "How does a Sharjah-based storage warehouse compare to leasing space in Dubai?",
             answer:
-              "Our facilities are strategically located across major Dubai commercial and industrial zones."
+              "Sharjah-based storage typically costs less than direct Dubai real estate while remaining a short drive from Dubai's business districts, avoiding the premium of prime city storage.",
           },
           {
-            question: "Which businesses benefit most from your storage services?",
+            question:
+              "Can storage capacity scale during Dubai's peak retail seasons?",
             answer:
-              "Retail, logistics, e-commerce, manufacturing, and pharmaceutical businesses benefit greatly from our storage services."
+              "Yes. Storage allocation increases during high-volume periods and reduces during slower periods, so businesses only pay for the space they use.",
           },
           {
-            question: "How do you preserve stored assets?",
+            question: "Does OSS support free zone-related storage for Dubai trade?",
             answer:
-              "We implement climate control, humidity management, and protective packaging to preserve asset quality."
+              "Yes. Storage near the SAIF Zone and Hamriyah Free Zone supports duty-efficient handling for international trade connected to Dubai.",
           },
           {
-            question: "Can I access my items anytime?",
-            answer:
-              "Yes, we provide 24/7 secure access to your stored goods."
+            question: "How does OSS reduce total logistics costs for Dubai-focused businesses?",
+            answer: "Lower-cost regional storage, automated tracking, and direct highway access via the E311 and E611 reduce per-shipment costs compared to Dubai-based alternatives.",
           },
           {
-            question: "What customer support does OSS FZC offer?",
+            question: "What operational standards does OSS follow at its storage warehouse facilities?",
             answer:
-              "Our team provides dedicated support including consultation, logistics assistance, and prompt issue resolution."
-          }
+              "OSS follows international supply chain safety standards, using certified equipment operators, defined health and safety protocols, and routine structural safety checks.",
+          },
         ]}
       />
 
       {/* CTA */}
       <CTASection
-        title="Ready to Elevate Your Storage Solutions?"
-        buttonText="Get in Touch with OSS FZC Today!"
+        title="Get Storage Space That Keeps Dubai Within Reach"
+        subtitle="Whether you need scalable B2B warehousing, real-time WMS visibility, or a reliable storage warehouse in Dubai's reach, OSS has the facility infrastructure to support it. Contact the OSS logistics team for a storage layout and quote."
+        buttonText="Contact OSS for a Dubai Storage Quote"
         buttonLink="/contact-us"
         backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
       />
     </>
   );
+  
 }

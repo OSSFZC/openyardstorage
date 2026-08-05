@@ -1,6 +1,7 @@
 export default function LeftalignedCards({
   eyebrow,
   title,
+  subtitle,
   description,
   features = [],
   bgColor = "#ffffff",
@@ -32,6 +33,10 @@ export default function LeftalignedCards({
           </h2>
 
           <p className="mt-5 text-gray-600 leading-8">
+            {subtitle}
+          </p>
+
+          <p className="mt-5 text-gray-900 leading-7">
             {description}
           </p>
 

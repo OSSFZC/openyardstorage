@@ -7,21 +7,17 @@ import StatsSection from "../../components/StatsSection";
 import DualInfoSection from "../../components/DualInfoSection";
 import FAQSection from "../../components/FAQSection";
 import CTASection from "../../components/CTASection";
+import CardsFeatures from "../../components/CardsFeatures";
+import LeftalignedCards from "../../components/LeftalignedCards";
 
-import {
-  FiDollarSign,
-  FiRefreshCw,
-  FiTool,
-  FiShield,
-} from "react-icons/fi";
+import { FiDollarSign, FiRefreshCw, FiTool, FiShield } from "react-icons/fi";
 
 import useMeta from "../../hooks/useMeta";
 
 export default function SmallStorageWarehouse() {
-
   useMeta(
-    "Small Storage Warehouse For Rent - Flexible, Secure Solutions | OSS FZC",
-    "Discover affordable and flexible small storage warehouse rental options at OSS FZC. Secure your space today and simplify your business storage needs!"
+    "Small Storage Warehouse for Rent Sharjah|Openyard Storage FZC",
+    "Searching for a small storage warehouse for rent in Sharjah?Openyard Storage FZC delivers flexible warehouse solutions designed for growing businesses.Call today!",
   );
 
   return (
@@ -29,9 +25,9 @@ export default function SmallStorageWarehouse() {
       {/* HERO */}
       <InnerHero
         eyebrow="Unlock Your Space Potential Today."
-        title="Flexible & Secure Small Storage Warehouse For Rent."
-        subtitle="Get Your Quote Now & Transform Your Storage Needs!"
-        buttonText="Get Your Quote Now"
+        title="Small Storage Warehouse for Rent in Sharjah"
+        subtitle="OSS offers a small storage warehouse for rent to businesses that need compact, secure space without committing to a large industrial footprint. Ideal for startups, small trading firms, and businesses testing new inventory lines, OSS scales storage up as demand grows."
+        buttonText="Request a Small Storage Warehouse Quote"
         buttonLink="/contact-us"
         backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
       />
@@ -40,32 +36,32 @@ export default function SmallStorageWarehouse() {
 
       {/* PROBLEM SECTION */}
       <ChallengeSection
-        subtitle="Overwhelmed by Inefficient Storage?"
-        title="Are Your Storage Solutions Letting You Down?"
-        description="Finding a suitable small storage warehouse for rent can be daunting, with many businesses facing challenges like exorbitant costs, inflexible lease terms, and poorly maintained facilities."
-        description2="Often, these frustrations lead to wasted time and money while limiting business growth."
-        rightTitle="We Address Your Storage Challenges"
+        // subtitle="Overwhelmed by Inefficient Storage?"
+        title="Why Small Businesses Struggle to Find the Right Storage Fit"
+        description="Small and growing businesses commonly run into four storage problems"
+        // description2="Often, these frustrations lead to wasted time and money while limiting business growth."
+        rightTitle="Problem Statement for Small Storage"
         rightBg="#C5F7FF"
         cards={[
           {
             icon: FiDollarSign,
-            title: "High Costs",
-            text: "Avoid unnecessary expenses with our affordable solutions.",
+            title: "Oversized space requirements",
+            text: " Standard industrial warehouses often require minimum footprints too large for small inventory volumes.",
           },
           {
             icon: FiRefreshCw,
-            title: "Inflexible Leases",
-            text: "Benefit from adaptable terms that grow with your business.",
+            title: "Rigid long-term contracts",
+            text: "Many warehouse providers require multi-year leases that don't suit early-stage or seasonal businesses.",
           },
           {
             icon: FiTool,
-            title: "Poor Maintenance",
-            text: "Experience modern, well-kept facilities.",
+            title: "High overhead for low volume",
+            text: "Paying for unused square footage eats into margins for smaller operations.",
           },
           {
             icon: FiShield,
-            title: "Security Concerns",
-            text: "Enjoy peace of mind with robust security measures.",
+            title: "No room to scale",
+            text: " Fixed small units can't expand when a business grows, forcing a disruptive move to a new provider.",
           },
         ]}
       />
@@ -77,70 +73,198 @@ export default function SmallStorageWarehouse() {
         description="At OSS FZC, we redefine how businesses approach storage with flexible rentals, scalable spaces, and state-of-the-art facilities."
         features={[
           {
-            image: "/icons/cost.png",
-            title: "Comprehensive Security",
-            description: "Advanced tech for top-tier protection.",
+            image: "/images/services/grow.png",
+            title: "Right-sized space ",
+            description:
+              "units are scaled to small inventory volumes instead of forcing a large minimum footprint.",
           },
           {
-            image: "/icons/timely-Delivery.png",
-            title: "Scalable Spaces",
-            description: "Adjust your space without hassle.",
+            image: "/images/services/back-in-time.png",
+            title: "Flexible rental terms",
+            description:
+              "short-term and month-to-month options suit early-stage and seasonal businesses.",
           },
           {
-            image: "/icons/Regulatory-exper.png",
-            title: "Client-Oriented",
-            description: "Personalized service every step of the way.",
+            image: "/images/locations/money.png",
+            title: "	Lower overhead ",
+            description: "businesses pay only for the space they actually use",
           },
           {
-            image: "/icons/Real-time.png",
-            title: "Cost-Efficient",
-            description: "Competitive pricing with no hidden fees.",
+            image: "/images/services/warehouseicon.png",
+            title: "	Built-in scalability ",
+            description:
+              "a small storage warehouse for rent at OSS can expand within the same facility network as the business grows.",
+          },
+        ]}
+      />
+
+      <LeftalignedCards
+        eyebrow="The OSS Difference "
+        title="Small Storage Without Losing Enterprise-Grade Infrastructure"
+        subtitle="OSS offers a small storage warehouse for rent that still includes the same security, tracking, and facility standards used across its larger industrial storage clients. Small businesses aren't limited to lower-quality infrastructure just because their footprint is smaller.
+Every small storage warehouse for rent through OSS is set up around actual inventory volume, cargo type, and expected growth, so businesses don't overpay for space they don't need."
+        description="What businesses get from renting small storage with OSS:"
+       
+features={[
+          {
+            image: "/images/services/tracking.png",
+            title: "Barcode and RFID tracking ",
+            description:
+              "even small units benefit from digital inventory logging.",
+          },
+          {
+            image: "/images/services/24-7.png",
+            title: "24/7 security ",
+            description:
+              "CCTV monitoring and access control apply to all storage sizes, not just large accounts.",
+          },
+          {
+            image: "/images/services/track.png",
+            title: "Highway access ",
+            description:
+              "proximity to the E311 and E611 corridors supports fast distribution regardless of unit size.",
+          },
+          {
+            image: "/images/services/speed.png",
+            title: "Flexible upgrade path ",
+            description:
+              "businesses can move into larger space within the same OSS network without switching providers.",
+          },
+         
+           {
+            image: "/images/services/logistic.png",
+            title: "Trained facility staff ",
+            description:
+              "the same logistics team supporting large clients also manages small storage accounts.",
           },
         ]}
       />
 
       {/* SERVICES */}
       <ServiceGridSection
-        eyebrow="Our Storage Solutions"
+        eyebrow="Our Storage Services"
         title="Explore Our Storage Solutions"
         services={[
           {
+            title: "Compact Unit Storage",
+            image: "/images/services/compact-unit.jpg",
+            description:
+              "Small storage warehouse for rent in sizes suited to startups, small trading firms, and low-volume inventory.",
+          },
+          {
             title: "Short-Term Rentals",
-            image: "/images/services/flexible-yard.jpg",
-            description: "Ideal for seasonal inventory.",
+            image: "/images/services/short-term.jpg",
+            description:
+              "Month-to-month options for businesses testing new product lines or managing seasonal stock.",
           },
           {
-            title: "Long-Term Agreements",
-            image: "/images/services/custom-storage.jpg",
-            description: "Secure your space for ongoing needs.",
+            title: "Secure Small-Scale Warehousing",
+            image: "/images/services/secure.jpg",
+            description:
+              "Reinforced flooring, CCTV monitoring, and access control applied to smaller storage units.",
           },
           {
-            title: "Custom Storage Design",
-            image: "/images/services/security.jpg",
-            description: "Tailored layouts for unique requirements.",
+            title: "Inventory Tracking for Small Units",
+            image: "/images/services/dispatch.jpg",
+            description:
+              "WMS-based tracking so small businesses get the same visibility as larger accounts.",
           },
           {
-            title: "Off-Site Transport",
-            image: "/images/services/logistics.jpg",
-            description: "Efficient transportation for your goods.",
+            title: "Scalable Storage Path",
+            image: "/images/services/scalable.jpg",
+            description:
+              "A clear upgrade route from small storage to larger warehouse space as inventory grows.",
           },
           {
-            title: "24/7 Access",
-            image: "/images/services/maintenance.jpg",
-            description: "Unrestricted access to your storage space.",
+            title: "Pallet-Level Storage",
+            image: "/images/services/pallet.jpg",
+            description:
+              "Rent by pallet position for businesses that don't need a full unit.",
           },
         ]}
       />
 
+      <CardsFeatures
+        eyebrow="Storage Solutions by Industry Section"
+        title="Small Storage Warehouse for Rent Across Five Business Types"
+        features={[
+          {
+            image: "/images/services/startup.png",
+            title: "Startups and New Businesses ",
+            description:
+              "low-commitment storage while inventory volume is still being established.",
+          },
+          {
+            image: "/images/services/online-store.png",
+            title: "Small E-Commerce Sellers ",
+            description:
+              "compact space for fast-moving retail SKUs without large minimum footprints.",
+          },
+          {
+            image: "/images/services/chart.png",
+            title: "Independent Trading Firms ",
+            description:
+              "small storage warehouse for rent during peak seasons, without a year-round lease.",
+          },
+          {
+            image: "/images/services/offer.png",
+            title: "Service and Contracting Businesses ",
+            description:
+              "compact space for equipment and materials between job sites.",
+          },
+          {
+            image: "/images/services/small.png",
+            title: "Seasonal Retailers",
+            description:
+              "small storage warehouse for rent during peak seasons, year-round lease.",
+          },
+        ]}
+      />
+
+      <FeatureSection
+        // eyebrow="The OSS FZC Difference"
+        title="Free Zone-Adjacent Access for Small Businesses"
+        description="Small trading businesses handling international shipments still need customs-efficient storage. A small storage warehouse for rent through OSS sits close to the SAIF Zone and Hamriyah Free Zone, giving smaller operators the same duty and customs advantages available to larger clients."
+      />
+
       {/* STATS */}
       <StatsSection
-        title="Proven Success in Numbers"
-        subtitle="Join Our Growing Community of Satisfied Clients"
+        title="Flexible Storage Solutions for Every Business"
+        subtitle="Scalable warehousing with secure facilities and flexible rental options."
         stats={[
-          { value: "30%", label: "Average Cost Savings" },
-          { value: "500+", label: "Businesses Served" },
-          { value: "24/7", label: "Secure Access" },
-          { value: "99%", label: "Client Satisfaction Rate" },
+          {
+            value: 260000,
+            suffix: "+",
+            unit: "sq ft",
+            label: "Total Managed Footprint",
+            description: "Across the OSS facility network.",
+          },
+          {
+            value: 1,
+            unit: "Month",
+            label: "Minimum Rental Commitment",
+            description: "Month-to-month options available.",
+          },
+          {
+            value: 140,
+            suffix: "+",
+            unit: "Clients",
+            label: "Enterprise Client Base",
+            description: "Active manufacturing, trading, and retail clients.",
+          },
+          {
+            value: 24,
+            suffix: "/7",
+            label: "Facility Security",
+            description: "Video surveillance with automated fire suppression.",
+          },
+          {
+            value: 100,
+            suffix: "%",
+            label: "Scalability",
+            description:
+              "Direct upgrade path from small units to full warehouse space.",
+          },
         ]}
       />
 
@@ -149,13 +273,15 @@ export default function SmallStorageWarehouse() {
         items={[
           {
             title: "About Us",
+            subtitle: "Storage Experience That Scales With Your Business",
             description:
-              "Leadership at OpenYardStorage is dedicated to delivering excellence and ensuring every client’s storage needs are met with efficiency and care.",
+              "OSS has operated as a storage and logistics provider in Sharjah since 2006, supporting businesses from single-pallet accounts to full industrial warehousing. A small storage warehouse for rent through OSS gives smaller businesses access to the same facility standards used across the entire client base.OSS prioritizes flexible contracts and predictable pricing, so businesses renting small storage today can scale into larger space without changing providers.",
           },
           {
             title: "Our Team",
+            subtitle: "Staff Supporting Every Account Size",
             description:
-              "Our skilled professionals blend expertise and creativity to craft storage solutions that ensure optimal functionality.",
+              "OSS storage facilities are managed by the same logistics managers, inventory analysts, and warehouse technicians for both small and large accounts, ensuring consistent handling standards regardless of unit size.",
           },
         ]}
       />
@@ -163,35 +289,74 @@ export default function SmallStorageWarehouse() {
       {/* FAQ */}
       <FAQSection
         eyebrow="FAQ"
-        title="Your Small Storage Warehouse Questions Answered"
+        title=" Common Questions About Small Storage Warehouse Rental"
         faqs={[
           {
-            question: "What are the benefits of renting a small storage warehouse?",
+            question:
+              "What is the minimum rental term for a small storage warehouse at OSS?",
             answer:
-              "Renting offers flexibility, scalability, cost control, and security without the burden of property ownership.",
+              "OSS offers month-to-month rental options alongside longer-term contracts, so businesses aren't locked into multi-year leases for small storage needs.",
           },
           {
-            question: "How do I choose the right size?",
+            question: "How small can a storage unit be at OSS?",
             answer:
-              "Assess inventory volume, stock rotation frequency, and growth plans to select the ideal space.",
+              "Storage can be rented at the pallet level, allowing businesses to pay only for the exact space their inventory requires.",
           },
           {
-            question: "Is security included?",
+            question:
+              "Does a small storage warehouse for rent include the same security as larger units?",
             answer:
-              "Yes, facilities include surveillance systems, controlled access, and regular monitoring.",
+              "Yes. All storage units, regardless of size, include 24/7 video monitoring, alarm systems, and access control.",
           },
           {
-            question: "Is 24/7 access available?",
+            question:
+              "Can a business upgrade from small storage to a larger warehouse later?",
             answer:
-              "Yes, you can access your stored goods anytime.",
+              "Yes. OSS allows businesses to move into larger space within the same facility network without switching providers.",
+          },
+          {
+            question:
+              "Is small storage tracked the same way as larger inventory accounts?",
+            answer:
+              "Yes. Small storage warehouse rentals use the same WMS-based barcode tracking available to larger clients.",
+          },
+          {
+            question:
+              "What businesses typically rent small storage warehouses from OSS?",
+            answer:
+              "Startups, small e-commerce sellers, independent trading firms, seasonal retailers, and contracting businesses commonly use small storage warehouse rentals.",
+          },
+          {
+            question: "Is small storage available near free zone areas?",
+            answer:
+              "Yes. Small storage warehouse rentals are located close to the SAIF Zone and Hamriyah Free Zone for customs-efficient handling.",
+          },
+          {
+            question:
+              "How is pricing structured for small storage warehouse rentals?",
+            answer:
+              "Pricing is based on the space or pallet positions actually used, avoiding the overhead of paying for a larger, unused footprint.",
+          },
+          {
+            question:
+              "Can seasonal businesses rent storage only during peak periods?",
+            answer:
+              "Yes. Short-term rental options support businesses that only need extra storage during specific seasons.",
+          },
+          {
+            question:
+              "What operational standards apply to small storage units?",
+            answer:
+              "The same international supply chain safety standards, certified equipment operators, and routine facility checks apply across all unit sizes.",
           },
         ]}
       />
 
       {/* CTA */}
       <CTASection
-        title="Ready to Elevate Your Storage Solutions?"
-        buttonText="Contact Us Today to Get Started!"
+        title="Rent the Right Amount of Storage, Not More Than You Need"
+        description="Whether you need a small storage warehouse for rent short-term, or a scalable unit that grows with your business, OSS has the space and flexibility to support it. Contact the OSS team for a small storage layout and quote."
+        buttonText="Contact OSS for a Small Storage Warehouse Quote"
         buttonLink="/contact-us"
         backgroundImage="/images/services/Explore-More.jpg"
       />
