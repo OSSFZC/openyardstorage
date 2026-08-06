@@ -72,9 +72,12 @@ export default function StatsSection({ title, subtitle, stats = [] }) {
 
         {subtitle && <p className="text-gray-500 mt-2">{subtitle}</p>}
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-10 mt-12">
+        <div className="flex flex-wrap justify-center gap-10 mt-12">
           {stats.map((item, index) => (
-            <div key={index}>
+            <div
+              key={index}
+              className="w-full md:w-[calc(50%-2.5rem)] lg:w-[calc(25%-2.5rem)]"
+            >
               <Counter
                 value={item.value}
                 suffix={item.suffix}
