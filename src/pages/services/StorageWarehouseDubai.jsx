@@ -10,7 +10,7 @@ import CTASection from "../../components/CTASection";
 import LeftalignedCards from "../../components/LeftalignedCards";
 import CardsFeatures from "../../components/CardsFeatures";
 
-import { FiBox, FiShield, FiDollarSign, FiClock } from "react-icons/fi";
+import { FiDollarSign, FiMapPin, FiEyeOff, FiClock } from "react-icons/fi";
 
 import useMeta from "../../hooks/useMeta";
 
@@ -44,17 +44,17 @@ export default function StorageWarehouseDubai() {
         rightBg="#C5F7FF"
         cards={[
           {
-            icon: FiBox,
+            icon: FiDollarSign,
             title: "High real estate costs",
             text: "Leasing standalone warehouse space directly in Dubai carries a higher cost than nearby regional alternatives.",
           },
           {
-            icon: FiShield,
+            icon: FiMapPin,
             title: "Limited availability",
             text: "Prime Dubai storage locations often have long waitlists or restrictive minimum footprints.",
           },
           {
-            icon: FiDollarSign,
+            icon: FiEyeOff,
             title: "No real-time stock visibility",
             text: "Manual tracking systems cause inventory discrepancies and delayed order fulfillment.",
           },
@@ -279,7 +279,8 @@ Every storage warehouse contract through OSS is built around cargo type, volume,
           },
           {
             title: "Our Team",
-            subtitle: "Logistics Staff Supporting Dubai-Bound Storage Operations",
+            subtitle:
+              "Logistics Staff Supporting Dubai-Bound Storage Operations",
             description:
               "OSS storage facilities are managed by certified logistics managers, inventory analysts, and warehouse technicians who coordinate inbound container unloading, pallet placement, and outbound delivery scheduling into Dubai.",
           },
@@ -298,12 +299,14 @@ Every storage warehouse contract through OSS is built around cargo type, volume,
               "OSS operates its storage warehouse network in Sharjah, positioned close to Dubai's ports, free zones, and business districts for fast access without the cost of Dubai-based real estate.",
           },
           {
-            question: "What cargo types can be stored at OSS's storage warehouse serving Dubai?",
+            question:
+              "What cargo types can be stored at OSS's storage warehouse serving Dubai?",
             answer:
               "OSS stores general trading commodities, retail stock, electronics, industrial raw materials, and palletized commercial goods. Non-hazardous cargo follows standard handling; specialized items follow separate safety procedures.",
           },
           {
-            question: "What are the lease terms for storage warehouse space near Dubai?",
+            question:
+              "What are the lease terms for storage warehouse space near Dubai?",
             answer:
               "OSS offers monthly short-term storage for seasonal demand and multi-year contracts for steady, ongoing enterprise storage needs.",
           },
@@ -318,7 +321,8 @@ Every storage warehouse contract through OSS is built around cargo type, volume,
               "Yes. OSS manages cross-docking, fleet sorting, and delivery scheduling to move cargo from storage directly into Dubai.",
           },
           {
-            question: "How does a Sharjah-based storage warehouse compare to leasing space in Dubai?",
+            question:
+              "How does a Sharjah-based storage warehouse compare to leasing space in Dubai?",
             answer:
               "Sharjah-based storage typically costs less than direct Dubai real estate while remaining a short drive from Dubai's business districts, avoiding the premium of prime city storage.",
           },
@@ -329,16 +333,20 @@ Every storage warehouse contract through OSS is built around cargo type, volume,
               "Yes. Storage allocation increases during high-volume periods and reduces during slower periods, so businesses only pay for the space they use.",
           },
           {
-            question: "Does OSS support free zone-related storage for Dubai trade?",
+            question:
+              "Does OSS support free zone-related storage for Dubai trade?",
             answer:
               "Yes. Storage near the SAIF Zone and Hamriyah Free Zone supports duty-efficient handling for international trade connected to Dubai.",
           },
           {
-            question: "How does OSS reduce total logistics costs for Dubai-focused businesses?",
-            answer: "Lower-cost regional storage, automated tracking, and direct highway access via the E311 and E611 reduce per-shipment costs compared to Dubai-based alternatives.",
+            question:
+              "How does OSS reduce total logistics costs for Dubai-focused businesses?",
+            answer:
+              "Lower-cost regional storage, automated tracking, and direct highway access via the E311 and E611 reduce per-shipment costs compared to Dubai-based alternatives.",
           },
           {
-            question: "What operational standards does OSS follow at its storage warehouse facilities?",
+            question:
+              "What operational standards does OSS follow at its storage warehouse facilities?",
             answer:
               "OSS follows international supply chain safety standards, using certified equipment operators, defined health and safety protocols, and routine structural safety checks.",
           },
@@ -355,5 +363,4 @@ Every storage warehouse contract through OSS is built around cargo type, volume,
       />
     </>
   );
-  
 }

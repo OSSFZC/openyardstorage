@@ -10,7 +10,7 @@ import CTASection from "../../components/CTASection";
 import LeftalignedCards from "../../components/LeftalignedCards";
 import CardsFeatures from "../../components/CardsFeatures";
 
-import { FiBox, FiShield, FiClock, FiDollarSign } from "react-icons/fi";
+import { FiMapPin, FiShield, FiTruck, FiCalendar } from "react-icons/fi";
 
 import useMeta from "../../hooks/useMeta";
 
@@ -44,7 +44,7 @@ export default function OpenYardStorage() {
         rightBg="#C5F7FF"
         cards={[
           {
-            icon: FiBox,
+            icon: FiMapPin,
             title: "Limited outdoor storage availability",
             text: "Many industrial facilities prioritise enclosed warehouses, leaving limited secure yard space for oversized assets.",
           },
@@ -54,12 +54,12 @@ export default function OpenYardStorage() {
             text: "Unsecured outdoor areas increase the risk of theft, damage, and unauthorised access.",
           },
           {
-            icon: FiClock,
+            icon: FiTruck,
             title: "Restricted vehicle access",
             text: "Large trailers, cranes, and heavy transport vehicles often struggle to access smaller storage sites.",
           },
           {
-            icon: FiDollarSign,
+            icon: FiCalendar,
             title: "Inflexible rental agreements",
             text: "Businesses managing temporary projects require storage without long-term lease commitments.",
           },
@@ -73,13 +73,13 @@ export default function OpenYardStorage() {
         // description="What businesses get from renting small storage with OSS:"
         features={[
           {
-            image: "/images/services/stock.png",
+            image: "/images/services/warehouseicon.png",
             title: "Large outdoor storage areas ",
             description:
               "space for machinery, containers, vehicles, and project materials.",
           },
           {
-            image: "/images/services/api.png",
+            image: "/images/services/offer.png",
             title: "Flexible rental terms ",
             description:
               "short-term and long-term agreements to suit changing project requirements.",
@@ -91,7 +91,7 @@ export default function OpenYardStorage() {
               "monitored facilities with controlled site access and perimeter security.",
           },
           {
-            image: "/images/services/speed.png",
+            image: "/images/locations/small-distance.png",
             title: "Excellent transport connectivity ",
             description:
               "quick access to major highways for efficient cargo movement.",
@@ -99,7 +99,6 @@ export default function OpenYardStorage() {
         ]}
       />
 
- 
       <FeatureSection
         eyebrow="The OSS FZC Difference"
         title="Industrial Open Yard for Rent in Sharjah Designed for Heavy-Duty Operations"
@@ -108,31 +107,31 @@ Each yard for rent in Sharjah is selected based on storage volume, equipment siz
         description="Benefits of choosing OSS open yard storage include"
         features={[
           {
-            image: "/icons/custom.png",
+            image: "/images/services/24-7.png",
             title: "24/7 monitored security",
             description:
               "CCTV surveillance, controlled entry points, and secure perimeter fencing. ",
           },
           {
-            image: "/icons/security.png",
+            image: "/images/services/truck.png",
             title: "Easy heavy vehicle access ",
             description:
               "suitable for trailers, cranes, forklifts, and oversized transport.",
           },
           {
-            image: "/icons/Real-time.png",
+            image: "/images/services/warehouseicon.png",
             title: "Flexible storage layouts ",
             description:
               "customised space allocation based on equipment size and project needs.",
           },
           {
-            image: "/icons/support.png",
+            image: "/images/services/pin.png",
             title: "Strategic location  ",
             description:
               "convenient access to E311 and E611 highways for efficient logistics.",
           },
           {
-            image: "/icons/support.png",
+            image: "/images/services/rental-service.png",
             title: "Scalable rental options ",
             description:
               "increase or reduce storage capacity as operational requirements change.",
@@ -189,32 +188,32 @@ Each yard for rent in Sharjah is selected based on storage volume, equipment siz
         title="Open Yard Storage Supporting Multiple Industries"
         features={[
           {
-            image: "/images/services/truck.png",
-            title: "Construction Companies ",
+            image: "/images/services/warehouseicon.png",
+            title: "Construction Companies",
             description:
               "secure storage for machinery, building materials, scaffolding, and project equipment.",
           },
           {
-            image: "/images/services/industrial-park.png",
+            image: "/images/services/truck.png",
             title: "Logistics Providers",
             description:
               "outdoor storage for trailers, containers, and transport assets awaiting distribution.",
           },
           {
-            image: "/images/services/online-store.png",
-            title: "Oil and Gas Contractors ",
+            image: "/images/locations/oil.png",
+            title: "Oil and Gas Contractors",
             description:
               "storage for pipes, fabrication materials, and field equipment.",
           },
           {
-            image: "/images/services/engineer.png",
-            title: "Manufacturing Businesses ",
+            image: "/images/locations/factory.png",
+            title: "Manufacturing Businesses",
             description:
               "overflow storage for raw materials and finished industrial products.",
           },
           {
-            image: "/images/services/world.png",
-            title: "Infrastructure and Engineering Firms ",
+            image: "/images/services/engineer.png",
+            title: "Infrastructure and Engineering Firms",
             description:
               "outdoor space for heavy equipment, project components, and temporary site inventory.",
           },

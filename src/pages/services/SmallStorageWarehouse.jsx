@@ -10,7 +10,12 @@ import CTASection from "../../components/CTASection";
 import CardsFeatures from "../../components/CardsFeatures";
 import LeftalignedCards from "../../components/LeftalignedCards";
 
-import { FiDollarSign, FiRefreshCw, FiTool, FiShield } from "react-icons/fi";
+import {
+  FiDollarSign,
+  FiCalendar,
+  FiLayers,
+  FiArrowUpRight,
+} from "react-icons/fi";
 
 import useMeta from "../../hooks/useMeta";
 
@@ -44,24 +49,24 @@ export default function SmallStorageWarehouse() {
         rightBg="#C5F7FF"
         cards={[
           {
-            icon: FiDollarSign,
+            icon: FiLayers,
             title: "Oversized space requirements",
-            text: " Standard industrial warehouses often require minimum footprints too large for small inventory volumes.",
+            text: "Standard industrial warehouses often require minimum footprints too large for small inventory volumes.",
           },
           {
-            icon: FiRefreshCw,
+            icon: FiCalendar,
             title: "Rigid long-term contracts",
             text: "Many warehouse providers require multi-year leases that don't suit early-stage or seasonal businesses.",
           },
           {
-            icon: FiTool,
+            icon: FiDollarSign,
             title: "High overhead for low volume",
             text: "Paying for unused square footage eats into margins for smaller operations.",
           },
           {
-            icon: FiShield,
+            icon: FiArrowUpRight,
             title: "No room to scale",
-            text: " Fixed small units can't expand when a business grows, forcing a disruptive move to a new provider.",
+            text: "Fixed small units can't expand when a business grows, forcing a disruptive move to a new provider.",
           },
         ]}
       />
@@ -104,8 +109,7 @@ export default function SmallStorageWarehouse() {
         subtitle="OSS offers a small storage warehouse for rent that still includes the same security, tracking, and facility standards used across its larger industrial storage clients. Small businesses aren't limited to lower-quality infrastructure just because their footprint is smaller.
 Every small storage warehouse for rent through OSS is set up around actual inventory volume, cargo type, and expected growth, so businesses don't overpay for space they don't need."
         description="What businesses get from renting small storage with OSS:"
-       
-features={[
+        features={[
           {
             image: "/images/services/tracking.png",
             title: "Barcode and RFID tracking ",
@@ -130,8 +134,8 @@ features={[
             description:
               "businesses can move into larger space within the same OSS network without switching providers.",
           },
-         
-           {
+
+          {
             image: "/images/services/logistic.png",
             title: "Trained facility staff ",
             description:

@@ -10,7 +10,12 @@ import CTASection from "../../components/CTASection";
 import LeftalignedCards from "../../components/LeftalignedCards";
 import CardsFeatures from "../../components/CardsFeatures";
 
-import { FiBox, FiShield, FiClock, FiDollarSign } from "react-icons/fi";
+import {
+  FiLayers,
+  FiCalendar,
+  FiDollarSign,
+  FiArrowUpRight,
+} from "react-icons/fi";
 
 import useMeta from "../../hooks/useMeta";
 
@@ -40,26 +45,26 @@ export default function WarehouseStorageSpace() {
         title="Why Small Businesses Struggle to Find the Right Storage Fit"
         description="Small and growing businesses commonly run into four storage problems:"
         // description2="At OpenYard Storage, we understand these hurdles and offer solutions designed to align with your storage needs. Our warehouse spaces provide superior security measures, flexible lease terms, and a variety of size options."
-        rightTitle="Solutions to Your Storage Dilemmas"
+        rightTitle="Problem statements"
         rightBg="#C5F7FF"
         cards={[
           {
-            icon: FiBox,
+            icon: FiLayers,
             title: "Oversized space requirements.",
             text: "Standard industrial warehouses often require minimum footprints too large for small inventory volumes.",
           },
           {
-            icon: FiShield,
+            icon: FiCalendar,
             title: "Rigid long-term contracts.",
             text: "Many warehouse providers require multi-year leases that don't suit early-stage or seasonal businesses.",
           },
           {
-            icon: FiClock,
+            icon: FiDollarSign,
             title: "High overhead for low volume",
             text: "Paying for unused square footage eats into margins for smaller operations.",
           },
           {
-            icon: FiDollarSign,
+            icon: FiArrowUpRight,
             title: "No room to scale.",
             text: "Fixed small units can't expand when a business grows, forcing a disruptive move to a new provider.",
           },
@@ -73,19 +78,19 @@ export default function WarehouseStorageSpace() {
         // description="What businesses get from renting small storage with OSS:"
         features={[
           {
-            image: "/images/services/stock.png",
+            image: "/images/services/grow.png",
             title: "Right-sized space ",
             description:
               "units are scaled to small inventory volumes instead of forcing a large minimum footprint.",
           },
           {
-            image: "/images/services/api.png",
+            image: "/images/services/offer.png",
             title: "Flexible rental terms",
             description:
               "short-term and month-to-month options suit early-stage and seasonal businesses.",
           },
           {
-            image: "/images/services/insurance.png",
+            image: "/images/locations/money.png",
             title: "Lower overhead",
             description: "businesses pay only for the space they actually use.",
           },
@@ -106,31 +111,31 @@ export default function WarehouseStorageSpace() {
         description="What businesses get from renting small storage with OSS"
         features={[
           {
-            image: "/icons/custom.png",
+            image: "/images/services/tracking.png",
             title: "Barcode and RFID tracking ",
             description:
               "even small units benefit from digital inventory logging. ",
           },
           {
-            image: "/icons/security.png",
+            image: "/images/services/24-7.png",
             title: "24/7 security ",
             description:
               "CCTV monitoring and access control apply to all storage sizes, not just large accounts.",
           },
           {
-            image: "/icons/Real-time.png",
+            image: "/images/services/track.png",
             title: "Highway access ",
             description:
               "proximity to the E311 and E611 corridors supports fast distribution regardless of unit size.",
           },
           {
-            image: "/icons/support.png",
+            image: "/images/services/small.png",
             title: "Flexible upgrade path ",
             description:
               "businesses can move into larger space within the same OSS network without switching providers.",
           },
           {
-            image: "/icons/support.png",
+            image: "/images/services/logistic.png",
             title: "Trained facility staff ",
             description:
               "the same logistics team supporting large clients also manages small storage accounts.",
@@ -145,7 +150,7 @@ export default function WarehouseStorageSpace() {
         services={[
           {
             title: "Compact Unit Storage",
-            image: "/images/services/flexible-yard.jpg",
+            image: "/images/services/compact-unit.jpg",
             description:
               "storage warehouse in sizes suited to startups, small trading firms, and low-volume inventory.",
           },
@@ -157,19 +162,19 @@ export default function WarehouseStorageSpace() {
           },
           {
             title: "Inventory Tracking for Small Units",
-            image: "/images/services/security.jpg",
+            image: "/images/services/dispatch.jpg",
             description:
               "WMS-based tracking so small businesses get the same visibility as larger accounts.",
           },
           {
             title: "Scalable Storage Path",
-            image: "/images/services/logistics.jpg",
+            image: "/images/services/scalable.jpg",
             description:
               "A clear upgrade route from small storage to larger warehouse space as inventory grows.",
           },
           {
             title: "Pallet-Level Storage",
-            image: "/images/services/maintenance.jpg",
+            image: "/images/services/pallet.jpg",
             description:
               "Rent by pallet position for businesses that don't need a full warehouse unit.",
           },
@@ -181,31 +186,31 @@ export default function WarehouseStorageSpace() {
         title="Warehouse Storage Space Across Five Business Types"
         features={[
           {
-            image: "/images/services/truck.png",
+            image: "/images/services/startup.png",
             title: "Startups and New Businesses",
             description:
               "low-commitment storage while inventory volume is still being established.",
           },
           {
-            image: "/images/services/industrial-park.png",
+            image: "/images/services/online-store.png",
             title: "Small E-Commerce Sellers ",
             description:
               "compact space for fast-moving retail SKUs without large minimum footprints.",
           },
           {
-            image: "/images/services/online-store.png",
+            image: "/images/services/chart.png",
             title: "Independent Trading Firms ",
             description:
               "flexible short-term storage for smaller import-export volumes.",
           },
           {
-            image: "/images/services/engineer.png",
+            image: "/images/services/offer.png",
             title: "Seasonal Retailers ",
             description:
               "storage warehouse for rent during peak seasons without committing to a year-round lease.",
           },
           {
-            image: "/images/services/world.png",
+            image: "/images/locations/small-distance.png",
             title: "Service and Contracting Businesses ",
             description:
               "compact space for equipment, spare parts, and project materials between job sites.",
@@ -295,7 +300,8 @@ export default function WarehouseStorageSpace() {
               "Storage can be rented by pallet position, enabling businesses to pay only for the storage capacity they actually require.",
           },
           {
-            question: "Does a storage warehouse for rent include the same security as larger units?",
+            question:
+              "Does a storage warehouse for rent include the same security as larger units?",
             answer:
               "Yes. Every storage unit includes 24/7 CCTV monitoring, controlled access, and comprehensive security systems regardless of storage size.",
           },
@@ -318,8 +324,7 @@ export default function WarehouseStorageSpace() {
               "Startups, e-commerce sellers, trading companies, seasonal retailers, distributors, and contracting businesses commonly utilise OSS storage solutions.",
           },
           {
-            question:
-              "Is small storage available near free zone areas?",
+            question: "Is small storage available near free zone areas?",
             answer:
               "Yes. OSS storage facilities are strategically located near SAIF Zone and Hamriyah Free Zone, supporting efficient customs and logistics operations.",
           },
