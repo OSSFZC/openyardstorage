@@ -10,7 +10,7 @@ import CTASection from "../../components/CTASection";
 import CardsFeatures from "../../components/CardsFeatures";
 import LeftalignedCards from "../../components/LeftalignedCards";
 
-import { FiBox, FiDollarSign, FiShield, FiClock } from "react-icons/fi";
+import { FiPackage, FiDollarSign, FiShield, FiClock } from "react-icons/fi";
 
 import useMeta from "../../hooks/useMeta";
 
@@ -44,7 +44,7 @@ export default function StorageFacilityAbuDhabi() {
         rightBg="#C5F7FF"
         cards={[
           {
-            icon: FiBox,
+            icon: FiPackage,
             title: "High real estate costs. ",
             text: "Leasing storage directly in Abu Dhabi carries a higher cost than nearby regional alternatives.",
           },

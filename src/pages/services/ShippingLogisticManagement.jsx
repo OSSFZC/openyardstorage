@@ -10,7 +10,7 @@ import CTASection from "../../components/CTASection";
 import CardsFeatures from "../../components/CardsFeatures";
 import LeftalignedCards from "../../components/LeftalignedCards";
 
-import { FiClock, FiMessageCircle, FiTrendingUp, FiEye } from "react-icons/fi";
+import { FiClock, FiShuffle, FiTrendingUp, FiDollarSign } from "react-icons/fi";
 
 import useMeta from "../../hooks/useMeta";
 
@@ -49,7 +49,7 @@ export default function ShippingLogisticManagement() {
             text: "Coordinating separate storage, freight, and customs providers creates communication gaps and delays.",
           },
           {
-            icon: FiMessageCircle,
+            icon: FiShuffle,
             title: "No unified shipment visibility",
             text: "Tracking cargo across different systems makes it difficult to confirm real-time status.",
           },
@@ -59,7 +59,7 @@ export default function ShippingLogisticManagement() {
             text: "Cargo passed between multiple third parties increases the risk of damage, loss, or delay.",
           },
           {
-            icon: FiEye,
+            icon: FiDollarSign,
             title: "Higher administrative overhead: ",
             text: "Managing separate contracts and invoices across providers adds unnecessary operational cost.",
           },
@@ -85,13 +85,13 @@ export default function ShippingLogisticManagement() {
               "A single WMS-based system tracks cargo from storage through final delivery.",
           },
           {
-            image: "/images/locations/oil.png",
+            image: "/images/services/warehouseicon.png",
             title: "Consistent Handling Standards",
             description:
               "Cargo stays within the OSS network from warehouse to destination.",
           },
           {
-            image: "/images/locations/factory.png",
+            image: "/images/locations/administrative.png",
             title: "Reduced Administrative Load",
             description:
               "One contract and one point of contact cover the full logistics chain.",
@@ -153,31 +153,31 @@ Every shipping & logistic management contract through OSS is built around cargo 
           },
           {
             title: "Cross-Docking and Distribution",
-            image: "/images/services/custom-storage.jpg",
+            image: "/images/services/cross-docking.jpg",
             description:
               "Cargo moves from inbound arrival directly to outbound delivery, reducing storage time and handling steps.",
           },
           {
             title: "Customs and Documentation Support",
-            image: "/images/services/security.jpg",
+            image: "/images/locations/customer-support.jpg",
             description:
               "Coordinated processing to reduce delays between clearance and delivery.",
           },
           {
             title: "Shipment Tracking and Reporting",
-            image: "/images/services/logistics.jpg",
+            image: "/images/services/shipment-tracking.jpg",
             description:
               "Digital tracking gives clients visibility into cargo location and delivery status across the full logistics chain.",
           },
           {
             title: "Fleet and Route Scheduling",
-            image: "/images/services/maintenance.jpg",
+            image: "/images/locations/fleet-reoute.jpg",
             description:
               "Dispatch coordination for scheduled and on-demand freight movement.",
           },
           {
             title: "Inventory and Storage Integration",
-            image: "/images/services/flexible-yard.jpg",
+            image: "/images/services/security.jpg",
             description:
               "Warehousing is managed as part of the same shipping & logistic management contract, not a separate service.",
           },

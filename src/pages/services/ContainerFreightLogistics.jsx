@@ -9,7 +9,7 @@ import FAQSection from "../../components/FAQSection";
 import CTASection from "../../components/CTASection";
 import CardsFeatures from "../../components/CardsFeatures";
 import LeftalignedCards from "../../components/LeftalignedCards";
-import { FiClock, FiMap, FiPackage, FiSettings } from "react-icons/fi";
+import { FiClock, FiMapPin, FiPackage, FiSettings } from "react-icons/fi";
 
 import useMeta from "../../hooks/useMeta";
 
@@ -41,14 +41,14 @@ export default function ContainerFreightLogistics() {
         // description2="Are you tired of dealing with unpredictable timelines, cargo handling errors, or poor communication from logistics providers? These issues not only hinder your business operations but also affect your bottom line. Open Yard Storage understands these challenges and offers optimized logistics solutions designed to overcome them."
         rightTitle="Problem statement"
         rightBg="#C5F7FF"
-        cards={[ 
+        cards={[
           {
             icon: FiClock,
             title: "Disconnected Freight Forwarders",
             text: "Working with multiple cargo freight forwarders across different legs of a shipment creates communication gaps and delays.",
           },
           {
-            icon: FiMap,
+            icon: FiMapPin,
             title: "No Integrated Sea and Air Coordination",
             text: "Businesses managing sea air cargo & logistics separately from inland transport lose time at every handoff point.",
           },
@@ -76,19 +76,19 @@ export default function ContainerFreightLogistics() {
               "One carrier in shipping and logistics manages the full container journey from port to warehouse to delivery.",
           },
           {
-            image: "/images/services/truck.png",
+            image: "/images/services/transportation.png",
             title: "Combined Sea Air Cargo & Logistics",
             description:
               "Ocean and air freight are coordinated together instead of through separate vendors.",
           },
           {
-            image: "/images/locations/oil.png",
+            image: "/images/services/risk-management.png",
             title: "Consistent Handling Standards",
             description:
               "Containers stay within the OSS network, reducing the risk of loss or damage.",
           },
           {
-            image: "/images/locations/factory.png",
+            image: "/images/services/time-manager.png",
             title: "Real-Time Tracking",
             description:
               "WMS-based visibility into container status from arrival through final delivery.",
@@ -105,31 +105,31 @@ As a logistic shipping service built around container-based trade, OSS coordinat
         description="What businesses get from OSS's container freight logistics"
         features={[
           {
-            image: "/icons/Real-time.png",
+            image: "/images/services/tracking.png",
             title: "Barcode and RFID Tracking",
             description:
               "Container contents are logged at each handling point.",
           },
           {
-            image: "/icons/timely-Delivery.png",
+            image: "/images/services/logistic.png",
             title: "Trained Port and Logistics Staff",
             description:
               "Coordinators manage container de-stuffing, storage, and outbound delivery.",
           },
           {
-            image: "/icons/cost.png",
+            image: "/images/services/track.png",
             title: "Highway Access",
             description:
               "Proximity to the E311 and E611 corridors supports fast inland distribution after port arrival.",
           },
           {
-            image: "/icons/support.png",
+            image: "/images/services/truck.png",
             title: "Flexible Freight Options",
             description:
               "Full-container-load and part-container-load services scale to shipment size.",
           },
           {
-            image: "/icons/custom.png",
+            image: "/icons/Real-time.png",
             title: "End-to-End Coordination",
             description:
               "Inbound container handling connects directly to outbound cargo transportation and logistics.",
@@ -144,25 +144,25 @@ As a logistic shipping service built around container-based trade, OSS coordinat
         services={[
           {
             title: "Container Destuffing and Cross-Docking",
-            image: "/images/services/flexible-yard.jpg",
+            image: "/images/services/cross-docking.jpg",
             description:
               "Cargo moves from container arrival directly to outbound delivery, reducing storage and handling time.",
           },
           {
             title: "Sea Air Cargo & Logistics Coordination",
-            image: "/images/services/custom-storage.jpg",
+            image: "/images/locations/sea-freight.jpg",
             description:
               "Combined ocean and air freight management under a single logistic shipping service.",
           },
           {
             title: "Inland Transport and Distribution",
-            image: "/images/services/security.jpg",
+            image: "/images/services/inland-transport.jpg",
             description:
               "Container freight logistics extends beyond the port into regional inland delivery routes.",
           },
           {
             title: "Customs and Documentation Support",
-            image: "/images/services/logistics.jpg",
+            image: "/images/locations/customer-support.jpg",
             description:
               "Coordinated processing reduces delays between container clearance and delivery.",
           },
@@ -174,7 +174,7 @@ As a logistic shipping service built around container-based trade, OSS coordinat
           },
           {
             title: "Marine Logistics Services in Sharjah",
-            image: "/images/services/flexible-yard.jpg",
+            image: "/images/locations/marine-logistic.jpg",
             description:
               "Port-side coordination connecting vessel arrival to warehouse and delivery scheduling.",
           },
@@ -185,7 +185,7 @@ As a logistic shipping service built around container-based trade, OSS coordinat
         title="Container Freight Logistics Across Five Business Sectors"
         features={[
           {
-            image: "/images/services/warehouseicon.png",
+            image: "/images/locations/oil.png",
             title: "Oil and Gas Support",
             description:
               "Cargo transportation and logistics for heavy equipment and pipes moving through Sharjah's ports.",
@@ -197,19 +197,19 @@ As a logistic shipping service built around container-based trade, OSS coordinat
               "Cargo freight forwarders coordinate international shipments through container freight logistics.",
           },
           {
-            image: "/images/locations/oil.png",
+            image: "/images/locations/factory.png",
             title: "Industrial Manufacturing",
             description:
               "Raw materials and machinery move on scheduled container delivery windows.",
           },
           {
-            image: "/images/locations/factory.png",
+            image: "/images/locations/construction.png",
             title: "Construction and Infrastructure",
             description:
               "Heavy materials transported through combined sea air cargo & logistics.",
           },
           {
-            image: "/images/services/engineer.png",
+            image: "/images/locations/shipped.png",
             title: "FMCG Distribution",
             description:
               "Marine logistics services in Sharjah support consistent inventory replenishment cycles.",

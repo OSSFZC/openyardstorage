@@ -10,12 +10,7 @@ import CTASection from "../../components/CTASection";
 import CardsFeatures from "../../components/CardsFeatures";
 import LeftalignedCards from "../../components/LeftAlignedCards";
 
-import {
-  FiAlertCircle,
-  FiShield,
-  FiTrendingUp,
-  FiDollarSign,
-} from "react-icons/fi";
+import { FiTruck, FiShield, FiTrendingUp, FiDollarSign } from "react-icons/fi";
 
 import useMeta from "../../hooks/useMeta";
 
@@ -64,7 +59,7 @@ export default function FreightShippingService() {
             text: "Cargo passed between unrelated freight agents in different countries increases the risk of damage, loss, or miscommunication over shipment status.",
           },
           {
-            icon: FiAlertCircle,
+            icon: FiTruck,
             title: "Limited Visibility Beyond the UAE",
             text: "Businesses lose track of shipment status once freight moves beyond domestic borders, making it hard to plan around arrival dates.",
           },

@@ -9,7 +9,7 @@ import FAQSection from "../../components/FAQSection";
 import CTASection from "../../components/CTASection";
 
 import {
-  FiAlertCircle,
+  FiSettings,
   FiShield,
   FiTrendingUp,
   FiDollarSign,
@@ -18,10 +18,9 @@ import {
 import useMeta from "../../hooks/useMeta";
 
 export default function LogisticsTransportSharjah() {
-
   useMeta(
     "Premier Logistics Transport Service in Sharjah | OSS FZC",
-    "Discover top-tier logistics transport services in Sharjah with unmatched efficiency and reliability. Partner with OSS FZC for tailored, dependable solutions."
+    "Discover top-tier logistics transport services in Sharjah with unmatched efficiency and reliability. Partner with OSS FZC for tailored, dependable solutions.",
   );
 
   return (
@@ -33,7 +32,8 @@ export default function LogisticsTransportSharjah() {
         subtitle="Contact Us Now for Customized Solutions that Propel Your Business Forward"
         buttonText="Get Started With Us Today"
         buttonLink="/contact-us"
-        backgroundImage="/images/services/Open-yard-storage.jpeg"s
+        backgroundImage="/images/services/Open-yard-storage.jpeg"
+        s
       />
 
       <TrustedSlider />
@@ -63,7 +63,7 @@ export default function LogisticsTransportSharjah() {
             text: "Optimize your transport budget with precision.",
           },
           {
-            icon: FiAlertCircle,
+            icon: FiSettings,
             title: "Custom Solutions",
             text: "Tailored logistics plans for unique needs.",
           },
@@ -107,12 +107,14 @@ export default function LogisticsTransportSharjah() {
           {
             title: "Freight Management",
             image: "/images/services/flexible-yard.jpg",
-            description: "Efficient handling of both local and international shipments.",
+            description:
+              "Efficient handling of both local and international shipments.",
           },
           {
             title: "Warehousing Solutions",
             image: "/images/services/custom-storage.jpg",
-            description: "Secure storage options to meet diverse warehousing needs.",
+            description:
+              "Secure storage options to meet diverse warehousing needs.",
           },
           {
             title: "Customs Clearance",
@@ -122,12 +124,14 @@ export default function LogisticsTransportSharjah() {
           {
             title: "Supply Chain Solutions",
             image: "/images/services/logistics.jpg",
-            description: "Optimizing entire supply chain operations for efficiency.",
+            description:
+              "Optimizing entire supply chain operations for efficiency.",
           },
           {
             title: "Fleet Management",
             image: "/images/services/maintenance.jpg",
-            description: "Modern, equipped fleets ready to handle your logistics challenges.",
+            description:
+              "Modern, equipped fleets ready to handle your logistics challenges.",
           },
         ]}
       />
@@ -166,7 +170,8 @@ export default function LogisticsTransportSharjah() {
         title="Your Sharjah Logistics Questions Answered"
         faqs={[
           {
-            question: "What logistics transport services do you offer in Sharjah?",
+            question:
+              "What logistics transport services do you offer in Sharjah?",
             answer:
               "Our services include freight management, customs clearance, warehousing, and tailored logistics solutions ensuring efficient and reliable delivery.",
           },

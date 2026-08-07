@@ -9,19 +9,18 @@ import FAQSection from "../../components/FAQSection";
 import CTASection from "../../components/CTASection";
 
 import {
-  FiAlertCircle,
-  FiShield,
-  FiTrendingUp,
+  FiDollarSign,
   FiFileText,
+  FiTrendingUp,
+  FiTruck,
 } from "react-icons/fi";
 
 import useMeta from "../../hooks/useMeta";
 
 export default function InternationalTruckShipping() {
-
   useMeta(
     "Effortless International Truck Shipping | OSS FZC",
-    "Discover seamless international truck shipping with OSS FZC. Enjoy strategic logistics, transparent pricing, and advanced tracking. Get a free quote today!"
+    "Discover seamless international truck shipping with OSS FZC. Enjoy strategic logistics, transparent pricing, and advanced tracking. Get a free quote today!",
   );
 
   return (
@@ -48,7 +47,7 @@ export default function InternationalTruckShipping() {
         rightBg="#C5F7FF"
         cards={[
           {
-            icon: FiShield,
+            icon: FiFileText,
             title: "Regulatory Complexity",
             text: "Navigating diverse international laws.",
           },
@@ -58,12 +57,12 @@ export default function InternationalTruckShipping() {
             text: "Reliable scheduling, every time.",
           },
           {
-            icon: FiAlertCircle,
+            icon: FiDollarSign,
             title: "Hidden Costs",
             text: "Full transparency in pricing.",
           },
           {
-            icon: FiFileText,
+            icon: FiTruck,
             title: "Document Management",
             text: "Simplifying paper trails efficiently.",
           },
@@ -117,7 +116,8 @@ export default function InternationalTruckShipping() {
           {
             title: "Customs Brokerage",
             image: "/images/services/security.jpg",
-            description: "Seamless border crossing with professional documentation.",
+            description:
+              "Seamless border crossing with professional documentation.",
           },
           {
             title: "Warehousing Solutions",

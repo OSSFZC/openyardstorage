@@ -9,7 +9,7 @@ import FAQSection from "../../components/FAQSection";
 import CTASection from "../../components/CTASection";
 import LeftalignedCards from "../../components/LeftalignedCards";
 import CardsFeatures from "../../components/CardsFeatures";
-import { FiMapPin, FiDollarSign, FiGrid, FiClock } from "react-icons/fi";
+import { FiMapPin, FiDollarSign, FiFileText, FiClock } from "react-icons/fi";
 
 import useMeta from "../../hooks/useMeta";
 
@@ -53,7 +53,7 @@ export default function HamriyahWarehouse() {
             text: "Standard commercial warehouses don't offer the duty suspension advantages available inside a free zone.",
           },
           {
-            icon: FiGrid,
+            icon: FiFileText,
             title: "Rigid lease structures",
             text: "Many providers require long-term commitments that don't suit fluctuating import-export volumes.",
           },
