@@ -7,21 +7,17 @@ import StatsSection from "../../components/StatsSection";
 import DualInfoSection from "../../components/DualInfoSection";
 import FAQSection from "../../components/FAQSection";
 import CTASection from "../../components/CTASection";
+import CardsFeatures from "../../components/CardsFeatures";
+import LeftalignedCards from "../../components/LeftalignedCards";
 
-import {
-  FiClock,
-  FiMessageCircle,
-  FiTrendingUp,
-  FiEye,
-} from "react-icons/fi";
+import { FiClock, FiMessageCircle, FiTrendingUp, FiEye } from "react-icons/fi";
 
 import useMeta from "../../hooks/useMeta";
 
 export default function ShippingLogisticManagement() {
-
   useMeta(
-    "Leading Shipping and Logistic Management Services | OSS FZC",
-    "Unlock efficient shipping and logistics with OSS FZC. Streamline operations with tailored, timely, and cost-effective solutions. Contact us today."
+    "Shipping & Logistic Management UAE | Openyard Storage FZC",
+    "Openyard Storage FZC delivers shipping & logistic management solutions with warehousing, freight & customs support to keep your supply chain moving.Get a quote!",
   );
 
   return (
@@ -29,9 +25,9 @@ export default function ShippingLogisticManagement() {
       {/* HERO */}
       <InnerHero
         eyebrow="Streamlining Logistics, Elevating Success."
-        title="Transform Your Operations with Premier Shipping And Logistic Management Solutions"
-        subtitle="Ready to Revolutionize Your Supply Chain? Contact Us Today!"
-        buttonText="Schedule a Consultation Now!"
+        title="Shipping and Logistic Management in the UAE"
+        subtitle="OSS provides shipping & logistic management services that connect warehousing, freight, and delivery under one provider. Trading firms, manufacturers, and e-commerce businesses use OSS to coordinate inbound storage, transport scheduling, and outbound delivery without managing multiple separate vendors."
+        buttonText="Request a Shipping & Logistic Management Consultation"
         buttonLink="/contact-us"
         backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
       />
@@ -40,61 +36,106 @@ export default function ShippingLogisticManagement() {
 
       {/* PROBLEM SECTION */}
       <ChallengeSection
-        subtitle="Navigating the Complexities of Shipping and Logistics?"
-        title="Overcome Operational Hurdles with Precision"
-        description="Shipping and logistics management can feel like an intricate puzzle with countless moving pieces. Delays, miscommunication, and inefficiencies can lead to costly errors and customer dissatisfaction."
-        description2="Fragmented supply chains often result in loss of control, impacting your bottom line. At OpenYard Storage, we understand these pressing challenges deeply. Our tailored solutions in Shipping And Logistic Management streamline operations, enhance transparency, and strengthen your supply chain."
-        rightTitle="Efficient Solutions for All Your Challenges"
+        // subtitle="Navigating the Complexities of Shipping and Logistics?"
+        title="How Poor Shipping and Logistic Management Disrupts Supply Chains"
+        description="Businesses without centralized shipping & logistic management commonly face four problems"
+        // description2="Fragmented supply chains often result in loss of control, impacting your bottom line. At OpenYard Storage, we understand these pressing challenges deeply. Our tailored solutions in Shipping And Logistic Management streamline operations, enhance transparency, and strengthen your supply chain."
+        rightTitle="prolem statement"
         rightBg="#C5F7FF"
         cards={[
           {
             icon: FiClock,
-            title: "Reduce Delays",
-            text: "Minimize downtime and logistical disruptions.",
+            title: "Multiple disconnected vendors",
+            text: "Coordinating separate storage, freight, and customs providers creates communication gaps and delays.",
           },
           {
             icon: FiMessageCircle,
-            title: "Enhance Communication",
-            text: "Ensure seamless connectivity across operations.",
+            title: "No unified shipment visibility",
+            text: "Tracking cargo across different systems makes it difficult to confirm real-time status.",
           },
           {
             icon: FiTrendingUp,
-            title: "Boost Efficiency",
-            text: "Optimize processes to save time and resources.",
+            title: "Inconsistent handling standards",
+            text: "Cargo passed between multiple third parties increases the risk of damage, loss, or delay.",
           },
           {
             icon: FiEye,
-            title: "Maximize Control",
-            text: "Gain complete visibility over your supply chain.",
+            title: "Higher administrative overhead: ",
+            text: "Managing separate contracts and invoices across providers adds unnecessary operational cost.",
+          },
+        ]}
+      />
+
+      <LeftalignedCards
+        // eyebrow="OSS Shipping & Logistic Management"
+        // title="Comprehensive Solutions for Every Step of the Supply Chain"
+        title="Streamlined Logistics for Better Business Operations"
+        description="OSS addresses each of these through centralized shipping & logistic management:"
+        features={[
+          {
+            image: "/images/services/warehouseicon.png",
+            title: "Single Point of Coordination",
+            description:
+              "Storage, freight, and delivery are managed under one provider instead of multiple vendors.",
+          },
+          {
+            image: "/images/services/truck.png",
+            title: "Unified Tracking",
+            description:
+              "A single WMS-based system tracks cargo from storage through final delivery.",
+          },
+          {
+            image: "/images/locations/oil.png",
+            title: "Consistent Handling Standards",
+            description:
+              "Cargo stays within the OSS network from warehouse to destination.",
+          },
+          {
+            image: "/images/locations/factory.png",
+            title: "Reduced Administrative Load",
+            description:
+              "One contract and one point of contact cover the full logistics chain.",
           },
         ]}
       />
 
       {/* SOLUTIONS */}
       <FeatureSection
-        eyebrow="Delivering Excellence in Shipping And Logistic Management"
-        title="Discover the OSS FZC Edge"
-        description="At OpenYard Storage, we pride ourselves on delivering unmatched Shipping And Logistic Management through innovation and reliability. Our proprietary approach utilizes cutting-edge technology and experienced insights to deliver tailored solutions that fit seamlessly into your existing operations."
+        eyebrow="The OSS Difference "
+        title="Shipping and Logistic Management Under One Provider"
+        subtitle="OSS operates a shipping & logistic management model that combines warehousing, freight coordination, and delivery scheduling into a single service. Businesses don't need to separately manage storage providers, freight forwarders, and last-mile delivery companies.
+Every shipping & logistic management contract through OSS is built around cargo type, shipment volume, and delivery timeline, so businesses get coordination matched to how their supply chain actually operates."
+        description="What businesses get from OSS's shipping & logistic management services"
         features={[
           {
-            image: "/icons/cost.png",
-            title: "Innovative Technology",
-            description: "Harness the latest in logistics tech.",
+            image: "/images/services/tracking.png",
+            title: "Barcode and RFID tracking ",
+            description:
+              "inventory and shipment status are logged at each handling point.",
           },
           {
             image: "/icons/timely-Delivery.png",
-            title: "Tailored Solutions",
-            description: "Customized strategies for your needs.",
+            title: "Trained logistics coordinators ",
+            description:
+              "dispatch and delivery are managed by staff familiar with each client's cargo requirements.",
           },
           {
-            image: "/icons/Regulatory-exper.png",
-            title: "Unmatched Expertise",
-            description: "Professional insights driving results.",
+            image: "/images/services/track.png",
+            title: "Highway access ",
+            description:
+              "proximity to the E311 and E611 corridors supports fast regional distribution.",
+          },
+          {
+            image: "/images/services/time-manager.png",
+            title: "Flexible scheduling ",
+            description:
+              "shipping & logistic management adjusts to seasonal demand and order volume.",
           },
           {
             image: "/icons/Real-time.png",
-            title: "Proven Track Record",
-            description: "Trusted success across industries.",
+            title: "End-to-end coordination ",
+            description:
+              "inbound storage connects directly to outbound delivery without added transfer points.",
           },
         ]}
       />
@@ -105,47 +146,125 @@ export default function ShippingLogisticManagement() {
         title="Comprehensive Logistics Capabilities"
         services={[
           {
-            title: "Integrated Supply Chain Solutions",
+            title: "Centralized Freight Coordination",
             image: "/images/services/flexible-yard.jpg",
             description:
-              "Seamlessly connect and optimize all supply chain elements.",
+              "Shipping and logistic management that combines warehousing and transport scheduling under one contract.",
           },
           {
-            title: "Advanced Tracking Systems",
+            title: "Cross-Docking and Distribution",
             image: "/images/services/custom-storage.jpg",
             description:
-              "Real-time monitoring of shipments ensures timely delivery.",
+              "Cargo moves from inbound arrival directly to outbound delivery, reducing storage time and handling steps.",
           },
           {
-            title: "Cost Efficiency Strategies",
+            title: "Customs and Documentation Support",
             image: "/images/services/security.jpg",
             description:
-              "Maximize budget impact with optimized logistics spending.",
+              "Coordinated processing to reduce delays between clearance and delivery.",
           },
           {
-            title: "Risk Management Services",
+            title: "Shipment Tracking and Reporting",
             image: "/images/services/logistics.jpg",
             description:
-              "Proactively identify and mitigate supply chain risks.",
+              "Digital tracking gives clients visibility into cargo location and delivery status across the full logistics chain.",
           },
           {
-            title: "Logistics Consulting",
+            title: "Fleet and Route Scheduling",
             image: "/images/services/maintenance.jpg",
             description:
-              "Expert guidance tailored to improve your operations.",
+              "Dispatch coordination for scheduled and on-demand freight movement.",
+          },
+          {
+            title: "Inventory and Storage Integration",
+            image: "/images/services/flexible-yard.jpg",
+            description:
+              "Warehousing is managed as part of the same shipping & logistic management contract, not a separate service.",
+          },
+        ]}
+      />
+      <CardsFeatures
+        eyebrow="Storage Solutions by Industry Section"
+        title="Shipping & Logistic Management Across Five Business Sectors"
+        features={[
+          {
+            image: "/images/services/warehouseicon.png",
+            title: "FMCG and General Trading",
+            description:
+              "Coordinated freight and storage support consistent product replenishment cycles.",
+          },
+          {
+            image: "/images/services/truck.png",
+            title: "Industrial Manufacturing",
+            description:
+              "Raw materials and finished machinery move on scheduled delivery windows.",
+          },
+          {
+            image: "/images/services/online-store.png",
+            title: "Retail and E-Commerce",
+            description:
+              "Shipping & logistic management scales with order volume during peak sales periods.",
+          },
+          {
+            image: "/images/locations/construction.png",
+            title: "Construction and Infrastructure",
+            description:
+              "Heavy materials and equipment move on coordinated storage-to-site schedules.",
+          },
+          {
+            image: "/images/services/world.png",
+            title: "Import and Export Operators",
+            description:
+              "Centralized coordination shortens the transit chain for international cargo.",
           },
         ]}
       />
 
+      <FeatureSection
+        eyebrow="Free Zone Storage "
+        title="Free Zone Coordination Within Shipping & Logistic Management"
+        description="Businesses trading internationally need shipping & logistic management that accounts for customs and duty processing. OSS coordinates storage and freight close to the SAIF Zone and Hamriyah Free Zone, keeping duty-efficient handling built into the same logistics contract rather than managed separately."
+      />
+
       {/* STATS */}
       <StatsSection
-        title="Proven Success in Numbers"
-        subtitle="Hundreds of Clients, Millions in Savings"
+        title="Performance That Drives Reliable Logistics"
+        subtitle="Proven warehousing and logistics capabilities backed by measurable operational results."
         stats={[
-          { value: "30%", label: "Cost Reduction Achieved" },
-          { value: "500+", label: "Clients Served" },
-          { value: "24/7", label: "Operational Support" },
-          { value: "98%", label: "On-Time Delivery Rate" },
+          {
+            value: 260000,
+            suffix: "+",
+            unit: "sq ft",
+            label: "Total Managed Footprint",
+            description: "Of storage capacity.",
+          },
+          {
+            value: 140,
+            suffix: "+",
+            unit: "Clients",
+            label: "Enterprise Client Base",
+            description: "Active manufacturing, trading, and retail clients.",
+          },
+          {
+            value: 99.9,
+            suffix: "%",
+            decimals: 1,
+            label: "On-Time Delivery Rate",
+            description: "Across coordinated shipping and logistics contracts.",
+          },
+          {
+            value: 12000,
+            suffix: "+",
+            unit: "Pallets",
+            label: "Monthly Freight Throughput",
+            description: "Processed and dispatched monthly.",
+          },
+          {
+            value: 24,
+            suffix: "/7",
+            label: "Facility Security",
+            description: "Video surveillance with automated fire suppression.",
+          },
         ]}
       />
 
@@ -154,13 +273,15 @@ export default function ShippingLogisticManagement() {
         items={[
           {
             title: "About Us",
+            subtitle: "Shipping & Logistic Management Experience in the UAE",
             description:
-              "With a dedicated leadership team, OpenYard Storage ensures unparalleled excellence in Shipping And Logistic Management.",
+              "OSS has operated as a storage and logistics provider in the UAE since 2006, offering shipping & logistic management that combines warehousing, freight, and delivery under one service. OSS invests in fleet coordination, digital tracking systems, and trained dispatch staff to keep supply chains moving without gaps. Clients using OSS for shipping & logistic management get dedicated account management, flexible contracts, and a logistics team focused on coordination across every step of the supply chain.",
           },
           {
             title: "Our Team",
+            subtitle: "Staff Coordinating Every Step of the Logistics Chain",
             description:
-              "Our experts blend creativity and precision to deliver superior logistics solutions, every step of the way.",
+              "OSS shipping & logistic management is run by dispatch coordinators, warehouse technicians, and logistics analysts who manage storage placement, route scheduling, and delivery confirmation under one unified process.",
           },
         ]}
       />
@@ -171,7 +292,8 @@ export default function ShippingLogisticManagement() {
         title="Your Shipping And Logistic Management Questions Answered"
         faqs={[
           {
-            question: "Why is efficient shipping and logistic management crucial?",
+            question:
+              "Why is efficient shipping and logistic management crucial?",
             answer:
               "Efficient management directly impacts delivery times, customer satisfaction, and operational costs while improving supply chain visibility.",
           },
@@ -225,8 +347,9 @@ export default function ShippingLogisticManagement() {
 
       {/* CTA */}
       <CTASection
-        title="Take Control of Your Logistics Today"
-        buttonText="Schedule a Consultation Now!"
+        title="Simplify Your Supply Chain with One Logistics Partner"
+        description="Whether you need centralized freight coordination, integrated warehousing, or full shipping & logistic management, OSS has the infrastructure and team to support it. Contact the OSS team for a logistics plan and quote."
+        buttonText="Contact OSS for a Shipping & Logistic Management Quote"
         buttonLink="/contact-us"
         backgroundImage="/images/services/Explore-More.jpg"
       />

@@ -7,31 +7,27 @@ import StatsSection from "../../components/StatsSection";
 import DualInfoSection from "../../components/DualInfoSection";
 import FAQSection from "../../components/FAQSection";
 import CTASection from "../../components/CTASection";
+import CardsFeatures from "../../components/CardsFeatures";
+import LeftalignedCards from "../../components/LeftalignedCards";
 
-import {
-  FiBox,
-  FiDollarSign,
-  FiShield,
-  FiClock
-} from "react-icons/fi";
+import { FiBox, FiDollarSign, FiShield, FiClock } from "react-icons/fi";
 
 import useMeta from "../../hooks/useMeta";
 
 export default function StorageFacilityAbuDhabi() {
-
   useMeta(
-    "Premier Storage Facility In Abu Dhabi | Secure & Reliable Solutions",
-    "Discover top-tier storage solutions at our cutting-edge Storage Facility in Abu Dhabi. Trusted by leading clients for security, flexibility, and unmatched service."
+    "Storage Facility Serving Abu Dhabi | Openyard Storage FZC",
+    "Built for businesses that need reliable storage,Openyard Storage FZC offers a storage facility in Abu Dhabi with flexible warehousing solutions.Contact us today!",
   );
 
   return (
     <>
       {/* HERO */}
       <InnerHero
-        eyebrow="Secure. Accessible. Reliable."
-        title="Discover Premium Storage Solutions in Abu Dhabi"
-        subtitle="Unlock peace of mind. Contact us for a personalized storage solution today."
-        buttonText="Contact Us Today"
+        // eyebrow="Secure. Accessible. Reliable."
+        title="Storage Facility Serving Abu Dhabi"
+        subtitle="OSS provides secure, scalable warehousing in Sharjah for Abu Dhabi businesses, helping trading, manufacturing, and import-export companies store inventory efficiently while reducing costs and ensuring reliable transport to Abu Dhabi."
+        buttonText="Request an Abu Dhabi Storage Quote"
         buttonLink="/contact-us"
         backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
       />
@@ -40,107 +36,234 @@ export default function StorageFacilityAbuDhabi() {
 
       {/* PROBLEM SECTION */}
       <ChallengeSection
-        subtitle="Facing Steep Challenges with Your Storage Needs?"
-        title="Don't Let Storage Hurdles Hold You Back"
-        description="Many businesses face challenges when searching for reliable storage facilities in Abu Dhabi. Limited space, high costs, and inadequate security can create operational inefficiencies."
-        description2="At Open Yard Storage, we offer modern storage facilities with advanced security, flexible access, and scalable solutions designed to eliminate these challenges."
-        rightTitle="Solutions Tailored to Your Needs"
+        // subtitle="Facing Steep Challenges with Your Storage Needs?"
+        title="Why Businesses Struggle to Find the Right Storage Facility Near Abu Dhabi"
+        description="Businesses searching for warehouse space near Abu Dhabi commonly run into four problems:"
+        // description2="At Open Yard Storage, we offer modern storage facilities with advanced security, flexible access, and scalable solutions designed to eliminate these challenges."
+        rightTitle="Problem statement"
         rightBg="#C5F7FF"
         cards={[
           {
             icon: FiBox,
-            title: "Space Woes Solved",
-            text: "Ample storage to overcome space limitations."
+            title: "High real estate costs. ",
+            text: "Leasing storage directly in Abu Dhabi carries a higher cost than nearby regional alternatives.",
           },
           {
             icon: FiDollarSign,
-            title: "Cost-Effective Solutions",
-            text: "Affordable pricing that maximizes value."
+            title: "Limited flexible capacity.",
+            text: "Many Abu Dhabi storage providers require large minimum footprints or long-term-only leases.",
           },
           {
             icon: FiShield,
-            title: "Top-Notch Security",
-            text: "Advanced systems ensure full protection."
+            title: "No real-time stock visibility",
+            text: " Manual tracking systems cause inventory discrepancies and delayed order fulfillment.",
           },
           {
             icon: FiClock,
-            title: "Flexible Accessibility",
-            text: "Convenient access tailored to your schedule."
-          }
+            title: "Slow transfer to delivery points",
+            text: "Storage located too far from Abu Dhabi's core business and industrial districts adds unnecessary transit time.",
+          },
         ]}
       />
 
+      <LeftalignedCards
+        // eyebrow="The OSS Difference "
+        title="Smart Solutions for Abu Dhabi Storage Challenges"
+        subtitle="OSS addresses each of these with a storage facility positioned to serve Abu Dhabi efficiently:"
+        // description="What businesses get from renting small storage with OSS:"
+        features={[
+          {
+            image: "/images/locations/money.png",
+            title: "Lower-cost regional storage ",
+            description:
+              "Sharjah-based warehousing costs less than direct Abu Dhabi real estate while maintaining reliable transit access.",
+          },
+          {
+            image: "/images/services/offer.png",
+            title: "Flexible capacity ",
+            description:
+              "unit sizes and lease terms scale to actual inventory needs, not a fixed minimum.",
+          },
+          {
+            image: "/images/services/online-test.png",
+            title: "WMS digital tracking",
+            description:
+              "real-time visibility into SKU counts, batch numbers, and stock levels through a client portal.",
+          },
+          {
+            image: "/images/locations/small-distance.png",
+            title: "Reliable transit routing ",
+            description:
+              "direct highway access keeps transfer time between storage and Abu Dhabi delivery points predictable.",
+          },
+        ]}
+      />
       {/* SOLUTIONS */}
       <FeatureSection
         eyebrow="The OSS FZC Difference"
-        title="Experience the OSS FZC Advantage"
-        description="At Open Yard Storage, we combine modern facilities with exceptional customer service to deliver reliable storage solutions in Abu Dhabi. Our infrastructure ensures security, flexibility, and operational efficiency."
+        title="Storage Facility near Abu Dhabi That Reduces Overhead Costs"
+        subtitle="OSS operates a storage facility network designed to serve Abu Dhabi-based businesses directly. Companies get enterprise-grade warehousing and dependable regional transit without the capital cost of securing storage space inside the city itself.
+Every storage facility contract through OSS is built around cargo type, volume, and delivery timeline into Abu Dhabi, so businesses don't overpay for space or transit flexibility they don't need."
+        description="What businesses get from OSS as their storage facility serving Abu Dhabi"
         features={[
           {
-            image: "/icons/cost.png",
-            title: "State-of-the-Art Facilities",
-            description: "Modern infrastructure designed for security."
+            image: "/images/industries/boxes.png",
+            title: "Scalable pallet allocations ",
+            description:
+              "storage footage adjusts to match import cycles and Abu Dhabi order volume.",
+          },
+          {
+            image: "/images/services/tracking.png",
+            title: "Barcode and RFID tracking ",
+            description:
+              "reduces manual processing errors across all inventory",
           },
           {
             image: "/icons/timely-Delivery.png",
-            title: "Tailored Flexibility",
-            description: "Storage plans customized to your needs."
+            title: "Direct highway connectivity ",
+            description:
+              "access to major transport corridors supports reliable transit toward Abu Dhabi.",
           },
           {
-            image: "/icons/Regulatory-exper.png",
-            title: "Customer Support",
-            description: "Dedicated team ready to assist you."
+            image: "/images/services/logistic.png",
+            title: "Trained logistics workforce ",
+            description:
+              "coordinators and technicians manage inbound storage and outbound delivery scheduling.",
           },
           {
             image: "/icons/Real-time.png",
-            title: "Advanced Security",
-            description: "Comprehensive monitoring and access control."
-          }
+            title: "End-to-end freight management ",
+            description:
+              "inbound container de-stuffing connects directly to outbound delivery toward Abu Dhabi.",
+          },
         ]}
       />
 
       {/* SERVICES */}
       <ServiceGridSection
         eyebrow="Our Services"
-        title="Explore Our Comprehensive Storage Solutions"
+        title="Storage Facility Services Supporting Abu Dhabi Businesses"
         services={[
           {
-            title: "Personal Storage",
+            title: "Secure Commercial Warehousing",
             image: "/images/services/flexible-yard.jpg",
-            description: "Secure units for personal belongings."
+            description:
+              "Storage for raw materials, industrial equipment, and finished goods in reinforced, high-clearance facilities.",
           },
           {
-            title: "Business Storage",
-            image: "/images/services/custom-storage.jpg",
-            description: "Efficient storage solutions for businesses."
-          },
-          {
-            title: "Vehicle Storage",
+            title: "WMS Inventory Tracking",
             image: "/images/services/security.jpg",
-            description: "Safe storage for cars and vehicles."
+            description:
+              "Real-time stock control through a warehouse management system with batch tracking and replenishment alerts.",
           },
           {
-            title: "Climate-Controlled Units",
-            image: "/images/services/logistics.jpg",
-            description: "Ideal for temperature-sensitive items."
+            title: "Long-Term Storage",
+            image: "/images/services/custom-storage.jpg",
+            description:
+              "Fixed pallet positions for manufacturing components and seasonal overstock destined for Abu Dhabi distribution.",
           },
           {
-            title: "Document Storage",
-            image: "/images/services/maintenance.jpg",
-            description: "Secure storage for important records."
-          }
+            title: "Short-Term Warehousing",
+            image: "/images/services/short-term.jpg",
+            description:
+              "Temporary space for sudden inbound shipments or promotional inventory spikes ahead of Abu Dhabi sales periods.",
+          },
+          {
+            title: "Cross-Docking Coordination",
+            image: "/images/services/cross-docking.jpg",
+            description:
+              "Cargo moves from container arrival directly to outbound delivery toward Abu Dhabi, cutting storage time.",
+          },
+          {
+            title: "Open Yard Storage",
+            image: "/images/services/open-yard.jpg",
+            description:
+              "Outdoor space for heavy equipment, machinery, and industrial materials serving Abu Dhabi's construction and oil and gas sectors.",
+          },
         ]}
+      />
+      <CardsFeatures
+        eyebrow="Storage Solutions by Industry Section"
+        title="Storage Facility Serving Abu Dhabi Across Five Business Sectors"
+        features={[
+          {
+            image: "/images/locations/oil.png",
+            title: "Oil and Gas Support ",
+            description:
+              "open yard storage for pipes, equipment, and industrial materials tied to Abu Dhabi's energy sector.",
+          },
+          {
+            image: "/images/services/truck.png",
+            title: "FMCG and General Trading ",
+            description:
+              "high-density racking supports faster product rotation into Abu Dhabi markets.",
+          },
+          {
+            image: "/images/locations/factory.png",
+            title: "Industrial Manufacturing ",
+            description:
+              "staging areas hold raw materials and machinery before Abu Dhabi distribution.",
+          },
+          {
+            image: "/images/locations/construction.png",
+            title: "Construction and Infrastructure ",
+            description:
+              "open-yard and covered storage for building materials headed to Abu Dhabi project sites.",
+          },
+          {
+            image: "/images/services/world.png",
+            title: "Import and Export Operators ",
+            description:
+              "cross-docking supports fast freight transit connected to Abu Dhabi.",
+          },
+        ]}
+      />
+
+      <FeatureSection
+        // eyebrow="The OSS FZC Difference"
+        title="Free Zone-Adjacent Access for Abu Dhabi Trade"
+        description="Businesses trading internationally through Abu Dhabi need storage that supports duty suspension and simplified customs processing. OSS's storage facility network sits close to the SAIF Zone and Hamriyah Free Zone, giving Abu Dhabi-focused trading firms duty-efficient storage without added customs delays."
       />
 
       {/* STATS */}
       <StatsSection
         title="Proven Success in Numbers"
-        subtitle="A Testament to Our Excellence"
+        subtitle="Enterprise-grade warehousing backed by reliable operations and measurable performance."
         stats={[
-          { value: "30%", label: "Operational Cost Reduction" },
-          { value: "500+", label: "Clients Served" },
-          { value: "24/7", label: "Security Monitoring" },
-          { value: "99%", label: "Customer Satisfaction" }
+          {
+            value: 260000,
+            suffix: "+",
+            unit: "sq ft",
+            label: "Total Managed Footprint",
+            description: "Of storage capacity.",
+          },
+          {
+            value: 140,
+            suffix: "+",
+            unit: "Clients",
+            label: "Enterprise Client Base",
+            description: "Active manufacturing, trading, and retail clients.",
+          },
+          {
+            value: 99.98,
+            suffix: "%",
+            decimals: 2,
+            label: "Inventory Accuracy Rating",
+            description: "Maintained via automated WMS barcode processing.",
+          },
+          {
+            value: 12000,
+            suffix: "+",
+            unit: "Pallets",
+            label: "Monthly Freight Throughput",
+            description: "Processed and dispatched monthly.",
+          },
+          {
+            value: 24,
+            suffix: "/7",
+            label: "Facility Security",
+            description: "Video surveillance with automated fire suppression.",
+          },
         ]}
       />
 
@@ -149,68 +272,93 @@ export default function StorageFacilityAbuDhabi() {
         items={[
           {
             title: "About Us",
+            subtitle:
+              "Warehousing Experience Serving Abu Dhabi and the Wider UAE",
             description:
-              "Open Yard Storage leads with innovation, delivering advanced storage solutions tailored to business and personal needs."
+              "OSS has operated as a storage and logistics provider in the UAE since 2006, giving Abu Dhabi-based businesses access to a storage facility network without requiring an Abu Dhabi-based warehouse. OSS invests in facility infrastructure, digital inventory software, and trained staff to support reliable storage and transit toward Abu Dhabi. Clients using OSS as their storage facility serving Abu Dhabi get dedicated account management, flexible contracts, and a logistics team focused on keeping operations moving without interruption.",
           },
           {
             title: "Our Team",
+            subtitle:
+              "Logistics Staff Supporting Abu Dhabi-Bound Storage Operations",
             description:
-              "Our experienced team delivers reliable and innovative storage services across Abu Dhabi."
-          }
+              "OSS storage facilities are managed by certified logistics managers, inventory analysts, and warehouse technicians who coordinate inbound container unloading, pallet placement, and outbound delivery scheduling toward Abu Dhabi.",
+          },
         ]}
       />
 
       {/* FAQ */}
       <FAQSection
         eyebrow="FAQ"
-        title="Your Storage Facility In Abu Dhabi Questions Answered"
+        title="Common Questions About Storage Facility Access for Abu Dhabi"
         faqs={[
           {
-            question: "What types of storage solutions do you offer?",
-            answer: "We offer personal storage, business storage, vehicle storage, document storage, and climate-controlled units."
+            question:
+              "What does shipping & logistic management with OSS include?",
+            answer:
+              "It combines warehousing, freight coordination, customs support, and delivery scheduling under one contract, instead of requiring businesses to manage separate providers for each step.",
           },
           {
-            question: "How secure is your storage facility?",
-            answer: "Our facility includes 24/7 surveillance, controlled access, and modern security infrastructure."
+            question:
+              "How is cargo tracked across the shipping & logistic management process?",
+            answer:
+              "A cloud-based WMS logs every item by barcode, giving clients visibility into storage status, transit location, and delivery confirmation in one system.",
           },
           {
-            question: "Are climate-controlled units available?",
-            answer: "Yes, we provide climate-controlled storage for sensitive items such as electronics and documents."
+            question:
+              "What cargo types does OSS handle within its logistics services?",
+            answer:
+              "OSS manages general trading commodities, industrial equipment, machinery, and palletized commercial goods. Non-hazardous cargo follows standard handling; specialized items follow separate safety procedures.",
           },
           {
-            question: "Can I access my belongings anytime?",
-            answer: "We offer flexible access hours allowing you to retrieve items conveniently."
+            question:
+              "Does OSS handle both scheduled and on-demand freight movement?",
+            answer:
+              "Yes. Shipping and logistic management includes both fixed-schedule freight and on-demand dispatch for urgent shipments.",
           },
           {
-            question: "What is the minimum rental period?",
-            answer: "The minimum rental period is typically 30 days with flexible options available."
+            question:
+              "What are the contract terms for shipping & logistic management services?",
+            answer:
+              "OSS offers monthly short-term agreements for seasonal demand and multi-year contracts for steady, ongoing logistics needs.",
           },
           {
-            question: "Is vehicle storage available?",
-            answer: "Yes, we provide secure storage spaces for vehicles."
+            question:
+              "How does centralized logistics management reduce operational costs?",
+            answer:
+              "Combining storage, freight, and delivery under one contract reduces administrative overhead and avoids the inefficiencies of coordinating multiple separate vendors.",
           },
           {
-            question: "Do you provide moving or packing services?",
-            answer: "Yes, our team can assist with packing and moving services."
+            question:
+              "Can shipping & logistic management scale during peak demand periods?",
+            answer:
+              "Yes. Freight and storage capacity adjust to order volume, supporting businesses through seasonal or high-demand periods.",
           },
           {
-            question: "How do I reserve a storage unit?",
-            answer: "Contact us online or by phone and our team will help you choose the best unit."
+            question:
+              "Does OSS support customs and free zone coordination as part of its logistics management?",
+            answer:
+              "Yes. Storage and freight near the SAIF Zone and Hamriyah Free Zone are coordinated within the same logistics contract to reduce customs delays.",
           },
           {
-            question: "Are there restrictions on stored items?",
-            answer: "Hazardous materials, explosives, and illegal items are prohibited."
+            question:
+              "What security measures protect cargo during shipping & logistic management?",
+            answer:
+              "Facilities use 24/7 video monitoring, alarm systems, biometric and card-controlled access, and civil defense-approved fire suppression.",
           },
           {
-            question: "What fire safety systems are installed?",
-            answer: "Our facility includes smoke detectors, sprinklers, and advanced fire safety systems."
-          }
+            question:
+              "What operational standards does OSS follow across its logistics services?",
+            answer:
+              "OSS follows international supply chain safety standards, using certified equipment operators, defined health and safety protocols, and routine facility and fleet checks.",
+          },
         ]}
       />
 
       {/* CTA */}
       <CTASection
-        title="Ready to Transform Your Storage Experience?"
+        title="Get Storage That Keeps Abu Dhabi Within Reach"
+        description="Whether you need scalable B2B warehousing, real-time WMS visibility, or a reliable storage facility, OSS has the infrastructure to support it. Contact the OSS logistics team for a storage layout and quote."
         buttonText="Contact Us for a Customized Storage Solution"
         buttonLink="/contact-us"
         backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"

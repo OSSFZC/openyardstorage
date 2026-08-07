@@ -7,21 +7,16 @@ import StatsSection from "../../components/StatsSection";
 import DualInfoSection from "../../components/DualInfoSection";
 import FAQSection from "../../components/FAQSection";
 import CTASection from "../../components/CTASection";
-
-import {
-  FiClock,
-  FiMap,
-  FiPackage,
-  FiSettings
-} from "react-icons/fi";
+import CardsFeatures from "../../components/CardsFeatures";
+import LeftalignedCards from "../../components/LeftalignedCards";
+import { FiClock, FiMap, FiPackage, FiSettings } from "react-icons/fi";
 
 import useMeta from "../../hooks/useMeta";
 
 export default function ContainerFreightLogistics() {
-
   useMeta(
-    "Efficient Container Freight Logistics | OSS FZC",
-    "OSS FZC offers seamless container freight logistics with reliable, efficient cargo transport optimized for your business needs. Contact us today."
+    "Container Freight Logistics in Sharjah | Openyard Storage FZC",
+    "Openyard Storage FZC delivers container freight logistics with seamless sea air cargo & logistics solutions, ensuring efficient global shipments. Enquire today!",
   );
 
   return (
@@ -29,9 +24,9 @@ export default function ContainerFreightLogistics() {
       {/* HERO */}
       <InnerHero
         eyebrow="Reliable Freight, Seamless Solutions"
-        title="Efficient Container Freight Logistics Tailored for You"
-        subtitle="Streamline Your Operations – Get Your Free Consultation Today!"
-        buttonText="Get Consultation"
+        title="Container Freight Logistics in Sharjah"
+        subtitle="OSS is a container freight logistics provider offering integrated sea air cargo, warehousing, and inland transport, connecting Sharjah's ports with regional and international shipping routes through one streamlined logistics solution."
+        buttonText="Request a Container Freight Logistics Quote"
         buttonLink="/contact-us"
         backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
       />
@@ -40,107 +35,233 @@ export default function ContainerFreightLogistics() {
 
       {/* PROBLEM SECTION */}
       <ChallengeSection
-        subtitle="When Challenges Pile Up, We Clear the Path"
-        title="Navigating the Complexities of Container Freight Logistics"
-        description="In the ever-evolving world of Container Freight Logistics, complexities and inefficiencies can add unnecessary costs and delays."
-        description2="Are you tired of dealing with unpredictable timelines, cargo handling errors, or poor communication from logistics providers? These issues not only hinder your business operations but also affect your bottom line. Open Yard Storage understands these challenges and offers optimized logistics solutions designed to overcome them."
-        rightTitle="Overcome Logistic Hurdles with Us"
+        // subtitle="When Challenges Pile Up, We Clear the Path"
+        title="Why Poor Freight Coordination Increases Delays for Cargo Freight Forwarders"
+        description="Businesses without a dedicated container freight logistics partner commonly run into four problems"
+        // description2="Are you tired of dealing with unpredictable timelines, cargo handling errors, or poor communication from logistics providers? These issues not only hinder your business operations but also affect your bottom line. Open Yard Storage understands these challenges and offers optimized logistics solutions designed to overcome them."
+        rightTitle="Problem statement"
         rightBg="#C5F7FF"
-        cards={[
+        cards={[ 
           {
             icon: FiClock,
-            title: "Precision Delivery",
-            text: "Eliminating costly delays."
+            title: "Disconnected Freight Forwarders",
+            text: "Working with multiple cargo freight forwarders across different legs of a shipment creates communication gaps and delays.",
           },
           {
             icon: FiMap,
-            title: "Advanced Tracking",
-            text: "Transparency at every step."
+            title: "No Integrated Sea and Air Coordination",
+            text: "Businesses managing sea air cargo & logistics separately from inland transport lose time at every handoff point.",
           },
           {
             icon: FiPackage,
-            title: "Expert Management",
-            text: "Skilled handling of every shipment."
+            title: "Inconsistent Container Handling",
+            text: "Cargo moving through several third parties increases the risk of damage, misplacement, or documentation errors.",
           },
           {
             icon: FiSettings,
-            title: "Personalized Solutions",
-            text: "Tailored strategies for unique needs."
-          }
+            title: "Limited Port-Side Visibility",
+            text: "Without a dedicated carrier in shipping and logistics, businesses can't confirm container status until it reaches the final destination.",
+          },
         ]}
       />
-
+      <LeftalignedCards
+        // eyebrow="OSS Container Freight Logistics"
+        title="Integrated Solutions for Container Freight Challenges"
+        description="OSS addresses each of these through integrated container freight logistics:"
+        features={[
+          {
+            image: "/images/services/warehouseicon.png",
+            title: "Single-Provider Coordination",
+            description:
+              "One carrier in shipping and logistics manages the full container journey from port to warehouse to delivery.",
+          },
+          {
+            image: "/images/services/truck.png",
+            title: "Combined Sea Air Cargo & Logistics",
+            description:
+              "Ocean and air freight are coordinated together instead of through separate vendors.",
+          },
+          {
+            image: "/images/locations/oil.png",
+            title: "Consistent Handling Standards",
+            description:
+              "Containers stay within the OSS network, reducing the risk of loss or damage.",
+          },
+          {
+            image: "/images/locations/factory.png",
+            title: "Real-Time Tracking",
+            description:
+              "WMS-based visibility into container status from arrival through final delivery.",
+          },
+        ]}
+      />
       {/* SOLUTIONS */}
       <FeatureSection
         eyebrow="The OSS FZC Difference"
-        title="Empower Your Freight with Innovative Solutions"
-        description="At Open Yard Storage, our Container Freight Logistics services hinge on a proprietary framework that addresses the exact needs of modern businesses. Our unique approach integrates technology with hands-on expertise to streamline operation processes."
+        title="A Full-Service Approach to Marine Logistics Services in Sharjah"
+        subtitle="OSS operates as one of the marine logistics companies in Sharjah offering container freight logistics that combines port handling, warehousing, and inland transport under one contract. Businesses don't need to separately manage cargo freight forwarders, customs agents, and inland carriers.
+As a logistic shipping service built around container-based trade, OSS coordinates every step of cargo transportation and logistics, from vessel arrival to final delivery, through a single point of contact.
+"
+        description="What businesses get from OSS's container freight logistics"
         features={[
           {
             image: "/icons/Real-time.png",
-            title: "Innovative Technology",
-            description: "Cutting-edge tools for better logistics."
+            title: "Barcode and RFID Tracking",
+            description:
+              "Container contents are logged at each handling point.",
           },
           {
             image: "/icons/timely-Delivery.png",
-            title: "Tailored Strategies",
-            description: "Solutions designed for your business."
+            title: "Trained Port and Logistics Staff",
+            description:
+              "Coordinators manage container de-stuffing, storage, and outbound delivery.",
           },
           {
             image: "/icons/cost.png",
-            title: "Reliable Network",
-            description: "Global access that guarantees reach."
+            title: "Highway Access",
+            description:
+              "Proximity to the E311 and E611 corridors supports fast inland distribution after port arrival.",
           },
           {
             image: "/icons/support.png",
-            title: "Dedicated Support",
-            description: "24/7 logistics support team."
-          }
+            title: "Flexible Freight Options",
+            description:
+              "Full-container-load and part-container-load services scale to shipment size.",
+          },
+          {
+            image: "/icons/custom.png",
+            title: "End-to-End Coordination",
+            description:
+              "Inbound container handling connects directly to outbound cargo transportation and logistics.",
+          },
         ]}
       />
 
       {/* SERVICES */}
       <ServiceGridSection
-        eyebrow="Freight Solutions"
-        title="Comprehensive Freight Solutions to Elevate Your Business"
+        eyebrow="Freight Services"
+        title="Container Freight Logistics Offerings"
         services={[
           {
-            title: "Global Freight Management",
+            title: "Container Destuffing and Cross-Docking",
             image: "/images/services/flexible-yard.jpg",
-            description: "Ensuring seamless delivery across borders."
+            description:
+              "Cargo moves from container arrival directly to outbound delivery, reducing storage and handling time.",
           },
           {
-            title: "Customs Brokerage Services",
+            title: "Sea Air Cargo & Logistics Coordination",
             image: "/images/services/custom-storage.jpg",
-            description: "Simplifying international trade complexities."
+            description:
+              "Combined ocean and air freight management under a single logistic shipping service.",
           },
           {
-            title: "Freight Consolidation",
+            title: "Inland Transport and Distribution",
             image: "/images/services/security.jpg",
-            description: "Cost-effective transport solutions."
+            description:
+              "Container freight logistics extends beyond the port into regional inland delivery routes.",
           },
           {
-            title: "Real-Time Cargo Tracking",
+            title: "Customs and Documentation Support",
             image: "/images/services/logistics.jpg",
-            description: "Stay informed, every step of the way."
+            description:
+              "Coordinated processing reduces delays between container clearance and delivery.",
           },
           {
-            title: "Dedicated Customer Support",
+            title: "Full-Container and Part-Container Load Services",
             image: "/images/services/maintenance.jpg",
-            description: "Experience unparalleled service excellence."
-          }
+            description:
+              "Flexible freight options for businesses of varying shipment volumes.",
+          },
+          {
+            title: "Marine Logistics Services in Sharjah",
+            image: "/images/services/flexible-yard.jpg",
+            description:
+              "Port-side coordination connecting vessel arrival to warehouse and delivery scheduling.",
+          },
         ]}
+      />
+      <CardsFeatures
+        eyebrow="Storage Solutions by Industry"
+        title="Container Freight Logistics Across Five Business Sectors"
+        features={[
+          {
+            image: "/images/services/warehouseicon.png",
+            title: "Oil and Gas Support",
+            description:
+              "Cargo transportation and logistics for heavy equipment and pipes moving through Sharjah's ports.",
+          },
+          {
+            image: "/images/services/truck.png",
+            title: "General Trading and Import-Export",
+            description:
+              "Cargo freight forwarders coordinate international shipments through container freight logistics.",
+          },
+          {
+            image: "/images/locations/oil.png",
+            title: "Industrial Manufacturing",
+            description:
+              "Raw materials and machinery move on scheduled container delivery windows.",
+          },
+          {
+            image: "/images/locations/factory.png",
+            title: "Construction and Infrastructure",
+            description:
+              "Heavy materials transported through combined sea air cargo & logistics.",
+          },
+          {
+            image: "/images/services/engineer.png",
+            title: "FMCG Distribution",
+            description:
+              "Marine logistics services in Sharjah support consistent inventory replenishment cycles.",
+          },
+        ]}
+      />
+
+      <FeatureSection
+        eyebrow="Free Zone Storage "
+        title="Free Zone Coordination Within Shipping & Logistic Management"
+        description="Businesses trading internationally need shipping & logistic management that accounts for customs and duty processing. OSS coordinates storage and freight close to the SAIF Zone and Hamriyah Free Zone, keeping duty-efficient handling built into the same logistics contract rather than managed separately."
       />
 
       {/* STATS */}
       <StatsSection
-        title="Proven Success in Numbers"
-        subtitle="Delivering Excellence Across the Globe"
+        title="Trusted Performance Across Every Shipment"
+        subtitle="Integrated container freight logistics supported by secure warehousing and reliable transportation."
         stats={[
-          { value: "30%", label: "Improvement in Delivery Times" },
-          { value: "25%", label: "Reduction in Logistics Costs" },
-          { value: "24/7", label: "Customer Support" },
-          { value: "Global", label: "Freight Network Coverage" }
+          {
+            value: 260000,
+            suffix: "+",
+            unit: "sq ft",
+            label: "Total Managed Footprint",
+            description: "Of storage capacity.",
+          },
+          {
+            value: 140,
+            suffix: "+",
+            unit: "Clients",
+            label: "Enterprise Client Base",
+            description: "Active manufacturing, trading, and retail clients.",
+          },
+          {
+            value: 12000,
+            suffix: "+",
+            unit: "Pallets",
+            label: "Monthly Freight Throughput",
+            description: "Processed and dispatched monthly.",
+          },
+          {
+            value: 24,
+            suffix: "/7",
+            label: "Facility Security",
+            description: "Video surveillance with automated fire suppression.",
+          },
+          {
+            value: 2,
+            unit: "Transport Modes",
+            label: "Service Scope",
+            description:
+              "Combined sea air cargo & logistics and inland transport.",
+          },
         ]}
       />
 
@@ -149,79 +270,91 @@ export default function ContainerFreightLogistics() {
         items={[
           {
             title: "About Us",
+            subtitle: "Marine and Container Logistics Experience in Sharjah",
             description:
-              "Led by seasoned experts, Open Yard Storage stands at the forefront of Container Freight Logistics, striving for unparalleled efficiency and precision."
+              "OSS has operated as a storage and logistics provider in Sharjah since 2006, growing into one of the established marine logistics companies in Sharjah offering container freight logistics alongside warehousing and inland transport. OSS invests in port coordination, digital tracking systems, and trained dispatch staff to keep container shipments moving without gaps. Clients working with OSS as their carrier in shipping and logistics get dedicated account management, flexible contracts, and a team focused on coordination across every step of the shipment.",
           },
           {
             title: "Our Team",
+            subtitle: "Staff Coordinating Every Stage of Container Freight",
             description:
-              "Our dedicated team leverages their expertise in Container Freight Logistics to craft innovative solutions that meet every client's needs."
-          }
+              "OSS container freight logistics operations are run by port coordinators, warehouse technicians, and dispatch staff who manage container de-stuffing, storage placement, and inland delivery scheduling as part of a single logistic shipping service.",
+          },
         ]}
       />
 
       {/* FAQ */}
-<FAQSection
-  eyebrow="FAQ"
-  title="Your Container Freight Logistics Questions Answered"
-  faqs={[
-    {
-      question: "What is Container Freight Logistics?",
-      answer:
-        "Container Freight Logistics involves managing the transportation of goods in containers, optimizing for effective delivery. This includes strategic planning, cargo handling, and delivery scheduling to ensure secure and timely transit of goods, often across international boundaries. Open Yard Storage offers industry-leading Container Freight Logistics solutions that enhance supply chain efficiency."
-    },
-    {
-      question: "How can Container Freight Logistics benefit my business?",
-      answer:
-        "Container Freight Logistics optimizes the shipping process, reducing transit time and costs. By utilizing these services, businesses can achieve greater efficiency, improve supply chain reliability, and adapt to market demands quicker by leveraging advanced tracking and expert freight management techniques offered by Open Yard Storage."
-    },
-    {
-      question: "What kind of tracking options do you offer?",
-      answer:
-        "Our logistics services provide real-time tracking, allowing clients to monitor their shipment's journey. Using cutting-edge GPS technology, we ensure that you have full visibility and regular updates, thereby improving coordination and preparing for any unforeseen challenges."
-    },
-    {
-      question: "Can Open Yard Storage handle international shipments?",
-      answer:
-        "Yes, we specialize in international Container Freight Logistics. Our extensive global network enables us to efficiently manage cross-border shipments, ensuring compliance with all relevant customs and regulatory requirements, thus offering smooth and secure international logistics."
-    },
-    {
-      question: "How do you ensure timely delivery?",
-      answer:
-        "Timely delivery is ensured by our robust logistics framework which includes route optimization, predictive analysis, and expert operational support. We prioritize planning and proactive management to mitigate delays and ensure your freight arrives on schedule."
-    },
-    {
-      question: "Do you offer customized logistics solutions?",
-      answer:
-        "Absolutely, our approach is tailored to meet specific business needs. We analyze each client's unique requirements and challenges to craft bespoke logistics plans, ensuring optimal efficiency and meeting all specific demands."
-    },
-    {
-      question: "What industries can benefit from your services?",
-      answer:
-        "Our Container Freight Logistics solutions are adaptable across various industries including retail, manufacturing, and e-commerce. We tailor our services to align with industry-specific needs, ensuring maximum efficiency and satisfaction."
-    },
-    {
-      question: "What sets Open Yard Storage apart in Container Freight Logistics?",
-      answer:
-        "Our distinctive combination of cutting-edge technology and personalized service makes us the preferred choice. We deliver reliable, efficient logistics solutions backed by a team of dedicated experts focused on client success."
-    },
-    {
-      question: "How do you manage logistics challenges during peak seasons?",
-      answer:
-        "We plan meticulously, employing advanced forecasting techniques and scaling resources proactively during peak times to ensure uninterrupted service and timely deliveries, regardless of seasonal demand spikes."
-    },
-    {
-      question: "What are the advantages of using freight consolidation services?",
-      answer:
-        "Freight consolidation combines multiple shipments into one, reducing shipping costs and improving transport efficiency. Our services optimize load management, increase shipment security, and enhance transit speed."
-    }
-  ]}
-/>
+      <FAQSection
+        eyebrow="FAQ"
+        title="Common Questions About Container Freight Logistics"
+        faqs={[
+          {
+            question:
+              "What does OSS's container freight logistics service include?",
+            answer:
+              "It combines container de-stuffing, warehousing, customs support, and inland delivery scheduling under one carrier in shipping and logistics, instead of requiring businesses to manage separate cargo freight forwarders.",
+          },
+          {
+            question: "Does OSS handle both sea and air freight coordination?",
+            answer:
+              "Yes. OSS manages sea air cargo & logistics together, rather than routing ocean and air shipments through separate providers.",
+          },
+          {
+            question:
+              "Is OSS considered one of the marine logistics companies in Sharjah?",
+            answer:
+              "Yes. OSS provides marine logistics services in Sharjah, including port-side container handling, cross-docking, and coordination with inland transport.",
+          },
+          {
+            question:
+              "What cargo types does OSS handle within its container freight logistics?",
+            answer:
+              "OSS manages general trading commodities, industrial equipment, machinery, and palletized commercial goods. Non-hazardous cargo follows standard handling; specialized items follow separate safety procedures.",
+          },
+          {
+            question:
+              "Does OSS offer full-container and part-container load options?",
+            answer:
+              "Yes. Container freight logistics services scale from full-container loads to smaller part-container shipments.",
+          },
+          {
+            question:
+              "How does OSS track containers from port arrival to delivery?",
+            answer:
+              "A cloud-based WMS logs container contents at each handling point, giving clients visibility from port arrival through final delivery.",
+          },
+          {
+            question:
+              "What are the contract terms for container freight logistics services?",
+            answer:
+              "OSS offers monthly short-term agreements for seasonal demand and multi-year contracts for steady, ongoing cargo transportation and logistics needs.",
+          },
+          {
+            question:
+              "Does OSS support customs and free zone coordination for container shipments?",
+            answer:
+              "Yes. Storage and freight near the SAIF Zone and Hamriyah Free Zone are coordinated within the same logistic shipping service to reduce customs delays.",
+          },
+          {
+            question:
+              "How is OSS different from using separate cargo freight forwarders?",
+            answer:
+              "A single carrier in shipping and logistics manages the full container journey, reducing the communication gaps and handoff delays common when using multiple freight forwarders.",
+          },
+          {
+            question:
+              "What operational standards does OSS follow across its container freight logistics?",
+            answer:
+              "OSS follows international supply chain safety standards, using certified equipment operators, defined health and safety protocols, and routine facility and fleet checks.",
+          },
+        ]}
+      />
 
       {/* CTA */}
       <CTASection
-        title="Ready to Transform Your Freight Logistics?"
-        buttonText="Contact Us Today"
+        title="Move Containers Through One Coordinated Logistics Partner"
+        description="Whether you need marine logistics services in Sharjah, combined sea air cargo & logistics, or full container freight logistics from port to delivery, OSS has the infrastructure and team to support it. Contact the OSS team for a logistics plan and quote."
+        buttonText="Contact OSS for a Container Freight Logistics Quote"
         buttonLink="/contact-us"
         backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
       />

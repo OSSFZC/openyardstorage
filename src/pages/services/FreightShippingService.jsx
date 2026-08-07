@@ -7,6 +7,8 @@ import StatsSection from "../../components/StatsSection";
 import DualInfoSection from "../../components/DualInfoSection";
 import FAQSection from "../../components/FAQSection";
 import CTASection from "../../components/CTASection";
+import CardsFeatures from "../../components/CardsFeatures";
+import LeftalignedCards from "../../components/LeftAlignedCards";
 
 import {
   FiAlertCircle,
@@ -18,10 +20,9 @@ import {
 import useMeta from "../../hooks/useMeta";
 
 export default function FreightShippingService() {
-
   useMeta(
-    "Reliable Freight Shipping Service | OSS FZC",
-    "Streamline your logistics with OSS FZC's top-tier Freight Shipping Service. Experience timely deliveries, unparalleled reliability, and customized solutions designed for your shipping needs. Contact us today!"
+    "International Freight Shipping Service | Openyard Storage FZC",
+    "Reliable freight shipping service with sea and air freight, export documentation, customs clearance, warehousing, and global cargo tracking.",
   );
 
   return (
@@ -29,9 +30,9 @@ export default function FreightShippingService() {
       {/* HERO */}
       <InnerHero
         eyebrow="Efficient Freight Solutions for Seamless Logistics"
-        title="Revolutionize Your Freight Shipping Service with Unmatched Efficiency"
-        subtitle="Discover the Difference—Request Your Free Quote Today!"
-        buttonText="Get Started with a Custom Freight Shipping Quote!"
+        subtitle="OSS provides freight shipping services connecting Sharjah to global markets through integrated sea and air freight, helping businesses manage international cargo with reliable scheduling, customs support, and end-to-end shipment visibility."
+        title="Freight Shipping Service Connecting Sharjah to Global Trade Routes"
+        buttonText="Request a Freight Shipping Quote"
         buttonLink="/contact-us"
         backgroundImage="/images/services/sea.jpeg"
       />
@@ -40,44 +41,44 @@ export default function FreightShippingService() {
 
       {/* PROBLEM SECTION */}
       <ChallengeSection
-        subtitle="Facing Shipping Challenges Head-On"
-        title="Are Freight Disruptions Hindering Your Business?"
-        description="It's common to feel overwhelmed by the unpredictability of freight shipping. Delays, unexpected costs, and complex compliance regulations can create chaos in your supply chain, diminishing trust with your clients."
-        description2="Traditional solutions often fall short, leaving you in a constant scramble to manage unexpected situations. Imagine consistently meeting deadlines, ensuring regulatory compliance without headaches, and maintaining a seamless flow in your logistics operations."
-        rightTitle="Transform Challenges into Triumphs"
+        // subtitle="Facing Shipping Challenges Head-On"
+        title="Why Cross-Border Freight Shipping Service Creates Bottlenecks"
+        description="Businesses shipping cargo beyond the UAE commonly face four problems."
+        // description2="Traditional solutions often fall short, leaving you in a constant scramble to manage unexpected situations. Imagine consistently meeting deadlines, ensuring regulatory compliance without headaches, and maintaining a seamless flow in your logistics operations."
+        rightTitle="Problem statment"
         rightBg="#C5F7FF"
         cards={[
           {
             icon: FiTrendingUp,
-            title: "Say Goodbye to Delays",
-            text: "Punctual deliveries are our priority.",
+            title: "Inconsistent International Scheduling",
+            text: "Coordinating freight across multiple countries without a fixed shipping partner leads to unpredictable transit times and missed delivery windows.",
           },
           {
             icon: FiShield,
-            title: "Clear Customs, Clear Mind",
-            text: "Simplifying compliance for smooth transit.",
+            title: "Complex Customs and Documentation",
+            text: "Cross-border shipments require accurate paperwork at each port of entry, and small errors cause costly clearance delays.",
           },
           {
             icon: FiDollarSign,
-            title: "Cost-Effective Strategies",
-            text: "Optimizing routes to save your budget.",
+            title: "Fragmented Handling Across Regions",
+            text: "Cargo passed between unrelated freight agents in different countries increases the risk of damage, loss, or miscommunication over shipment status.",
           },
           {
             icon: FiAlertCircle,
-            title: "Real-Time Tracking",
-            text: "Visibility and control at every moment.",
+            title: "Limited Visibility Beyond the UAE",
+            text: "Businesses lose track of shipment status once freight moves beyond domestic borders, making it hard to plan around arrival dates.",
           },
         ]}
       />
 
       {/* SOLUTIONS */}
       <FeatureSection
-        eyebrow="Your Pathway to Streamlined Shipping Excellence"
-        title="Experience Freight Shipping Done Right"
-        description="At OSS FZC, our Freight Shipping Service stands out by redefining reliability and efficiency. We leverage cutting-edge technology and decades of industry expertise to create a customized shipping experience tailored to your needs."
+        // eyebrow="Your Pathway to Streamlined Shipping Excellence"
+        title="Simplifying International Freight Shipping"
+        description="OSS's freight shipping addresses each of these directly"
         features={[
           {
-            image: "/icons/cost.png",
+            image: "/images/services/time-manager.png",
             title: "Innovative Tracking",
             description: "Stay informed and secure with real-time updates.",
           },
@@ -99,48 +100,172 @@ export default function FreightShippingService() {
         ]}
       />
 
+      <LeftalignedCards
+        eyebrow="The OSS Difference "
+        title="What businesses get from OSS's freight shipping:"
+        subtitle="OSS operates freight shipping services designed around the realities of moving cargo across international borders, customs variation, documentation requirements, and multi-leg transit. Rather than treating export shipments the same as domestic freight, OSS builds each route around the destination country's clearance and handling requirements.
+Every freight shipping contract through OSS is structured around cargo type, destination, and shipment frequency, giving exporters a consistent process instead of a one-off booking each time cargo needs to move. Businesses with recurring shipments to the same markets get a repeatable routing plan; businesses with occasional or first-time export needs get documentation guidance built into the process rather than left to figure out on their own.
+"
+        description="What businesses get from OSS's freight shipping"
+        features={[
+          {
+            image: "/images/services/tracking.png",
+            title: "Barcode and RFID Tracking",
+            description:
+              "Shipments are logged at each handling point, from Sharjah storage through export clearance.",
+          },
+          {
+            image: "/images/services/truck.png",
+            title: "Trained Freight Coordinators",
+            description:
+              "Staff manage documentation, loading, and dispatch scheduling for cross-border shipments.",
+          },
+          {
+            image: "/images/services/track.png",
+            title: "Highway and Port Connectivity",
+            description:
+              "Direct access to the E311 and E611 corridors links inland storage to shipping points.",
+          },
+          {
+            image: "/images/services/transportation.png",
+            title: "Flexible Load Options",
+            description:
+              "Full-load, part-load, sea, and air freight services scale to shipment size and destination.",
+          },
+          {
+            image: "/images/services/stock.png",
+            title: "Consolidated Warehousing and Shipping",
+            description:
+              "Inventory storage and international freight are managed under a single contract, so businesses aren't coordinating separate storage and shipping vendors.",
+          },
+        ]}
+      />
       {/* SERVICES */}
       <ServiceGridSection
         eyebrow="Our Services"
-        title="Comprehensive Freight Services for Your Needs"
+        title="Freight Shipping Offerings"
         services={[
           {
-            title: "Road Freight",
-            image: "/images/services/flexible-yard.jpg",
-            description: "Flexible, reliable road transport solutions.",
+            title: "Sea Freight Coordination",
+            image: "/images/locations/sea-freight.jpg",
+            description:
+              "Scheduled and on-demand ocean freight connecting Sharjah's ports to international destinations across multiple regions.",
           },
           {
-            title: "Air Freight",
-            image: "/images/services/custom-storage.jpg",
-            description: "Swift delivery services for urgent consignments.",
+            title: "Air Freight Coordination",
+            image: "/images/locations/planes-runway.jpg",
+            description:
+              "Time-sensitive freight shipping options for urgent or high-value cross-border shipments where transit speed matters more than cost.",
           },
           {
-            title: "Sea Freight",
-            image: "/images/services/security.jpg",
-            description: "Cost-efficient ocean shipping solutions.",
+            title: "Export Documentation and Customs Support",
+            image: "/images/locations/customer-support.jpg",
+            description:
+              "Paperwork and clearance handling built into the freight shipping process to reduce delays at destination ports.",
           },
           {
-            title: "Rail Solutions",
+            title: "Warehouse-to-Port Coordination",
             image: "/images/services/logistics.jpg",
-            description: "Eco-friendly and budget-conscious transport.",
+            description:
+              "Storage and outbound freight are managed together, removing the need to coordinate separate storage and shipping providers.",
           },
           {
-            title: "End-to-End Logistics",
+            title: "Full-Load and Part-Load Shipping",
             image: "/images/services/maintenance.jpg",
-            description: "Complete freight management from start to finish.",
+            description:
+              "Flexible freight capacity so businesses only pay for the space their shipment requires, whether that's a full container or a smaller consignment.",
+          },
+          {
+            title: "Shipment Tracking and Reporting",
+            image: "/images/services/shipment-tracking.jpg",
+            description:
+              "Digital tracking gives exporters visibility into cargo status from dispatch through international arrival.",
           },
         ]}
       />
 
+      <CardsFeatures
+        eyebrow="Storage Solutions by Industry"
+        title="Freight Shipping Across Five Business Sectors"
+        features={[
+          {
+            image: "/images/services/warehouseicon.png",
+            title: "General Trading and Export",
+            description:
+              "Freight shipping built around consistent international routing for commodity shipments moving to multiple markets.",
+          },
+          {
+            image: "/images/services/truck.png",
+            title: "Industrial Manufacturing",
+            description:
+              "Finished machinery and components move on scheduled export freight windows.",
+          },
+          {
+            image: "/images/locations/oil.png",
+            title: "Oil and Gas Support",
+            description:
+              "Heavy equipment and materials are coordinated for cross-border project shipments.",
+          },
+          {
+            image: "/images/locations/factory.png",
+            title: "Construction and Infrastructure",
+            description:
+              "Building materials and machinery are exported on flexible load schedules.",
+          },
+          {
+            image: "/images/services/world.png",
+            title: "FMCG and Retail Export",
+            description:
+              "Consistent freight shipping scheduling supports recurring overseas replenishment cycles.",
+          },
+        ]}
+      />
+
+      <FeatureSection
+        eyebrow="Free Zone Storage "
+        title="Free Zone Access Supporting Export Freight"
+        description="Businesses shipping internationally need freight coordination that keeps pace with customs and duty processing at both origin and destination. OSS storage sits close to the SAIF Zone and Hamriyah Free Zone, giving export-focused clients duty-efficient handling built directly into their freight shipping rather than managed as a separate step outside the shipping process."
+      />
+
       {/* STATS */}
       <StatsSection
-        title="Proven Success in Numbers"
-        subtitle="Empowering Logistics with Measurable Excellence"
+        title="Reliable Container Freight Performance"
+        subtitle="Integrated container freight logistics supported by secure warehousing and regional transport connectivity."
         stats={[
-          { value: "30%", label: "Reduction in Transit Time" },
-          { value: "500+", label: "Freight Shipments Managed" },
-          { value: "24/7", label: "Tracking Support" },
-          { value: "98%", label: "On-Time Delivery Rate" },
+          {
+            value: 260000,
+            suffix: "+",
+            unit: "sq ft",
+            label: "Total Managed Footprint",
+            description: "Of storage capacity.",
+          },
+          {
+            value: 140,
+            suffix: "+",
+            unit: "Clients",
+            label: "Enterprise Client Base",
+            description: "Active manufacturing, trading, and export clients.",
+          },
+          {
+            value: 12000,
+            suffix: "+",
+            unit: "Pallets",
+            label: "Monthly Freight Throughput",
+            description: "Processed and dispatched monthly.",
+          },
+          {
+            value: 24,
+            suffix: "/7",
+            label: "Facility Security",
+            description: "Video surveillance with automated fire suppression.",
+          },
+          {
+            value: 2,
+            unit: "Modes",
+            label: "Route Coverage",
+            description:
+              "Sea and air freight lanes connecting the UAE to regional and global markets.",
+          },
         ]}
       />
 
@@ -149,13 +274,15 @@ export default function FreightShippingService() {
         items={[
           {
             title: "About Us",
+            subtitle: "Freight Shipping Experience Built Around Export Trade",
             description:
-              "Led by seasoned industry veterans, we are committed to elevating freight shipping excellence and ensuring your operations are hassle-free and efficient.",
+              "OSS has delivered storage and logistics solutions across the UAE since 2006, offering freight shipping services that support international cargo movement with export documentation, customs coordination, and multi-country routing. Clients benefit from dedicated account management, flexible scheduling, and experienced logistics professionals who manage cross-border shipments efficiently from origin to destination.",
           },
           {
             title: "Our Team",
+            subtitle: "Staff Coordinating Export and Cross-Border Freight",
             description:
-              "Our expert team combines creativity with precision to deliver innovative freight solutions tailored to meet your business needs.",
+              "OSS freight shipping operations are run by dispatch coordinators, documentation specialists, and warehouse technicians who manage export paperwork, loading, and scheduling across sea and air routes reaching well beyond the UAE.",
           },
         ]}
       />
@@ -163,65 +290,74 @@ export default function FreightShippingService() {
       {/* FAQ */}
       <FAQSection
         eyebrow="FAQ"
-        title="Your Freight Shipping Service Questions Answered"
+        title="Common Questions About Freight Shipping"
         faqs={[
           {
-            question: "What is freight shipping?",
+            question:
+              "Does OSS's freight shipping cover destinations outside the UAE?",
             answer:
-              "Freight shipping is the transportation of goods by land, air, or sea. OSS FZC provides comprehensive and customized freight solutions for businesses.",
+              "Yes. OSS coordinates sea and air freight lanes connecting Sharjah to regional and international destinations, built around each shipment's origin and destination requirements.",
           },
           {
-            question: "How do I choose the right freight shipping service?",
+            question:
+              "What documentation support is included in the freight shipping service?",
             answer:
-              "Evaluate transit time, cost efficiency, network reach, and reliability. OSS FZC combines all these with advanced tracking and customer support.",
+              "Export paperwork and customs clearance coordination are built into the service, reducing the risk of delays at destination ports.",
           },
           {
-            question: "What types of freight can be shipped?",
+            question: "Can businesses choose between sea and air freight?",
             answer:
-              "From small parcels to heavy machinery and bulk goods, our service handles diverse cargo securely.",
+              "Yes. The freight shipping service includes both sea and air options, allowing businesses to choose based on cost, urgency, and shipment size.",
           },
           {
-            question: "How can I track my freight shipment?",
+            question:
+              "Does OSS combine warehousing with international freight shipping?",
             answer:
-              "We offer state-of-the-art real-time tracking for full shipment visibility.",
+              "Yes. Storage and export freight are managed under a single contract, removing the need to coordinate separate storage and shipping providers.",
           },
           {
-            question: "What are the costs involved?",
+            question:
+              "What cargo types can be shipped through OSS's freight service?",
             answer:
-              "Costs vary by weight, size, and destination. We provide competitive and transparent pricing.",
+              "OSS ships general trading commodities, industrial equipment, machinery, and palletized commercial goods. Non-hazardous cargo follows standard handling; specialized items follow separate safety procedures.",
           },
           {
-            question: "How does freight differ from regular shipping?",
+            question: "How is cargo tracked once it leaves the UAE?",
             answer:
-              "Freight involves larger volumes and more complex logistics. We streamline the process for efficiency.",
+              "A digital tracking system provides visibility into shipment status from dispatch through arrival at the destination port.",
           },
           {
-            question: "What documents are required?",
+            question:
+              "What are the contract terms for freight shipping clients?",
             answer:
-              "Bill of lading, commercial invoice, packing list, and relevant permits are required.",
+              "OSS offers monthly short-term agreements for occasional shipments and multi-year contracts for businesses with recurring export volume across multiple markets.",
           },
           {
-            question: "Do you handle international freight?",
+            question:
+              "Does OSS support free zone coordination for export shipments?",
             answer:
-              "Yes, we manage both domestic and international freight shipments.",
+              "Yes. Storage near the SAIF Zone and Hamriyah Free Zone supports duty-efficient handling as part of the freight shipping process.",
           },
           {
-            question: "What is the estimated delivery time?",
+            question:
+              "Can shipment volume scale for exporters with seasonal demand?",
             answer:
-              "Delivery depends on mode and destination, but we prioritize punctuality.",
+              "Yes. Freight capacity adjusts to order volume, supporting exporters through both steady and high-demand periods.",
           },
           {
-            question: "How do you ensure safe delivery?",
+            question:
+              "What operational standards does OSS follow for its freight shipping?",
             answer:
-              "We use stringent handling protocols and robust security measures to ensure safe transit.",
+              "OSS follows international supply chain safety standards, using certified equipment operators, defined documentation protocols, and routine facility and fleet checks.",
           },
         ]}
       />
 
       {/* CTA */}
       <CTASection
-        title="Ready to Elevate Your Freight Operations?"
-        buttonText="Get Started with a Custom Freight Shipping Quote!"
+        title="Ship Freight Beyond the UAE with One Coordinated Partner"
+        description="Whether you need sea freight, air freight, or a combined freight shipping that handles documentation and warehousing together, OSS has the infrastructure and experience to support it. Contact the OSS team for a shipping schedule and quote."
+        buttonText="Contact OSS for a Freight Shipping Quote"
         buttonLink="/contact-us"
         backgroundImage="/images/services/Explore-More.jpg"
       />

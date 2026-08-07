@@ -7,21 +7,16 @@ import StatsSection from "../../components/StatsSection";
 import DualInfoSection from "../../components/DualInfoSection";
 import FAQSection from "../../components/FAQSection";
 import CTASection from "../../components/CTASection";
-
-import {
-  FiMapPin,
-  FiDollarSign,
-  FiGrid,
-  FiClock,
-} from "react-icons/fi";
+import LeftalignedCards from "../../components/LeftalignedCards";
+import CardsFeatures from "../../components/CardsFeatures";
+import { FiMapPin, FiDollarSign, FiGrid, FiClock } from "react-icons/fi";
 
 import useMeta from "../../hooks/useMeta";
 
 export default function HamriyahWarehouse() {
-
   useMeta(
-    "Hamriyah Free Zone Warehouse Rent Solutions | OSS FZC",
-    "Explore premium warehouse rentals in Hamriyah Free Zone with OSS FZC. Flexible terms, strategic location, and reliable solutions to secure your ideal space today."
+    "Hamriyah Free Zone Warehouse for Rent | Openyard Storage FZC",
+    "Openyard Storage FZC offers a Hamriyah Free Zone warehouse for rent with flexible leasing, secure storage, and easy port access. Get a quote today!",
   );
 
   return (
@@ -29,9 +24,9 @@ export default function HamriyahWarehouse() {
       {/* HERO */}
       <InnerHero
         eyebrow="Transform Your Storage Needs with Seamless Solutions."
-        title="Discover Premium Hamriyah Free Zone Warehouse Rent Options."
-        subtitle="Secure Your Space Today – Contact Our Experts Now!"
-        buttonText="Contact Our Experts"
+        title="Hamriyah Free Zone Warehouse for Rent"
+        subtitle="OSS offers a Hamriyah Free Zone warehouse for rent with secure, duty-efficient storage near Hamriyah Port, helping trading companies, manufacturers, and import-export businesses streamline customs clearance and cargo movement efficiently."
+        buttonText="Request a Hamriyah Free Zone Warehouse Quote"
         buttonLink="/contact-us"
         backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
       />
@@ -40,107 +35,231 @@ export default function HamriyahWarehouse() {
 
       {/* PROBLEM SECTION */}
       <ChallengeSection
-        subtitle="Overcoming Storage Challenges, Together."
-        title="Struggling with Finding Reliable Warehouse Space in Hamriyah Free Zone?"
-        description="Navigating warehouse rental options in the Hamriyah Free Zone can feel overwhelming. Limited availability, soaring costs, and finding the right specifications to match your operations are daunting tasks."
-        description2="At Open Yard Storage, we alleviate these pain points by offering straightforward, affordable, and customizable rental solutions tailored to your business needs."
-        rightTitle="Simplifying Your Warehousing Woes."
+        // subtitle="Overcoming Storage Challenges, Together."
+        title="Why Businesses Struggle When Choosing a Hamriyah Free Zone Warehouse for Rent"
+        description="Businesses trading through Hamriyah Free Zone commonly run into four problems."
+        // description2="At Open Yard Storage, we alleviate these pain points by offering straightforward, affordable, and customizable rental solutions tailored to your business needs."
+        rightTitle="Problem Statement"
         rightBg="#C5F7FF"
         cards={[
           {
             icon: FiClock,
-            title: "Availability Issues",
-            text: "Struggling with finding the right space when you need it?",
+            title: "Storage located too far from customs points",
+            text: "Warehousing outside the free zone adds transfer time between customs clearance and inventory storage.",
           },
           {
             icon: FiDollarSign,
-            title: "High Rental Costs",
-            text: "Tired of spending too much on warehouse rent?",
+            title: "Non-duty-efficient facilities",
+            text: "Standard commercial warehouses don't offer the duty suspension advantages available inside a free zone.",
           },
           {
             icon: FiGrid,
-            title: "Space Optimization",
-            text: "Is your current warehouse layout inefficient?",
+            title: "Rigid lease structures",
+            text: "Many providers require long-term commitments that don't suit fluctuating import-export volumes.",
           },
           {
             icon: FiMapPin,
-            title: "Location Problems",
-            text: "Need a strategically located space for better logistics?",
+            title: "Limited visibility into customs-cleared stock",
+            text: "Manual tracking makes it difficult to confirm which inventory has cleared duty processing.",
           },
         ]}
       />
-
-      {/* SOLUTIONS */}
-      <FeatureSection
-        eyebrow="Experience Tailored Solutions with Open Yard Storage."
-        title="Unlock Seamless Storage Solutions."
-        description="Open Yard Storage is committed to redefining your Hamriyah Free Zone warehouse rental experience. With strategic location advantages, customizable spaces, and competitive pricing, we simplify your logistics operations."
+      <LeftalignedCards
+        // eyebrow="The OSS Difference "
+        title="Simplifying Free Zone Storage Challenges"
+        subtitle="OSS addresses each of these through its Hamriyah free zone warehouse"
+        // description="What businesses get from renting small storage with OSS:"
         features={[
           {
-            image: "/icons/cost.png",
-            title: "Flexible Terms",
-            description: "Tailored lease terms to suit your timeline.",
+            image: "/images/services/pin.png",
+            title: "Proximity to customs points ",
+            description:
+              "storage sits close to Hamriyah Port and its free zone, reducing transfer time after clearance.",
           },
           {
-            image: "/icons/timely-Delivery.png",
-            title: "Strategic Location",
-            description: "Proximity to key transportation hubs.",
+            image: "/images/services/offer.png",
+            title: "Duty-efficient storage ",
+            description:
+              "a Hamriyah free zone warehouse supports tax suspension and simplified customs processing.",
           },
           {
-            image: "/icons/Regulatory-exper.png",
-            title: "Competitive Pricing",
-            description: "Get the best value for your rental investment.",
+            image: "/images/services/insurance.png",
+            title: "Flexible lease terms ",
+            description:
+              "monthly and multi-year options fit both steady and fluctuating trade volumes.",
+          },
+          {
+            image: "/images/services/online-test.png",
+            title: "WMS digital tracking ",
+            description:
+              "real-time visibility into stock status, including customs-cleared inventory.",
+          },
+        ]}
+      />
+      {/* SOLUTIONS */}
+      <FeatureSection
+        eyebrow="The OSS Difference "
+        title="Hamriyah Free Zone Warehouse for Rent with Enterprise-Grade Infrastructure"
+        subtitle="OSS operates a Hamriyah free zone warehouse that includes the same security, tracking, and facility standards used across its wider Sharjah storage network. Businesses trading through the free zone don't have to choose between customs efficiency and warehouse quality.
+Every Hamriyah free zone warehouse through OSS is set up around cargo type, trade volume, and customs processing needs, so businesses get storage that matches how their shipments actually move.
+"
+        description="What businesses get from renting free zone warehouse space with OSS:"
+        features={[
+          {
+            image: "/images/services/tracking.png",
+            title: "Barcode and RFID Tracking",
+            description:
+              "Inventory is logged at each handling point, including customs-cleared stock.",
+          },
+          {
+            image: "/images/industries/protection.png",
+            title: "24/7 Security",
+            description:
+              "CCTV monitoring, biometric access, and civil defense-approved fire suppression.",
+          },
+          {
+            image: "/images/services/track.png",
+            title: "Highway Access",
+            description:
+              "Proximity to the E311 and E611 corridors supports fast distribution beyond the free zone.",
+          },
+          {
+            image: "/images/services/logistic.png",
+            title: "Trained Logistics Staff",
+            description:
+              "Coordinators manage transfers between customs clearance and warehouse storage.",
           },
           {
             image: "/icons/Real-time.png",
-            title: "Customizable Spaces",
-            description: "Adapt the space according to your needs.",
+            title: "End-to-End Coordination",
+            description:
+              "Inbound port and customs processing connects directly to outbound delivery.",
           },
         ]}
       />
 
       {/* SERVICES */}
       <ServiceGridSection
-        eyebrow="Our Solutions"
-        title="Comprehensive Warehousing Solutions"
+        eyebrow="Our Services"
+        title="Hamriyah Free Zone Warehouse Rental Options"
         services={[
           {
-            title: "Short-term Rentals",
-            image: "/images/services/flexible-yard.jpg",
-            description: "Temporary solutions for urgent needs.",
+            title: "Duty-Efficient Warehousing",
+            image: "/images/services/duty-efficient-warehouse.jpg",
+            description:
+              "A Hamriyah free zone warehouse for rent built to support duty suspension and simplified customs handling.",
           },
           {
-            title: "Long-term Lease Options",
-            image: "/images/services/custom-storage.jpg",
-            description: "Secure your spot for uninterrupted operations.",
+            title: "Short-Term and Long-Term Rental",
+            image: "/images/services/short-term.jpg",
+            description:
+              "Monthly and multi-year lease options to match fluctuating or steady trade volumes.",
           },
           {
-            title: "Temperature-Controlled Units",
+            title: "Open Yard Storage",
+            image: "/images/services/open-yard.jpg",
+            description:
+              "Outdoor space for heavy equipment, pipes, and industrial materials tied to free zone trade.",
+          },
+          {
+            title: "Cross-Docking and Customs Coordination",
+            image: "/images/services/cross-docking.jpg",
+            description:
+              "Cargo moves from customs clearance directly to outbound delivery, reducing handling time.",
+          },
+          {
+            title: "Inventory Tracking for Free Zone Stock",
             image: "/images/services/security.jpg",
-            description: "Perfect for sensitive goods storage.",
+            description:
+              "WMS-based tracking to confirm customs status and stock location in real time.",
           },
           {
-            title: "Full-Service Management",
-            image: "/images/services/logistics.jpg",
-            description: "We handle the logistics, so you don't have to.",
+            title: "Pallet-Level Storage",
+            image: "/images/services/pallet.jpg",
+            description:
+              "Rent by pallet position for businesses that don't need a full free zone warehouse unit.",
+          },
+        ]}
+      />
+      <CardsFeatures
+        eyebrow="Storage Solutions by Industry Section"
+        title="Storage Facility Serving Abu Dhabi Across Five Business Sectors"
+        features={[
+          {
+            image: "/images/locations/oil.png",
+            title: "Oil and Gas Support ",
+            description:
+              "open yard storage for pipes, equipment, and industrial materials tied to Abu Dhabi's energy sector.",
           },
           {
-            title: "24/7 Security",
-            image: "/images/services/maintenance.jpg",
-            description: "Ensure the safety of your inventory.",
+            image: "/images/services/truck.png",
+            title: "General Trading and Import-Export",
+            description:
+              "duty-efficient storage supports fast-moving international shipments.",
+          },
+          {
+            image: "/images/locations/factory.png",
+            title: "Industrial Manufacturing ",
+            description:
+              "raw materials and machinery are staged close to customs and port access.",
+          },
+          {
+            image: "/images/locations/shipped.png",
+            title: "Construction and Infrastructure ",
+            description:
+              "heavy materials move efficiently between the free zone and project sites.",
+          },
+          {
+            image: "/images/services/small.png",
+            title: "FMCG Distribution ",
+            description:
+              "a Hamriyah free zone warehouse supports faster inventory replenishment cycles.",
           },
         ]}
       />
 
-      {/* STATS */}
+      <FeatureSection
+        // eyebrow="The OSS FZC Difference"
+        title="Free Zone-Adjacent Access for Abu Dhabi Trade"
+        description="Businesses trading internationally through Abu Dhabi need storage that supports duty suspension and simplified customs processing. OSS's storage facility network sits close to the SAIF Zone and Hamriyah Free Zone, giving Abu Dhabi-focused trading firms duty-efficient storage without added customs delays."
+      />
+
       <StatsSection
-        title="Proven Success in Numbers."
-        subtitle="Setting Standards in Warehouse Rental Excellence."
+        title="Strategically Located for Efficient Storage"
+        subtitle="Secure warehousing with flexible leasing and easy access to key transport routes."
         stats={[
-          { value: "30%", label: "Cost Reduction Achieved" },
-          { value: "500+", label: "Warehousing Clients" },
-          { value: "24/7", label: "Security & Access" },
-          { value: "98%", label: "Client Satisfaction Rate" },
+          {
+            value: 8,
+            unit: "km",
+            label: "Distance from Hamriyah Port",
+            description: "Approximately a 13–15 minute drive.",
+          },
+          {
+            value: 260000,
+            suffix: "+",
+            unit: "sq ft",
+            label: "Total Managed Footprint",
+            description: "Across the OSS facility network.",
+          },
+          {
+            value: 140,
+            suffix: "+",
+            unit: "Clients",
+            label: "Enterprise Client Base",
+            description: "Active manufacturing, trading, and retail clients.",
+          },
+          {
+            value: 24,
+            suffix: "/7",
+            label: "Facility Security",
+            description: "Video surveillance with automated fire suppression.",
+          },
+          {
+            value: 2,
+            unit: "Lease Options",
+            label: "Lease Flexibility",
+            description: "Monthly and multi-year rental options available.",
+          },
         ]}
       />
 
@@ -149,79 +268,91 @@ export default function HamriyahWarehouse() {
         items={[
           {
             title: "About Us",
+            subtitle: "Free Zone Storage Experience Near Hamriyah Port",
             description:
-              "Our leadership team is dedicated to bringing excellence and innovation to the warehouse rental market.",
+              "OSS has operated as a storage and logistics provider in Sharjah since 2006, offering a Hamriyah free zone warehouse to support businesses trading through the port and its surrounding customs zone. OSS invests in facility infrastructure, digital tracking systems, and trained staff to keep free zone logistics efficient. Clients renting free zone warehouse space from OSS get dedicated account management, flexible contracts, and a logistics team focused on keeping customs-cleared cargo moving without delay.",
           },
           {
             title: "Our Team",
+            subtitle: "Staff Managing Free Zone Cargo Transfers",
             description:
-              "Our expert team combines creativity and precision to provide unmatched warehousing solutions.",
+              "OSS storage operations near Hamriyah Free Zone are run by warehouse technicians, dispatch coordinators, and inventory analysts who manage customs coordination, storage placement, and outbound delivery scheduling.",
           },
         ]}
       />
 
       {/* FAQ */}
       <FAQSection
-  eyebrow="FAQ"
-  title="Your Warehouse Rental Questions Answered"
-  faqs={[
-    {
-      question: "What makes Hamriyah Free Zone an ideal location for warehouse rental?",
-      answer:
-        "The Hamriyah Free Zone is strategically located in the UAE, offering excellent connectivity through air, sea, and road networks. This makes it a prime spot for businesses looking to enhance their logistics and distribution channels. Additionally, the zone offers tax exemptions and a business-friendly environment, adding to its appeal for entrepreneurs and established businesses alike. Renting a warehouse here can significantly improve your operational efficiency by reducing transportation time and cost.",
-    },
-    {
-      question: "How does Open Yard Storage ensure competitive pricing for warehouse rentals in Hamriyah Free Zone?",
-      answer:
-        "We leverage our extensive network and market research to provide rental solutions that are both competitive and transparent. By understanding the dynamics of the Hamriyah Free Zone rental landscape, we secure spaces that maximize value for money, aligning cost with your budgetary needs without compromising on service quality.",
-    },
-    {
-      question: "Can I customize the warehouse space according to my business needs?",
-      answer:
-        "Yes, at Open Yard Storage, we understand that every business has unique needs. Our spaces are flexible and can be tailored to your specific requirements, whether you need specialized shelving, temperature control, or unique layouts to optimize your operations. We'll work with you to ensure the space supports your business goals.",
-    },
-    {
-      question: "What security measures are in place for warehouses in Hamriyah Free Zone?",
-      answer:
-        "Security is a top priority at Open Yard Storage. Our facilities are equipped with 24/7 surveillance, secure access control, and onsite security teams to ensure the safety of your goods. Additionally, our warehouses are regularly inspected to maintain safety standards, providing you peace of mind.",
-    },
-    {
-      question: "Are there options for short-term warehouse rentals in Hamriyah Free Zone?",
-      answer:
-        "Absolutely, we offer flexible short-term rental options catering to businesses looking for temporary space solutions. Whether it's a seasonal need or a specific project, our short-term leases provide you with the flexibility to scale as required without long-term commitments.",
-    },
-    {
-      question: "How can renting a warehouse in the Hamriyah Free Zone improve my logistics?",
-      answer:
-        "Renting a warehouse here can significantly streamline your supply chain due to its strategic location and excellent connectivity. With reduced transportation times and ease of access to major trade routes, your logistics operations become more efficient, reducing costs and delivery times.",
-    },
-    {
-      question: "What are the lease terms offered by Open Yard Storage?",
-      answer:
-        "We provide flexible lease terms designed to accommodate both short-term and long-term business requirements. Our team will work with you to create a lease agreement that suits your operational timelines and financial plan, ensuring a hassle-free experience from start to finish.",
-    },
-    {
-      question: "Do you offer any value-added services with warehouse rentals?",
-      answer:
-        "Yes, we offer a suite of value-added services such as inventory management, shipment processing, and logistics solutions. Our goal is to streamline your operations, so you can focus on what matters most – running your business efficiently.",
-    },
-    {
-      question: "How quickly can I move into a warehouse in Hamriyah Free Zone?",
-      answer:
-        "Once all paperwork is finalized and a space is chosen, you can move in immediately. We understand that time is crucial for businesses, so we aim to make the transition as quick and seamless as possible, with support from our dedicated team.",
-    },
-    {
-      question: "Why choose Open Yard Storage for my warehousing needs?",
-      answer:
-        "Open Yard Storage combines industry expertise with a customer-focused approach to deliver exceptional warehousing solutions. Our transparency, competitive pricing, and personalized service model ensure you receive the best possible experience in the Hamriyah Free Zone.",
-    },
-  ]}
-/>
+        eyebrow="FAQ"
+        title="Your Warehouse Rental Questions Answered"
+        faqs={[
+          {
+            question:
+              "What is a Hamriyah free zone warehouse for rent used for?",
+            answer:
+              "It provides duty-efficient storage for businesses trading through Hamriyah Free Zone, allowing cargo to move from customs clearance to storage without added transfer delays.",
+          },
+          {
+            question: "How close is the free zone warehouse to Hamriyah Port?",
+            answer:
+              "OSS storage is 8km from Hamriyah Port, about a 13-minute drive, keeping transfer times short between the port and warehouse.",
+          },
+          {
+            question:
+              "What is the minimum lease term for a Hamriyah free zone warehouse?",
+            answer:
+              "OSS offers monthly short-term rentals alongside multi-year contracts, so businesses aren't locked into long leases for fluctuating trade volumes.",
+          },
+          {
+            question:
+              "What cargo types can be stored in the free zone warehouse?",
+            answer:
+              "OSS stores general trading commodities, industrial equipment, pipes, machinery, and palletized cargo. Non-hazardous cargo follows standard handling; specialized items follow separate safety procedures.",
+          },
+          {
+            question:
+              "Does renting free zone warehouse space reduce customs delays?",
+            answer:
+              "Yes. Proximity to Hamriyah's customs points and free zone processing simplifies clearance compared to storage located farther away.",
+          },
+          {
+            question:
+              "What security measures apply to the free zone warehouse?",
+            answer:
+              "All units include 24/7 video monitoring, alarm systems, biometric and card-controlled access, and civil defense-approved fire suppression.",
+          },
+          {
+            question:
+              "Can businesses scale their free zone storage as trade volume changes?",
+            answer:
+              "Yes. Businesses can adjust storage footprint or move into larger space within the same facility network as import-export volume changes.",
+          },
+          {
+            question:
+              "How is inventory tracked in the Hamriyah free zone warehouse?",
+            answer:
+              "A cloud-based WMS logs every item by barcode, giving clients visibility into stock status, including customs clearance stage.",
+          },
+          {
+            question:
+              "What industries most commonly rent Hamriyah free zone warehouse space?",
+            answer:
+              "Oil and gas support, general trading, industrial manufacturing, construction, and FMCG distribution businesses are the primary users.",
+          },
+          {
+            question:
+              "What operational standards apply to the Hamriyah free zone warehouse?",
+            answer:
+              "OSS follows international supply chain safety standards, using certified equipment operators, defined health and safety protocols, and routine facility checks.",
+          },
+        ]}
+      />
 
       {/* CTA */}
       <CTASection
-        title="Ready to Optimize Your Storage Solutions?"
-        buttonText="Get in Touch with Our Experts Today!"
+        title="Rent Warehouse Space Built for Free Zone Trade"
+        description="Whether you need short-term or long-term storage, a Hamriyah free zone warehouse for rent through OSS gives your business duty-efficient space close to the port. Contact the OSS team for a storage layout and quote."
+        buttonText="Contact OSS for a Hamriyah Free Zone Warehouse Quote"
         buttonLink="/contact-us"
         backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
       />
