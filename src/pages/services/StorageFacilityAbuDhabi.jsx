@@ -290,67 +290,66 @@ Every storage facility contract through OSS is built around cargo type, volume, 
       {/* FAQ */}
       <FAQSection
         eyebrow="FAQ"
-        title="Common Questions About Storage Facility Access for Abu Dhabi"
+        title="Common Questions About Storage Facilities Serving Abu Dhabi"
         faqs={[
           {
             question:
-              "What does shipping & logistic management with OSS include?",
+              "Does OSS operate a storage facility directly inside Abu Dhabi?",
             answer:
-              "It combines warehousing, freight coordination, customs support, and delivery scheduling under one contract, instead of requiring businesses to manage separate providers for each step.",
+              "OSS operates its storage facility network in Sharjah, positioned to serve Abu Dhabi's business and industrial zones with reliable transit access, without the cost of Abu Dhabi-based real estate.",
           },
           {
             question:
-              "How is cargo tracked across the shipping & logistic management process?",
+              "What cargo types can be stored at OSS's storage facility serving Abu Dhabi?",
             answer:
-              "A cloud-based WMS logs every item by barcode, giving clients visibility into storage status, transit location, and delivery confirmation in one system.",
+              "OSS stores general trading commodities, industrial equipment, machinery, building materials, and palletized commercial goods. Non-hazardous cargo follows standard handling, while specialized items follow separate safety procedures.",
           },
           {
             question:
-              "What cargo types does OSS handle within its logistics services?",
+              "What are the lease terms for storage facility space serving Abu Dhabi?",
             answer:
-              "OSS manages general trading commodities, industrial equipment, machinery, and palletized commercial goods. Non-hazardous cargo follows standard handling; specialized items follow separate safety procedures.",
+              "OSS offers monthly short-term storage for seasonal demand and multi-year contracts for steady, ongoing enterprise storage needs.",
           },
           {
             question:
-              "Does OSS handle both scheduled and on-demand freight movement?",
+              "How does OSS track inventory for Abu Dhabi-bound shipments?",
             answer:
-              "Yes. Shipping and logistic management includes both fixed-schedule freight and on-demand dispatch for urgent shipments.",
+              "A cloud-based WMS logs every item by barcode, giving clients portal access to monitor stock levels, batch numbers, and dispatch history in real time.",
+          },
+          {
+            question: "Does OSS handle transport from storage into Abu Dhabi?",
+            answer:
+              "Yes. OSS manages cross-docking, fleet sorting, and delivery scheduling to move cargo from storage toward Abu Dhabi.",
           },
           {
             question:
-              "What are the contract terms for shipping & logistic management services?",
+              "How does a Sharjah-based storage facility compare to leasing space in Abu Dhabi?",
             answer:
-              "OSS offers monthly short-term agreements for seasonal demand and multi-year contracts for steady, ongoing logistics needs.",
+              "Sharjah-based storage typically costs less than direct Abu Dhabi real estate while maintaining dependable transit access, avoiding the premium of prime city storage.",
           },
           {
             question:
-              "How does centralized logistics management reduce operational costs?",
+              "Can storage capacity scale for oil and gas or construction projects near Abu Dhabi?",
             answer:
-              "Combining storage, freight, and delivery under one contract reduces administrative overhead and avoids the inefficiencies of coordinating multiple separate vendors.",
+              "Yes. Storage allocation increases during active project phases and reduces during slower periods, so businesses only pay for the space they use.",
           },
           {
             question:
-              "Can shipping & logistic management scale during peak demand periods?",
+              "Does OSS support free zone-related storage for Abu Dhabi trade?",
             answer:
-              "Yes. Freight and storage capacity adjust to order volume, supporting businesses through seasonal or high-demand periods.",
+              "Yes. Storage near the SAIF Zone and Hamriyah Free Zone supports duty-efficient handling for international trade connected to Abu Dhabi.",
           },
           {
             question:
-              "Does OSS support customs and free zone coordination as part of its logistics management?",
+              "How does OSS reduce total logistics costs for Abu Dhabi-focused businesses?",
             answer:
-              "Yes. Storage and freight near the SAIF Zone and Hamriyah Free Zone are coordinated within the same logistics contract to reduce customs delays.",
+              "Lower-cost regional storage, automated tracking, and direct highway access reduce per-shipment costs compared to Abu Dhabi-based alternatives.",
           },
           {
             question:
-              "What security measures protect cargo during shipping & logistic management?",
+              "What operational standards does OSS follow at its storage facility?",
             answer:
-              "Facilities use 24/7 video monitoring, alarm systems, biometric and card-controlled access, and civil defense-approved fire suppression.",
-          },
-          {
-            question:
-              "What operational standards does OSS follow across its logistics services?",
-            answer:
-              "OSS follows international supply chain safety standards, using certified equipment operators, defined health and safety protocols, and routine facility and fleet checks.",
+              "OSS follows international supply chain safety standards, using certified equipment operators, defined health and safety protocols, and routine structural safety checks.",
           },
         ]}
       />

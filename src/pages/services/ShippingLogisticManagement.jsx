@@ -40,7 +40,7 @@ export default function ShippingLogisticManagement() {
         title="How Poor Shipping and Logistic Management Disrupts Supply Chains"
         description="Businesses without centralized shipping & logistic management commonly face four problems"
         // description2="Fragmented supply chains often result in loss of control, impacting your bottom line. At OpenYard Storage, we understand these pressing challenges deeply. Our tailored solutions in Shipping And Logistic Management streamline operations, enhance transparency, and strengthen your supply chain."
-        rightTitle="prolem statement"
+        rightTitle="problem statement"
         rightBg="#C5F7FF"
         cards={[
           {
@@ -289,58 +289,67 @@ Every shipping & logistic management contract through OSS is built around cargo 
       {/* FAQ */}
       <FAQSection
         eyebrow="FAQ"
-        title="Your Shipping And Logistic Management Questions Answered"
+        title="Common Questions About Shipping & Logistic Management"
         faqs={[
           {
             question:
-              "Why is efficient shipping and logistic management crucial?",
+              "What does shipping & logistic management with OSS include?",
             answer:
-              "Efficient management directly impacts delivery times, customer satisfaction, and operational costs while improving supply chain visibility.",
+              "It combines warehousing, freight coordination, customs support, and delivery scheduling under one contract, instead of requiring businesses to manage separate providers for each step.",
           },
           {
-            question: "How can technology improve shipping logistics?",
+            question:
+              "How is cargo tracked across the shipping & logistic management process?",
             answer:
-              "Technology enables automation, route optimization, forecasting, and real-time tracking for better decision-making.",
+              "A cloud-based WMS logs every item by barcode, giving clients visibility into storage status, transit location, and delivery confirmation in one system.",
           },
           {
-            question: "What industries benefit most?",
+            question:
+              "What cargo types does OSS handle within its logistics services?",
             answer:
-              "E-commerce, manufacturing, healthcare, retail, and infrastructure sectors benefit greatly.",
+              "OSS manages general trading commodities, industrial equipment, machinery, and palletized commercial goods. Non-hazardous cargo follows standard handling, while specialized items follow separate safety procedures.",
           },
           {
-            question: "How does OpenYard Storage enhance operations?",
+            question:
+              "Does OSS handle both scheduled and on-demand freight movement?",
             answer:
-              "By leveraging technology and expert insights to streamline processes and reduce operational costs.",
+              "Yes. Shipping & logistic management includes both fixed-schedule freight and on-demand dispatch for urgent shipments.",
           },
           {
-            question: "What are common challenges?",
+            question:
+              "What are the contract terms for shipping & logistic management services?",
             answer:
-              "Shipment delays, cost overruns, compliance issues, and supply chain disruptions.",
+              "OSS offers monthly short-term agreements for seasonal demand and multi-year contracts for steady, ongoing logistics needs.",
           },
           {
-            question: "How can businesses reduce logistics costs?",
+            question:
+              "How does centralized logistics management reduce operational costs?",
             answer:
-              "Through optimized routing, consolidation, warehouse efficiency, and tech-driven tracking systems.",
+              "Combining storage, freight, and delivery under one contract reduces administrative overhead and avoids the inefficiencies of coordinating multiple separate vendors.",
           },
           {
-            question: "What role does customer service play?",
+            question:
+              "Can shipping & logistic management scale during peak demand periods?",
             answer:
-              "Clear communication and proactive problem-solving enhance customer satisfaction and loyalty.",
+              "Yes. Freight and storage capacity adjust to order volume, supporting businesses through seasonal or high-demand periods.",
           },
           {
-            question: "Why is transparency important?",
+            question:
+              "Does OSS support customs and free zone coordination as part of its logistics management?",
             answer:
-              "Transparency builds trust by providing real-time visibility and proactive issue resolution.",
+              "Yes. Storage and freight near the SAIF Zone and Hamriyah Free Zone are coordinated within the same logistics contract to reduce customs delays.",
           },
           {
-            question: "Can logistics management be customized?",
+            question:
+              "What security measures protect cargo during shipping & logistic management?",
             answer:
-              "Yes, strategies can be tailored based on industry, size, and operational goals.",
+              "Facilities use 24/7 video monitoring, alarm systems, biometric and card-controlled access, and Civil Defense-approved fire suppression systems.",
           },
           {
-            question: "What future trends influence logistics?",
+            question:
+              "What operational standards does OSS follow across its logistics services?",
             answer:
-              "AI forecasting, automation, autonomous vehicles, and sustainable logistics innovations.",
+              "OSS follows international supply chain safety standards, using certified equipment operators, defined health and safety protocols, and routine facility and fleet checks.",
           },
         ]}
       />

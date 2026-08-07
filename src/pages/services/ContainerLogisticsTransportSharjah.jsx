@@ -7,15 +7,17 @@ import StatsSection from "../../components/StatsSection";
 import DualInfoSection from "../../components/DualInfoSection";
 import FAQSection from "../../components/FAQSection";
 import CTASection from "../../components/CTASection";
+import CardsFeatures from "../../components/CardsFeatures";
 
 import { FiCalendar, FiShield, FiFileText, FiTruck } from "react-icons/fi";
 
 import useMeta from "../../hooks/useMeta";
+import LeftalignedCards from "../../components/LeftalignedCards";
 
 export default function ContainerLogisticsTransportSharjah() {
   useMeta(
-    "Reliable Container Logistics Transport in Sharjah | OSS FZC",
-    "Optimize your supply chain with Open Yard Storage's seamless container logistics transport in Sharjah. Discover tailored solutions, real-time tracking, and expert services ensuring efficiency and security for your business.",
+    "Container Logistics Transport in Sharjah | Openyard Storage FZC",
+    "From port to destination, Openyard Storage FZC provides container shipping services in Sharjah with dependable freight solutions. Request a quote today!",
   );
 
   return (
@@ -23,9 +25,9 @@ export default function ContainerLogisticsTransportSharjah() {
       {/* HERO */}
       <InnerHero
         eyebrow="Dependable Logistics, Seamless Solutions"
-        title="Revolutionizing Container Logistics Transport in Sharjah for Your Business Success"
-        subtitle="Experience Hassle-Free Logistics Today – Contact Us Now!"
-        buttonText="Contact Us"
+        title="Container Logistics Transport in Sharjah"
+        subtitle="OSS provides container logistics transport in Sharjah, integrating port handling, warehousing, and inland delivery into one coordinated solution, helping businesses move cargo efficiently from vessel arrival to final destination."
+        buttonText="Request a Container Logistics Transport Quote"
         buttonLink="/contact-us"
         backgroundImage="/images/services/containe-certification-ISO-tank-service.jpeg"
       />
@@ -34,116 +36,235 @@ export default function ContainerLogisticsTransportSharjah() {
 
       {/* PROBLEM SECTION */}
       <ChallengeSection
-        subtitle="Navigating the Challenges of Container Logistics"
-        title="Overcoming Complexities in Container Logistics Transport in Sharjah"
-        description="Managing container logistics in Sharjah can be a daunting task, fraught with challenges at every turn. The complexities of coordinating transport schedules, ensuring container safety, and navigating regulatory requirements often lead to delays and increased costs."
-        description2="At Open Yard Storage, we understand the hurdles you face. Our container logistics transport solutions in Sharjah are designed to address these specific issues, offering precision and reliability that streamline your operations."
-        rightTitle="Solving Your Logistics Challenges"
+        // subtitle="Navigating the Challenges of Container Logistics"
+        title="Why Businesses Struggle with Container Shipping Services in Sharjah"
+        description="Businesses handling containers through Sharjah's ports commonly face four problems:"
+        // description2="At Open Yard Storage, we understand the hurdles you face. Our container logistics transport solutions in Sharjah are designed to address these specific issues, offering precision and reliability that streamline your operations."
+        rightTitle="Problem Statement"
         rightBg="#C5F7FF"
         cards={[
           {
             icon: FiCalendar,
-            title: "Complex Coordination",
-            text: "Efficient schedule management for seamless operations.",
+            title: "Disconnected Port and Storage Handling",
+            text: "Working with separate providers for port handling and inland transport creates delays at every handoff.",
           },
           {
             icon: FiFileText,
-            title: "Regulatory Navigation",
-            text: "Expert handling of compliance and legal requirements.",
+            title: "Unreliable Container De-Stuffing Schedules",
+            text: "Without dedicated coordination, container unloading can be delayed, pushing back downstream storage and delivery.",
           },
           {
             icon: FiShield,
-            title: "Container Safety",
-            text: "State-of-the-art solutions for secure transport.",
+            title: "Limited Visibility After Port Arrival",
+            text: "Businesses lose track of container status once cargo leaves the vessel and enters inland transport.",
           },
           {
             icon: FiTruck,
-            title: "Cost Overruns",
-            text: "Strategies to optimize expenses and increase profitability.",
+            title: "Inconsistent Handling Standards",
+            text: "Containers moving through multiple unrelated agents increase the risk of damage or misplaced cargo.",
+          },
+        ]}
+      />
+
+      {/* SOLUTIONS */}
+      <LeftalignedCards
+        // eyebrow="The OSS FZC Difference"
+        title="Streamlining Container Logistics from Port to Delivery"
+        description="OSS addresses each of these through coordinated container logistics transport:"
+        features={[
+          {
+            image: "/icons/Real-time.png",
+            title: "Single-Provider Coordination",
+            description:
+              "Port handling, storage, and inland delivery are managed under one service instead of separate vendors.",
+          },
+          {
+            image: "/images/locations/schedule.png",
+            title: "Scheduled De-Stuffing",
+            description:
+              "Containers are unloaded on a set timeline, keeping downstream storage and delivery on schedule.",
+          },
+          {
+            image: "/images/services/track.png",
+            title: "Continuous Tracking",
+            description:
+              "WMS-based visibility into container status from port arrival through inland delivery.",
+          },
+          {
+            image: "/images/locations/shipped.png",
+            title: "Consistent Handling Standards",
+            description:
+              "Containers stay within the OSS network from the port to the final destination.",
           },
         ]}
       />
 
       {/* SOLUTIONS */}
       <FeatureSection
-        eyebrow="The OSS FZC Difference"
-        title="Elevate Your Logistics Experience"
-        description="At OSS FZC, our unique approach to container logistics transport in Sharjah sets us apart. With our in-depth knowledge and cutting-edge technology, we provide comprehensive solutions that ensure efficiency from start to finish."
+        eyebrow="The OSS Difference"
+        title="Container Logistics Transport in Sharjah Built Around Port-to-Door Coordination"
+        subtitle="OSS operates container shipping services in Sharjah that combine port-side handling with inland storage and transport under a single contract. Businesses working with OSS don't need to separately manage port agents, warehouse providers, and inland freight carriers for the same shipment.
+
+Every container logistics transport contract in Sharjah is structured around cargo type, container volume, and delivery timeline, giving businesses a repeatable process instead of coordinating each shipment from scratch. This matters most for businesses moving containers on a recurring basis, where consistency in handling and scheduling directly affects downstream production or retail timelines."
+        description="What businesses get from OSS's container logistics transport"
         features={[
           {
-            image: "/icons/Real-time.png",
-            title: "Innovative Technology",
+            image: "/images/services/tracking.png",
+            title: "Barcode and RFID Tracking",
             description:
-              "Leveraging the latest tools for optimal logistics coordination.",
+              "Container contents are logged at each handling point, from port arrival through inland delivery.",
           },
           {
             image: "/icons/timely-Delivery.png",
-            title: "Expert Team",
+            title: "Trained Port and Logistics Staff",
             description:
-              "A seasoned team committed to excellence and client satisfaction.",
+              "Coordinators manage destuffing, storage placement, and outbound delivery scheduling.",
           },
           {
-            image: "/icons/cost.png",
-            title: "Tailored Solutions",
+            image: "/images/services/track.png",
+            title: "Highway Connectivity",
             description:
-              "Customized tactics to fit your unique logistics needs.",
+              "Direct access to the E311 and E611 corridors supports fast inland distribution after port arrival.",
           },
           {
-            image: "/icons/cost.png",
-            title: "Proven Results",
+            image: "/images/services/truck.png",
+            title: "Flexible Container Handling",
             description:
-              "A track record of successful deliveries and satisfied clientele.",
+              "Full-container-load and part-container-load services scale to shipment size.",
+          },
+          {
+            image: "/icons/Real-time.png",
+            title: "End-to-End Coordination",
+            description:
+              "Inbound container handling connects directly to outbound delivery without added transfer points.",
           },
         ]}
       />
 
-      {/* SERVICES */}
       <ServiceGridSection
-        eyebrow="Logistics Services"
-        title="Comprehensive Logistics Services Crafted for You"
+        eyebrow="Our Services"
+        title="Container Logistics Transport Offerings in Sharjah"
         services={[
           {
-            title: "End-to-End Container Transport",
-            image: "/images/services/flexible-yard.jpg",
+            title: "Container Destuffing and Cross-Docking",
+            image: "/images/services/cross-docking.jpg",
             description:
-              "Reliable container movement from pickup to final delivery.",
+              "Cargo moves from container arrival directly to outbound delivery, reducing storage and handling time.",
           },
           {
-            title: "Customs Clearance Services",
-            image: "/images/services/custom-storage.jpg",
+            title: "Inland Transport and Distribution",
+            image: "/images/services/open-yard.jpg",
             description:
-              "Smooth handling of shipping documentation and compliance procedures.",
+              "Container logistics transport in Sharjah extends beyond the port into regional inland delivery routes.",
           },
           {
-            title: "Real-Time Shipment Tracking",
+            title: "Warehouse-to-Port Coordination",
             image: "/images/services/security.jpg",
             description:
-              "Live container tracking with timely delivery updates.",
+              "Storage and container handling are managed together, removing the need for businesses to coordinate separate providers.",
           },
           {
-            title: "Container Handling & Coordination",
-            image: "/images/services/logistics.jpg",
+            title: "Full-Container and Part-Container Load Services",
+            image: "/images/cargo2.jpg",
             description:
-              "Efficient scheduling, loading, and transport management solutions.",
+              "Flexible container shipping services in Sharjah for businesses of varying shipment volumes.",
           },
           {
-            title: "Warehousing & Storage Solutions",
-            image: "/images/services/maintenance.jpg",
+            title: "Customs and Documentation Support",
+            image: "/images/locations/customer-support.jpg",
             description:
-              "Secure storage facilities to support cargo distribution and transit.",
+              "Coordinated processing reduces delays between container clearance and inland delivery.",
+          },
+          {
+            title: "Shipment Tracking and Reporting",
+            image: "/images/services/shipment-tracking.jpg",
+            description:
+              "Digital tracking gives clients visibility into container status from port arrival through final delivery.",
           },
         ]}
+      />
+      <CardsFeatures
+        eyebrow="Storage Solutions by Industry"
+        title="Container Logistics Transport Across Five Business Sectors"
+        features={[
+          {
+            image: "/images/locations/oil.png",
+            title: "Oil and Gas Support",
+            description:
+              "Heavy equipment and industrial materials moved through container shipping services tied to energy sector projects.",
+          },
+          {
+            image: "/images/services/truck.png",
+            title: "General Trading and Import-Export",
+            description:
+              "Container logistics transport supports consistent international shipment routing.",
+          },
+          {
+            image: "/images/locations/factory.png",
+            title: "Industrial Manufacturing",
+            description:
+              "Raw materials and machinery move on scheduled container delivery windows.",
+          },
+          {
+            image: "/images/locations/construction.png",
+            title: "Construction and Infrastructure",
+            description:
+              "Heavy materials are transported efficiently between the port and project sites.",
+          },
+          {
+            image: "/images/services/warehousingicon.png",
+            title: "FMCG Distribution",
+            description:
+              "Reliable container handling supports consistent inventory replenishment cycles.",
+          },
+        ]}
+      />
+
+      <FeatureSection
+        eyebrow="Free Zone Storage "
+        title="Free Zone Coordination Within Shipping & Logistic Management"
+        description="Businesses trading internationally need shipping & logistic management that accounts for customs and duty processing. OSS coordinates storage and freight close to the SAIF Zone and Hamriyah Free Zone, keeping duty-efficient handling built into the same logistics contract rather than managed separately."
       />
 
       {/* STATS */}
       <StatsSection
-        title="Proven Success in Numbers"
-        subtitle="Ensuring Excellence in Every Container Delivered"
+        title="Operational Performance That Businesses Trust"
+        subtitle="Integrated container logistics backed by secure infrastructure and reliable transport coordination."
         stats={[
-          { value: "30%", label: "Supply Chain Efficiency Increase" },
-          { value: "24/7", label: "Real-Time Tracking Support" },
-          { value: "100+", label: "Successful Logistics Projects" },
-          { value: "Global", label: "Industry Network Coverage" },
+          {
+            value: 260000,
+            suffix: "+",
+            unit: "sq ft",
+            label: "Total Managed Footprint",
+            description: "Of storage capacity.",
+          },
+          {
+            value: 140,
+            suffix: "+",
+            unit: "Clients",
+            label: "Enterprise Client Base",
+            description: "Active manufacturing, trading, and retail clients.",
+          },
+          {
+            value: 12000,
+            suffix: "+",
+            unit: "Pallets",
+            label: "Monthly Freight Throughput",
+            description: "Processed and dispatched monthly.",
+          },
+          {
+            value: 24,
+            suffix: "/7",
+            label: "Facility Security",
+            description: "Video surveillance with automated fire suppression.",
+          },
+          {
+            value: 3,
+            unit: "Services",
+            label: "Service Scope",
+            description:
+              "Combined port handling, storage, and inland container transport.",
+          },
         ]}
       />
 
@@ -152,13 +273,15 @@ export default function ContainerLogisticsTransportSharjah() {
         items={[
           {
             title: "About Us",
+            subtitle: "Container Handling Experience Rooted in Sharjah",
             description:
-              "Our leadership drives Open Yard Storage's commitment to excellence in container logistics services by fostering innovation and consistently delivering outstanding results.",
+              "OSS has operated as a storage and logistics provider in Sharjah since 2006, developing container shipping services in Sharjah that connect port-side handling directly to inland storage and delivery. OSS invests in port coordination, digital tracking systems, and trained dispatch staff to keep container movement predictable. Clients using OSS for container logistics transport get dedicated account management, flexible contracts, and a logistics team focused on keeping containers moving from arrival to final delivery without added delays.",
           },
           {
             title: "Our Team",
+            subtitle: "Staff Coordinating Every Stage of Container Movement",
             description:
-              "Our team combines industry expertise and creativity to deliver unparalleled logistics services in Sharjah, ensuring precision and success.",
+              "OSS container logistics transport operations in Sharjah are run by port coordinators, warehouse technicians, and dispatch staff who manage de-stuffing, storage placement, and inland delivery scheduling as part of one coordinated process.",
           },
         ]}
       />
@@ -167,73 +290,74 @@ export default function ContainerLogisticsTransportSharjah() {
 
       <FAQSection
         eyebrow="FAQ"
-        title="Your Container Logistics Transport Questions Answered"
+        title="Common Questions About Container Logistics Transport in Sharjah"
         faqs={[
           {
-            question:
-              "What services do you offer for container logistics transport in Sharjah?",
+            question: "What does OSS's container logistics transport include?",
             answer:
-              "At Open Yard Storage, we offer a full suite of services to ensure smooth container logistics transport in Sharjah. From end-to-end container transport and customs clearance to real-time tracking and logistics consulting, our services are designed to address every facet of your logistics needs. Our team provides tailored solutions to ensure your supply chain operates seamlessly and efficiently, minimizing any disruptions or delays.",
+              "It combines container de-stuffing, warehousing, customs support, and inland delivery scheduling under one service, instead of requiring businesses to manage separate port and transport providers.",
           },
           {
             question:
-              "How do you ensure the safety of containers during transport?",
+              "Are container shipping services in Sharjah available for both full and part loads?",
             answer:
-              "Ensuring container safety during transport is a top priority for us. We use state-of-the-art logistical strategies and security measures to monitor and safeguard your cargo. Our transport vehicles are well-maintained and equipped with GPS tracking for real-time oversight, and our team is trained to handle containers with the utmost care, reducing the risk of damage throughout the journey.",
+              "Yes. Container handling scales from full-container loads to smaller part-container shipments depending on cargo volume.",
           },
           {
             question:
-              "Can you handle international shipping and customs compliance?",
+              "How does OSS track containers from port arrival to delivery?",
             answer:
-              "Yes, we specialize in both domestic and international shipping. Our extensive knowledge of international logistics and customs regulations allows us to manage and streamline customs compliance effectively, ensuring your containers are processed smoothly and without unnecessary delays or costs.",
+              "A cloud-based WMS logs container contents at each handling point, giving clients visibility from port arrival through inland delivery.",
           },
           {
             question:
-              "How do you manage logistics challenges in Sharjah’s dynamic market?",
+              "What cargo types can move through OSS's container logistics transport?",
             answer:
-              "Our approach is to stay proactive and adaptable to tackle the challenges posed by Sharjah’s logistics landscape. We keep abreast of market trends and regulatory updates and employ innovative technology to optimize routes and schedules, keeping your supply chain resilient and efficient even in a dynamic environment.",
+              "OSS manages general trading commodities, industrial equipment, machinery, and palletized commercial goods. Non-hazardous cargo follows standard handling; specialized items follow separate safety procedures.",
+          },
+          {
+            question: "Does OSS combine warehousing with container transport?",
+            answer:
+              "Yes. Storage and inland container transport are managed under a single contract, removing the need to coordinate separate storage and transport providers.",
           },
           {
             question:
-              "What sets Open Yard Storage apart in container logistics transport?",
+              "What are the contract terms for container logistics transport?",
             answer:
-              "What truly sets us apart is our dedication to customer satisfaction and our innovative use of technology in logistics. Our team’s industry expertise and our customized approach enable us to deliver unparalleled service, tailored to the unique needs of your business. This results in enhanced efficiency, cost savings, and reliable delivery of your goods.",
+              "OSS offers monthly short-term agreements for occasional shipments and multi-year contracts for businesses with recurring container volume.",
           },
           {
             question:
-              "How does real-time tracking benefit my logistics process?",
+              "Does OSS support free zone coordination for container shipments?",
             answer:
-              "Real-time tracking allows you to monitor your container's progress from the moment it leaves the origin until it reaches its destination. This transparency helps in managing expectations, planning operations better, and responding swiftly to any unforeseen circumstances, ultimately leading to a more controlled and efficient logistics process.",
-          },
-          {
-            question: "Do you offer logistics consulting services?",
-            answer:
-              "Yes, our logistics consulting services are designed to help businesses streamline their supply chain and optimize logistics operations. Our experts provide insights and strategies tailored to your company’s needs, ensuring cost containment, improved efficiency, and long-term success in your logistics endeavors.",
+              "Yes. Storage and container handling near the SAIF Zone and Hamriyah Free Zone support duty-efficient processing as part of the same service.",
           },
           {
             question:
-              "How can I start using your container logistics services?",
+              "How is OSS different from using separate port agents and inland carriers?",
             answer:
-              "Getting started with Open Yard Storage is simple. You can contact our experienced team through our website or via phone to discuss your specific logistics needs. We’ll work closely with you to develop a comprehensive strategy tailored to your requirements, ensuring a smooth integration with your existing supply chain operations.",
+              "A single coordinated service manages the full container journey, reducing the handoff delays and communication gaps common when using multiple unrelated providers.",
           },
           {
             question:
-              "What industries do you serve with your logistics services?",
+              "Can container volume scale for businesses with seasonal demand?",
             answer:
-              "We cater to a diverse range of industries including manufacturing, retail, automotive, and technology, among others. Our adaptable logistics solutions are designed to meet the distinct needs of each sector, ensuring reliability and efficiency for any business requiring container logistics transport in Sharjah.",
+              "Yes. Container handling capacity adjusts to shipment volume, supporting businesses through both steady and high-demand periods.",
           },
           {
-            question: "How is your pricing structured for logistics services?",
+            question:
+              "What operational standards does OSS follow for container logistics transport?",
             answer:
-              "Our pricing is competitive and based on the specific logistics services you require. Factors such as the volume and frequency of shipments, as well as the complexity of your logistical needs, are considered during pricing. We ensure transparency and offer a detailed quote upon assessing your requirements, focusing on delivering value and efficiency.",
+              "OSS follows international supply chain safety standards, using certified equipment operators, defined handling protocols, and routine facility and fleet checks.",
           },
         ]}
       />
 
       {/* CTA */}
       <CTASection
-        title="Ready to Transform Your Logistics Operations?"
-        buttonText="Contact Our Experts Today for a Custom Solution"
+        title="Move Containers Through Sharjah with One Coordinated Partner"
+        description="Whether you need port-side de-stuffing, inland transport, or full container logistics transport in Sharjah from arrival to delivery, OSS has the infrastructure and team to support it. Contact the OSS team for a container logistics plan and quote."
+        buttonText="Contact OSS for a Container Logistics Transport Quote"
         buttonLink="/contact-us"
         backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
       />
