@@ -45,6 +45,7 @@ import ContainerFreightLogistics from "./pages/services/ContainerFreightLogistic
 import ContainerLogisticsTransportSharjah from "./pages/services/ContainerLogisticsTransportSharjah";
 import FreightLogisticsServices from "./pages/services/FreightLogisticsServices";
 import FreightForwardingManagement from "./pages/services/FreightForwardingManagement";
+import CustomsClearanceServices from "./pages/services/CustomsClearanceServices";
 import HamriyahPortSharjah from "./pages/services/HamriyahPortSharjah";
 import InternationalShippingAir from "./pages/services/InternationalShippingAir";
 import ShippingCompaniesSharjah from "./pages/services/ShippingCompaniesSharjah";
@@ -57,7 +58,6 @@ import BlogDetail from "./pages/BlogDetail";
 import News from "./pages/News";
 import Terms from "./pages/Terms";
 import OpenYardStorage from "./pages/home/openyardstorangefacility";
-
 
 import ThankYou from "./pages/thank-you";
 
@@ -73,16 +73,34 @@ export default function App() {
         <Route path="/about/Founder" element={<Founder />} />
         <Route path="/about/vision-mission" element={<VisionMission />} />
         <Route path="/about/inspiration" element={<Inspiration />} />
-        <Route path="/services/yard-for-rent-sharjah" element={<YardForRentInSharjah />} />
-        
+        <Route
+          path="/services/yard-for-rent-sharjah"
+          element={<YardForRentInSharjah />}
+        />
+
         <Route path="/contact-us" element={<ContactUs />} />
-        <Route path="/projects/weatherford-drilling-international" element={<WeatherfordDrillingInternational />}/>
-        <Route path="/projects/apache" element={<Apache />}/>
-         <Route path="/projects/trinidad-drilling" element={<TrinidadDrilling />}/>
+        <Route
+          path="/projects/weatherford-drilling-international"
+          element={<WeatherfordDrillingInternational />}
+        />
+        <Route path="/projects/apache" element={<Apache />} />
+        <Route
+          path="/projects/trinidad-drilling"
+          element={<TrinidadDrilling />}
+        />
         <Route path="/services/wooden-crating" element={<WoodenCrating />} />
-        <Route path="/services/temperature-controlled-warehouse" element={<TemperatureControlledWarehouse />} />
-        <Route path="/services/storage-warehouse-for-rent" element={<StorageWarehouseForRent />} />
-        <Route path="/services/ship-spare-clearance" element={<ShipSpareClearance />} />
+        <Route
+          path="/services/temperature-controlled-warehouse"
+          element={<TemperatureControlledWarehouse />}
+        />
+        <Route
+          path="/services/storage-warehouse-for-rent"
+          element={<StorageWarehouseForRent />}
+        />
+        <Route
+          path="/services/ship-spare-clearance"
+          element={<ShipSpareClearance />}
+        />
         <Route
           path="/services/medical-equipment-healthcare-storage"
           element={<MedicalEquipmentHealthcareStorage />}
@@ -103,10 +121,10 @@ export default function App() {
           path="/services/health-care-storage-solutions"
           element={<HealthCareStorageSolutions />}
         />
-         <Route
+        <Route
           path="/services/freight-shipping-service"
           element={<FreightShippingService />}
-        />       
+        />
         <Route
           path="/services/container-cross-stuffing"
           element={<ContainerCrossStuffing />}
@@ -125,8 +143,8 @@ export default function App() {
           element={<SmallStorageWarehouse />}
         />
         <Route
-        path="/services/hamriyah-free-zone-warehouse-rent"
-        element={<HamriyahWarehouse />}
+          path="/services/hamriyah-free-zone-warehouse-rent"
+          element={<HamriyahWarehouse />}
         />
         <Route
           path="/services/storage-space-sharjah"
@@ -137,8 +155,8 @@ export default function App() {
           element={<StorageWarehouseDubai />}
         />
         <Route
-        path="/services/storage-space-rent-dubai"
-        element={<StorageSpaceDubai />}
+          path="/services/storage-space-rent-dubai"
+          element={<StorageSpaceDubai />}
         />
         <Route
           path="/services/storage-facility-abu-dhabi"
@@ -177,37 +195,39 @@ export default function App() {
           element={<ContainerFreightLogistics />}
         />
         <Route
-        path="/service/container-logistics-transport-sharjah"
-        element={<ContainerLogisticsTransportSharjah />}
+          path="/service/container-logistics-transport-sharjah"
+          element={<ContainerLogisticsTransportSharjah />}
         />
         <Route
           path="/service/freight-logistics-services"
           element={<FreightLogisticsServices />}
         />
         <Route
-        path="/service/freight-forwarding-management"
-        element={<FreightForwardingManagement />}
+          path="/service/freight-forwarding-management"
+          element={<FreightForwardingManagement />}
         />
         <Route
-        path="/service/hamriyah-port-sharjah"
-        element={<HamriyahPortSharjah />}
+          path="/service/hamriyah-port-sharjah"
+          element={<HamriyahPortSharjah />}
         />
         <Route
-        path="/service/international-shipping-air"
-        element={<InternationalShippingAir />}
-        />
-       <Route
-        path="/service/shipping-companies-sharjah"
-        element={<ShippingCompaniesSharjah />}
+          path="/service/international-shipping-air"
+          element={<InternationalShippingAir />}
         />
         <Route
-        path="/service/transport-logistic-service-sharjah"
-        element={<TransportLogisticSharjah />}
+          path="/service/shipping-companies-sharjah"
+          element={<ShippingCompaniesSharjah />}
         />
         <Route
-        path="/service/warehouse-storage-space-for-rent"
-        element={<WarehouseStorageSpace />}
+          path="/service/transport-logistic-service-sharjah"
+          element={<TransportLogisticSharjah />}
         />
+        <Route
+          path="/service/warehouse-storage-space-for-rent"
+          element={<WarehouseStorageSpace />}
+        />
+                <Route path="/services/customs-clearance-services" element={<CustomsClearanceServices/>}/>
+
         <Route path="/industries/:slug" element={<IndustryPage />} />
         <Route path="/locations/:slug" element={<LocationPage />} />
         <Route path="/services" element={<ServicesPage />} />
@@ -215,11 +235,9 @@ export default function App() {
         <Route path="/blogs/:slug" element={<BlogDetail />} />
         <Route path="/news" element={<News />} />
         <Route path="/terms" element={<Terms />} />
-        <Route path="/open-yard-storage-facility" element={<OpenYardStorage />} />
-        
-    </Routes>
-    
-      
+        <Route path="/open-yard-storage-facility" element={<OpenYardStorage />}/>
+        </Routes>
+
       <Footer />
     </BrowserRouter>
   );

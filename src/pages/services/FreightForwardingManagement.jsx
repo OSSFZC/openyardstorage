@@ -7,21 +7,17 @@ import StatsSection from "../../components/StatsSection";
 import DualInfoSection from "../../components/DualInfoSection";
 import FAQSection from "../../components/FAQSection";
 import CTASection from "../../components/CTASection";
+import LeftalignedCards from "../../components/LeftAlignedCards";
 
-import {
-  FiPackage,
-  FiClock,
-  FiDollarSign,
-  FiUsers
-} from "react-icons/fi";
+import { FiPackage, FiClock, FiFileText, FiEye } from "react-icons/fi";
 
 import useMeta from "../../hooks/useMeta";
+import CardsFeatures from "../../components/CardsFeatures";
 
 export default function FreightForwardingManagement() {
-
   useMeta(
-    "Efficient Freight Forwarding Management Services | OSS FZC",
-    "Optimize your logistics with expert freight forwarding management. Discover seamless solutions to streamline your supply chain. Contact OSS FZC today."
+    "Freight Forwarding Management in UAE | Openyard Storage FZC",
+    "Every shipment impacts your business.Openyard Storage FZC provides freight forwarding management that reduces delays & keeps supply chains moving.Enquire today!",
   );
 
   return (
@@ -29,9 +25,9 @@ export default function FreightForwardingManagement() {
       {/* HERO */}
       <InnerHero
         eyebrow="Simplify Your Supply Chain"
-        title="Experience Seamless Freight Forwarding Management with OSS FZC"
-        subtitle="Ready to Transform Your Logistics? Schedule a Consultation Today!"
-        buttonText="Get Consultation"
+        title="Freight Forwarding Management Backed by Sharjah Storage"
+        subtitle="OSS provides freight forwarding management with integrated warehousing, air freight, and sea freight, connecting secure Sharjah storage to efficient outbound cargo movement through one coordinated logistics solution."
+        buttonText="Request a Freight Forwarding Quote"
         buttonLink="/contact-us"
         backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
       />
@@ -40,188 +36,322 @@ export default function FreightForwardingManagement() {
 
       {/* PROBLEM SECTION */}
       <ChallengeSection
-        subtitle="Navigating Challenges, Delivering Solutions"
-        title="Frustrations of Freight Forwarding Management"
-        description="Freight forwarding management can often feel like navigating a maze. Ever-changing regulations, coordination hiccups, and unexpected delays disrupt your operations and inflate costs."
-        description2="OSS FZC is here to unravel these complexities. With intricate precision, we streamline processes, ensuring timely and cost-effective delivery of your goods."
-        rightTitle="Solutions Tailored to Your Challenges"
+        // subtitle="Navigating Challenges, Delivering Solutions"
+        title="Why Businesses Need Coordinated Freight Forwarding Management"
+        description="Businesses without a coordinated approach to freight forwarding commonly face four problems:"
+        // description2="OSS FZC is here to unravel these complexities. With intricate precision, we streamline processes, ensuring timely and cost-effective delivery of your goods."
+        rightTitle="Problem statement"
         rightBg="#C5F7FF"
         cards={[
           {
             icon: FiPackage,
-            title: "Lost in Transition",
-            text: "Struggling with complex customs and logistics?"
+            title: "Disconnected Storage and Freight Booking",
+            text: "Coordinating separate warehousing and freight providers adds delays before cargo reaches the port or airport.",
           },
           {
             icon: FiClock,
-            title: "Unforeseen Delays",
-            text: "Tired of unplanned interruptions impacting your schedule?"
+            title: "Inconsistent Dispatch Scheduling",
+            text: "Ad hoc bookings without a fixed forwarding partner lead to unpredictable loading and departure windows.",
           },
           {
-            icon: FiDollarSign,
-            title: "Cost Overruns",
-            text: "Facing budget strains due to unexpected shipping costs?"
+            icon: FiFileText,
+            title: "Complex Customs and Documentation",
+            text: "Forwarded shipments require accurate paperwork, and errors at the port cause costly delays.",
           },
           {
-            icon: FiUsers,
-            title: "Coordination Chaos",
-            text: "Combating communication breakdowns?"
-          }
+            icon: FiEye,
+            title: "Limited Visibility Once Cargo Leaves Storage",
+            text: "Businesses lose track of shipment status once freight moves out of the warehouse.",
+          },
         ]}
       />
 
+      <LeftalignedCards
+        title="Integrated Freight Solutions for Better Logistics"
+        description="OSS addresses each of these directly:"
+        features={[
+          {
+            image: "/images/services/warehouseicon.png",
+            title: "Combined storage and freight dispatch",
+            description:
+              "Inventory is stored and dispatched under a single coordinated service.",
+          },
+          {
+            image: "/images/locations/schedule.png",
+            title: "Reliable dispatch scheduling",
+            description:
+              "Dedicated freight coordination reduces the unpredictability of ad hoc bookings.",
+          },
+          {
+            image: "/images/services/offer.png",
+            title: "Documentation support",
+            description:
+              "Export paperwork and customs requirements are managed as part of the shipping process.",
+          },
+          {
+            image: "/icons/Real-time.png",
+            title: "End-to-end tracking",
+            description:
+              "Shipment status is visible from Sharjah storage through arrival at the destination.",
+          },
+        ]}
+      />
       {/* SOLUTIONS */}
       <FeatureSection
         eyebrow="The OSS FZC Difference"
-        title="Seamless Success with Our Expertise"
-        description="At OSS FZC, we redefine freight forwarding management. Our approach integrates cutting-edge technology and extensive industry expertise, ensuring a consistent and reliable flow of goods."
+        title="Freight Forwarding Management Built Around Storage Coordination"
+        subtitle="OSS operates a service that combines warehousing with outbound dispatch, so cargo doesn't need to move between unrelated storage and freight vendors before it ships. Inventory can move from an OSS warehouse straight into sea or air freight without added transfer delays, giving businesses freight forwarding that starts at the storage stage rather than after cargo has already left the warehouse. Every contract through OSS is structured around cargo type, shipment frequency, and destination, giving businesses a faster path from storage to dispatch than working with disconnected vendors. This matters most for businesses with recurring multi-destination shipments, where consistent handling and scheduling directly affect delivery reliability."
+        description="What businesses get from OSS's freight forwarding:"
         features={[
           {
-            image: "/icons/Real-time.png",
-            title: "Innovative Tracking",
-            description: "Real-time visibility for every shipment."
+            image: "/images/services/tracking.png",
+            title: "Barcode and RFID tracking",
+            description:
+              "Shipment status is logged at each handling point, from warehouse storage through dispatch.",
           },
           {
-            image: "/icons/cost.png",
-            title: "Cost Management",
-            description: "Strategic planning to minimize expenses."
+            image: "/images/services/logistic.png",
+            title: "Trained freight coordinators",
+            description:
+              "Staff manage documentation, loading, and dispatch scheduling for outbound shipments.",
           },
           {
-            image: "/icons/Regulatory-exper.png",
-            title: "Regulatory Compliance",
-            description: "Ensuring adherence to all international rules."
+            image: "/images/services/track.png",
+            title: "Port and airport connectivity",
+            description:
+              "Direct access to major transport corridors supports fast transfer from storage to departure points.",
           },
           {
-            image: "/icons/timely-Delivery.png",
-            title: "Dedicated Support",
-            description: "24/7 commitment to your success."
-          }
+            image: "/images/industries/boxes.png",
+            title: "Flexible shipment sizes",
+            description:
+              "Small parcels and full pallet-level cargo are both supported.",
+          },
+          {
+            image: "/images/services/stock.png",
+            title: "Consolidated warehousing and dispatch",
+            description:
+              "Storage and freight are managed under a single contract.",
+          },
         ]}
       />
 
       {/* SERVICES */}
       <ServiceGridSection
-        eyebrow="Freight Services"
-        title="Comprehensive Freight Management Services"
+        eyebrow="Our Services"
+        title="Freight Forwarding Offerings"
         services={[
           {
-            title: "End-to-End Shipping Solutions",
-            image: "/images/services/flexible-yard.jpg",
-            description: "Managing your logistics from start to finish."
+            title: "Cargo Consolidation and Warehousing",
+            image: "/images/warehouse.png",
+            description:
+              "Storage in Sharjah for businesses that need a staging point between inbound cargo and outbound dispatch.",
           },
           {
-            title: "Real-Time Tracking",
-            image: "/images/services/custom-storage.jpg",
-            description: "Monitor your freight's journey live."
+            title: "Export Documentation and Customs Support",
+            image: "/images/services/bill-of-entry.jpg",
+            description:
+              "Paperwork and clearance handling built into the shipping process to reduce delays at the port or airport.",
           },
           {
-            title: "Regulatory Consultation",
+            title: "Warehouse-to-Port Coordination",
             image: "/images/services/security.jpg",
-            description: "Navigate intricate global trade laws effortlessly."
+            description:
+              "Storage and outbound freight are managed together, removing the need to coordinate separate providers.",
           },
           {
-            title: "Cost Efficiency Strategies",
+            title: "Full and Part Shipment Options",
             image: "/images/services/logistics.jpg",
-            description: "Reducing overheads while optimizing performance."
+            description:
+              "Flexible storage and freight capacity so businesses only pay for the space their shipment requires.",
           },
           {
-            title: "Customizable Solutions",
+            title: "Shipment Tracking and Reporting",
             image: "/images/services/maintenance.jpg",
-            description: "Tailored services to fit your unique needs."
-          }
+            description:
+              "Digital tracking gives businesses visibility into cargo status from storage through international arrival.",
+          },
+          {
+            title: "Combined Sea and Air Coordination",
+            image: "/images/services/ocean-freight.png",
+            description:
+              "Businesses can pair sea freight for bulk cargo with air freight for urgent shipments under the same provider as part of a single freight forwarding management plan.",
+          },
         ]}
+      />
+
+      <CardsFeatures
+        eyebrow="Storage Solutions by Industry Section"
+        title="Storage Support Across Five Business Sectors"
+        features={[
+          {
+            image: "/images/services/warehouseicon.png",
+            title: "General Trading and Export",
+            description:
+              "Commodity shipments move faster with dedicated storage and dispatch coordination.",
+          },
+          {
+            image: "/images/locations/factory.png",
+            title: "Industrial Manufacturing",
+            description:
+              "Components and finished goods move on scheduled freight lanes.",
+          },
+          {
+            image: "/images/industries/protection.png",
+            title: "Healthcare and Pharmaceutical",
+            description:
+              "Sensitive shipments benefit from controlled storage ahead of dispatch.",
+          },
+          {
+            image: "/images/services/online-store.png",
+            title: "Retail and E-Commerce",
+            description:
+              "Fast replenishment during peak sales periods relies on quick dispatch from storage.",
+          },
+          {
+            image: "/images/locations/oil.png",
+            title: "Oil and Gas Support",
+            description:
+              "Urgent equipment and parts move quickly to support active project timelines.",
+          },
+        ]}
+      />
+
+      <FeatureSection
+        eyebrow="Free Zone Storage "
+        title="Free Zone Access Supporting Freight Forwarding"
+        description="Businesses shipping cargo internationally need customs processing that moves as fast as their freight. OSS storage sits close to the SAIF Zone and Hamriyah Free Zone, giving businesses duty-efficient handling built directly into the storage and dispatch process rather than managed as a separate step."
       />
 
       {/* STATS */}
       <StatsSection
-        title="Proven Success in Numbers"
-        subtitle="Data-Driven Excellence"
+        title="Achievement Stats "
         stats={[
-          { value: "30%", label: "Shipping Cost Reduction" },
-          { value: "24/7", label: "Logistics Monitoring" },
-          { value: "500+", label: "Successful Deliveries" },
-          { value: "Global", label: "Freight Network Coverage" }
+          {
+            value: 260000,
+            suffix: "+",
+            unit: "sq ft",
+            label: "Total Managed Footprint",
+            description: "Of storage capacity.",
+          },
+          {
+            value: 140,
+            suffix: "+",
+            unit: "Clients",
+            label: "Enterprise Client Base",
+            description: "Active manufacturing, trading, and export clients.",
+          },
+          {
+            value: 12000,
+            suffix: "+",
+            unit: "Pallets",
+            label: "Monthly Freight Throughput",
+            description: "Processed and dispatched monthly.",
+          },
+          {
+            value: 24,
+            suffix: "/7",
+            label: "Facility Security",
+            description: "Video surveillance with automated fire suppression.",
+          },
+          {
+            value: 2,
+            unit: "Modes",
+            label: "Route Coverage",
+            description:
+              "Sea and air freight lanes connecting Sharjah to regional and global destinations.",
+          },
         ]}
       />
-
       {/* ABOUT + TEAM */}
       <DualInfoSection
         items={[
           {
             title: "About Us",
+            subtitle: "Freight Forwarding Experience Built Around Reliability",
             description:
-              "We lead the way in freight forwarding management, where innovation meets excellence, under the visionary guidance of our leadership."
+              "OSS has operated as a storage and logistics provider in the UAE since 2006, developing freight forwarding capabilities alongside its wider warehousing and sea and air freight services. Fast documentation turnaround, warehouse-to-port coordination, and destination-specific handling are built into how OSS structures every shipment. Clients using OSS for freight forwarding get dedicated account management, flexible scheduling, and a logistics team experienced in coordinating cargo movement across multiple destination countries.",
           },
           {
             title: "Our Team",
+            subtitle: "Staff Coordinating Storage and Dispatch",
             description:
-              "Our expert team navigates logistics with creativity and precision, ensuring top-tier freight management solutions for every client."
-          }
+              "OSS freight forwarding operations are run by dispatch coordinators, documentation specialists, and warehouse technicians who manage export paperwork, loading, and scheduling for shipments moving through Sharjah's ports and airports.",
+          },
         ]}
       />
 
       {/* FAQ */}
-<FAQSection
-  eyebrow="FAQ"
-  title="Your Freight Forwarding Management Questions Answered"
-  faqs={[
-    {
-      question: "What is freight forwarding management?",
-      answer:
-        "Freight forwarding management involves the coordination and shipment of goods from one place to another through a single or series of carriers. It requires planning, skills in supply chain optimization, and understanding both logistics and international regulations. By entrusting this task to experts like OSS FZC, companies can focus on their core business, securing efficient and reliable delivery of products worldwide."
-    },
-    {
-      question: "Why is freight forwarding management important?",
-      answer:
-        "Effective freight forwarding management is crucial as it ensures timely delivery, reduces risks, and optimizes costs. It involves navigating complex logistics networks, which can be overwhelming without professional help. With OSS FZC, businesses can be assured that their goods move safely and efficiently, minimizing delays and maximizing productivity."
-    },
-    {
-      question: "How can effective freight forwarding management reduce costs?",
-      answer:
-        "By leveraging strategic planning and optimal routing, freight forwarding management reduces unnecessary expenses. It involves negotiating rates with carriers, consolidating shipments to take advantage of bulk rates, and implementing cost-saving technologies like real-time tracking. OSS FZC provides these services, cutting excessive costs and improving your bottom line."
-    },
-    {
-      question: "What challenges can arise in freight forwarding management?",
-      answer:
-        "Key challenges include regulatory compliance, unexpected delays, cost overruns, and communication barriers. Ineffective management can lead to delayed shipments and increased costs. OSS FZC mitigates these risks by offering sophisticated solutions and comprehensive support, ensuring smooth and efficient operations."
-    },
-    {
-      question: "How do freight forwarders handle unexpected delays?",
-      answer:
-        "Freight forwarders manage delays by adjusting plans rapidly, coordinating with a network of carriers to find alternative routes, and maintaining constant communication with clients. OSS FZC uses advanced software and strategic partnerships to navigate such hurdles, ensuring timely delivery and client satisfaction."
-    },
-    {
-      question: "What is the role of technology in freight forwarding management?",
-      answer:
-        "Technology is central to modern freight forwarding, enhancing visibility, tracking, and efficiency. Systems like real-time tracking and automated notifications streamline the management process. At OSS FZC, we harness the latest technologies to optimize your supply chain's performance."
-    },
-    {
-      question: "How does OSS FZC ensure regulatory compliance?",
-      answer:
-        "We maintain up-to-date knowledge of international trade laws and integrate compliance checks into our processes. This proactive approach minimizes risks and potential penalties, guaranteeing that your shipments meet all necessary legal requirements every step of the way."
-    },
-    {
-      question: "Can freight forwarding services be customized?",
-      answer:
-        "Yes, freight forwarding services can be tailored to accommodate specific business needs regarding shipment size, destination, and urgency. OSS FZC prides itself on offering flexible solutions that match your unique requirements."
-    },
-    {
-      question: "What industries benefit most from freight forwarding management?",
-      answer:
-        "Industries involved in manufacturing, retail, and e-commerce, as well as businesses dealing with international trade, benefit heavily from freight forwarding management. OSS FZC serves a diverse clientele, offering strategic solutions that drive efficiency and growth."
-    },
-    {
-      question: "How can businesses pick the right freight forwarder?",
-      answer:
-        "Businesses should consider experience, network size, technology used, and client reviews when choosing a freight forwarder. OSS FZC’s proven track record and commitment to innovation make it an ideal partner for businesses seeking optimized freight forwarding management."
-    }
-  ]}
-/>
+      <FAQSection
+        eyebrow="FAQ"
+        title="Common Questions About Freight Forwarding"
+        faqs={[
+          {
+            question:
+              "Does OSS offer freight forwarding management in Sharjah?",
+            answer:
+              "Yes. OSS coordinates warehousing alongside its wider sea and air freight services, giving businesses a single partner for storage and dispatch.",
+          },
+          {
+            question:
+              "What documentation support is included in the freight forwarding process?",
+            answer:
+              "Export paperwork and customs clearance coordination are built into the service, reducing the risk of delays at the port or airport.",
+          },
+          {
+            question:
+              "Can businesses combine sea and air freight under the same forwarding plan?",
+            answer:
+              "Yes. Bulk cargo can move by sea while urgent portions move by air, under the same provider.",
+          },
+          {
+            question: "Does OSS combine warehousing with freight forwarding?",
+            answer:
+              "Yes. Storage and freight dispatch are managed under a single contract, removing the need to coordinate separate storage and freight vendors.",
+          },
+          {
+            question:
+              "What cargo types can be handled through OSS's freight forwarding service?",
+            answer:
+              "OSS handles general trading commodities, industrial components, and palletized commercial goods. Non-hazardous cargo follows standard handling; specialized items follow separate safety procedures.",
+          },
+          {
+            question: "How is cargo tracked once it leaves storage?",
+            answer:
+              "A digital tracking system provides visibility into shipment status from storage through arrival at the destination.",
+          },
+          {
+            question:
+              "What are the contract terms for freight forwarding clients?",
+            answer:
+              "OSS offers monthly short-term agreements for occasional shipments and multi-year contracts for businesses with recurring storage and freight needs.",
+          },
+          {
+            question:
+              "Does OSS support free zone coordination as part of freight forwarding?",
+            answer:
+              "Yes. Storage near the SAIF Zone and Hamriyah Free Zone supports duty-efficient handling as part of the storage and shipping process.",
+          },
+          {
+            question:
+              "Can freight forwarding capacity scale for businesses with seasonal demand?",
+            answer:
+              "Yes. Capacity adjusts to shipment volume, supporting businesses through both steady and high-demand periods.",
+          },
+          {
+            question:
+              "What operational standards does OSS follow for freight forwarding?",
+            answer:
+              "OSS follows international supply chain safety standards, using certified equipment operators, defined documentation protocols, and routine facility checks.",
+          },
+        ]}
+      />
 
       {/* CTA */}
       <CTASection
-        title="Ready to Elevate Your Freight Management?"
-        buttonText="Contact Us for Tailored Solutions Today!"
+        title="Move Cargo with a Coordinated Freight Forwarding Partner"
+        description="Whether you need standalone storage in Sharjah or a combined service that pairs warehousing with sea and air freight dispatch, OSS has the infrastructure and experience to support your freight forwarding management needs. Contact the OSS team for a storage and shipping schedule quote."
+        buttonText="Contact OSS for a Freight Forwarding Quote"
         buttonLink="/contact-us"
         backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
       />

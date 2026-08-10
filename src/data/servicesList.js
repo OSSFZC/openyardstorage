@@ -1,6 +1,7 @@
 const services = [
   { name: "Break Bulk Cargo Clearance", path: "/services/break-bulk-cargo-clearance" },
   { name: "Cargo Service Dubai", path: "/services/cargo-service-dubai" },
+  {name: "Customs Clearance Services",path: "/services/customs-clearance-services" },
   { name: "Chiller Storage Warehouse", path: "/services/chiller-storage-warehouse" },
   { name: "Container Cross Stuffing", path: "/services/container-cross-stuffing" },
   { name: "Container Freight Logistics", path: "/service/container-freight-logistics" },

@@ -36,7 +36,6 @@ export default function IndustryTemplate({ data }) {
 
       <ServiceGridSection {...data.services} />
 
-      {/* /Free Zone Storage Section */}
       <FeatureSection {...data.FreeZoneStorage} />
 
       <CardsFeatures {...data.cardsFeature} />
