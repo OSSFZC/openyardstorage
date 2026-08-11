@@ -192,7 +192,7 @@ Every shipment coordinated through OSS is structured around cargo type, destinat
               "Consistent international routing for commodity shipments moving to multiple markets.",
           },
           {
-            image: "/images/services/truck.png",
+            image: "/images/locations/factory.png",
             title: "Industrial Manufacturing",
             description:
               "Finished machinery and components move on scheduled export freight windows.",
@@ -204,13 +204,13 @@ Every shipment coordinated through OSS is structured around cargo type, destinat
               "Heavy equipment and materials coordinated for cross-border project shipments.",
           },
           {
-            image: "/images/locations/factory.png",
+            image: "/images/locations/construction.png",
             title: "Construction and Infrastructure",
             description:
               "Building materials and machinery exported on flexible load schedules.",
           },
           {
-            image: "/images/services/engineer.png",
+            image: "/images/industries/product-testing.png",
             title: "FMCG and Retail Export",
             description:
               "Consistent freight scheduling supports recurring overseas replenishment cycles.",
@@ -273,7 +273,7 @@ Every shipment coordinated through OSS is structured around cargo type, destinat
             title: "About Us",
             subtitle: "Freight Forwarding Experience Built Around Export Trade",
             description:
-              "OSS has operated as a storage and logistics provider in the UAE since 2006, developing the coordination and documentation experience needed to support export-driven businesses across multiple markets. Multi-leg routing, destination-specific handling, and customs documentation are built into how OSS structures every freight contract. Clients working with OSS get dedicated account management, flexible scheduling, and a logistics team experienced in coordinating shipments across multiple destination countries rather than single-market delivery alone.",
+              "OSS has operated as a storage and logistics provider in the UAE since 2006, developing the coordination and documentation experience needed to support export-driven businesses across multiple markets. Multi-leg routing, destination-specific handling, and customs documentation are built into how OSS structures every freight contract. \n\n Clients working with OSS get dedicated account management, flexible scheduling, and a logistics team experienced in coordinating shipments across multiple destination countries rather than single-market delivery alone.",
           },
           {
             title: "Our Team",

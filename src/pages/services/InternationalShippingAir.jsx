@@ -278,7 +278,7 @@ export default function InternationalShippingAir() {
             subtitle:
               "Air Freight Experience Built Around Speed and Reliability",
             description:
-              "OSS has operated as a storage and logistics provider in the UAE since 2006, developing air cargo capabilities alongside its wider warehousing and sea freight services. Fast documentation turnaround, warehouse-to-airport coordination, and destination-specific handling are built into how OSS structures every urgent shipment. Clients using OSS for international shipping air get dedicated account management, flexible scheduling, and a logistics team experienced in coordinating time-sensitive shipments across multiple destination countries.",
+              "OSS has operated as a storage and logistics provider in the UAE since 2006, developing air cargo capabilities alongside its wider warehousing and sea freight services. Fast documentation turnaround, warehouse-to-airport coordination, and destination-specific handling are built into how OSS structures every urgent shipment. \n\n Clients using OSS for international shipping air get dedicated account management, flexible scheduling, and a logistics team experienced in coordinating time-sensitive shipments across multiple destination countries.",
           },
           {
             title: "Our Team",
@@ -293,7 +293,7 @@ export default function InternationalShippingAir() {
       {/* FAQ */}
       <FAQSection
         eyebrow="FAQ"
-        title="Your International Shipping Air Questions Answered"
+        title="Common Questions About Air Cargo and International Shipping"
         faqs={[
           {
             question: "Does OSS offer urgent air cargo dispatch in the UAE?",

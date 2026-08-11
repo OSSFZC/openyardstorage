@@ -272,7 +272,7 @@ As a logistic shipping service built around container-based trade, OSS coordinat
             title: "About Us",
             subtitle: "Marine and Container Logistics Experience in Sharjah",
             description:
-              "OSS has operated as a storage and logistics provider in Sharjah since 2006, growing into one of the established marine logistics companies in Sharjah offering container freight logistics alongside warehousing and inland transport. OSS invests in port coordination, digital tracking systems, and trained dispatch staff to keep container shipments moving without gaps. Clients working with OSS as their carrier in shipping and logistics get dedicated account management, flexible contracts, and a team focused on coordination across every step of the shipment.",
+              "OSS has operated as a storage and logistics provider in Sharjah since 2006, growing into one of the established marine logistics companies in Sharjah offering container freight logistics alongside warehousing and inland transport. OSS invests in port coordination, digital tracking systems, and trained dispatch staff to keep container shipments moving without gaps.\n\n Clients working with OSS as their carrier in shipping and logistics get dedicated account management, flexible contracts, and a team focused on coordination across every step of the shipment.",
           },
           {
             title: "Our Team",

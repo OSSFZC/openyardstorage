@@ -143,7 +143,7 @@ Every shipping & logistic management contract through OSS is built around cargo 
       {/* SERVICES */}
       <ServiceGridSection
         eyebrow="Our Services"
-        title="Comprehensive Logistics Capabilities"
+        title="Shipping & Logistic Management Offerings"
         services={[
           {
             title: "Centralized Freight Coordination",
@@ -275,7 +275,7 @@ Every shipping & logistic management contract through OSS is built around cargo 
             title: "About Us",
             subtitle: "Shipping & Logistic Management Experience in the UAE",
             description:
-              "OSS has operated as a storage and logistics provider in the UAE since 2006, offering shipping & logistic management that combines warehousing, freight, and delivery under one service. OSS invests in fleet coordination, digital tracking systems, and trained dispatch staff to keep supply chains moving without gaps. Clients using OSS for shipping & logistic management get dedicated account management, flexible contracts, and a logistics team focused on coordination across every step of the supply chain.",
+              "OSS has operated as a storage and logistics provider in the UAE since 2006, offering shipping & logistic management that combines warehousing, freight, and delivery under one service. OSS invests in fleet coordination, digital tracking systems, and trained dispatch staff to keep supply chains moving without gaps.\n\n Clients using OSS for shipping & logistic management get dedicated account management, flexible contracts, and a logistics team focused on coordination across every step of the supply chain.",
           },
           {
             title: "Our Team",

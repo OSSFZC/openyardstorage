@@ -187,7 +187,7 @@ const shippingSharjah = {
           "High-density racking and freight coordination support faster product rotation.",
       },
       {
-        image: "/images/services/truck.png",
+        image: "/images/locations/factory.png",
         title: "Industrial Manufacturing",
         description:
           "Staging areas hold raw materials and machinery before scheduled distribution.",
@@ -199,7 +199,7 @@ const shippingSharjah = {
           "Open yard storage for pipes, equipment, and industrial materials.",
       },
       {
-        image: "/images/locations/factory.png",
+        image: "/images/locations/construction.png",
         title: "Construction and Infrastructure",
         description:
           "Heavy materials move efficiently between storage and project sites.",
@@ -267,7 +267,7 @@ const shippingSharjah = {
       title: "About Us",
       subtitle: "Storage and Logistics Experience Rooted in Sharjah",
       description:
-        "OSS has operated as a storage and logistics provider in Sharjah since 2006, growing into one of the region's established storage and freight providers by combining warehousing, container handling, and freight transport under one service. OSS invests in facility infrastructure, digital tracking systems, and trained staff to support businesses across trading, manufacturing, and retail sectors. Clients working with OSS get dedicated account management, flexible contracts, and a logistics team focused on keeping storage and shipping coordinated rather than managed as separate functions.",
+        "OSS has operated as a storage and logistics provider in Sharjah since 2006, growing into one of the region's established storage and freight providers by combining warehousing, container handling, and freight transport under one service. OSS invests in facility infrastructure, digital tracking systems, and trained staff to support businesses across trading, manufacturing, and retail sectors. \n\n Clients working with OSS get dedicated account management, flexible contracts, and a logistics team focused on keeping storage and shipping coordinated rather than managed as separate functions.",
     },
     {
       title: "Our Team Section",
@@ -279,7 +279,7 @@ const shippingSharjah = {
 
   faq: {
     eyebrow: "FAQ",
-    title: "Your Shipping Questions Answered in Sharjah",
+    title: "Common Questions About Storage and Shipping in Sharjah",
 
     faqs: [
       {

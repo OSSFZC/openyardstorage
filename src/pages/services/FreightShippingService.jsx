@@ -73,31 +73,35 @@ export default function FreightShippingService() {
         description="OSS's freight shipping addresses each of these directly"
         features={[
           {
-            image: "/images/services/time-manager.png",
-            title: "Innovative Tracking",
-            description: "Stay informed and secure with real-time updates.",
-          },
-          {
             image: "/icons/timely-Delivery.png",
-            title: "Customized Solutions",
-            description: "Tailored shipping plans for your business.",
+            title: "Fixed International Routing",
+            description:
+              "Scheduled freight lanes connect Sharjah to key regional and global destinations, so businesses aren't rebuilding a shipping plan for every order.",
           },
           {
-            image: "/icons/Regulatory-exper.png",
-            title: "Delivers on Time",
-            description: "Prioritizing speed and reliability.",
+            image: "/images/services/offer.png",
+            title: "Customs Documentation Support",
+            description:
+              "Export paperwork and clearance processes are managed as part of the shipping contract, not left for the client to coordinate separately.",
+          },
+          {
+            image: "/images/industries/product-testing.png",
+            title: "Consistent Handling from Origin to Destination",
+            description:
+              "Cargo stays within a coordinated network rather than passing through disconnected agents in different countries.",
           },
           {
             image: "/icons/Real-time.png",
-            title: "Strategic Partnerships",
-            description: "Benefit from our extensive logistics network.",
+            title: "End-to-End Tracking",
+            description:
+              "Shipment status is visible from UAE departure through arrival at the destination port.",
           },
         ]}
       />
 
       <LeftalignedCards
         eyebrow="The OSS Difference "
-        title="What businesses get from OSS's freight shipping:"
+        title="Freight Shipping Services Built for Cross-Border Reliability"
         subtitle="OSS operates freight shipping services designed around the realities of moving cargo across international borders, customs variation, documentation requirements, and multi-leg transit. Rather than treating export shipments the same as domestic freight, OSS builds each route around the destination country's clearance and handling requirements.
 Every freight shipping contract through OSS is structured around cargo type, destination, and shipment frequency, giving exporters a consistent process instead of a one-off booking each time cargo needs to move. Businesses with recurring shipments to the same markets get a repeatable routing plan; businesses with occasional or first-time export needs get documentation guidance built into the process rather than left to figure out on their own.
 "
@@ -271,7 +275,7 @@ Every freight shipping contract through OSS is structured around cargo type, des
             title: "About Us",
             subtitle: "Freight Shipping Experience Built Around Export Trade",
             description:
-              "OSS has delivered storage and logistics solutions across the UAE since 2006, offering freight shipping services that support international cargo movement with export documentation, customs coordination, and multi-country routing. Clients benefit from dedicated account management, flexible scheduling, and experienced logistics professionals who manage cross-border shipments efficiently from origin to destination.",
+              "OSS has delivered storage and logistics solutions across the UAE since 2006, offering freight shipping services that support international cargo movement with export documentation, customs coordination, and multi-country routing. \n\n Clients benefit from dedicated account management, flexible scheduling, and experienced logistics professionals who manage cross-border shipments efficiently from origin to destination.",
           },
           {
             title: "Our Team",

@@ -272,7 +272,7 @@ Each transport contract through OSS is structured around cargo type, delivery fr
             title: "About Us",
             subtitle: "Transport and Logistics Experience Rooted in Sharjah",
             description:
-              "OSS has operated as a storage and logistics provider in Sharjah since 2006, developing a transport logistic service in Sharjah that connects warehousing directly to inland freight movement. OSS invests in fleet management, digital tracking systems, and trained dispatch staff to keep deliveries predictable. Clients working with OSS get dedicated account management, flexible scheduling, and a logistics team focused on keeping storage and transport coordinated rather than managed as separate functions.",
+              "OSS has operated as a storage and logistics provider in Sharjah since 2006, developing a transport logistic service in Sharjah that connects warehousing directly to inland freight movement. OSS invests in fleet management, digital tracking systems, and trained dispatch staff to keep deliveries predictable. \n\n Clients working with OSS get dedicated account management, flexible scheduling, and a logistics team focused on keeping storage and transport coordinated rather than managed as separate functions.",
           },
           {
             title: "Our Team",

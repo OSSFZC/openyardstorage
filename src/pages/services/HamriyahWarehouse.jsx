@@ -270,7 +270,7 @@ Every Hamriyah free zone warehouse through OSS is set up around cargo type, trad
             title: "About Us",
             subtitle: "Free Zone Storage Experience Near Hamriyah Port",
             description:
-              "OSS has operated as a storage and logistics provider in Sharjah since 2006, offering a Hamriyah free zone warehouse to support businesses trading through the port and its surrounding customs zone. OSS invests in facility infrastructure, digital tracking systems, and trained staff to keep free zone logistics efficient. Clients renting free zone warehouse space from OSS get dedicated account management, flexible contracts, and a logistics team focused on keeping customs-cleared cargo moving without delay.",
+              "OSS has operated as a storage and logistics provider in Sharjah since 2006, offering a Hamriyah free zone warehouse to support businesses trading through the port and its surrounding customs zone. OSS invests in facility infrastructure, digital tracking systems, and trained staff to keep free zone logistics efficient. \n\n Clients renting free zone warehouse space from OSS get dedicated account management, flexible contracts, and a logistics team focused on keeping customs-cleared cargo moving without delay.",
           },
           {
             title: "Our Team",

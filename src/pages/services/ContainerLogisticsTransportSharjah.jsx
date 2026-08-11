@@ -212,7 +212,7 @@ Every container logistics transport contract in Sharjah is structured around car
               "Heavy materials are transported efficiently between the port and project sites.",
           },
           {
-            image: "/images/services/warehousingicon.png",
+            image: "/images/industries/product-testing.png",
             title: "FMCG Distribution",
             description:
               "Reliable container handling supports consistent inventory replenishment cycles.",
@@ -275,7 +275,7 @@ Every container logistics transport contract in Sharjah is structured around car
             title: "About Us",
             subtitle: "Container Handling Experience Rooted in Sharjah",
             description:
-              "OSS has operated as a storage and logistics provider in Sharjah since 2006, developing container shipping services in Sharjah that connect port-side handling directly to inland storage and delivery. OSS invests in port coordination, digital tracking systems, and trained dispatch staff to keep container movement predictable. Clients using OSS for container logistics transport get dedicated account management, flexible contracts, and a logistics team focused on keeping containers moving from arrival to final delivery without added delays.",
+              "OSS has operated as a storage and logistics provider in Sharjah since 2006, developing container shipping services in Sharjah that connect port-side handling directly to inland storage and delivery. OSS invests in port coordination, digital tracking systems, and trained dispatch staff to keep container movement predictable. \n\n Clients using OSS for container logistics transport get dedicated account management, flexible contracts, and a logistics team focused on keeping containers moving from arrival to final delivery without added delays.",
           },
           {
             title: "Our Team",

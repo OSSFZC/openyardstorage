@@ -275,7 +275,7 @@ Every storage facility contract through OSS is built around cargo type, volume, 
             subtitle:
               "Warehousing Experience Serving Abu Dhabi and the Wider UAE",
             description:
-              "OSS has operated as a storage and logistics provider in the UAE since 2006, giving Abu Dhabi-based businesses access to a storage facility network without requiring an Abu Dhabi-based warehouse. OSS invests in facility infrastructure, digital inventory software, and trained staff to support reliable storage and transit toward Abu Dhabi. Clients using OSS as their storage facility serving Abu Dhabi get dedicated account management, flexible contracts, and a logistics team focused on keeping operations moving without interruption.",
+              "OSS has operated as a storage and logistics provider in the UAE since 2006, giving Abu Dhabi-based businesses access to a storage facility network without requiring an Abu Dhabi-based warehouse. OSS invests in facility infrastructure, digital inventory software, and trained staff to support reliable storage and transit toward Abu Dhabi. \n\n Clients using OSS as their storage facility serving Abu Dhabi get dedicated account management, flexible contracts, and a logistics team focused on keeping operations moving without interruption.",
           },
           {
             title: "Our Team",
