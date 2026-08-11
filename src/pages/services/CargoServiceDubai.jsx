@@ -13,7 +13,7 @@ import LeftalignedCards from "../../components/LeftalignedCards";
 import { FiFileText, FiClock, FiShield, FiMap } from "react-icons/fi";
 
 import useMeta from "../../hooks/useMeta";
-import { sub } from "framer-motion/client";
+// import { sub } from "framer-motion/client";
 
 export default function CargoServiceDubai() {
   useMeta(
@@ -28,7 +28,7 @@ export default function CargoServiceDubai() {
         // eyebrow="Effortless Cargo Transition to Dubai"
         title="Cargo Service to Dubai from Sharjah, UAE"
         subtitle="OSS provides a reliable cargo service to Dubai, connecting its 260,000+ square-ft Sharjah storage network to Dubai's ports, free zones, and business districts. Businesses use OSS for scheduled freight runs, cross-docking, and full-load or part-load cargo movement between the two Emirates, backed by real-time shipment tracking and a dedicated fleet."
-        buttonText="Get a Free Quote"
+        buttonText="Request a Dubai Cargo Service Quote"
         buttonLink="/contact-us"
         backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
       />
@@ -224,8 +224,8 @@ OSS is a storage and logistics company based in Sharjah, and cargo movement to D
       {/* /Free Zone Storage Section */}
       <FeatureSection
         // eyebrow="The OSS FZC Difference"
-        title="Free Zone Storage Access for Import-Export Businesses"
-        description="Companies handling international trade need reliable Freezone Storage Space in Sharjah that supports duty suspension and simplifies customs processing. OSS facilities are located near the Sharjah International Airport Free Zone (SAIF Zone) and Hamriyah Free Zone, giving trading firms efficient, strategically positioned storage close to major shipping and logistics hubs."
+        title="Free Zone Cargo Access for Dubai-Bound Shipments"
+        description="Businesses trading internationally need cargo shipping that supports duty-efficient handling and simplified customs processing. OSS's cargo service to Dubai connects to major free zones and shipping points, giving trading firms a direct route from Sharjah storage to Dubai-based distribution without added customs delays."
       />
 
       {/* STATS */}
@@ -278,7 +278,7 @@ OSS is a storage and logistics company based in Sharjah, and cargo movement to D
             title: "About Us",
             subtitle: "Cargo Shipping Experience Based in the UAE",
             description:
-              "OSS provides cargo service to Dubai as part of its broader storage and 3PL logistics operation across the United Arab Emirates. OSS invests in fleet management, digital tracking systems, and trained dispatch staff to keep freight moving on schedule. OSS is a storage and logistics company based in Sharjah. Clients using OSS's shipping cargo services in Dubai get dedicated account management, flexible shipping schedules, and a logistics team focused on delivery reliability.",
+              "OSS provides cargo service to Dubai as part of its broader storage and 3PL logistics operation across the United Arab Emirates. OSS invests in fleet management, digital tracking systems, and trained dispatch staff to keep freight moving on schedule.\n\n OSS is a storage and logistics company based in Sharjah. Clients using OSS's shipping cargo services in Dubai get dedicated account management, flexible shipping schedules, and a logistics team focused on delivery reliability.",
           },
           {
             title: "Our Team",

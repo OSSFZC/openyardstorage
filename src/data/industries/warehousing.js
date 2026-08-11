@@ -25,7 +25,7 @@ const warehousingData = {
 
     rightTitle: "Problem Statement ",
 
-    rightBg: "#F4F8FF",
+    rightBg: "#C5F7FF",
 
     cards: [
       {
@@ -314,11 +314,26 @@ const warehousingData = {
     ],
   },
 
+   about: [
+    {
+      title: "About Us",
+      subtitle: "Industry-Specific Warehousing Experience in the UAE",
+      description:
+        "OSS has operated as a storage and logistics provider in the UAE since 2006, building warehouse infrastructure suited to different industries rather than a single generic layout. As one of the warehouse companies in UAE serving both standard trading goods and regulated healthcare stock, OSS invests in facility upgrades, digital tracking, and trained staff to meet each industry's requirements.\n\n Healthcare clients specifically rely on OSS for warehouse storage of healthcare logistics products, medicines, and vaccines, supported by temperature-controlled zones and condition monitoring.",
+    },
+    {
+      title: "Our Team Section",
+      subtitle: "Staff Trained Across Multiple Industry Requirements",
+      description:
+        "OSS warehouse teams include logistics managers, inventory analysts, and technicians trained on industry-specific handling, from standard commercial goods to temperature-sensitive healthcare and pharmaceutical stock.",
+    },
+  ],
+
   cta: {
     title: "Get Warehousing Built for Your Industry",
     description:
       "Whether you need general commercial storage, cold chain infrastructure, or dedicated warehouse storage of healthcare logistics products, medicines, and vaccines, OSS has the facility configurations to support it. Contact the OSS team for an industry-specific storage plan and quote.",
-    buttonText: "Talk to OSS for Custom Warehousing Solutions",
+    buttonText: "Contact OSS for an Industry Warehousing Quote",
     buttonLink: "/contact-us",
     backgroundImage: "/images/services/Explore-More.jpg",
   },

@@ -146,37 +146,37 @@ Each yard for rent in Sharjah is selected based on storage volume, equipment siz
         services={[
           {
             title: "Equipment Storage",
-            image: "/images/services/flexible-yard.jpg",
+            image: "/images/services/short-warehouse.jpeg",
             description:
               "Secure outdoor storage for construction equipment, generators, cranes, and heavy machinery.",
           },
           {
             title: "Container Storage",
-            image: "/images/services/custom-storage.jpg",
+            image: "/images/industries/container-storage.jpg",
             description:
               "Dedicated yard space for loaded or empty shipping containers with convenient transport access.",
           },
           {
             title: "Construction Material Storage",
-            image: "/images/services/security.jpg",
+            image: "/images/services/freezone-mainland.jpg",
             description:
               "Store steel, pipes, timber, concrete products, scaffolding, and bulk project materials safely.",
           },
           {
             title: "Vehicle and Fleet Storage",
-            image: "/images/services/logistics.jpg",
+            image: "/images/industries/vehicle-and-fleet.jpg",
             description:
               "Secure parking and storage for commercial vehicles, trailers, buses, and industrial fleets.",
           },
           {
             title: "Project-Based Yard Rental",
-            image: "/images/services/maintenance.jpg",
+            image: "/images/services/short-term.jpg",
             description:
               "Flexible outdoor storage for temporary construction, infrastructure, and industrial projects.",
           },
           {
             title: "Oversized Cargo Storage",
-            image: "/images/services/maintenance.jpg",
+            image: "/images/warehouse.png",
             description:
               "Space for large industrial components, fabricated structures, transformers, and heavy equipment that require outdoor handling.",
           },
@@ -274,7 +274,7 @@ Each yard for rent in Sharjah is selected based on storage volume, equipment siz
             subtitle:
               "Outdoor Storage Backed by Nearly Two Decades of Logistics Experience",
             description:
-              "Since 2006, OSS has supported businesses throughout Sharjah with reliable industrial storage and logistics solutions. Businesses looking for open yard storage for rent in Sharjah benefit from secure facilities, flexible contracts, experienced logistics support, and storage solutions designed around operational requirements rather than fixed rental models. Whether storing construction equipment, industrial materials, containers, or transport fleets, OSS provides dependable outdoor storage that grows alongside business operations.",
+              "Since 2006, OSS has supported businesses throughout Sharjah with reliable industrial storage and logistics solutions. Businesses looking for open yard storage for rent in Sharjah benefit from secure facilities, flexible contracts, experienced logistics support, and storage solutions designed around operational requirements rather than fixed rental models.\n\n Whether storing construction equipment, industrial materials, containers, or transport fleets, OSS provides dependable outdoor storage that grows alongside business operations.",
           },
           {
             title: "Our Team",

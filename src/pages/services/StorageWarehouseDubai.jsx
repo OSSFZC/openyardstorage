@@ -275,7 +275,7 @@ Every storage warehouse contract through OSS is built around cargo type, volume,
             title: "About Us",
             subtitle: "Warehousing Experience Serving Dubai and the Wider UAE",
             description:
-              "OSS has operated as a storage and logistics provider in the UAE since 2006, giving Dubai-based businesses access to a storage warehouse network without requiring a Dubai-based facility. OSS invests in facility infrastructure, digital inventory software, and trained staff to support fast, reliable storage close to Dubai. Clients using OSS as their storage warehouse in Dubai get dedicated account management, flexible contracts, and a logistics team focused on keeping operations moving without interruption.",
+              "OSS has operated as a storage and logistics provider in the UAE since 2006, giving Dubai-based businesses access to a storage warehouse network without requiring a Dubai-based facility. OSS invests in facility infrastructure, digital inventory software, and trained staff to support fast, reliable storage close to Dubai.\n\n Clients using OSS as their storage warehouse in Dubai get dedicated account management, flexible contracts, and a logistics team focused on keeping operations moving without interruption.",
           },
           {
             title: "Our Team",
@@ -356,7 +356,7 @@ Every storage warehouse contract through OSS is built around cargo type, volume,
       {/* CTA */}
       <CTASection
         title="Get Storage Space That Keeps Dubai Within Reach"
-        subtitle="Whether you need scalable B2B warehousing, real-time WMS visibility, or a reliable storage warehouse in Dubai's reach, OSS has the facility infrastructure to support it. Contact the OSS logistics team for a storage layout and quote."
+        description="Whether you need scalable B2B warehousing, real-time WMS visibility, or a reliable storage warehouse in Dubai's reach, OSS has the facility infrastructure to support it. Contact the OSS logistics team for a storage layout and quote."
         buttonText="Contact OSS for a Dubai Storage Quote"
         buttonLink="/contact-us"
         backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"

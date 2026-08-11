@@ -230,7 +230,58 @@ export default function StorageSpaceDubai() {
           },
         ]}
       />
+      <section className="py-20">
+        <div className="container mx-auto px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Image / Map */}
+            <div className="relative">
+              <img
+                src="/images/industries/dubai-network.jpg"
+                alt="OSS storage location and transport connectivity across Dubai"
+                className="w-full rounded-2xl"
+              />
+            </div>
 
+            {/* Content */}
+            <div>
+              <span className="text-sm font-semibold uppercase tracking-wider">
+                Strategic Location
+              </span>
+
+              <h2 className="text-3xl md:text-4xl font-bold mt-3">
+                Well-Connected Storage Facilities Across Dubai
+              </h2>
+
+              <p className="mt-5 text-gray-600 leading-relaxed">
+                Efficient logistics begins with the right location. OSS provides
+                storage space for rent in Dubai near major transport corridors,
+                allowing businesses to move inventory quickly across the UAE and
+                international markets.
+              </p>
+
+              <p className="mt-6 font-semibold">
+                Our facilities provide convenient connectivity to:
+              </p>
+
+              <ul className="mt-4 space-y-3 list-disc list-inside text-gray-600">
+                <li>Jebel Ali Port</li>
+                <li>Al Maktoum International Airport</li>
+                <li>Dubai International Airport</li>
+                <li>Sheikh Mohammed Bin Zayed Road (E311)</li>
+                <li>Emirates Road (E611)</li>
+                <li>Major industrial and commercial districts</li>
+              </ul>
+
+              <p className="mt-6 text-gray-600 leading-relaxed">
+                This strategic positioning helps reduce transportation time
+                while improving supply chain efficiency.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
       {/* STATS */}
       <StatsSection
         title="Operational Excellence You Can Depend On"
@@ -278,7 +329,7 @@ export default function StorageSpaceDubai() {
             title: "About Us",
             subtitle: "Reliable Warehouse Storage Since 2006",
             description:
-              "OSS has been delivering professional warehouse and logistics solutions across the UAE since 2006. Businesses that need to rent storage in Dubai benefit from modern facilities, experienced warehouse teams, flexible rental structures, and inventory management systems that simplify daily operations. Every storage solution is designed around the client's operational requirements rather than offering a one-size-fits-all warehouse. Whether storing a few pallet positions or managing large commercial inventories, OSS delivers consistent service, security, and scalability.",
+              "OSS has been delivering professional warehouse and logistics solutions across the UAE since 2006. Businesses that need to rent storage in Dubai benefit from modern facilities, experienced warehouse teams, flexible rental structures, and inventory management systems that simplify daily operations.\n\n Every storage solution is designed around the client's operational requirements rather than offering a one-size-fits-all warehouse. Whether storing a few pallet positions or managing large commercial inventories, OSS delivers consistent service, security, and scalability.",
           },
           {
             title: "Our Team",

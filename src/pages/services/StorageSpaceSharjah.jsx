@@ -27,7 +27,7 @@ export default function StorageSpaceSharjah() {
         // eyebrow="Secure Your Space, Simplify Your Life"
         title="Commercial Storage Space in Sharjah, UAE"
         subtitle="OSS is a 3PL warehousing provider operating 260,000+ square ft of ambient, temperature-controlled, and open-yard storage across Sharjah. OSS serves trading firms, industrial manufacturers, and e-commerce businesses with cloud-based warehouse management system (WMS) tracking, real-time inventory visibility, and multimodal logistics support."
-        buttonText="Contact Us Now"
+        buttonText="Request a 3PL Storage Consultation"
         buttonLink="/contact-us"
         backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
       />
@@ -281,7 +281,7 @@ export default function StorageSpaceSharjah() {
             title: "About Us",
             subtitle: "Warehousing Experience Based in the UAE",
             description:
-              "OSS provides industrial storage and 3PL logistics services across the United Arab Emirates.\n\nOSS invests in facility infrastructure, digital inventory software, and trained operational staff to solve fulfillment problems for growing businesses.\n\nOSS is a storage and logistics company in Sharjah. Clients get dedicated account management, flexible storage contracts, and a logistics team focused on keeping operations running without interruption.",
+              "OSS provides industrial storage and 3PL logistics services across the United Arab Emirates.OSS invests in facility infrastructure, digital inventory software, and trained operational staff to solve fulfillment problems for growing businesses.\n\n OSS is a storage and logistics company in Sharjah. Clients get dedicated account management, flexible storage contracts, and a logistics team focused on keeping operations running without interruption.",
           },
           {
             title: "Our Team",
@@ -360,7 +360,7 @@ export default function StorageSpaceSharjah() {
       <CTASection
         title="Optimize Your Storage Operations in Sharjah"
         description="Whether you need scalable B2B warehousing, real-time WMS visibility, or free zone storage access, OSS has the facility infrastructure to support it. Contact the OSS logistics team for a warehouse layout plan and quote."
-        buttonText="Contact Us Now"
+        buttonText="Contact OSS for a Cargo Service to Dubai Quote"
         buttonLink="/contact-us"
         backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
       />

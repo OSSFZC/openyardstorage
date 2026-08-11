@@ -11,12 +11,18 @@ export default function DualInfoSection({ items = [] }) {
               <h3 className="text-2xl font-semibold text-gray-800 mb-4">
                 {item.title}
               </h3>
-              <h4  className="text-xl font-medium text-gray-700 mb-4">
+
+              <h4 className="text-xl font-medium text-gray-700 mb-4">
                 {item.subtitle}
               </h4>
-              <p className="text-gray-600 leading-relaxed">
-                {item.description}
-              </p>
+
+              <div className="text-gray-600 leading-relaxed">
+                {item.description.split("\n\n").map((paragraph, i) => (
+                  <p key={i} className={i > 0 ? "mt-4" : ""}>
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
             </div>
           ))}
         </div>

@@ -161,6 +161,18 @@ export default function WarehouseStorageSpace() {
               "Climate-controlled storage options for pharmaceuticals, cosmetics, food products, electronics, and other temperature-sensitive inventory requiring stable environmental conditions.",
           },
           {
+            title: "Short-Term Rental",
+            image: "/images/services/short-term.jpg",
+            description:
+              "Month-to-month options for businesses testing new product lines or managing seasonal stock.",
+          },
+          {
+            title: "Secure Small-Scale Warehousing",
+            image: "/images/services/secure.jpg",
+            description:
+              "Reinforced flooring, CCTV monitoring, and access control applied to smaller storage units",
+          },
+          {
             title: "Inventory Tracking for Small Units",
             image: "/images/services/dispatch.jpg",
             description:
@@ -271,7 +283,7 @@ export default function WarehouseStorageSpace() {
             title: "About Us",
             subtitle: "Storage Experience That Scales With Your Business",
             description:
-              "OSS has operated as a storage and logistics provider in Sharjah since 2006, supporting businesses from single-pallet accounts to full industrial warehousing. A flexible warehouse storage space for rent through OSS gives smaller businesses access to the same facility standards trusted by larger enterprises. OSS prioritises flexible contracts and predictable pricing, allowing businesses renting small storage today to expand into larger warehouse space tomorrow without changing providers.",
+              "OSS has operated as a storage and logistics provider in Sharjah since 2006, supporting businesses from single-pallet accounts to full industrial warehousing. A flexible warehouse storage space for rent through OSS gives smaller businesses access to the same facility standards trusted by larger enterprises.\n\n OSS prioritises flexible contracts and predictable pricing, allowing businesses renting small storage today to expand into larger warehouse space tomorrow without changing providers.",
           },
           {
             title: "Our Team",
@@ -286,7 +298,7 @@ export default function WarehouseStorageSpace() {
       {/* FAQ */}
       <FAQSection
         eyebrow="FAQ"
-        title="Your Warehouse Storage Space For Rent Questions Answered"
+        title="Common Questions About Storage Warehouse for Rent"
         faqs={[
           {
             question:

@@ -10,7 +10,7 @@ const hamriyahPortSharjah = {
     title: "Strategic Logistics Support at Hamriyah Port Sharjah",
     subtitle:
       " OSS operates a storage and logistics facility positioned close to Hamriyah Port in Sharjah, giving businesses fast access to port-side cargo movement. OSS storage is 13 - 15 minute drive from Hamriyah Port, making it a practical base for import, export, and industrial storage operations tied to Hamriyah's shipping activity.",
-    buttonText: "Discover Our Journey",
+    buttonText: "Request a Hamriyah Port Storage Consultation",
     buttonLink: "/contact-us",
     backgroundImage: "/images/locations/hamriyah.jpg",
   },
@@ -20,7 +20,7 @@ const hamriyahPortSharjah = {
     description:
       "Businesses storing cargo far from Hamriyah Port commonly run into four problems",
 
-    rightBg: "#F8FFEA",
+    rightBg: "#C5F7FF",
 
     cards: [
       {
@@ -271,7 +271,7 @@ const hamriyahPortSharjah = {
 
   faq: {
     eyebrow: "FAQ",
-    title: "Your Hamriyah Port Logistics Questions Answered",
+    title: "Common Questions About OSS Storage Near Hamriyah Port",
 
     faqs: [
       {

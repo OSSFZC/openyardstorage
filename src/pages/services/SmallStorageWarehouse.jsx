@@ -73,9 +73,8 @@ export default function SmallStorageWarehouse() {
 
       {/* SOLUTIONS */}
       <FeatureSection
-        eyebrow="Discover the OSS FZC Advantage"
         title="Experience Tailored Storage Solutions"
-        description="At OSS FZC, we redefine how businesses approach storage with flexible rentals, scalable spaces, and state-of-the-art facilities."
+        description="OSS addresses each of these through its small storage warehouse for rent:"
         features={[
           {
             image: "/images/services/grow.png",
@@ -147,7 +146,7 @@ Every small storage warehouse for rent through OSS is set up around actual inven
       {/* SERVICES */}
       <ServiceGridSection
         eyebrow="Our Storage Services"
-        title="Explore Our Storage Solutions"
+        title="Small Storage Warehouse Rental Options"
         services={[
           {
             title: "Compact Unit Storage",
@@ -279,7 +278,7 @@ Every small storage warehouse for rent through OSS is set up around actual inven
             title: "About Us",
             subtitle: "Storage Experience That Scales With Your Business",
             description:
-              "OSS has operated as a storage and logistics provider in Sharjah since 2006, supporting businesses from single-pallet accounts to full industrial warehousing. A small storage warehouse for rent through OSS gives smaller businesses access to the same facility standards used across the entire client base.OSS prioritizes flexible contracts and predictable pricing, so businesses renting small storage today can scale into larger space without changing providers.",
+              "OSS has operated as a storage and logistics provider in Sharjah since 2006, supporting businesses from single-pallet accounts to full industrial warehousing. A small storage warehouse for rent through OSS gives smaller businesses access to the same facility standards used across the entire client base.\n\n OSS prioritizes flexible contracts and predictable pricing, so businesses renting small storage today can scale into larger space without changing providers.",
           },
           {
             title: "Our Team",
