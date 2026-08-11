@@ -7,7 +7,7 @@ import StatsSection from "../../components/StatsSection";
 import DualInfoSection from "../../components/DualInfoSection";
 import FAQSection from "../../components/FAQSection";
 import CTASection from "../../components/CTASection";
-import LeftalignedCards from "../../components/LeftAlignedCards";
+import LeftalignedCards from "../../components/LeftalignedCards";
 
 import { FiPackage, FiClock, FiFileText, FiEye } from "react-icons/fi";
 
