@@ -33,7 +33,7 @@ export default function CustomsClearanceServices() {
         subtitle="At OSS Logistics, we provide fast, reliable, and hassle-free customs clearance solutions for import and export shipments across the UAE. Our experienced team ensures that your cargo complies with all customs regulations, minimizing delays and keeping your supply chain moving efficiently. Whether your shipment arrives by sea, air, or land, we manage the entire customs clearance process with accuracy and professionalism."
         buttonText="Request a Freight Forwarding Quote"
         buttonLink="/contact-us"
-        backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
+        backgroundImage="/images/services/banner-customs.jpeg"
       />
       <TrustedSlider />
       {/* <ChallengeSection
