@@ -7,20 +7,17 @@ import StatsSection from "../../components/StatsSection";
 import DualInfoSection from "../../components/DualInfoSection";
 import FAQSection from "../../components/FAQSection";
 import CTASection from "../../components/CTASection";
+import CardsFeatures from "../../components/CardsFeatures";
 
-import {
-  FiDroplet,
-  FiLayers,
-  FiThermometer,
-  FiTrendingUp,
-} from "react-icons/fi";
+import { FiThermometer, FiTruck, FiClock, FiShield } from "react-icons/fi";
 
 import useMeta from "../../hooks/useMeta";
+import LeftalignedCards from "../../components/LeftalignedCards";
 
 export default function ChillerStorageWarehouse() {
   useMeta(
-    "Premium Chiller Storage Warehouse Solutions | OSS FZC",
-    "OSS FZC offers reliable chiller and temperature-controlled warehouse solutions to enhance storage efficiency and maintain optimal conditions for your goods.",
+    "Chiller Storage Warehouse in Sharjah | Openyard Storage FZC",
+    "Looking for a chiller storage warehouse? Openyard Storage FZC delivers dependable cold storage with reliable temperature control. Get a quote today for secure storage!",
   );
 
   return (
@@ -28,9 +25,9 @@ export default function ChillerStorageWarehouse() {
       {/* HERO */}
       <InnerHero
         eyebrow="Precision Storage for Optimal Quality"
-        title="Discover the Perfect Chiller Storage Warehouse Solution for Your Needs"
-        subtitle="Secure Your Space Today – Reach Out for a Customized Quote!"
-        buttonText="Get a Quote"
+        title="Chiller Storage Warehouse Facilities in Sharjah"
+        subtitle="OSS operates a chiller storage warehouse for businesses that need temperature-controlled space for perishable and sensitive goods. Combined with the OSS logistics network, chilled storage connects directly to inbound receiving and outbound distribution, so businesses don't need to coordinate separate cold storage and transport providers for the same inventory."
+        buttonText="Request a Chiller Storage Quote"
         buttonLink="/contact-us"
         backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
       />
@@ -39,109 +36,234 @@ export default function ChillerStorageWarehouse() {
 
       {/* PROBLEM SECTION */}
       <ChallengeSection
-        subtitle="Tired of Compromised Storage Conditions?"
-        title="Challenges in Maintaining Temperature-Controlled Environments"
-        description="Chiller storage requires precise temperature management to prevent spoilage and maintain product quality. Many businesses struggle with inconsistent cooling, inefficient storage layouts, and unreliable systems."
-        description2="OSS FZC provides advanced temperature-controlled warehouse solutions designed to maintain ideal storage conditions while optimizing space and operational efficiency."
-        rightTitle="Solutions to Common Challenges"
+        // subtitle="Tired of Compromised Storage Conditions?"
+        title="Why Temperature-Sensitive Goods Need a Dedicated Chiller Storage Warehouse Partner"
+        description="Businesses without access to dedicated chilled storage commonly face four problems:"
+        // description2="OSS FZC provides advanced temperature-controlled warehouse solutions designed to maintain ideal storage conditions while optimizing space and operational efficiency."
+        rightTitle="Problem Statement"
         rightBg="#C5F7FF"
         cards={[
           {
-            icon: FiDroplet,
-            title: "Humidity Management",
-            text: "Precision moisture control prevents spoilage.",
-          },
-          {
-            icon: FiLayers,
-            title: "Space Optimization",
-            text: "Maximize storage efficiency while maintaining accessibility.",
-          },
-          {
             icon: FiThermometer,
-            title: "Consistent Cooling",
-            text: "Reliable systems maintain stable temperatures.",
+            title: "Inconsistent Temperature Control",
+            text: "Ambient warehousing or improvised cold rooms can't maintain the stable range of perishable goods required.",
           },
           {
-            icon: FiTrendingUp,
-            title: "Scalable Solutions",
-            text: "Flexible storage options that grow with demand.",
+            icon: FiTruck,
+            title: "Disconnected Storage and Distribution",
+            text: "Coordinating separate cold storage and transport providers adds delays and increases the risk of temperature breaks.",
+          },
+          {
+            icon: FiClock,
+            title: "Limited Shelf-Life Visibility",
+            text: "Businesses without proper stock rotation systems risk holding goods past their usable window.",
+          },
+          {
+            icon: FiShield,
+            title: "Compliance and Hygiene Gaps",
+            text: "Perishable and pharmaceutical goods require documented handling standards that ad hoc facilities often can't meet.",
           },
         ]}
       />
 
       {/* SOLUTIONS */}
-      <FeatureSection
-        eyebrow="The OSS FZC Difference"
-        title="Tailored Temperature Control Solutions"
-        description="OSS FZC delivers cutting-edge temperature-controlled warehouses designed specifically for chiller storage needs. Our facilities ensure precise environmental conditions, protecting sensitive goods while optimizing operational efficiency."
+      <LeftalignedCards
+        title="Temperature-Controlled Storage That Protects Product Quality"
+        description="OSS addresses each of these directly:"
         features={[
           {
-            image: "/icons/cost.png",
-            title: "Advanced Monitoring",
-            description: "Continuous tracking ensures product integrity.",
-          },
-          {
-            image: "/icons/timely-Delivery.png",
-            title: "Custom Configurations",
-            description: "Flexible layouts tailored to your requirements.",
-          },
-          {
-            image: "/icons/Regulatory-exper.png",
-            title: "Energy Efficiency",
+            image:"/images/industries/cold-storage.png",
+            title: "Consistent Chilled Conditions",
             description:
-              "Reduce operational costs with sustainable technology.",
+              "Temperature is monitored and maintained across dedicated storage zones.",
           },
           {
-            image: "/icons/Real-time.png",
-            title: "Integrated Systems",
-            description: "Smart systems for efficient warehouse management.",
+            image: "/images/services/warehouseicon.png",
+            title: "Combined Storage and Dispatch",
+            description:
+              "Inventory is stored and released under a single coordinated operation.",
+          },
+          {
+            image: "/images/services/stock.png",
+            title: "Stock Rotation Support",
+            description:
+              "Inventory management follows first-in, first-out handling to reduce spoilage risk.",
+          },
+          {
+            image: "/images/services/offer.png",
+            title: "Documented Compliance Standards",
+            description:
+              "Hygiene and handling protocols are built into daily facility operations.",
+          },
+        ]}
+      />
+
+      <FeatureSection
+        eyebrow="The OSS Difference"
+        title="Chiller Storage Warehousing Built Around Consistency and Coordination"
+        description={`OSS operates a chiller storage warehouse that combines temperature-controlled space with the wider OSS logistics network, so perishable and sensitive goods don't need to move between unrelated cold storage and transport providers before dispatch. Inventory can move from a chilled storage zone straight onto a delivery vehicle without breaking the cold chain.
+
+Every storage arrangement through OSS is structured around product type, required temperature range, and turnover frequency, giving businesses a more reliable path from receiving to dispatch than working with disconnected vendors. This matters most for businesses handling recurring perishable stock, where consistent temperature control directly affects product quality and shelf life. Storage zones are monitored continuously, so deviations are identified and corrected before they affect stored inventory.`}
+        features={[
+          {
+            image: "/images/services/tracking.png",
+            title: "Barcode and RFID Tracking",
+            description:
+              "Stock is logged at each handling point, from receiving through dispatch.",
+          },
+          {
+            image: "/images/services/logistic.png",
+            title: "Trained Warehouse Staff",
+            description:
+              "Coordinators manage stock rotation, temperature checks, and dispatch scheduling.",
+          },
+          {
+            image: "/images/services/track.png",
+            title: "Highway Connectivity",
+            description:
+              "Direct access to major transport corridors supports fast movement from storage to delivery.",
+          },
+          {
+            image: "/images/industries/boxes.png",
+            title: "Flexible Storage Volumes",
+            description:
+              "Small consignments and full pallet-level cold storage are both supported.",
+          },
+          {
+            image: "/images/services/stock.png",
+            title: "Consolidated Storage and Dispatch",
+            description:
+              "Chilled storage and outbound transport are managed under a single contract.",
           },
         ]}
       />
 
       {/* SERVICES */}
       <ServiceGridSection
-        eyebrow="Our Services"
-        title="Transformative Temperature Control Solutions"
+        eyebrow="Services"
+        title="Chiller Storage Offerings"
         services={[
           {
-            title: "Dynamic Temperature Control",
-            image: "/images/services/flexible-yard.jpg",
-            description: "Maintain optimal conditions for sensitive goods.",
-          },
-          {
-            title: "Energy-Efficient Designs",
-            image: "/images/services/custom-storage.jpg",
-            description: "Reduce energy costs with advanced cooling systems.",
-          },
-          {
-            title: "24/7 Monitoring & Support",
-            image: "/images/services/security.jpg",
+            title: "Temperature-Controlled Warehousing",
+            image: "/images/services/controlled-temperature.jpg",
             description:
-              "Round-the-clock supervision for uninterrupted storage.",
+              "Dedicated chiller storage designed for perishable products requiring stable, continuously monitored temperatures to help preserve quality, freshness, and product integrity.",
           },
           {
-            title: "Modular Storage Options",
-            image: "/images/services/logistics.jpg",
-            description: "Flexible layouts for different storage needs.",
+            title: "Stock Rotation and Inventory Management",
+            image: "/images/services/secure.jpg",
+            description:
+              "FIFO inventory handling supports efficient stock rotation, helping reduce spoilage, manage shelf life, and maintain product availability.",
           },
           {
-            title: "Compliance-Ready Facilities",
-            image: "/images/services/maintenance.jpg",
-            description: "Meet strict industry and safety regulations.",
+            title: "Receiving and Dispatch Coordination",
+            image: "/images/services/dispatch.jpg",
+            description:
+              "Chiller storage and outbound dispatch are managed under one coordinated operation, simplifying product movement and reducing unnecessary handling.",
+          },
+          {
+            title: "Full and Part Pallet Storage",
+            image: "/images/services/pallet.jpg",
+            description:
+              "Flexible chilled storage options allow businesses to rent pallet positions or larger areas based on actual storage requirements.",
+          },
+          {
+            title: "Shipment Tracking and Reporting",
+            image: "/images/services/shipment-tracking.jpg",
+            description:
+              "Digital inventory tracking provides real-time visibility into stock levels, storage status, and dispatch activity.",
+          },
+          {
+            title: "Combined Chilled and Ambient Storage",
+            image: "/images/services/ocean-freight.png",
+            description:
+              "Businesses can store temperature-sensitive and standard goods within the same logistics network, simplifying inventory management and distribution.",
           },
         ]}
       />
 
+      <CardsFeatures
+        eyebrow=""
+        title="Chiller Storage Support Across Five Business Sectors"
+        features={[
+          {
+            image: "/images/locations/beverage.png",
+            title: "Food and Beverage Import",
+            description:
+              "Perishable stock stays within a controlled temperature range from receiving through dispatch.",
+          },
+          {
+            image: "/images/locations/factory.png",
+            title: "Industrial Manufacturing",
+            description:
+              "Temperature-sensitive components and materials are stored under monitored conditions.",
+          },
+          {
+            image: "/images/industries/protection.png",
+            title: "Healthcare and Pharmaceutical",
+            description:
+              "Chilled storage supports products that require consistent, documented temperature handling.",
+          },
+          {
+            image: "/images/services/online-store.png",
+            title: "Retail and E-Commerce",
+            description:
+              "Perishable and chilled goods stay fresh through peak demand periods.",
+          },
+          {
+            image: "/images/industries/boxes.png",
+            title: "Hospitality and Catering",
+            description:
+              "Bulk perishable supplies are stored reliably ahead of scheduled delivery.",
+          },
+        ]}
+      />
+
+      <FeatureSection
+        eyebrow="Free Zone Storage "
+        title="Free Zone Access Supporting Chilled Storage"
+        description="Businesses importing temperature-sensitive goods need customs processing that keeps pace with cold chain handling. OSS chiller storage sits close to the SAIF Zone and Hamriyah Free Zone, giving clients duty-efficient handling built directly into the storage process rather than managed as a separate step."
+      />
+
       {/* STATS */}
       <StatsSection
-        title="Proven Success in Numbers"
-        subtitle="See the Impact of Our Temperature-Controlled Solutions"
+        title="Operational Performance That Businesses Trust"
+        subtitle="Temperature-controlled storage supported by secure infrastructure, reliable inventory handling, and continuous monitoring."
         stats={[
-          { value: "30%", label: "Reduction in Spoilage Costs" },
-          { value: "24/7", label: "Monitoring & Support" },
-          { value: "500+", label: "Satisfied Clients" },
-          { value: "99%", label: "Temperature Stability Rate" },
+          {
+            value: 260000,
+            suffix: "+",
+            unit: "sq ft",
+            label: "Total Managed Footprint",
+            description: "Of storage capacity.",
+          },
+          {
+            value: 140,
+            suffix: "+",
+            unit: "Clients",
+            label: "Enterprise Client Base",
+            description: "Active manufacturing, trading, and export clients.",
+          },
+          {
+            value: 12000,
+            suffix: "+",
+            unit: "Pallets",
+            label: "Monthly Freight Throughput",
+            description: "Processed and dispatched monthly.",
+          },
+          {
+            value: 24,
+            suffix: "/7",
+            label: "Facility Security",
+            description: "Video surveillance with automated fire suppression.",
+          },
+          {
+            value: 100,
+            suffix: "%",
+            label: "Temperature Monitoring",
+            description:
+              "Continuous monitoring across dedicated chilled storage zones.",
+          },
         ]}
       />
 
@@ -150,80 +272,89 @@ export default function ChillerStorageWarehouse() {
         items={[
           {
             title: "About Us",
+            subtitle: "Cold Storage Experience Built Around Reliability",
             description:
-              "Trusted leaders in chiller storage, we provide advanced temperature-controlled warehouse solutions designed to maintain the highest standards of quality.",
+              "OSS has operated as a storage and logistics provider in the UAE since 2006, developing chilled storage capabilities alongside its wider warehousing and transport services. Consistent temperature control, receiving-to-dispatch coordination, and documented handling standards are built into how OSS structures every chilled storage arrangement. Clients using OSS's chiller storage warehouse get dedicated account management, flexible storage terms, and a logistics team experienced in handling perishable and temperature-sensitive goods across multiple industries.",
           },
           {
             title: "Our Team",
+            subtitle: "Staff Managing Chilled Storage Operations",
             description:
-              "Our experts combine technical knowledge with logistics expertise to deliver innovative temperature-controlled storage solutions.",
+              "OSS cold storage operations are run by warehouse technicians, stock rotation coordinators, and dispatch staff who manage temperature checks, inventory handling, and delivery scheduling for perishable goods moving through the facility.",
           },
         ]}
       />
 
       {/* FAQ */}
       <FAQSection
-        eyebrow="FAQ"
-        title="Your Chiller Storage Questions Answered"
+        title="Common Questions About Chiller Storage"
         faqs={[
           {
-            question: "What is a chiller storage warehouse?",
+            question: "Does OSS operate a chilled storage facility in Sharjah?",
             answer:
-              "A chiller storage warehouse maintains goods at low controlled temperatures to preserve quality and extend shelf life.",
+              "Yes. OSS operates temperature-controlled storage zones alongside its wider warehousing and transport services, giving businesses a reliable option for perishable and sensitive goods.",
           },
           {
             question:
-              "How is temperature-controlled storage different from regular storage?",
+              "What temperature range does OSS's chilled storage maintain?",
             answer:
-              "Temperature-controlled warehouses regulate temperature and humidity levels to protect sensitive goods.",
+              "Storage zones are monitored continuously to maintain a stable, consistent range suited to the product type being stored.",
           },
           {
-            question: "Why is humidity control important?",
+            question:
+              "Can businesses combine chilled storage with standard warehousing?",
             answer:
-              "Proper humidity prevents condensation, mold growth, and packaging damage.",
+              "Yes. Perishable stock can be held in chilled zones while non-sensitive goods are stored under standard warehousing, under the same provider.",
           },
           {
-            question: "Which industries benefit from chiller storage?",
+            question:
+              "Does OSS combine chilled storage with outbound distribution?",
             answer:
-              "Food, pharmaceuticals, biotechnology, and electronics industries rely on temperature-controlled storage.",
+              "Yes. Storage and dispatch are managed under a single contract, removing the need to coordinate separate cold storage and transport providers.",
           },
           {
-            question: "Can storage solutions be customized?",
+            question:
+              "What goods can be stored in OSS's chilled storage facility?",
             answer:
-              "Yes, we provide customizable layouts, temperature ranges, and storage configurations.",
+              "OSS stores perishable food and beverage stock, temperature-sensitive pharmaceutical products, and other goods requiring controlled conditions. Specialized products follow separate handling procedures.",
           },
           {
-            question: "How do you maintain consistent cooling?",
+            question: "How is stock tracked once it enters chilled storage?",
             answer:
-              "We use advanced HVAC systems and real-time monitoring technology.",
+              "A digital tracking system provides visibility into stock levels and movement from receiving through dispatch.",
           },
           {
-            question: "Is energy efficiency important in cold storage?",
+            question:
+              "What are the contract terms for chiller storage warehouse clients?",
             answer:
-              "Yes, energy-efficient systems reduce operational costs and environmental impact.",
+              "OSS offers monthly short-term agreements for occasional storage needs and multi-year contracts for businesses with recurring chilled storage requirements.",
           },
           {
-            question: "Do you offer monitoring and support?",
+            question:
+              "Does OSS support free zone coordination for chilled storage clients?",
             answer:
-              "Yes, our facilities are monitored 24/7 to ensure stable storage conditions.",
+              "Yes. Storage near the SAIF Zone and Hamriyah Free Zone supports duty-efficient handling as part of the chilled storage process.",
           },
           {
-            question: "Are facilities compliant with regulations?",
+            question:
+              "Can chiller storage capacity scale for businesses with seasonal demand?",
             answer:
-              "All our storage facilities meet strict industry and safety compliance standards.",
+              "Yes. Storage capacity adjusts to stock volume, supporting businesses through both steady and high-demand periods for perishable goods.",
           },
           {
-            question: "Are your storage solutions scalable?",
+            question:
+              "What operational standards does OSS follow for chilled storage?",
             answer:
-              "Yes, our storage capacity can expand based on seasonal or business growth needs.",
+              "OSS follows international supply chain and hygiene standards, using certified equipment, defined stock rotation protocols, and routine temperature checks.",
           },
         ]}
       />
 
       {/* CTA */}
       <CTASection
-        title="Elevate Your Storage Strategy"
-        buttonText="Contact Us for Tailored Solutions Today"
+        title="Store Perishable Goods with a Coordinated Cold Storage Partner"
+        description="Whether you need standalone chilled storage or a combined service that pairs cold storage with distribution, OSS has the infrastructure and experience to support it. Contact the OSS team for a storage plan and quote."
+        buttonText="Contact OSS for a Chiller Storage Quote"
         buttonLink="/contact-us"
         backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
       />

@@ -8,19 +8,16 @@ import DualInfoSection from "../../components/DualInfoSection";
 import FAQSection from "../../components/FAQSection";
 import CTASection from "../../components/CTASection";
 
-import {
-  FiSettings,
-  FiShield,
-  FiTrendingUp,
-  FiDollarSign,
-} from "react-icons/fi";
+import { FiSettings, FiClock, FiTrendingUp, FiEye } from "react-icons/fi";
 
 import useMeta from "../../hooks/useMeta";
+import LeftalignedCards from "../../components/LeftalignedCards";
+import CardsFeatures from "../../components/CardsFeatures";
 
 export default function LogisticsTransportSharjah() {
   useMeta(
-    "Premier Logistics Transport Service in Sharjah | OSS FZC",
-    "Discover top-tier logistics transport services in Sharjah with unmatched efficiency and reliability. Partner with OSS FZC for tailored, dependable solutions.",
+    "Logistics Transport Service in Sharjah|Openyard Storage FZC",
+    "Your reliable logistics transport service in Sharjah starts with Openyard Storage FZC.Efficient transport, dependable support & competitive quotes. Call us today!",
   );
 
   return (
@@ -28,9 +25,9 @@ export default function LogisticsTransportSharjah() {
       {/* HERO */}
       <InnerHero
         eyebrow="Your Trusted Partner in Sharjah Logistics"
-        title="Transform Your Logistics Experience with Unmatched Transport Services"
-        subtitle="Contact Us Now for Customized Solutions that Propel Your Business Forward"
-        buttonText="Get Started With Us Today"
+        title="Logistics and Transport Service in Sharjah"
+        subtitle="OSS delivers a dependable logistics transport service in Sharjah for businesses that need warehousing and distribution moved under one coordinated operation. Combined with the OSS storage network, transport fleets connect inventory directly to inbound and outbound delivery, so businesses don't need to manage separate warehousing and trucking providers for the same shipment"
+        buttonText="Request a Logistics Transport Quote"
         buttonLink="/contact-us"
         backgroundImage="/images/services/Open-yard-storage.jpeg"
         s
@@ -40,111 +37,226 @@ export default function LogisticsTransportSharjah() {
 
       {/* PROBLEM SECTION */}
       <ChallengeSection
-        subtitle="Experiencing Delays and Inefficiencies?"
-        title="Overcoming Common Logistics Challenges in Sharjah"
-        description="In the bustling hub of Sharjah, ensuring seamless logistics operations can be daunting. Frequent shipment delays, complex regulatory requirements, and inefficient transport methods can impede your business growth. Mismanaged logistics cost time and money, disrupting your operations."
-        description2="OSS FZC offers refined solutions for these prevalent issues, providing smooth, reliable logistics transport service in Sharjah tailored to your business needs. Partner with us to streamline your operations and enhance productivity with our expertise and advanced technologies."
-        rightTitle="Solve Your Logistics Challenges"
+        // subtitle="Experiencing Delays and Inefficiencies?"
+        title="Why Distribution Needs a Reliable Logistics Transport Service in Sharjah"
+        description="Businesses without a coordinated approach to inland freight movement commonly face four problems:"
+        // description2="OSS FZC offers refined solutions for these prevalent issues, providing smooth, reliable logistics transport service in Sharjah tailored to your business needs. Partner with us to streamline your operations and enhance productivity with our expertise and advanced technologies."
+        rightTitle="Problem Statement"
         rightBg="#C5F7FF"
         cards={[
           {
             icon: FiTrendingUp,
-            title: "Reduced Delivery Delays",
-            text: "Experience fast, reliable delivery.",
+            title: "Disconnected Storage and Transport Booking",
+            text: "Coordinating separate warehousing and trucking providers adds handling steps before goods even leave the facility.",
           },
           {
-            icon: FiShield,
-            title: "Regulatory Expertise",
-            text: "Navigate complex regulations effortlessly.",
-          },
-          {
-            icon: FiDollarSign,
-            title: "Cost Management",
-            text: "Optimize your transport budget with precision.",
+            icon: FiClock,
+            title: "Inconsistent Delivery Scheduling",
+            text: "Ad hoc transport bookings without a fixed fleet partner lead to unpredictable pickup and drop-off windows.",
           },
           {
             icon: FiSettings,
-            title: "Custom Solutions",
-            text: "Tailored logistics plans for unique needs.",
+            title: "Limited Fleet Flexibility",
+            text: "Businesses with mixed cargo, from pallets to full loads, struggle to find a single provider that can handle both.",
+          },
+          {
+            icon: FiEye,
+            title: "Poor Visibility During Transit",
+            text: "Once goods leave the warehouse, businesses often lose track of delivery status until arrival.",
+          },
+        ]}
+      />
+
+      <LeftalignedCards
+        title="Transport Solutions That Keep Your Deliveries Moving"
+        description="OSS addresses each of these directly:"
+        features={[
+          {
+            image: "/images/services/warehouseicon.png",
+            title: "Combined storage and transport",
+            description:
+              "Inventory is stored and dispatched under a single coordinated operation.",
+          },
+          {
+            image: "/images/locations/schedule.png",
+            title: "Reliable delivery scheduling",
+            description:
+              "A dedicated fleet reduces the unpredictability of ad hoc bookings.",
+          },
+          {
+            image: "/images/services/truck.png",
+            title: "Flexible vehicle capacity",
+            description:
+              "Small consignments and full truckloads are both supported from the same facility.",
+          },
+          {
+            image: "/images/services/online-test.png",
+            title: "In-transit tracking",
+            description:
+              "Delivery status is visible from warehouse dispatch through final drop-off.",
           },
         ]}
       />
 
       {/* SOLUTIONS */}
       <FeatureSection
-        eyebrow="OSS FZC - Elevating Your Logistics Experience"
-        title="Experience Excellence in Logistics"
-        description="At OSS FZC, our logistics transport services in Sharjah stand out through our unmatched dedication to efficiency and reliability. We employ state-of-the-art technologies to streamline operations, ensuring your goods are delivered on time, every time. Our comprehensive understanding of regional regulations facilitates smooth cross-border transactions."
+        eyebrow="The OSS FZC Difference"
+        title="Freight Trucking Built Around Reliable Delivery"
+        description="OSS combines warehousing with coordinated road transport to simplify cargo movement across Sharjah and the UAE. From scheduled deliveries and flexible vehicle capacity to real-time tracking, our integrated approach helps businesses move goods efficiently with fewer coordination gaps."
         features={[
           {
-            image: "/icons/cost.png",
-            title: "Advanced Technology",
-            description: "Keeping you informed & in control.",
-          },
-          {
             image: "/icons/timely-Delivery.png",
-            title: "Expertise You Can Trust",
-            description: "Decades of industry experience.",
+            title: "Reliable Delivery Scheduling",
+            description:
+              "Planned transport schedules for predictable pickups and deliveries.",
           },
           {
-            image: "/icons/Regulatory-exper.png",
-            title: "Tailored Solutions",
-            description: "Customized to fit your business needs.",
+            image: "/images/locations/shipped.png",
+            title: "Flexible Fleet Capacity",
+            description:
+              "Support for small consignments, palletized cargo, and full truckloads.",
+          },
+          {
+            image: "/images/services/offer.png",
+            title: "Route & Documentation Support",
+            description:
+              "Transport paperwork and checkpoint requirements handled efficiently.",
           },
           {
             image: "/icons/Real-time.png",
-            title: "Unwavering Reliability",
-            description: "We deliver when it matters most.",
+            title: "Real-Time Tracking",
+            description:
+              "Visibility from warehouse dispatch through final delivery.",
           },
         ]}
       />
 
       {/* SERVICES */}
       <ServiceGridSection
-        eyebrow="Our Services"
-        title="Comprehensive Logistics Services"
+        eyebrow="Services"
+        title="Transport and Distribution Offerings"
         services={[
           {
-            title: "Freight Management",
-            image: "/images/services/flexible-yard.jpg",
+            title: "Scheduled Inland Distribution",
+            image: "/images/services/inland-transport.jpg",
             description:
-              "Efficient handling of both local and international shipments.",
+              "Planned delivery routes connecting Sharjah warehouses with destinations across the UAE, providing dependable transport for businesses with recurring distribution requirements.",
           },
           {
-            title: "Warehousing Solutions",
-            image: "/images/services/custom-storage.jpg",
+            title: "On-Demand Freight Movement",
+            image: "/images/services/land-transportation.png",
             description:
-              "Secure storage options to meet diverse warehousing needs.",
+              "Flexible transport services for urgent deliveries, one-off shipments, and time-sensitive stock transfers between warehouses, customers, and commercial locations.",
           },
           {
-            title: "Customs Clearance",
+            title: "Warehouse-to-Delivery Coordination",
             image: "/images/services/security.jpg",
-            description: "Expert navigation of complex customs procedures.",
+            description:
+              "Storage and outbound transport are managed under one coordinated service, reducing handling, simplifying logistics, and removing the need for multiple providers.",
           },
           {
-            title: "Supply Chain Solutions",
-            image: "/images/services/logistics.jpg",
+            title: "Full and Part Load Options",
+            image: "/images/services/customs-inspection.jpg",
             description:
-              "Optimizing entire supply chain operations for efficiency.",
+              "Flexible vehicle capacity allows businesses to transport full or smaller loads while paying only for the space their cargo requires.",
           },
           {
-            title: "Fleet Management",
-            image: "/images/services/maintenance.jpg",
+            title: "Shipment Tracking and Reporting",
+            image: "/images/services/shipment-tracking.jpg",
             description:
-              "Modern, equipped fleets ready to handle your logistics challenges.",
+              "Digital tracking provides real-time visibility into shipment location, delivery progress, and proof of delivery.",
+          },
+          {
+            title: "Multi-Location Distribution Support",
+            image: "/images/services/Open-yard-storage.jpeg",
+            description:
+              "Coordinated transport for businesses delivering to multiple retail outlets, warehouses, production facilities, or customer locations across Sharjah and the UAE.",
           },
         ]}
       />
 
+      <CardsFeatures
+        eyebrow=""
+        title="Transport Support Across Five Business Sectors"
+        features={[
+          {
+            image: "/images/services/warehouseicon.png",
+            title: "General Trading and Export",
+            description:
+              "Inland distribution keeps commodity stock moving between storage and buyers.",
+          },
+          {
+            image: "/images/locations/factory.png",
+            title: "Industrial Manufacturing",
+            description:
+              "Components and finished goods move on scheduled delivery routes to production sites.",
+          },
+          {
+            image: "/images/industries/protection.png",
+            title: "Healthcare and Pharmaceutical",
+            description:
+              "Controlled, scheduled transport supports time-sensitive stock movement.",
+          },
+          {
+            image: "/images/services/online-store.png",
+            title: "Retail and E-Commerce",
+            description:
+              "Regular replenishment runs keep shelves and fulfillment centers stocked.",
+          },
+          {
+            image: "/images/locations/oil.png",
+            title: "Oil and Gas Support",
+            description:
+              "Equipment and parts move reliably to support active project timelines.",
+          },
+        ]}
+      />
+
+      <FeatureSection
+        eyebrow="Free Zone Storage "
+        title="Free Zone Access Supporting Transport Operations"
+        description="Businesses moving goods across the UAE need customs processing that keeps pace with delivery schedules. OSS storage sits close to the SAIF Zone and Hamriyah Free Zone, giving transport clients duty-efficient handling built directly into the distribution process rather than managed as a separate step."
+      />
+
       {/* STATS */}
       <StatsSection
-        title="Proven Success in Numbers"
-        subtitle="Delivering Excellence with Every Shipment"
+        title="Operational Performance That Businesses Trust"
+        subtitle="Reliable transport and distribution supported by secure infrastructure, scheduled delivery routes, and coordinated logistics across the UAE."
         stats={[
-          { value: "30%", label: "Reduction in Delivery Times" },
-          { value: "15+", label: "Years of Logistics Expertise" },
-          { value: "500+", label: "Clients Served Across Sharjah" },
-          { value: "98%", label: "Client Satisfaction Rate" },
+          {
+            value: 260000,
+            suffix: "+",
+            unit: "sq ft",
+            label: "Total Managed Footprint",
+            description: "Of storage capacity.",
+          },
+          {
+            value: 140,
+            suffix: "+",
+            unit: "Clients",
+            label: "Enterprise Client Base",
+            description: "Active manufacturing, trading, and export clients.",
+          },
+          {
+            value: 12000,
+            suffix: "+",
+            unit: "Pallets",
+            label: "Monthly Freight Throughput",
+            description: "Processed and dispatched monthly.",
+          },
+          {
+            value: 24,
+            suffix: "/7",
+            label: "Facility Security",
+            description: "Video surveillance with automated fire suppression.",
+          },
+          {
+            value: 3,
+            unit: "Routes",
+            label: "Route Coverage",
+            description:
+              "Transport lanes connecting Sharjah to Dubai, Abu Dhabi, and the wider UAE.",
+          },
         ]}
       />
 
@@ -153,13 +265,16 @@ export default function LogisticsTransportSharjah() {
         items={[
           {
             title: "About Us",
+            subtitle:
+              "Transport Experience Built Around Reliability and Coordination",
             description:
-              "Our leadership’s foresight ensures top-tier logistics services, fostering growth and efficiency for every client.",
+              "OSS has operated as a storage and logistics provider in the UAE since 2006, developing its transport fleet alongside its wider warehousing and freight services. Predictable scheduling, warehouse-to-delivery coordination, and route-specific handling are built into how OSS structures every distribution arrangement. Clients using OSS for a logistics transport service in Sharjah get dedicated account management, flexible scheduling, and a logistics team experienced in coordinating recurring and one-off deliveries across the Emirates. Over nearly two decades of operation, OSS has built the vehicle capacity, driver expertise, and warehouse-to-road processes needed to keep delivery windows consistent even as client volumes grow.",
           },
           {
             title: "Our Team",
+            subtitle: "Staff Coordinating Distribution and Delivery",
             description:
-              "A team of seasoned experts dedicated to delivering logistics solutions with unmatched precision.",
+              "OSS transport operations are run by dispatch coordinators, route planners, and warehouse technicians who manage loading, scheduling, and delivery confirmation for goods moving through Sharjah and across the UAE.",
           },
         ]}
       />
@@ -167,66 +282,72 @@ export default function LogisticsTransportSharjah() {
       {/* FAQ */}
       <FAQSection
         eyebrow="FAQ"
-        title="Your Sharjah Logistics Questions Answered"
+        title="Common Questions About Logistics and Transport in Sharjah"
         faqs={[
           {
             question:
-              "What logistics transport services do you offer in Sharjah?",
+              "Does OSS offer a logistics transport service in Sharjah?",
             answer:
-              "Our services include freight management, customs clearance, warehousing, and tailored logistics solutions ensuring efficient and reliable delivery.",
+              "Yes. OSS coordinates inland transport alongside its wider warehousing and freight services, giving businesses a dependable option for scheduled and on-demand distribution.",
           },
           {
-            question: "How do you ensure timely deliveries?",
+            question: "Does OSS combine warehousing with transport dispatch?",
             answer:
-              "We leverage advanced route planning, real-time tracking systems, and contingency planning to ensure punctual deliveries.",
+              "Yes. Storage and transport are managed under a single contract, removing the need to coordinate separate storage and trucking providers.",
           },
           {
-            question: "Can you handle both local and international logistics?",
+            question: "Can businesses schedule recurring deliveries with OSS?",
             answer:
-              "Yes, we provide comprehensive services for both local and international logistics operations.",
+              "Yes. Recurring inland routes can be set up for businesses that need predictable pickup and delivery windows across Sharjah and the wider UAE.",
           },
           {
-            question: "What makes your logistics service distinct?",
+            question:
+              "What vehicle sizes are available for transport bookings?",
             answer:
-              "Our integration of technology, analytics, and personalized service sets us apart in Sharjah logistics.",
+              "OSS offers small vans, mid-size trucks, and full trailers, so shipments of any size can be matched to the right vehicle.",
           },
           {
-            question: "Are your logistics services scalable?",
+            question: "How is cargo tracked once it leaves the warehouse?",
             answer:
-              "Yes, our solutions are flexible and scalable to match business growth.",
+              "A digital tracking system provides visibility into delivery status from dispatch through drop-off confirmation.",
           },
           {
-            question: "How do you ensure cost-effectiveness?",
+            question:
+              "What cargo types can be moved through OSS's transport service?",
             answer:
-              "Through optimized routes, efficient planning, and strategic logistics execution.",
+              "OSS moves general trading commodities, industrial components, and palletized commercial goods. Non-hazardous cargo follows standard handling; specialized items follow separate safety procedures.",
           },
           {
-            question: "What industries do you service?",
+            question: "What are the contract terms for transport clients?",
             answer:
-              "We serve retail, textiles, electronics, and many other industries in Sharjah.",
+              "OSS offers monthly short-term agreements for occasional deliveries and multi-year contracts for businesses with recurring distribution needs.",
           },
           {
-            question: "Do you provide shipment tracking?",
+            question:
+              "Does OSS support free zone coordination for transport clients?",
             answer:
-              "Yes, our real-time tracking system ensures full visibility.",
+              "Yes. Storage near the SAIF Zone and Hamriyah Free Zone supports duty-efficient handling as part of the distribution process.",
           },
           {
-            question: "How do you handle customs?",
+            question:
+              "Can transport capacity scale for businesses with seasonal demand?",
             answer:
-              "We manage all documentation and regulatory requirements to ensure smooth customs clearance.",
+              "Yes. Fleet capacity adjusts to shipment volume, supporting businesses through both steady and high-demand periods.",
           },
           {
-            question: "How can I get started?",
+            question:
+              "What operational standards does OSS follow for logistics and transport?",
             answer:
-              "Contact our team through our website or phone to receive a customized logistics plan.",
+              "OSS follows international supply chain safety standards, using certified drivers and equipment operators, defined loading protocols, and routine vehicle checks.",
           },
         ]}
       />
 
       {/* CTA */}
       <CTASection
-        title="Ready to Revolutionize Your Logistics?"
-        buttonText="Get Started With Us Today"
+        title="Move Goods with a Coordinated Transport Partner"
+        description="Whether you need standalone inland transport or a combined service that pairs warehousing with distribution, OSS has the infrastructure and experience to support it. Contact the OSS team for a delivery schedule and quote."
+        buttonText="Contact OSS for a Logistics Transport Quote"
         buttonLink="/contact-us"
         backgroundImage="/images/services/Explore-More.jpg"
       />

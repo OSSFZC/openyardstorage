@@ -16,12 +16,13 @@ import {
 } from "react-icons/fi";
 
 import useMeta from "../../hooks/useMeta";
+import LeftalignedCards from "../../components/LeftalignedCards";
+import CardsFeatures from "../../components/CardsFeatures";
 
 export default function LogisticTruckCompanySharjah() {
-
   useMeta(
-    "Premier Logistic Truck Company in Sharjah | OSS FZC",
-    "Reliable truck logistics in Sharjah with expert international truck shipping services, ensuring smooth, efficient transportation through our trusted solutions."
+    "Logistic Truck Company in Sharjah | Openyard Storage FZC",
+    "Openyard Storage FZC is a trusted logistic truck company in Sharjah for reliable truck transport, warehousing, and cargo movement. Get your quote today!",
   );
 
   return (
@@ -29,9 +30,9 @@ export default function LogisticTruckCompanySharjah() {
       {/* HERO */}
       <InnerHero
         eyebrow="Get Your Cargo Moving with Ease"
-        title="Reliable Logistic Truck Company in Sharjah for Seamless International Shipping"
-        subtitle="Experience hassle-free logistics. Get a tailored quote today!"
-        buttonText="Contact Us for a Personalized Quote"
+        title="Logistic Truck Company in Sharjah"
+        subtitle="OSS operates as a logistic truck company in Sharjah, providing reliable road transport between storage, ports, airports, and business locations across the UAE. Combined with the OSS storage network in Sharjah, trucking connects warehousing directly to road dispatch, so businesses don't need to coordinate separate storage and trucking providers for the same shipment."
+        buttonText="Request a Trucking Quote"
         buttonLink="/contact-us"
         backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
       />
@@ -40,122 +41,250 @@ export default function LogisticTruckCompanySharjah() {
 
       {/* PROBLEM SECTION */}
       <ChallengeSection
-        subtitle="Facing Delays and Complexities?"
-        title="Navigating Logistics Challenges in Sharjah and Beyond"
-        description="Are you tired of dealing with unreliable logistic partners that leave your shipments delayed and your expectations unmet?"
-        description2="Navigating the logistics landscape in Sharjah can be daunting, with its unique infrastructure challenges and regulatory hurdles. Traditional logistic companies often struggle to deliver on their promises, leaving you frustrated and incurring additional costs."
-        rightTitle="Transform Your Logistics Experience"
+        // subtitle="Facing Delays and Complexities?"
+        title="Why Businesses Need a Dedicated Logistic Truck Company in Sharjah"
+        description="Businesses without a dedicated logistic truck partner commonly face four problems:"
+        // description2="Navigating the logistics landscape in Sharjah can be daunting, with its unique infrastructure challenges and regulatory hurdles. Traditional logistic companies often struggle to deliver on their promises, leaving you frustrated and incurring additional costs."
+        rightTitle="Problem Statement"
         rightBg="#C5F7FF"
         cards={[
           {
             icon: FiClock,
-            title: "Delayed Deliveries",
-            text: "Say goodbye to frustrating shipment delays.",
-          },
-          {
-            icon: FiDollarSign,
-            title: "High Costs",
-            text: "Reduce unnecessary expenses with efficient logistics.",
-          },
-          {
-            icon: FiFileText,
-            title: "Complex Regulations",
-            text: "Simplify compliance with expert guidance.",
+            title: "Disconnected storage and trucking booking",
+            text: "Coordinating separate warehousing and trucking providers adds delays before cargo even leaves the yard.",
           },
           {
             icon: FiTrendingUp,
-            title: "Limited Visibility",
-            text: "Gain full transparency throughout your shipping process.",
+            title: "Inconsistent delivery scheduling",
+            text: "Ad hoc trucking bookings without a fixed partner lead to unpredictable pickup and delivery windows.",
+          },
+          {
+            icon: FiFileText,
+            title: "Complex routing and documentation",
+            text: "Inland and cross-emirate trucking requires accurate paperwork, and errors at checkpoints cause costly delays.",
+          },
+          {
+            icon: FiDollarSign,
+            title: "Limited visibility once cargo is on the road",
+            text: "Businesses lose track of shipment status once trucks leave the warehouse.",
           },
         ]}
       />
 
-      {/* SOLUTIONS */}
-      <FeatureSection
-        eyebrow="The OSS FZC Difference"
-        title="Experience Unmatched Logistics Efficiency"
-        description="At Open Yard Storage, we redefine logistics by providing strategic solutions designed to meet the unique requirements of your cargo. Our logistic truck company in Sharjah is equipped with state-of-the-art technology and a team of seasoned experts."
+      <LeftalignedCards
+        title=""
+        description=""
         features={[
           {
-            image: "/icons/cost.png",
-            title: "Real-Time Tracking",
-            description: "Stay informed with live shipment updates.",
+            image: "/images/services/warehouseicon.png",
+            title: "Combined storage and trucking dispatch",
+            description:
+              "Inventory is stored and dispatched under a single coordinated service.",
           },
           {
-            image: "/icons/timely-Delivery.png",
-            title: "Cost-Effective Plans",
-            description: "Double your savings with optimized routes.",
+            image: "/images/locations/schedule.png",
+            title: "Reliable delivery scheduling",
+            description:
+              "Dedicated trucking coordination reduces the unpredictability of ad hoc bookings.",
           },
           {
-            image: "/icons/Regulatory-exper.png",
-            title: "Regulatory Expertise",
-            description: "Simplifying international compliance laws.",
+            image: "/images/services/offer.png",
+            title: "Documentation support",
+            description:
+              "Routing paperwork and checkpoint requirements are managed as part of the trucking process.",
           },
           {
-            image: "/icons/Real-time.png",
-            title: "Advanced Fleet",
-            description: "Reliable trucks ensuring safe and speedy delivery.",
+            image: "/images/services/online-test.png",
+            title: "En-route tracking",
+            description:
+              "Shipment status is visible from warehouse dispatch through final delivery.",
+          },
+        ]}
+      />
+      {/* SOLUTIONS */}
+      <FeatureSection
+        eyebrow="The OSS Difference Section"
+        title="Logistic Truck Company In Sharjah Built Around Storage Coordination"
+        description={`OSS operates a service that combines warehousing with road freight dispatch, so cargo doesn't need to move between unrelated storage and trucking providers before delivery. Inventory can move from an OSS warehouse straight onto a truck without added transfer delays, which is what sets OSS apart from a standalone logistic truck company that has no storage of its own.
+
+Every trucking contract through OSS is structured around cargo type, delivery frequency, and destination, giving businesses a faster path from storage to delivery than working with disconnected vendors. This matters most for businesses with recurring inland deliveries, where consistent handling and scheduling directly affect delivery reliability.
+
+What businesses get from OSS's trucking and warehousing coordination:`}
+        features={[
+          {
+            image: "/images/services/tracking.png",
+            title: "Barcode and RFID tracking",
+            description:
+              "Shipment status is logged at each handling point, from warehouse dispatch through delivery.",
+          },
+          {
+            image: "/images/services/logistic.png",
+            title: "Trained dispatch coordinators",
+            description:
+              "Staff manage documentation, loading, and delivery scheduling for road shipments.",
+          },
+          {
+            image: "/images/services/track.png",
+            title: "Highway connectivity",
+            description:
+              "Direct access to major transport corridors supports fast transfer from storage to delivery points across the UAE.",
+          },
+          {
+            image: "/images/services/truck.png",
+            title: "Flexible shipment sizes",
+            description:
+              "Small parcels and full truckload cargo are both supported.",
+          },
+          {
+            image: "/images/services/stock.png",
+            title: "Consolidated warehousing and dispatch",
+            description:
+              "Storage and trucking are managed under a single contract.",
           },
         ]}
       />
 
       {/* SERVICES */}
       <ServiceGridSection
-        eyebrow="Our Services"
-        title="Elevate Your Logistics Game"
+        eyebrow="Services"
+        title="End-to-End Trucking Solutions"
         services={[
           {
-            title: "Route Optimization",
-            image: "/images/services/flexible-yard.jpg",
-            description: "Precision planning for efficient deliveries.",
+            title: "Inland and Cross-Emirate Trucking",
+            image: "/images/services/inland-transport.jpg",
+            description:
+              "Scheduled road transport connecting warehouses, ports, airports, and business locations across the UAE with dependable transit planning and timely deliveries.",
           },
           {
-            title: "Cross-Border Shipping",
-            image: "/images/services/custom-storage.jpg",
-            description: "Seamless international transit solutions.",
+            title: "Warehouse-to-Destination Dispatch",
+            image: "/images/services/dispatch.jpg",
+            description:
+              "Storage and outbound trucking are coordinated under one service, simplifying cargo movement and reducing the need to manage multiple logistics providers.",
           },
           {
-            title: "Customs Clearance",
-            image: "/images/services/security.jpg",
-            description: "Expertise in navigating complex regulatory landscapes.",
+            title: "Full and Part Truckload Options",
+            image: "/images/services/cross-docking.jpg",
+            description:
+              "Flexible FTL and LTL solutions allow businesses to move full shipments or smaller loads while paying only for the transport capacity required.",
           },
           {
-            title: "Warehousing Solutions",
-            image: "/images/services/logistics.jpg",
-            description: "Secure, scalable storage for your inventory.",
+            title: "Route Documentation Support",
+            image: "/images/locations/fleet-reoute.jpg",
+            description:
+              "Transport paperwork, delivery documentation, and checkpoint requirements are managed to help minimise delays and maintain efficient road freight operations.",
           },
           {
-            title: "24/7 Customer Support",
-            image: "/images/services/maintenance.jpg",
-            description: "Always available, always responsive.",
+            title: "Shipment Tracking and Reporting",
+            image: "/images/services/shipment-tracking.jpg",
+            description:
+              "Digital tracking provides real-time visibility into cargo location, transit progress, and delivery confirmation throughout the journey.",
+          },
+          {
+            title: "Recurring Delivery Scheduling",
+            image: "/images/services/schedule.jpg",
+            description:
+              "Fixed trucking schedules support regular distribution routes, ensuring predictable deliveries and reliable transport for ongoing business operations.",
           },
         ]}
+      />
+      <CardsFeatures
+        eyebrow="Storage Solutions by Industry Section"
+        title="Trucking Support Across Five Business Sectors"
+        features={[
+          {
+            image: "/images/services/warehouseicon.png",
+            title: "General Trading and Export",
+            description:
+              "Commodity shipments move on scheduled trucking routes between storage and destination.",
+          },
+          {
+            image: "/images/locations/factory.png",
+            title: "Industrial Manufacturing",
+            description:
+              "Components and finished goods move by road on fixed delivery schedules.",
+          },
+          {
+            image: "/images/industries/protection.png",
+            title: "Healthcare and Pharmaceutical",
+            description:
+              "Time-sensitive shipments benefit from reliable road transport between storage and delivery points.",
+          },
+          {
+            image: "/images/services/online-store.png",
+            title: "Retail and E-Commerce",
+            description:
+              "Fast replenishment during peak sales periods relies on consistent trucking dispatch.",
+          },
+          {
+            image: "/images/locations/oil.png",
+            title: "Oil and Gas Support",
+            description:
+              "Urgent equipment and parts move by road to support active project timelines.",
+          },
+        ]}
+      />
+
+      <FeatureSection
+        eyebrow="Free Zone Storage "
+        title="Free Zone Access Supporting Trucking Operations"
+        description="Businesses moving cargo by road between free zones and other destinations need customs processing that keeps pace with their delivery schedule. OSS storage sits close to the SAIF Zone and Hamriyah Free Zone, giving trucking clients duty-efficient handling built directly into the dispatch process rather than managed as a separate step."
       />
 
       {/* STATS */}
       <StatsSection
-        title="Proven Success in Numbers"
-        subtitle="Trust Built Through Excellence"
+        title="Operational Performance That Businesses Trust"
+        subtitle="Freight trucking supported by secure storage infrastructure, reliable routing, and coordinated road transport across the UAE."
         stats={[
-          { value: "30%", label: "Increase in Delivery Efficiency" },
-          { value: "500+", label: "Successful Shipments Managed" },
-          { value: "24/7", label: "Customer Support Available" },
-          { value: "98%", label: "Client Satisfaction Rate" },
+          {
+            value: 260000,
+            suffix: "+",
+            unit: "sq ft",
+            label: "Total Managed Footprint",
+            description: "Of storage capacity.",
+          },
+          {
+            value: 140,
+            suffix: "+",
+            unit: "Clients",
+            label: "Enterprise Client Base",
+            description: "Active manufacturing, trading, and export clients.",
+          },
+          {
+            value: 12000,
+            suffix: "+",
+            unit: "Pallets",
+            label: "Monthly Freight Throughput",
+            description: "Processed and dispatched monthly.",
+          },
+          {
+            value: 24,
+            suffix: "/7",
+            label: "Facility Security",
+            description: "Video surveillance with automated fire suppression.",
+          },
+          {
+            value: 1,
+            unit: "Network",
+            label: "Route Coverage",
+            description:
+              "Trucking lanes connecting Sharjah to ports, airports, and destinations across the UAE.",
+          },
         ]}
       />
-
       {/* ABOUT + TEAM */}
       <DualInfoSection
         items={[
           {
             title: "About Us",
+            subtitle: "Trucking Experience Built Around Reliability",
             description:
-              "Our leadership is dedicated to unparalleled excellence in logistics, ensuring each service upholds our commitment to quality and innovation.",
+              "OSS has operated as a storage and logistics provider in the UAE since 2006, growing into a logistic truck company in Sharjah alongside its wider warehousing and sea and air freight services. Fast documentation turnaround, warehouse-to-destination coordination, and route-specific handling are built into how OSS structures every trucking shipment. Clients using OSS for trucking get dedicated account management, flexible scheduling, and a logistics team experienced in coordinating road transport across multiple UAE destinations.",
           },
           {
             title: "Our Team",
+            subtitle: "Staff Coordinating Storage and Road Dispatch",
             description:
-              "Our expert team crafts logistics solutions with creativity and precision, guaranteeing successful outcomes for every client.",
+              "OSS trucking operations are run by dispatch coordinators, documentation specialists, and warehouse technicians who manage routing paperwork, loading, and delivery scheduling for shipments moving by road across the UAE.",
           },
         ]}
       />
@@ -163,65 +292,73 @@ export default function LogisticTruckCompanySharjah() {
       {/* FAQ */}
       <FAQSection
         eyebrow="FAQ"
-        title="Your Logistic Truck Company in Sharjah Questions Answered"
+        title="Common Questions About Trucking in Sharjah"
         faqs={[
           {
-            question: "What makes a logistic truck company in Sharjah unique?",
+            question:
+              "Does OSS operate as a logistic truck company in Sharjah?",
             answer:
-              "A logistic truck company in Sharjah must navigate unique infrastructure and regulatory requirements. With Sharjah's strategic location, companies must ensure compliance, manage customs efficiently, and leverage local expertise to enhance delivery efficiency.",
+              "Yes. OSS coordinates road dispatch alongside its wider warehousing and sea and air freight services, giving businesses a dependable option for inland and cross-emirate delivery.",
           },
           {
-            question: "How does international truck shipping with Open Yard Storage work?",
+            question:
+              "What documentation support is included in the trucking process?",
             answer:
-              "Our process starts by understanding your cargo requirements. We manage documentation, route optimization, compliance, and tracking while using a well-maintained fleet for safe and efficient cross-border transportation.",
+              "Routing paperwork and checkpoint requirements are handled as part of the service, reducing the risk of delays en route.",
           },
           {
-            question: "What compliance measures are required for international truck shipping?",
+            question:
+              "Can businesses set up recurring trucking schedules with OSS?",
             answer:
-              "International shipping requires customs documentation, tariffs, and country-specific regulations. Our compliance experts ensure all shipments meet necessary regulations to avoid delays and penalties.",
+              "Yes. Fixed delivery schedules are available for businesses with regular inland routes, reducing the unpredictability of ad hoc bookings.",
           },
           {
-            question: "Can Open Yard Storage manage large-scale logistics?",
+            question: "Does OSS combine warehousing with trucking dispatch?",
             answer:
-              "Yes, we are fully equipped to manage logistics operations of any scale using advanced technology, strong networks, and experienced professionals.",
+              "Yes. Storage and trucking dispatch are managed under a single contract, removing the need to coordinate separate storage and trucking providers.",
           },
           {
-            question: "How does route optimization improve shipping efficiency?",
+            question:
+              "What cargo types can be moved through OSS's trucking service?",
             answer:
-              "Route optimization identifies the most efficient paths by analyzing traffic, road conditions, and fuel costs to minimize delays and reduce logistics expenses.",
+              "OSS moves general trading commodities, industrial components, and palletized commercial goods by road. Non-hazardous cargo follows standard handling; specialized items follow separate safety procedures.",
           },
           {
-            question: "What are the costs associated with truck logistics in Sharjah?",
+            question: "How is cargo tracked once it's on the road?",
             answer:
-              "Costs vary depending on shipment size, distance, and service complexity. We provide transparent pricing with customized solutions tailored to your logistics needs.",
+              "A digital tracking system provides visibility into shipment status from warehouse dispatch through final delivery.",
           },
           {
-            question: "Do you offer shipment tracking?",
+            question: "What are the contract terms for trucking clients?",
             answer:
-              "Yes, we provide real-time tracking systems so clients can monitor cargo progress and stay informed at every stage of transportation.",
+              "OSS offers monthly short-term agreements for occasional deliveries and multi-year contracts for businesses with recurring trucking needs.",
           },
           {
-            question: "Which industries benefit from international truck shipping?",
+            question:
+              "Does OSS support free zone coordination for trucking shipments?",
             answer:
-              "Industries such as manufacturing, retail, agriculture, and construction benefit significantly from reliable cross-border truck shipping services.",
+              "Yes. Storage near the SAIF Zone and Hamriyah Free Zone supports duty-efficient handling as part of the trucking process.",
           },
           {
-            question: "How fast can Open Yard Storage deliver shipments internationally?",
+            question:
+              "Can trucking capacity scale for businesses with seasonal demand?",
             answer:
-              "Delivery times depend on distance and route complexity, but our optimized logistics network ensures the fastest and most efficient transportation possible.",
+              "Yes. Capacity adjusts to shipment volume, supporting businesses through both steady and high-demand periods.",
           },
           {
-            question: "How does Open Yard Storage ensure shipment safety?",
+            question:
+              "What operational standards does OSS follow as a logistic truck company?",
             answer:
-              "We use advanced tracking systems, well-maintained fleets, and experienced logistics professionals to ensure every shipment reaches its destination safely.",
+              "OSS follows international supply chain safety standards, using certified drivers, defined documentation protocols, and routine vehicle checks.",
           },
         ]}
       />
 
       {/* CTA */}
       <CTASection
-        title="Ready to Transform Your Logistics?"
-        buttonText="Contact Us for a Personalized Solution Today!"
+        title="Move Cargo with a Coordinated Logistic Truck Company in Sharjah"
+        description="Whether you need standalone trucking or a combined service that pairs warehousing with road freight dispatch, OSS has the infrastructure and experience to support it. Contact the OSS team for a trucking schedule and quote."
+        buttonText="Contact OSS for a Trucking Quote"
         buttonLink="/contact-us"
         backgroundImage="/images/services/Explore-More.jpg"
       />

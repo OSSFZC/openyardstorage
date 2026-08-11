@@ -103,9 +103,7 @@ export default function InternationalShippingAir() {
 
       {/* SOLUTIONS */}
       <FeatureSection
-        eyebrow="The Open Yard Storage Difference"
-        title="Discover the Open Yard Storage Advantage"
-        description="Our powerful network, proactive strategies, and cutting-edge technologies ensure efficiency and reliability. By minimizing downtime and optimizing resources, we elevate your logistics process."
+       
         eyebrow="The OSS Difference"
         title="Air Freight in UAE Built Around Speed and Storage Coordination"
         subtitle="OSS operates a service that combines warehousing with air cargo dispatch, so time-sensitive shipments don't need to move between unrelated storage and air freight providers before dispatch. Inventory can move from an OSS warehouse straight into air freight in UAE without added transfer delays.\n\nEvery air cargo contract through OSS is structured around cargo type, urgency, and destination, giving businesses a faster path from storage to airport dispatch than working with disconnected vendors. This matters most for businesses with recurring urgent shipments, where consistent handling and scheduling directly affect delivery reliability."
