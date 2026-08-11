@@ -8,7 +8,7 @@ import DualInfoSection from "../../components/DualInfoSection";
 import FAQSection from "../../components/FAQSection";
 import CTASection from "../../components/CTASection";
 import CardsFeatures from "../../components/CardsFeatures";
-import LeftalignedCards from "../../components/LeftAlignedCards";
+import LeftalignedCards from "../../components/LeftalignedCards";
 
 import { FiTruck, FiShield, FiTrendingUp, FiDollarSign } from "react-icons/fi";
 
