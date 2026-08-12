@@ -100,9 +100,10 @@ export default function InternationalTruckShipping() {
       <FeatureSection
         eyebrow="The OSS Difference Section"
         title="International Truck Shipping Built Around Reliability and Storage Coordination"
-        description={`OSS operates a cross-border truck freight service that integrates warehousing with regional road transport, allowing cargo to move directly from storage to departing trucks without relying on separate logistics providers. This reduces handling, improves efficiency, and creates a smoother path from warehouse to international delivery. Every shipment is planned around cargo type, destination, border requirements, and delivery schedules to support reliable cross-border transport.
+        subtitle={`OSS operates a cross-border truck freight service that integrates warehousing with regional road transport, allowing cargo to move directly from storage to departing trucks without relying on separate logistics providers. This reduces handling, improves efficiency, and creates a smoother path from warehouse to international delivery. Every shipment is planned around cargo type, destination, border requirements, and delivery schedules to support reliable cross-border transport.
 
 Route planning includes documentation and checkpoint requirements specific to each destination, helping minimise delays during transit. For businesses with recurring regional shipments, consistent scheduling and coordinated freight management improve delivery reliability while reducing administrative effort. By managing storage and trucking under one service, OSS simplifies cross-border logistics and provides businesses with a more predictable supply chain across the GCC and neighbouring international markets.`}
+        description="What businesses get from OSS's truck shipping and warehousing coordination:"
         features={[
           {
             image: "/images/services/tracking.png",
@@ -285,7 +286,7 @@ Route planning includes documentation and checkpoint requirements specific to ea
 
       {/* FAQ */}
       <FAQSection
-      eyebrow="FAQ"
+        eyebrow="FAQ"
         title="Common Questions About Cross-Border Truck Freight"
         faqs={[
           {

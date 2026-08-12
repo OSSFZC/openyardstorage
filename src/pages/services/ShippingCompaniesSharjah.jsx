@@ -275,7 +275,7 @@ export default function ShippingCompaniesSharjah() {
             subtitle:
               "Storage and Freight Experience Built for Shipping Companies in Sharjah",
             description:
-              "OSS has supported storage and logistics operations across the UAE since 2006, delivering integrated warehousing and freight solutions for shipping companies in Sharjah. Clients benefit from warehouse-to-port coordination, documentation support, flexible scheduling, dedicated account management, and an experienced logistics team that manages efficient cargo movement across the UAE and international destinations.",
+              "OSS has supported storage and logistics operations across the UAE since 2006, delivering integrated warehousing and freight solutions for shipping companies in Sharjah. \n\n Clients benefit from warehouse-to-port coordination, documentation support, flexible scheduling, dedicated account management, and an experienced logistics team that manages efficient cargo movement across the UAE and international destinations.",
           },
           {
             title: "Our Team",

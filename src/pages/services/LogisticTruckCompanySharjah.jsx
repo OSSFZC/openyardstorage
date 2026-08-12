@@ -72,8 +72,8 @@ export default function LogisticTruckCompanySharjah() {
       />
 
       <LeftalignedCards
-        title=""
-        description=""
+        title="Road Transport Solutions That Keep Deliveries on Schedule"
+        description="OSS addresses each of these directly:"
         features={[
           {
             image: "/images/services/warehouseicon.png",
@@ -232,8 +232,7 @@ What businesses get from OSS's trucking and warehousing coordination:`}
 
       {/* STATS */}
       <StatsSection
-        title="Operational Performance That Businesses Trust"
-        subtitle="Freight trucking supported by secure storage infrastructure, reliable routing, and coordinated road transport across the UAE."
+        title="Achievement Stats"
         stats={[
           {
             value: 260000,
@@ -278,7 +277,7 @@ What businesses get from OSS's trucking and warehousing coordination:`}
             title: "About Us",
             subtitle: "Trucking Experience Built Around Reliability",
             description:
-              "OSS has operated as a storage and logistics provider in the UAE since 2006, growing into a logistic truck company in Sharjah alongside its wider warehousing and sea and air freight services. Fast documentation turnaround, warehouse-to-destination coordination, and route-specific handling are built into how OSS structures every trucking shipment. Clients using OSS for trucking get dedicated account management, flexible scheduling, and a logistics team experienced in coordinating road transport across multiple UAE destinations.",
+              "OSS has operated as a storage and logistics provider in the UAE since 2006, growing into a logistic truck company in Sharjah alongside its wider warehousing and sea and air freight services. Fast documentation turnaround, warehouse-to-destination coordination, and route-specific handling are built into how OSS structures every trucking shipment. \n\n Clients using OSS for trucking get dedicated account management, flexible scheduling, and a logistics team experienced in coordinating road transport across multiple UAE destinations.",
           },
           {
             title: "Our Team",

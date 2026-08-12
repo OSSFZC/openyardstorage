@@ -278,7 +278,7 @@ What freight forwarding companies get from OSS's storage and freight coordinatio
             subtitle:
               "Storage and Freight Experience Built for Freight Forwarding Companies",
             description:
-              "OSS has operated as a storage and logistics provider in the UAE since 2006, developing warehousing capabilities that support freight forwarding companies alongside its wider sea and air freight services. Fast documentation turnaround, warehouse-to-port coordination, and destination-specific handling are built into how OSS structures every shipment for its forwarding clients. Forwarders using OSS for storage in Sharjah get dedicated account management, flexible scheduling, and a logistics team experienced in coordinating consolidated cargo movement across multiple destination countries.",
+              "OSS has operated as a storage and logistics provider in the UAE since 2006, developing warehousing capabilities that support freight forwarding companies alongside its wider sea and air freight services. Fast documentation turnaround, warehouse-to-port coordination, and destination-specific handling are built into how OSS structures every shipment for its forwarding clients. \n\n Forwarders using OSS for storage in Sharjah get dedicated account management, flexible scheduling, and a logistics team experienced in coordinating consolidated cargo movement across multiple destination countries.",
           },
           {
             title: "Our Team",

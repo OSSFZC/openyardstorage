@@ -272,7 +272,7 @@ Every trucking contract through OSS is structured around cargo type, delivery fr
             title: "About Us",
             subtitle: "Freight Trucking Experience Built Around Reliability",
             description:
-              "OSS has operated as a storage and logistics provider in the UAE since 2006, developing freight logistics trucking capabilities alongside its wider warehousing and sea and air freight services. Fast documentation turnaround, warehouse-to-destination coordination, and route-specific handling are built into how OSS structures every trucking shipment. Clients using OSS for freight trucking get dedicated account management, flexible scheduling, and a logistics team experienced in coordinating road transport across multiple UAE destinations.",
+              "OSS has operated as a storage and logistics provider in the UAE since 2006, developing freight logistics trucking capabilities alongside its wider warehousing and sea and air freight services. Fast documentation turnaround, warehouse-to-destination coordination, and route-specific handling are built into how OSS structures every trucking shipment. \n\n Clients using OSS for freight trucking get dedicated account management, flexible scheduling, and a logistics team experienced in coordinating road transport across multiple UAE destinations.",
           },
           {
             title: "Our Team",
@@ -286,7 +286,7 @@ Every trucking contract through OSS is structured around cargo type, delivery fr
       {/* FAQ */}
       <FAQSection
         eyebrow="FAQ"
-        title="Your Freight Logistics Questions Answered"
+        title="Common Questions About Freight Trucking"
         faqs={[
           {
             question: "Does OSS offer freight logistics trucking in the UAE?",

@@ -260,7 +260,7 @@ const medicalData = {
       title: "About Us",
       subtitle: "Storage and Freight Experience Built for the Medical Sector",
       description:
-        "OSS has operated as a storage and logistics provider in the UAE since 2006, developing warehousing capabilities that support healthcare and medical equipment businesses alongside its wider sea and air freight services. Fast documentation turnaround, warehouse-to-port coordination, and destination-specific handling are built into how OSS structures every shipment for its medical sector clients. Healthcare businesses using OSS for storage get dedicated account management, flexible scheduling, and a logistics team experienced in running a medical equipment freight service and logistics operation across multiple destination countries.",
+        "OSS has operated as a storage and logistics provider in the UAE since 2006, developing warehousing capabilities that support healthcare and medical equipment businesses alongside its wider sea and air freight services. Fast documentation turnaround, warehouse-to-port coordination, and destination-specific handling are built into how OSS structures every shipment for its medical sector clients. \n\n Healthcare businesses using OSS for storage get dedicated account management, flexible scheduling, and a logistics team experienced in running a medical equipment freight service and logistics operation across multiple destination countries.",
     },
     {
       title: "Our Team",

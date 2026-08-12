@@ -72,7 +72,7 @@ export default function ChillerStorageWarehouse() {
         description="OSS addresses each of these directly:"
         features={[
           {
-            image:"/images/industries/cold-storage.png",
+            image: "/images/industries/cold-storage.png",
             title: "Consistent Chilled Conditions",
             description:
               "Temperature is monitored and maintained across dedicated storage zones.",
@@ -101,9 +101,10 @@ export default function ChillerStorageWarehouse() {
       <FeatureSection
         eyebrow="The OSS Difference"
         title="Chiller Storage Warehousing Built Around Consistency and Coordination"
-        description={`OSS operates a chiller storage warehouse that combines temperature-controlled space with the wider OSS logistics network, so perishable and sensitive goods don't need to move between unrelated cold storage and transport providers before dispatch. Inventory can move from a chilled storage zone straight onto a delivery vehicle without breaking the cold chain.
+        subtitle={`OSS operates a chiller storage warehouse that combines temperature-controlled space with the wider OSS logistics network, so perishable and sensitive goods don't need to move between unrelated cold storage and transport providers before dispatch. Inventory can move from a chilled storage zone straight onto a delivery vehicle without breaking the cold chain.
 
 Every storage arrangement through OSS is structured around product type, required temperature range, and turnover frequency, giving businesses a more reliable path from receiving to dispatch than working with disconnected vendors. This matters most for businesses handling recurring perishable stock, where consistent temperature control directly affects product quality and shelf life. Storage zones are monitored continuously, so deviations are identified and corrected before they affect stored inventory.`}
+        description="What businesses get from OSS's chilled storage and logistics coordination:"
         features={[
           {
             image: "/images/services/tracking.png",
@@ -227,8 +228,7 @@ Every storage arrangement through OSS is structured around product type, require
 
       {/* STATS */}
       <StatsSection
-        title="Operational Performance That Businesses Trust"
-        subtitle="Temperature-controlled storage supported by secure infrastructure, reliable inventory handling, and continuous monitoring."
+        title="Achievement Stats "
         stats={[
           {
             value: 260000,
@@ -274,7 +274,7 @@ Every storage arrangement through OSS is structured around product type, require
             title: "About Us",
             subtitle: "Cold Storage Experience Built Around Reliability",
             description:
-              "OSS has operated as a storage and logistics provider in the UAE since 2006, developing chilled storage capabilities alongside its wider warehousing and transport services. Consistent temperature control, receiving-to-dispatch coordination, and documented handling standards are built into how OSS structures every chilled storage arrangement. Clients using OSS's chiller storage warehouse get dedicated account management, flexible storage terms, and a logistics team experienced in handling perishable and temperature-sensitive goods across multiple industries.",
+              "OSS has operated as a storage and logistics provider in the UAE since 2006, developing chilled storage capabilities alongside its wider warehousing and transport services. Consistent temperature control, receiving-to-dispatch coordination, and documented handling standards are built into how OSS structures every chilled storage arrangement.\n\n Clients using OSS's chiller storage warehouse get dedicated account management, flexible storage terms, and a logistics team experienced in handling perishable and temperature-sensitive goods across multiple industries.",
           },
           {
             title: "Our Team",

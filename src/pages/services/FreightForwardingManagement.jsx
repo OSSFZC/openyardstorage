@@ -270,7 +270,7 @@ export default function FreightForwardingManagement() {
             title: "About Us",
             subtitle: "Freight Forwarding Experience Built Around Reliability",
             description:
-              "OSS has operated as a storage and logistics provider in the UAE since 2006, developing freight forwarding capabilities alongside its wider warehousing and sea and air freight services. Fast documentation turnaround, warehouse-to-port coordination, and destination-specific handling are built into how OSS structures every shipment. Clients using OSS for freight forwarding get dedicated account management, flexible scheduling, and a logistics team experienced in coordinating cargo movement across multiple destination countries.",
+              "OSS has operated as a storage and logistics provider in the UAE since 2006, developing freight forwarding capabilities alongside its wider warehousing and sea and air freight services. Fast documentation turnaround, warehouse-to-port coordination, and destination-specific handling are built into how OSS structures every shipment. \n\n Clients using OSS for freight forwarding get dedicated account management, flexible scheduling, and a logistics team experienced in coordinating cargo movement across multiple destination countries.",
           },
           {
             title: "Our Team",

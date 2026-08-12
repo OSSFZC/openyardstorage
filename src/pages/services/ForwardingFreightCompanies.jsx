@@ -44,7 +44,7 @@ export default function ForwardingFreightCompanies() {
         title="Why Forwarding Freight Companies Need a Coordinated Storage Partner"
         description="Forwarding freight operating without a dedicated storage partner commonly face four problems:"
         // description2="OSS FZC simplifies logistics management with structured processes and smart coordination tools that ensure timely deliveries and seamless supply chain management."
-        rightTitle="Solutions at Your Fingertips"
+        rightTitle="Problem statement"
         rightBg="#C5F7FF"
         cards={[
           {
@@ -281,7 +281,7 @@ Every storage contract through OSS is structured around cargo type, shipment fre
             subtitle:
               "Storage and Freight Experience Built for Forwarding Freight",
             description:
-              "OSS has operated as a storage and logistics provider in the UAE since 2006, developing warehousing capabilities that support forwarding freight alongside its wider sea and air freight services. Fast documentation turnaround, warehouse-to-port coordination, and destination-specific handling are built into how OSS structures every shipment for its forwarding clients. Forwarding freight using OSS for storage in Sharjah gets dedicated account management, flexible scheduling, and a logistics team experienced in coordinating consolidated cargo movement across multiple destination countries.",
+              "OSS has operated as a storage and logistics provider in the UAE since 2006, developing warehousing capabilities that support forwarding freight alongside its wider sea and air freight services. Fast documentation turnaround, warehouse-to-port coordination, and destination-specific handling are built into how OSS structures every shipment for its forwarding clients. \n\n Forwarding freight using OSS for storage in Sharjah gets dedicated account management, flexible scheduling, and a logistics team experienced in coordinating consolidated cargo movement across multiple destination countries.",
           },
           {
             title: "Our Team",

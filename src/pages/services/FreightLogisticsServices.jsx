@@ -275,7 +275,7 @@ What businesses get from OSS's freight & logistics:"
             subtitle:
               "Freight & Logistics Experience Built Around Speed and Reliability",
             description:
-              "OSS has operated as a storage and logistics provider in the UAE since 2006, developing freight & logistics that combine warehousing with sea, air, and road dispatch. Fast documentation turnaround, warehouse-to-departure coordination, and destination-specific handling are built into how OSS structures every shipment. Clients using OSS for freight & logistics get dedicated account management, flexible scheduling, and a logistics team experienced in coordinating shipments across multiple transport modes and destination countries.",
+              "OSS has operated as a storage and logistics provider in the UAE since 2006, developing freight & logistics that combine warehousing with sea, air, and road dispatch. Fast documentation turnaround, warehouse-to-departure coordination, and destination-specific handling are built into how OSS structures every shipment. \n\n Clients using OSS for freight & logistics get dedicated account management, flexible scheduling, and a logistics team experienced in coordinating shipments across multiple transport modes and destination countries.",
           },
           {
             title: "Our Team",
@@ -289,7 +289,7 @@ What businesses get from OSS's freight & logistics:"
       {/* FAQ */}
       <FAQSection
         eyebrow="FAQ"
-        title="Your Freight & Logistics Services Questions Answered"
+        title="Common Questions About Freight & Logistics"
         faqs={[
           {
             question: "What freight & logistics does OSS offer in the UAE?",
