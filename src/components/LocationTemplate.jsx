@@ -25,7 +25,7 @@ export default function LocationTemplate({ data }) {
         title={data.hero.title}
       />
 
-      <TrustedSlider />
+      <TrustedSlider {...data.trustedSlider} />
 
       <ChallengeSection {...data.challenge} />
       

@@ -31,7 +31,11 @@ export default function TransportLogisticSharjah() {
         backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
       />
 
-      <TrustedSlider />
+      <TrustedSlider
+        title="Used by Businesses Moving Cargo Across the UAE"
+        description="Companies relying on OSS for transport and logistics support include commodity trading firms, industrial manufacturers, oil and gas support businesses, and import-export operators who need dependable freight movement across Sharjah and the wider UAE."
+      />
+
 
       {/* PROBLEM SECTION */}
       <ChallengeSection
@@ -221,8 +225,8 @@ Each transport contract through OSS is structured around cargo type, delivery fr
 
       <FeatureSection
         eyebrow="Free Zone Storage "
-        title="Free Zone Coordination Within Shipping & Logistic Management"
-        description="Businesses trading internationally need shipping & logistic management that accounts for customs and duty processing. OSS coordinates storage and freight close to the SAIF Zone and Hamriyah Free Zone, keeping duty-efficient handling built into the same logistics contract rather than managed separately."
+        title="Free Zone Access Supporting Transport Coordination"
+        description="Businesses trading internationally need transport that keeps pace with customs and duty processing. OSS coordinates storage and freight close to the SAIF Zone and Hamriyah Free Zone, keeping duty-efficient handling built into the same transport process rather than managed as a separate step."
       />
 
       {/* STATS */}

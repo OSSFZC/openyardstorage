@@ -15,6 +15,14 @@ const shippingSharjah = {
     backgroundImage: "/images/locations/locations-bg.png",
   },
 
+  trustedSlider: {
+    title: "Used by Businesses Across Trading, Manufacturing, and Retail",
+    description:
+      "Companies working with OSS include commodity trading firms, industrial manufacturers, FMCG distributors, and import-export operators who chose OSS after comparing regional storage and freight providers on capacity, tracking systems, and reliability.",
+  },
+
+  
+
   challenge: {
     title: "Why Choosing the Right Logistics Company in Sharjah Matters",
 

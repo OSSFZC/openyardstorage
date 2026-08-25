@@ -31,7 +31,10 @@ export default function HamriyahWarehouse() {
         backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
       />
 
-      <TrustedSlider />
+      <TrustedSlider
+        title="Used by Businesses Trading Through Hamriyah Free Zone"
+        description="Companies renting a Hamriyah free zone warehouse from OSS include commodity trading firms, oil and gas support businesses, industrial equipment suppliers, and import-export operators handling regular customs-cleared shipments."
+      />
 
       {/* PROBLEM SECTION */}
       <ChallengeSection
@@ -183,13 +186,13 @@ Every Hamriyah free zone warehouse through OSS is set up around cargo type, trad
       />
       <CardsFeatures
         eyebrow="Storage Solutions by Industry Section"
-        title="Storage Facility Serving Abu Dhabi Across Five Business Sectors"
+        title="Hamriyah Free Zone Warehouse Across Five Business Sectors"
         features={[
           {
             image: "/images/locations/oil.png",
             title: "Oil and Gas Support ",
             description:
-              "open yard storage for pipes, equipment, and industrial materials tied to Abu Dhabi's energy sector.",
+              "open yard storage for pipes, equipment, and industrial materials moving through the free zone.",
           },
           {
             image: "/images/services/truck.png",
@@ -220,8 +223,8 @@ Every Hamriyah free zone warehouse through OSS is set up around cargo type, trad
 
       <FeatureSection
         // eyebrow="The OSS FZC Difference"
-        title="Free Zone-Adjacent Access for Abu Dhabi Trade"
-        description="Businesses trading internationally through Abu Dhabi need storage that supports duty suspension and simplified customs processing. OSS's storage facility network sits close to the SAIF Zone and Hamriyah Free Zone, giving Abu Dhabi-focused trading firms duty-efficient storage without added customs delays."
+        title="Free Zone Advantages for Hamriyah Trade"
+        description="Businesses trading internationally through Hamriyah need storage that keeps pace with customs and duty processing. A Hamriyah free zone warehouse through OSS gives trading firms tax-efficient storage, duty suspension options, and simplified clearance close to the port itself."
       />
 
       <StatsSection
@@ -284,7 +287,7 @@ Every Hamriyah free zone warehouse through OSS is set up around cargo type, trad
       {/* FAQ */}
       <FAQSection
         eyebrow="FAQ"
-        title="Your Warehouse Rental Questions Answered"
+        title="Common Questions About Hamriyah Free Zone Warehouse Rental"
         faqs={[
           {
             question:

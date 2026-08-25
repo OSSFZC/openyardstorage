@@ -32,7 +32,10 @@ export default function ContainerLogisticsTransportSharjah() {
         backgroundImage="/images/services/containe-certification-ISO-tank-service.jpeg"
       />
 
-      <TrustedSlider />
+     <TrustedSlider
+        title="Used by Businesses Moving Containers Through Sharjah's Ports"
+        description="Companies relying on OSS for container logistics transport include commodity trading firms, industrial manufacturers, oil and gas support businesses, and import-export operators managing regular container shipments through the Emirates."
+      />
 
       {/* PROBLEM SECTION */}
       <ChallengeSection
@@ -45,7 +48,7 @@ export default function ContainerLogisticsTransportSharjah() {
         cards={[
           {
             icon: FiCalendar,
-            title: "Disconnected Port and Storage Handling",
+            title: "Disconnected handling between port and storage",
             text: "Working with separate providers for port handling and inland transport creates delays at every handoff.",
           },
           {
@@ -222,8 +225,8 @@ Every container logistics transport contract in Sharjah is structured around car
 
       <FeatureSection
         eyebrow="Free Zone Storage "
-        title="Free Zone Coordination Within Shipping & Logistic Management"
-        description="Businesses trading internationally need shipping & logistic management that accounts for customs and duty processing. OSS coordinates storage and freight close to the SAIF Zone and Hamriyah Free Zone, keeping duty-efficient handling built into the same logistics contract rather than managed separately."
+        title="Free Zone Access Supporting Container Transport"
+        description="Businesses trading internationally through Sharjah need container logistics transport that accounts for customs and duty processing. OSS coordinates container shipping services in Sharjah close to the SAIF Zone and Hamriyah Free Zone, keeping duty-efficient handling built into the same process rather than managed as a separate step."
       />
 
       {/* STATS */}

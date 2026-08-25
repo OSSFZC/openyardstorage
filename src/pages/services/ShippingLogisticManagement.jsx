@@ -32,7 +32,10 @@ export default function ShippingLogisticManagement() {
         backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
       />
 
-      <TrustedSlider />
+      <TrustedSlider
+        title="Used by Businesses Coordinating Multi-Step Supply Chains"
+        description="Companies relying on OSS for shipping & logistic management include commodity trading firms, industrial manufacturers, FMCG distributors, and import-export operators who need consistent coordination across storage and transport."
+      />
 
       {/* PROBLEM SECTION */}
       <ChallengeSection

@@ -32,7 +32,10 @@ export default function FreightShippingService() {
         backgroundImage="/images/services/sea.jpeg"
       />
 
-      <TrustedSlider />
+      <TrustedSlider
+        title="Used by Businesses Shipping Across Borders"
+        description="Companies relying on OSS's freight shipping include export-focused trading firms, manufacturers supplying overseas markets, and import-export operators managing multi-country shipment routes through the UAE's regional ports and free zones."
+      />
 
       {/* PROBLEM SECTION */}
       <ChallengeSection
@@ -60,7 +63,7 @@ export default function FreightShippingService() {
           },
           {
             icon: FiTruck,
-            title: "Limited Visibility Beyond the UAE",
+            title: "Limited visibility once cargo leaves the UAE",
             text: "Businesses lose track of shipment status once freight moves beyond domestic borders, making it hard to plan around arrival dates.",
           },
         ]}

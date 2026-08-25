@@ -31,7 +31,11 @@ export default function InternationalShippingForwarder() {
         backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
       />
 
-      <TrustedSlider />
+      <TrustedSlider
+        title="Used by Businesses Shipping to Multiple Countries"
+        description="Companies relying on OSS for cross-border freight forwarding include export-focused trading firms, manufacturers supplying overseas markets, and import-export operators managing shipment routes across several destination countries at once."
+      />
+
 
       {/* PROBLEM SECTION */}
       <ChallengeSection
@@ -287,7 +291,7 @@ Every shipment coordinated through OSS is structured around cargo type, destinat
       {/* FAQ */}
       <FAQSection
         eyebrow="FAQ"
-        title="Common Questions About International Shipping Forwarder Questions Answered"
+        title="Common Questions About International Shipping Forwarding"
         faqs={[
           {
             question: "What does OSS handle as a freight forwarding provider?",

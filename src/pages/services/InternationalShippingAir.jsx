@@ -36,7 +36,11 @@ export default function InternationalShippingAir() {
         backgroundImage="/images/services/freight.jpeg  "
       />
 
-      <TrustedSlider />
+     <TrustedSlider
+        title="Used by Businesses Shipping Time-Sensitive Cargo"
+        description="Companies relying on OSS for urgent air cargo include export-focused trading firms, manufacturers with time-critical overseas orders, and import-export operators who need faster transit than sea freight can offer for select shipments."
+      />
+
 
       {/* PROBLEM SECTION */}
       <ChallengeSection
@@ -106,7 +110,7 @@ export default function InternationalShippingAir() {
        
         eyebrow="The OSS Difference"
         title="Air Freight in UAE Built Around Speed and Storage Coordination"
-        subtitle="OSS operates a service that combines warehousing with air cargo dispatch, so time-sensitive shipments don't need to move between unrelated storage and air freight providers before dispatch. Inventory can move from an OSS warehouse straight into air freight in UAE without added transfer delays.\n\nEvery air cargo contract through OSS is structured around cargo type, urgency, and destination, giving businesses a faster path from storage to airport dispatch than working with disconnected vendors. This matters most for businesses with recurring urgent shipments, where consistent handling and scheduling directly affect delivery reliability."
+        subtitle="OSS operates a service that combines warehousing with air cargo dispatch, so time-sensitive shipments don't need to move between unrelated storage and air freight providers before dispatch. Inventory can move from an OSS warehouse straight into air freight in UAE without added transfer delays.Every air cargo contract through OSS is structured around cargo type, urgency, and destination, giving businesses a faster path from storage to airport dispatch than working with disconnected vendors. This matters most for businesses with recurring urgent shipments, where consistent handling and scheduling directly affect delivery reliability."
         description="What businesses get from OSS's air freight and warehousing coordination"
         features={[
           {
@@ -225,8 +229,8 @@ export default function InternationalShippingAir() {
 
       <FeatureSection
         eyebrow="Free Zone Storage "
-        title="Free Zone Access Supporting Export Freight"
-        description="Businesses shipping internationally need freight coordination that keeps pace with customs and duty processing at both origin and destination. OSS storage sits close to the SAIF Zone and Hamriyah Free Zone, giving export-focused clients duty-efficient handling built directly into the shipping process rather than managed as a separate step."
+        title="Free Zone Access Supporting Air Freight"
+        description="Businesses shipping urgent international cargo need customs processing that moves as fast as their freight. OSS storage sits close to the SAIF Zone and Hamriyah Free Zone, giving air cargo clients duty-efficient handling built directly into the shipping process rather than managed as a separate step."
       />
 
       {/* STATS */}
@@ -283,9 +287,9 @@ export default function InternationalShippingAir() {
           {
             title: "Our Team",
             subtitle:
-              "OSS air cargo operations are run by dispatch coordinators, documentation specialists, and warehouse technicians who manage export paperwork, loading, and scheduling for urgent shipments moving through UAE airports.",
+              "Staff Coordinating Time-Sensitive Air Shipments",
             description:
-              "Our dedicated team excels in deploying creative solutions with precision in international air freight logistics.",
+              "OSS air cargo operations are run by dispatch coordinators, documentation specialists, and warehouse technicians who manage export paperwork, loading, and scheduling for urgent shipments moving through UAE airports.",
           },
         ]}
       />

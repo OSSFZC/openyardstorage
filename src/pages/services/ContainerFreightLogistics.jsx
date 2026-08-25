@@ -31,7 +31,10 @@ export default function ContainerFreightLogistics() {
         backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
       />
 
-      <TrustedSlider />
+      <TrustedSlider
+        title="Used by Businesses Managing International Container Shipments"
+        description="Companies relying on OSS for container freight logistics include commodity trading firms, industrial manufacturers, oil and gas support businesses, and import-export operators who need dependable cargo transportation and logistics across sea and inland routes."
+      />
 
       {/* PROBLEM SECTION */}
       <ChallengeSection
@@ -219,8 +222,8 @@ As a logistic shipping service built around container-based trade, OSS coordinat
 
       <FeatureSection
         eyebrow="Free Zone Storage "
-        title="Free Zone Coordination Within Shipping & Logistic Management"
-        description="Businesses trading internationally need shipping & logistic management that accounts for customs and duty processing. OSS coordinates storage and freight close to the SAIF Zone and Hamriyah Free Zone, keeping duty-efficient handling built into the same logistics contract rather than managed separately."
+        title="Free Zone Coordination for Container Freight"
+        description="Businesses trading internationally need container freight logistics that accounts for customs and duty processing. OSS coordinates cargo transportation and logistics close to the SAIF Zone and Hamriyah Free Zone, keeping duty-efficient handling built into the same shipping process rather than managed separately."
       />
 
       {/* STATS */}

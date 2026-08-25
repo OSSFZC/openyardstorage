@@ -12,15 +12,24 @@ const logos = [
   "/logos/pay.png",
 ];
 
-export default function TrustedSlider() {
+export default function TrustedSlider({
+  title = "Trusted by Leaders Across Industries",
+  description,
+}) {
   return (
     <section className="bg-white py-20">
       <div className="mx-auto max-w-[1400px] px-6">
-
         {/* Heading */}
-        <p className="text-center text-gray-400 uppercase tracking-widest mb-12">
-          Trusted by Leaders Across Industries
-        </p>
+        <div className="mx-auto mb-12 max-w-6xl text-center">
+          <h2 className="text-2xl font-semibold tracking-tight text-gray-900 md:text-3xl lg:whitespace-nowrap">
+            {title}
+          </h2>
+          {description && (
+            <p className="mx-auto mt-4 max-w-3xl text-base leading-7 text-gray-500">
+              {description}
+            </p>
+          )}
+        </div>
 
         {/* Slider */}
         <Swiper
@@ -52,7 +61,6 @@ export default function TrustedSlider() {
             </SwiperSlide>
           ))}
         </Swiper>
-
       </div>
     </section>
   );
