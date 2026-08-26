@@ -23,9 +23,9 @@ export default function LeftalignedCards({
             </div>
           )}
 
-          <h2 className="text-3xl md:text-4xl font-semibold text-gray-900">
+          <h3 className="text-3xl md:text-4xl font-semibold text-gray-900">
             {title}
-          </h2>
+          </h3>
 
           <p className="mt-5 text-gray-600 leading-8">{subtitle}</p>
 

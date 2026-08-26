@@ -28,18 +28,13 @@ export default function LocationTemplate({ data }) {
       <TrustedSlider {...data.trustedSlider} />
 
       <ChallengeSection {...data.challenge} />
-      
+
       {/*key benefits section*/}
-      {data.keyBenefits && (
-        <LeftalignedCards
-          {...data.keyBenefits}
-        />
-      )}
+      {data.keyBenefits && <LeftalignedCards {...data.keyBenefits} />}
 
       <FeatureSection {...data.features} />
 
       <ServiceGridSection {...data.services} />
-
 
       {/* /Solutions Section */}
       {data.solutions && (

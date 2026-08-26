@@ -20,9 +20,9 @@ export default function CardsFeatures({
             </div>
           )}
 
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+          <h3 className="text-3xl md:text-4xl font-bold text-gray-900">
             {title}
-          </h2>
+          </h3>
 
           <p className="mt-6 text-gray-600 leading-8">{description}</p>
         </div>

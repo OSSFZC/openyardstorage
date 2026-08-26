@@ -19,9 +19,9 @@ export default function FAQSection({ eyebrow, title, faqs = [] }) {
         )}
 
         {/* Title */}
-        <h2 className="text-3xl md:text-4xl font-semibold text-center mb-10">
+        <h5 className="text-3xl md:text-4xl font-semibold text-center mb-10">
           {title}
-        </h2>
+        </h5>
 
         {/* FAQ Items */}
         <div className="divide-y">

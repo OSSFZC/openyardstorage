@@ -66,9 +66,9 @@ export default function StatsSection({ title, subtitle, stats = [] }) {
   return (
     <section className="py-16 bg-white">
       <div className="max-w-6xl mx-auto px-4 text-center">
-        <h2 className="text-3xl md:text-4xl font-semibold text-gray-800">
+        <h4 className="text-3xl md:text-4xl font-semibold text-gray-800">
           {title}
-        </h2>
+        </h4>
 
         {subtitle && <p className="text-gray-500 mt-2">{subtitle}</p>}
 
