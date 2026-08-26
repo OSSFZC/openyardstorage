@@ -18,9 +18,9 @@ export default function CTASection({
 
       {/* Content */}
       <div className="relative z-10 max-w-6xl mx-auto px-4 text-center">
-        <h4 className="text-white text-3xl md:text-5xl font-semibold mb-8">
+        <h5 className="text-white text-3xl md:text-5xl font-semibold mb-8">
           {title}
-        </h4>
+        </h5>
 
         <p className="text-white text-lg mb-8">
           {description}
