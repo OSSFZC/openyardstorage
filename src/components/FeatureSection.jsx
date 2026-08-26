@@ -18,9 +18,9 @@ export default function FeatureSection({
           </div>
         )}
         {/* Title */}
-        <h3 className="text-3xl md:text-4xl font-semibold text-gray-800">
+        <h4 className="text-3xl md:text-4xl font-semibold text-gray-800">
           {title}
-        </h3>
+        </h4>
 
         <p className="mt-4 text-gray-600 text-sm md:text-base leading-relaxed">
           {subtitle}
@@ -52,7 +52,7 @@ export default function FeatureSection({
                 />
               </div>
 
-              <h4 className="font-semibold text-gray-800 mb-2">{item.title}</h4>
+              <p className="font-semibold text-gray-800 mb-2">{item.title}</p>
 
               <p className="text-sm text-gray-600 max-w-xs">
                 {item.description}

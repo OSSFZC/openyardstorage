@@ -37,9 +37,9 @@ export default function ChallengeSection({
           className="rounded-2xl p-8"
           style={{ backgroundColor: rightBg }}
         >
-          <h4 className="text-base font-semibold text-gray-800 mb-6 text-center">
+          <p className="text-base font-semibold text-gray-800 mb-6 text-center">
           {rightTitle}
-          </h4>
+          </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {cards.map((card, index) => (
@@ -62,9 +62,9 @@ function FeatureCard({ icon: Icon, title, text }) {
         <Icon />
       </div>
 
-      <h4 className="mt-4 text-lg font-semibold text-black">
+      <p className="mt-4 text-lg font-semibold text-black">
         {title}
-      </h4>
+      </p>
 
       <p className="mt-2 text-gray-600 text-sm leading-relaxed">
         {text}

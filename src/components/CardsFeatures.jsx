@@ -44,9 +44,9 @@ export default function CardsFeatures({
               </div>
 
               {/* Title */}
-              <h3 className="mt-6 text-xl font-semibold text-gray-900">
+              <p className="mt-6 text-xl font-semibold text-gray-900">
                 {item.title}
-              </h3>
+              </p>
 
               {/* Description */}
               <p className="mt-3 text-gray-600 leading-7">{item.description}</p>

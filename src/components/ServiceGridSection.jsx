@@ -39,9 +39,9 @@ export default function ServiceGridSection({
                               bg-gradient-to-t from-black/80 via-black/40 to-transparent 
                               p-6 transition duration-500 group-hover:opacity-0"
               >
-                <h4 className="text-white text-xl font-semibold text-left">
+                <p className="text-white text-xl font-semibold text-left">
                   {item.title}
-                </h4>
+                </p>
               </div>
 
               {/* Hover Overlay */}
@@ -51,9 +51,9 @@ export default function ServiceGridSection({
                               opacity-0 group-hover:opacity-100
                               transition duration-500 p-6"
               >
-                <h4 className="text-white text-2xl font-semibold mb-3 transform translate-y-4 group-hover:translate-y-0 transition duration-500">
+                <p className="text-white text-2xl font-semibold mb-3 transform translate-y-4 group-hover:translate-y-0 transition duration-500">
                   {item.title}
-                </h4>
+                </p>
 
                 {item.description && (
                   <p className="text-white text-sm mb-4 opacity-90">

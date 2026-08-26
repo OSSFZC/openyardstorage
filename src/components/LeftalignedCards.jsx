@@ -23,9 +23,9 @@ export default function LeftalignedCards({
             </div>
           )}
 
-          <h3 className="text-3xl md:text-4xl font-semibold text-gray-900">
+          <p className="text-3xl md:text-4xl font-semibold text-gray-900">
             {title}
-          </h3>
+          </p>
 
           <p className="mt-5 text-gray-600 leading-8">{subtitle}</p>
 
@@ -53,9 +53,9 @@ export default function LeftalignedCards({
               {/* Content */}
 
               <div>
-                <h3 className="text-xl font-semibold text-gray-900">
+                <p className="text-xl font-semibold text-gray-900">
                   {item.title}
-                </h3>
+                </p>
 
                 <p className="mt-2 text-gray-600 leading-7">
                   {item.description}

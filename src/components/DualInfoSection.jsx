@@ -12,9 +12,9 @@ export default function DualInfoSection({ items = [] }) {
                 {item.title}
               </h4>
 
-              <h4 className="text-xl font-medium text-gray-700 mb-4">
+              <p className="text-xl font-medium text-gray-700 mb-4">
                 {item.subtitle}
-              </h4>
+              </p>
 
               <div className="text-gray-600 leading-relaxed">
                 {item.description.split("\n\n").map((paragraph, i) => (
