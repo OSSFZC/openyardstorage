@@ -1,4 +1,4 @@
-export default function FeatureSection({
+export default function FreeZoneFeatureSection({
   eyebrow,
   title,
   subtitle,
@@ -18,9 +18,9 @@ export default function FeatureSection({
           </div>
         )}
         {/* Title */}
-        <h3 className="text-3xl md:text-4xl font-semibold text-gray-800">
+        <h4 className="text-3xl md:text-4xl font-semibold text-gray-800">
           {title}
-        </h3>
+        </h4>
 
         <p className="mt-4 text-gray-600 text-sm md:text-base leading-relaxed">
           {subtitle}

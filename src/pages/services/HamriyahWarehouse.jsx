@@ -2,6 +2,7 @@ import InnerHero from "../../components/InnerHero";
 import TrustedSlider from "../../components/TrustedSlider";
 import ChallengeSection from "../../components/ChallengeSection";
 import FeatureSection from "../../components/FeatureSection";
+import FreeZoneFeatureSection from "../../components/FreeZoneFeatureSection";
 import ServiceGridSection from "../../components/ServiceGridSection";
 import StatsSection from "../../components/StatsSection";
 import DualInfoSection from "../../components/DualInfoSection";
@@ -10,7 +11,6 @@ import CTASection from "../../components/CTASection";
 import LeftalignedCards from "../../components/LeftalignedCards";
 import CardsFeatures from "../../components/CardsFeatures";
 import { FiMapPin, FiDollarSign, FiFileText, FiClock } from "react-icons/fi";
-
 import useMeta from "../../hooks/useMeta";
 
 export default function HamriyahWarehouse() {
@@ -221,7 +221,7 @@ Every Hamriyah free zone warehouse through OSS is set up around cargo type, trad
         ]}
       />
 
-      <FeatureSection
+      <FreeZoneFeatureSection
         // eyebrow="The OSS FZC Difference"
         title="Free Zone Advantages for Hamriyah Trade"
         description="Businesses trading internationally through Hamriyah need storage that keeps pace with customs and duty processing. A Hamriyah free zone warehouse through OSS gives trading firms tax-efficient storage, duty suspension options, and simplified clearance close to the port itself."

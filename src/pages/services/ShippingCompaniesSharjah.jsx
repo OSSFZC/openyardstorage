@@ -8,7 +8,7 @@ import DualInfoSection from "../../components/DualInfoSection";
 import FAQSection from "../../components/FAQSection";
 import CTASection from "../../components/CTASection";
 import CardsFeatures from "../../components/CardsFeatures";
-
+import FreeZoneFeatureSection from "../../components/FreeZoneFeatureSection";
 import { FiClock, FiShield, FiFileText, FiDollarSign } from "react-icons/fi";
 
 import useMeta from "../../hooks/useMeta";
@@ -32,7 +32,10 @@ export default function ShippingCompaniesSharjah() {
         backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
       />
 
-      <TrustedSlider />
+      <TrustedSlider
+        title="Used by Shipping and Freight-Focused Businesses in Sharjah"
+        description="Companies relying on OSS for shipping support in Sharjah include freight forwarders, general trading firms, manufacturers with recurring export volumes, and ship management companies in Sharjah that need consistent storage and dispatch coordination for vessel-bound cargo."
+      />
 
       {/* PROBLEM SECTION */}
       <ChallengeSection
@@ -141,7 +144,7 @@ export default function ShippingCompaniesSharjah() {
       {/* SERVICES */}
       <ServiceGridSection
         eyebrow="Our Services"
-        title="Storage and Freight Offerings for Shipping Companiess"
+        title="Storage and Freight Offerings for Shipping Companies"
         services={[
           {
             title: "Cargo Consolidation and Warehousing",
@@ -219,7 +222,7 @@ export default function ShippingCompaniesSharjah() {
         ]}
       />
 
-      <FeatureSection
+      <FreeZoneFeatureSection
         eyebrow="Free Zone Storage "
         title="Free Zone Access Supporting Shipping Companies"
         description="Shipping companies moving cargo internationally need customs processing that moves as fast as their freight. OSS storage sits close to the SAIF Zone and Hamriyah Free Zone, giving shipping companies duty-efficient handling built directly into the storage and dispatch process rather than managed as a separate step."

@@ -10,7 +10,7 @@ import CTASection from "../../components/CTASection";
 import LeftalignedCards from "../../components/LeftalignedCards";
 import CardsFeatures from "../../components/CardsFeatures";
 import { FiFileText, FiClock, FiDollarSign, FiGlobe } from "react-icons/fi";
-
+import FreeZoneFeatureSection from "../../components/FreeZoneFeatureSection";
 import useMeta from "../../hooks/useMeta";
 
 export default function InternationalShippingForwarder() {
@@ -222,7 +222,7 @@ Every shipment coordinated through OSS is structured around cargo type, destinat
         ]}
       />
 
-      <FeatureSection
+      <FreeZoneFeatureSection
         eyebrow="Free Zone Storage "
         title="Free Zone Access Supporting Export Freight"
         description="Businesses shipping internationally need freight coordination that keeps pace with customs and duty processing at both origin and destination. OSS storage sits close to the SAIF Zone and Hamriyah Free Zone, giving export-focused clients duty-efficient handling built directly into the shipping process rather than managed as a separate step."

@@ -10,7 +10,7 @@ import CTASection from "../../components/CTASection";
 import CardsFeatures from "../../components/CardsFeatures";
 import LeftalignedCards from "../../components/LeftalignedCards";
 import { FiClock, FiMapPin, FiPackage, FiSettings } from "react-icons/fi";
-
+import FreeZoneFeatureSection from "../../components/FreeZoneFeatureSection";
 import useMeta from "../../hooks/useMeta";
 
 export default function ContainerFreightLogistics() {
@@ -99,7 +99,7 @@ export default function ContainerFreightLogistics() {
         ]}
       />
       {/* SOLUTIONS */}
-      <FeatureSection
+      <FreeZoneFeatureSection
         eyebrow="The OSS FZC Difference"
         title="A Full-Service Approach to Marine Logistics Services in Sharjah"
         subtitle="OSS operates as one of the marine logistics companies in Sharjah offering container freight logistics that combines port handling, warehousing, and inland transport under one contract. Businesses don't need to separately manage cargo freight forwarders, customs agents, and inland carriers.

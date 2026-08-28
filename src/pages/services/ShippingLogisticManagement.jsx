@@ -9,7 +9,7 @@ import FAQSection from "../../components/FAQSection";
 import CTASection from "../../components/CTASection";
 import CardsFeatures from "../../components/CardsFeatures";
 import LeftalignedCards from "../../components/LeftalignedCards";
-
+import FreeZoneFeatureSection from "../../components/FreeZoneFeatureSection";
 import { FiClock, FiShuffle, FiTrendingUp, FiDollarSign } from "react-icons/fi";
 
 import useMeta from "../../hooks/useMeta";
@@ -223,7 +223,7 @@ Every shipping & logistic management contract through OSS is built around cargo 
         ]}
       />
 
-      <FeatureSection
+      <FreeZoneFeatureSection
         eyebrow="Free Zone Storage "
         title="Free Zone Coordination Within Shipping & Logistic Management"
         description="Businesses trading internationally need shipping & logistic management that accounts for customs and duty processing. OSS coordinates storage and freight close to the SAIF Zone and Hamriyah Free Zone, keeping duty-efficient handling built into the same logistics contract rather than managed separately."

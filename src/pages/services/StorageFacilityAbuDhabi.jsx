@@ -9,7 +9,7 @@ import FAQSection from "../../components/FAQSection";
 import CTASection from "../../components/CTASection";
 import CardsFeatures from "../../components/CardsFeatures";
 import LeftalignedCards from "../../components/LeftalignedCards";
-
+import FreeZoneFeatureSection from "../../components/FreeZoneFeatureSection";
 import { FiPackage, FiDollarSign, FiShield, FiClock } from "react-icons/fi";
 
 import useMeta from "../../hooks/useMeta";
@@ -219,7 +219,7 @@ Every storage facility contract through OSS is built around cargo type, volume, 
         ]}
       />
 
-      <FeatureSection
+      <FreeZoneFeatureSection
         // eyebrow="The OSS FZC Difference"
         title="Free Zone-Adjacent Access for Abu Dhabi Trade"
         description="Businesses trading internationally through Abu Dhabi need storage that supports duty suspension and simplified customs processing. OSS's storage facility network sits close to the SAIF Zone and Hamriyah Free Zone, giving Abu Dhabi-focused trading firms duty-efficient storage without added customs delays."

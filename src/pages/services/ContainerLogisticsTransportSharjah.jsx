@@ -8,7 +8,7 @@ import DualInfoSection from "../../components/DualInfoSection";
 import FAQSection from "../../components/FAQSection";
 import CTASection from "../../components/CTASection";
 import CardsFeatures from "../../components/CardsFeatures";
-
+import FreeZoneFeatureSection from "../../components/FreeZoneFeatureSection";
 import { FiCalendar, FiShield, FiFileText, FiTruck } from "react-icons/fi";
 
 import useMeta from "../../hooks/useMeta";
@@ -223,7 +223,7 @@ Every container logistics transport contract in Sharjah is structured around car
         ]}
       />
 
-      <FeatureSection
+      <FreeZoneFeatureSection
         eyebrow="Free Zone Storage "
         title="Free Zone Access Supporting Container Transport"
         description="Businesses trading internationally through Sharjah need container logistics transport that accounts for customs and duty processing. OSS coordinates container shipping services in Sharjah close to the SAIF Zone and Hamriyah Free Zone, keeping duty-efficient handling built into the same process rather than managed as a separate step."

@@ -10,7 +10,7 @@ import CTASection from "../../components/CTASection";
 import LeftalignedCards from "../../components/LeftalignedCards";
 import CardsFeatures from "../../components/CardsFeatures";
 import { FiClock, FiDollarSign, FiFileText, FiTruck } from "react-icons/fi";
-
+import FreeZoneFeatureSection from "../../components/FreeZoneFeatureSection";
 import useMeta from "../../hooks/useMeta";
 
 export default function TransportLogisticSharjah() {
@@ -223,7 +223,7 @@ Each transport contract through OSS is structured around cargo type, delivery fr
         ]}
       />
 
-      <FeatureSection
+      <FreeZoneFeatureSection
         eyebrow="Free Zone Storage "
         title="Free Zone Access Supporting Transport Coordination"
         description="Businesses trading internationally need transport that keeps pace with customs and duty processing. OSS coordinates storage and freight close to the SAIF Zone and Hamriyah Free Zone, keeping duty-efficient handling built into the same transport process rather than managed as a separate step."

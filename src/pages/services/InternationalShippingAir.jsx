@@ -9,6 +9,7 @@ import FAQSection from "../../components/FAQSection";
 import CTASection from "../../components/CTASection";
 import CardsFeatures from "../../components/CardsFeatures";
 import LeftalignedCards from "../../components/LeftalignedCards";
+import FreeZoneFeatureSection from "../../components/FreeZoneFeatureSection";
 import {
   FiDollarSign,
   FiClock,
@@ -227,7 +228,7 @@ export default function InternationalShippingAir() {
         ]}
       />
 
-      <FeatureSection
+      <FreeZoneFeatureSection
         eyebrow="Free Zone Storage "
         title="Free Zone Access Supporting Air Freight"
         description="Businesses shipping urgent international cargo need customs processing that moves as fast as their freight. OSS storage sits close to the SAIF Zone and Hamriyah Free Zone, giving air cargo clients duty-efficient handling built directly into the shipping process rather than managed as a separate step."

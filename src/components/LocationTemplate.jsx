@@ -10,7 +10,7 @@ import CTASection from "./CTASection";
 import useMeta from "../hooks/useMeta";
 import CardsFeatures from "./CardsFeatures";
 import LeftalignedCards from "./LeftalignedCards";
-
+import FreeZoneFeatureSection from "./FreeZoneFeatureSection";
 export default function LocationTemplate({ data }) {
   useMeta(data.metaTitle, data.metaDescription);
 
@@ -45,7 +45,7 @@ export default function LocationTemplate({ data }) {
       )}
 
       {/* /Free Zone Storage Section */}
-      <FeatureSection {...data.FreeZoneStorage} />
+      <FreeZoneFeatureSection {...data.FreeZoneStorage} />
 
       <StatsSection {...data.stats} />
 
