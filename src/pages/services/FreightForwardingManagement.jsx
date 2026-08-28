@@ -8,7 +8,7 @@ import DualInfoSection from "../../components/DualInfoSection";
 import FAQSection from "../../components/FAQSection";
 import CTASection from "../../components/CTASection";
 import LeftalignedCards from "../../components/LeftalignedCards";
-
+import FreeZoneFeatureSection from "../../components/FreeZoneFeatureSection";
 import { FiPackage, FiClock, FiFileText, FiEye } from "react-icons/fi";
 
 import useMeta from "../../hooks/useMeta";
@@ -32,7 +32,9 @@ export default function FreightForwardingManagement() {
         backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
       />
 
-      <TrustedSlider />
+      <TrustedSlider 
+      title="Used by Businesses Managing Multi-Destination Freight"
+      description="Companies relying on OSS for freight forwarding include export-focused trading firms, manufacturers with recurring overseas orders, and import-export operators who need a single partner to coordinate storage and dispatch across multiple destinations." />
 
       {/* PROBLEM SECTION */}
       <ChallengeSection
@@ -217,7 +219,7 @@ export default function FreightForwardingManagement() {
         ]}
       />
 
-      <FeatureSection
+      <FreeZoneFeatureSection
         eyebrow="Free Zone Storage "
         title="Free Zone Access Supporting Freight Forwarding"
         description="Businesses shipping cargo internationally need customs processing that moves as fast as their freight. OSS storage sits close to the SAIF Zone and Hamriyah Free Zone, giving businesses duty-efficient handling built directly into the storage and dispatch process rather than managed as a separate step."

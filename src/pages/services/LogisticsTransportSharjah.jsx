@@ -7,7 +7,7 @@ import StatsSection from "../../components/StatsSection";
 import DualInfoSection from "../../components/DualInfoSection";
 import FAQSection from "../../components/FAQSection";
 import CTASection from "../../components/CTASection";
-
+import FreeZoneFeatureSection from "../../components/FreeZoneFeatureSection";
 import { FiSettings, FiClock, FiTrendingUp, FiEye } from "react-icons/fi";
 
 import useMeta from "../../hooks/useMeta";
@@ -33,8 +33,10 @@ export default function LogisticsTransportSharjah() {
         s
       />
 
-      <TrustedSlider />
-
+      <TrustedSlider
+      title="Used by Businesses Moving Goods Across the UAE"
+      description="Companies relying on OSS for transport and distribution include manufacturers with regular production output, retailers managing multi-location stock transfers, and trading firms that need scheduled inland delivery across the Emirates." />
+      
       {/* PROBLEM SECTION */}
       <ChallengeSection
         // subtitle="Experiencing Delays and Inefficiencies?"
@@ -221,7 +223,7 @@ features={[
         ]}
       />
 
-      <FeatureSection
+      <FreeZoneFeatureSection
         eyebrow="Free Zone Storage "
         title="Free Zone Access Supporting Transport Operations"
         description="Businesses moving goods across the UAE need customs processing that keeps pace with delivery schedules. OSS storage sits close to the SAIF Zone and Hamriyah Free Zone, giving transport clients duty-efficient handling built directly into the distribution process rather than managed as a separate step."

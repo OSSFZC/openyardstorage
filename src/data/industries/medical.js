@@ -11,6 +11,12 @@ const medicalData = {
   metaDescription:
     "Trust Openyard Storage FZC for medical equipment freight service & logistics, delivering safe handling, secure transport & reliable delivery.Get started today!",
 
+  trustedSlider: {
+    title: "Used by Healthcare and Medical Equipment Businesses",
+    description:
+      "Companies relying on OSS for medical storage and freight support include hospital suppliers, medical device distributors, pharmaceutical importers, and manufacturers that depend on a reliable medical equipment freight service and logistics partner for time-critical shipments.",
+  },
+
   hero: {
     eyebrow: "REVOLUTIONIZING ACCESSIBILITY IN HEALTHCARE",
     title:
@@ -272,7 +278,7 @@ const medicalData = {
 
   faq: {
     eyebrow: "FAQ",
-    title: "Medical Equipment Storage Questions",
+    title: "Common Questions About Medical and Healthcare Storage",
 
     faqs: [
       {
@@ -337,8 +343,10 @@ const medicalData = {
   },
 
   cta: {
-    title: "Move Medical Equipment with a Coordinated Storage and Freight Partner",
-    description:"Whether you need standalone storage for medical supplies or a combined service that pairs warehousing with sea and air freight dispatch, OSS has the infrastructure and experience to support hospital suppliers, device distributors, and pharmaceutical importers. Contact the OSS team for a storage and shipping schedule quote.",
+    title:
+      "Move Medical Equipment with a Coordinated Storage and Freight Partner",
+    description:
+      "Whether you need standalone storage for medical supplies or a combined service that pairs warehousing with sea and air freight dispatch, OSS has the infrastructure and experience to support hospital suppliers, device distributors, and pharmaceutical importers. Contact the OSS team for a storage and shipping schedule quote.",
     buttonText: "Contact OSS for a Medical Storage Quote",
     buttonLink: "/contact-us",
     backgroundImage: "/images/services/Explore-More.jpg",

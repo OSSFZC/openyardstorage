@@ -10,6 +10,7 @@ import CTASection from "./CTASection";
 import useMeta from "../hooks/useMeta";
 import CardsFeatures from "./CardsFeatures";
 import LeftalignedCards from "./LeftalignedCards";
+import FreeZoneFeatureSection from "./FreeZoneFeatureSection";
 
 export default function IndustryTemplate({ data }) {
 
@@ -26,7 +27,7 @@ export default function IndustryTemplate({ data }) {
         title={data.hero.title}
       />
 
-      <TrustedSlider />
+      <TrustedSlider {...data.trustedSlider} />
 
       <ChallengeSection {...data.challenge} />
 
@@ -36,7 +37,7 @@ export default function IndustryTemplate({ data }) {
 
       <ServiceGridSection {...data.services} />
 
-      <FeatureSection {...data.FreeZoneStorage} />
+      <FreeZoneFeatureSection {...data.FreeZoneStorage} />
 
       <CardsFeatures {...data.cardsFeature} />
 

@@ -8,7 +8,7 @@ import DualInfoSection from "../../components/DualInfoSection";
 import FAQSection from "../../components/FAQSection";
 import CTASection from "../../components/CTASection";
 import CardsFeatures from "../../components/CardsFeatures";
-
+import FreeZoneFeatureSection from "../../components/FreeZoneFeatureSection";
 import { FiThermometer, FiTruck, FiClock, FiShield } from "react-icons/fi";
 
 import useMeta from "../../hooks/useMeta";
@@ -32,7 +32,10 @@ export default function ChillerStorageWarehouse() {
         backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
       />
 
-      <TrustedSlider />
+      <TrustedSlider 
+      title="Used by Businesses Storing Temperature-Sensitive Goods"
+      description="Companies relying on OSS for chilled storage include food importers and distributors, pharmaceutical and healthcare suppliers, and retailers managing perishable stock that needs consistent temperature control between receiving and dispatch." />
+      
 
       {/* PROBLEM SECTION */}
       <ChallengeSection
@@ -220,7 +223,7 @@ Every storage arrangement through OSS is structured around product type, require
         ]}
       />
 
-      <FeatureSection
+      <FreeZoneFeatureSection
         eyebrow="Free Zone Storage "
         title="Free Zone Access Supporting Chilled Storage"
         description="Businesses importing temperature-sensitive goods need customs processing that keeps pace with cold chain handling. OSS chiller storage sits close to the SAIF Zone and Hamriyah Free Zone, giving clients duty-efficient handling built directly into the storage process rather than managed as a separate step."

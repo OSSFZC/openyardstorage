@@ -10,7 +10,7 @@ import CTASection from "../../components/CTASection";
 import LeftalignedCards from "../../components/LeftalignedCards";
 import { FiPackage, FiFileText, FiEye, FiClock } from "react-icons/fi";
 import CardsFeatures from "../../components/CardsFeatures";
-
+import FreeZoneFeatureSection from "../../components/FreeZoneFeatureSection";
 import useMeta from "../../hooks/useMeta";
 
 export default function InternationalTruckShipping() {
@@ -31,8 +31,10 @@ export default function InternationalTruckShipping() {
         backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
       />
 
-      <TrustedSlider />
-
+      <TrustedSlider
+      title="Used by Businesses Shipping Cargo Across Borders"
+      description="Companies relying on OSS for international truck shipping include export-focused trading firms, manufacturers supplying regional markets, and import-export operators who need reliable road transit to neighboring GCC countries." />
+      
       {/* PROBLEM SECTION */}
       <ChallengeSection
         // subtitle="Facing Roadblocks in International Truck Shipping?"
@@ -97,7 +99,7 @@ export default function InternationalTruckShipping() {
       />
 
       {/* SOLUTIONS */}
-      <FeatureSection
+      <FreeZoneFeatureSection
         eyebrow="The OSS Difference Section"
         title="International Truck Shipping Built Around Reliability and Storage Coordination"
         subtitle={`OSS operates a cross-border truck freight service that integrates warehousing with regional road transport, allowing cargo to move directly from storage to departing trucks without relying on separate logistics providers. This reduces handling, improves efficiency, and creates a smoother path from warehouse to international delivery. Every shipment is planned around cargo type, destination, border requirements, and delivery schedules to support reliable cross-border transport.

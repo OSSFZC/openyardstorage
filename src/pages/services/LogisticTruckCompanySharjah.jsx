@@ -7,7 +7,7 @@ import StatsSection from "../../components/StatsSection";
 import DualInfoSection from "../../components/DualInfoSection";
 import FAQSection from "../../components/FAQSection";
 import CTASection from "../../components/CTASection";
-
+import FreeZoneFeatureSection from "../../components/FreeZoneFeatureSection";
 import {
   FiFileText,
   FiClock,
@@ -37,7 +37,9 @@ export default function LogisticTruckCompanySharjah() {
         backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
       />
 
-      <TrustedSlider />
+      <TrustedSlider
+      title="Used by Businesses Moving Cargo by Road" 
+      description="Companies relying on OSS as a logistic truck company include general trading firms, manufacturers with regular inland deliveries, and import-export operators who need dependable road transport between storage and destination points." />
 
       {/* PROBLEM SECTION */}
       <ChallengeSection
@@ -224,7 +226,7 @@ What businesses get from OSS's trucking and warehousing coordination:`}
         ]}
       />
 
-      <FeatureSection
+      <FreeZoneFeatureSection
         eyebrow="Free Zone Storage "
         title="Free Zone Access Supporting Trucking Operations"
         description="Businesses moving cargo by road between free zones and other destinations need customs processing that keeps pace with their delivery schedule. OSS storage sits close to the SAIF Zone and Hamriyah Free Zone, giving trucking clients duty-efficient handling built directly into the dispatch process rather than managed as a separate step."

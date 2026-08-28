@@ -8,7 +8,7 @@ import DualInfoSection from "../../components/DualInfoSection";
 import FAQSection from "../../components/FAQSection";
 import CTASection from "../../components/CTASection";
 import LeftalignedCards from "../../components/LeftalignedCards";
-
+import FreeZoneFeatureSection from "../../components/FreeZoneFeatureSection";
 import { FiTruck, FiClock, FiFileText, FiEye } from "react-icons/fi";
 
 import useMeta from "../../hooks/useMeta";
@@ -31,7 +31,9 @@ export default function FreightLogisticsTrucking() {
         backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
       />
 
-      <TrustedSlider />
+      <TrustedSlider
+      title="Used by Businesses Moving Cargo by Road"
+      description="Companies relying on OSS for freight logistics include general trading firms, manufacturers with regular inland deliveries, and import-export operators who need dependable road transport between storage and destination points." />
 
       {/* PROBLEM SECTION */}
       <ChallengeSection
@@ -217,7 +219,7 @@ Every trucking contract through OSS is structured around cargo type, delivery fr
         ]}
       />
 
-      <FeatureSection
+      <FreeZoneFeatureSection 
         eyebrow="Free Zone Storage "
         title="Free Zone Access Supporting Freight Trucking"
         description="Businesses moving cargo by road between free zones and other destinations need customs processing that keeps pace with their delivery schedule. OSS storage sits close to the SAIF Zone and Hamriyah Free Zone, giving trucking clients duty-efficient handling built directly into the dispatch process rather than managed as a separate step."

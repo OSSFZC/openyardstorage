@@ -9,6 +9,7 @@ import FAQSection from "../../components/FAQSection";
 import CTASection from "../../components/CTASection";
 import CardsFeatures from "../../components/CardsFeatures";
 import LeftalignedCards from "../../components/LeftalignedCards";
+import FreeZoneFeatureSection from "../../components/FreeZoneFeatureSection";
 import {
   FiClock,
   FiMessageSquare,
@@ -36,7 +37,9 @@ export default function ForwardingFreightCompanies() {
         backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
       />
 
-      <TrustedSlider />
+      <TrustedSlider
+      title="Used by Freight Forwarders and Logistics Operators"
+      description="Companies relying on OSS for storage and dispatch support include international freight forwarders, customs brokers, and forwarding freight that need consistent warehousing and cargo consolidation for client shipments." />
 
       {/* PROBLEM SECTION */}
       <ChallengeSection
@@ -224,7 +227,7 @@ Every storage contract through OSS is structured around cargo type, shipment fre
         ]}
       />
 
-      <FeatureSection
+      <FreeZoneFeatureSection
         eyebrow="Free Zone Storage "
         title="Free Zone Access Supporting Forwarding Freight"
         description="Forwarding freight moving client cargo internationally needs customs processing that moves as fast as their freight. OSS storage sits close to the SAIF Zone and Hamriyah Free Zone, giving forwarders duty-efficient handling built directly into the storage and dispatch process rather than managed as a separate step."
