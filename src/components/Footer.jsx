@@ -64,7 +64,7 @@ export default function Footer() {
 
           {/* QUICK LINKS */}
           <div>
-            <h4 className="text-red-600 font-semibold mb-6">Quick Links</h4>
+            <p className="text-red-600 font-semibold mb-6">Quick Links</p>
             <ul className="space-y-3 text-gray-500 text-sm">
   <li><Link to="/" className="hover:text-red-600">Home</Link></li>
   <li><Link to="about/our-story" className="hover:text-red-600">About</Link></li>
@@ -80,7 +80,7 @@ export default function Footer() {
 
           {/* SERVICES */}
           <div>
-            <h4 className="text-red-600 font-semibold mb-6">Services</h4>
+            <p className="text-red-600 font-semibold mb-6">Services</p>
             <ul className="space-y-3 text-gray-500 text-sm">
   <li>
     <Link to="/services/freight-shipping-service" className="hover:text-red-600">
@@ -112,7 +112,7 @@ export default function Footer() {
 
           {/* LOCATION */}
           <div>
-            <h4 className="text-red-600 font-semibold mb-6">Location</h4>
+            <p className="text-red-600 font-semibold mb-6">Location</p>
 
             <p className="text-gray-500 text-sm leading-relaxed mb-4">
               Hamriyah Free Zone, Sharjah<br />
