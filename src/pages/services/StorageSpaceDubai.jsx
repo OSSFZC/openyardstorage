@@ -10,14 +10,13 @@ import CTASection from "../../components/CTASection";
 import LeftalignedCards from "../../components/LeftalignedCards";
 
 import { FiDollarSign, FiCalendar, FiShield, FiTool } from "react-icons/fi";
-
 import useMeta from "../../hooks/useMeta";
 import CardsFeatures from "../../components/CardsFeatures";
 
 export default function StorageSpaceDubai() {
   useMeta(
-    "Secure Storage Space for Rent in Dubai | OSS FZC",
-    "OSS FZC offers flexible, secure storage spaces in Dubai, tailored to your needs. Rent reliable storage solutions today.",
+    "Storage Space for Rent in Dubai|Openyard Storage FZC Logistics",
+    "Openyard Storage FZC makes it easy to rent storage in Dubai with secure storage spaces in Dubai, flexible rental options & reliable support.Get a quote today!",
   );
 
   return (
@@ -32,7 +31,9 @@ export default function StorageSpaceDubai() {
         backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
       />
 
-      <TrustedSlider />
+      <TrustedSlider
+      title="Trusted by Businesses Across Dubai and the UAE"
+      description="From growing startups and established trading companies to manufacturers, distributors, and online retailers, businesses choose OSS when they need dependable storage spaces in Dubai backed by professional warehouse management, flexible rental options, and reliable logistics support."/>
 
       {/* PROBLEM SECTION */}
       <ChallengeSection
@@ -74,30 +75,30 @@ export default function StorageSpaceDubai() {
         features={[
           {
             image: "/images/services/grow.png",
-            title: "Flexible storage options ",
+            title: "Flexible storage options",
             description:
               "Rent only the amount of space your inventory requires.",
           },
           {
             image: "/images/services/back-in-time.png",
-            title: "Short and long-term agreements.",
+            title: "Short and long-term agreements",
             description: "Suitable for changing business demands.",
           },
           {
             image: "/images/industries/protection.png",
-            title: "Secure warehouse environment ",
+            title: "Secure warehouse environment",
             description:
               "Monitored facilities with controlled access and modern safety systems.",
           },
           {
             image: "/images/industries/boxes.png",
-            title: "Scalable storage solutions ",
+            title: "Scalable storage solutions",
             description:
               "Expand your storage capacity without changing providers.",
           },
           {
             image: "/images/services/logistic.png",
-            title: "Integrated logistics support ",
+            title: "Integrated logistics support",
             description:
               "Inventory handling, loading, unloading, and warehouse management available when required.",
           },
@@ -208,6 +209,12 @@ export default function StorageSpaceDubai() {
             image: "/images/services/cooperation.png",
             title: "Trading Companies",
             description:
+              "Flexible warehouse space for imported and exported products with efficient inventory handling.",
+          },
+          {
+            image: "/images/services/online-store.png",
+            title: "E-Commerce Businesses",
+            description:
               "Secure inventory storage supporting online order fulfilment and seasonal demand fluctuations.",
           },
           {
@@ -281,7 +288,6 @@ export default function StorageSpaceDubai() {
         </div>
       </section>
 
-      
       {/* STATS */}
       <StatsSection
         title="Operational Excellence You Can Depend On"

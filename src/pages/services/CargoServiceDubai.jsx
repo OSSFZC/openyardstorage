@@ -9,7 +9,7 @@ import FAQSection from "../../components/FAQSection";
 import CTASection from "../../components/CTASection";
 import CardsFeatures from "../../components/CardsFeatures";
 import LeftalignedCards from "../../components/LeftalignedCards";
-
+import FreeZoneFeatureSection from "../../components/FreeZoneFeatureSection";
 import { FiFileText, FiClock, FiShield, FiMap } from "react-icons/fi";
 
 import useMeta from "../../hooks/useMeta";
@@ -33,8 +33,10 @@ export default function CargoServiceDubai() {
         backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
       />
 
-      <TrustedSlider />
-
+      <TrustedSlider
+        title="Used by Trading, Manufacturing, and Retail Companies Moving Cargo to Dubai"
+        description="Companies relying on OSS's shipping cargo services in Dubai include commodity trading firms, automotive component distributors, FMCG brands, and e-commerce sellers who need consistent transit between Sharjah warehouses and Dubai delivery points."
+      />
       {/* PROBLEM SECTION */}
       <ChallengeSection
         // subtitle="Navigating Cargo Complexities?"
@@ -222,7 +224,7 @@ OSS is a storage and logistics company based in Sharjah, and cargo movement to D
       />
 
       {/* /Free Zone Storage Section */}
-      <FeatureSection
+      <FreeZoneFeatureSection
         // eyebrow="The OSS FZC Difference"
         title="Free Zone Cargo Access for Dubai-Bound Shipments"
         description="Businesses trading internationally need cargo shipping that supports duty-efficient handling and simplified customs processing. OSS's cargo service to Dubai connects to major free zones and shipping points, giving trading firms a direct route from Sharjah storage to Dubai-based distribution without added customs delays."
@@ -357,7 +359,7 @@ OSS is a storage and logistics company based in Sharjah, and cargo movement to D
       <CTASection
         title="Move Cargo to Dubai with a Dedicated Logistics Partner"
         description="Whether you need scheduled freight runs, on-demand dispatch, or full-load shipping cargo services in Dubai, OSS has the fleet and warehouse network to support it. Contact the OSS logistics team for a shipping schedule and quote."
-        buttonText="Contact Us Today for Customized Solutions"
+        buttonText=" Contact OSS for a Cargo Service to Dubai Quote"
         buttonLink="/contact-us"
         backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
       />

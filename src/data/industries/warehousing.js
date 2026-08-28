@@ -16,6 +16,12 @@ const warehousingData = {
     backgroundImage: "/images/services/Yard-for-Rent-in-Sharjah.jpg",
   },
 
+  trustedSlider: {
+  title: "Used by Businesses Across Trading, Manufacturing, and Healthcare",
+  description:
+    "OSS supports commodity trading firms, industrial manufacturers, retail distributors, and healthcare logistics providers who need warehouse companies in UAE capable of handling both standard and temperature-controlled inventory.",
+},
+
   challenge: {
     title: "Why Generic Warehousing Fails Specialized Industries",
     // subtitle: "Facing Storage Challenges?",
@@ -56,7 +62,7 @@ const warehousingData = {
     title: "Warehousing Matched to Industry Requirements",
 
     description:
-      "OSS operates as one of the warehouse companies in UAE that builds storage configurations around the industry it serves, rather than applying the same layout to every client. Trading firms, manufacturers, and healthcare logistics providers each get infrastructure suited to their cargo.For healthcare clients, this includes dedicated warehouse storage of healthcare logistics products, medicines, and vaccines, with temperature-controlled zones and stricter access and monitoring protocols than standard commercial storage.",
+      "OSS operates as one of the warehouse companies in UAE that builds storage configurations around the industry it serves, rather than applying the same layout to every client. Trading firms, manufacturers, and healthcare logistics providers each get infrastructure suited to their cargo. For healthcare clients, this includes dedicated warehouse storage of healthcare logistics products, medicines, and vaccines, with temperature-controlled zones and stricter access and monitoring protocols than standard commercial storage.",
 
     features: [
       {
@@ -117,7 +123,7 @@ const warehousingData = {
 
   services: {
     eyebrow: "Our Services",
-    title: "Comprehensive Warehousing Solutions",
+    title: "Warehousing Services by Industry",
 
     services: [
       {

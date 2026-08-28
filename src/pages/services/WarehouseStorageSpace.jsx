@@ -9,7 +9,7 @@ import FAQSection from "../../components/FAQSection";
 import CTASection from "../../components/CTASection";
 import LeftalignedCards from "../../components/LeftalignedCards";
 import CardsFeatures from "../../components/CardsFeatures";
-
+import FreeZoneFeatureSection from "../../components/FreeZoneFeatureSection";
 import {
   FiLayers,
   FiCalendar,
@@ -37,7 +37,10 @@ export default function WarehouseStorageSpace() {
         backgroundImage="/images/services/warehousing.jpeg"
       />
 
-      <TrustedSlider />
+      <TrustedSlider
+      title="Storage Warehouse for Rent Used by International Businesses and Businesses Across the UAE" 
+      description="Businesses utilizing a warehouse storage space for rent from OSS include startups, independent trading operations, small e-commerce sellers, and companies piloting new product lines before committing to larger storage contracts."
+      />
 
       {/* PROBLEM SECTION */}
       <ChallengeSection
@@ -230,7 +233,7 @@ export default function WarehouseStorageSpace() {
         ]}
       />
 
-      <FeatureSection
+      <FreeZoneFeatureSection
         // eyebrow="The OSS FZC Difference"
         title="Free Zone-Adjacent Access for Small Businesses"
         description="Small trading businesses handling international shipments still need customs-efficient storage. A storage warehouse for rent through OSS is conveniently located near SAIF Zone and Hamriyah Free Zone, allowing smaller operators to benefit from efficient import, export, and distribution logistics."

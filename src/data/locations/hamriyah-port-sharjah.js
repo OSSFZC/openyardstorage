@@ -9,10 +9,16 @@ const hamriyahPortSharjah = {
   hero: {
     title: "Strategic Logistics Support at Hamriyah Port Sharjah",
     subtitle:
-      " OSS operates a storage and logistics facility positioned close to Hamriyah Port in Sharjah, giving businesses fast access to port-side cargo movement. OSS storage is 13 - 15 minute drive from Hamriyah Port, making it a practical base for import, export, and industrial storage operations tied to Hamriyah's shipping activity.",
+      "OSS operates a storage and logistics facility positioned close to Hamriyah Port in Sharjah, giving businesses fast access to port-side cargo movement. OSS storage is 13 - 15 minute drive from Hamriyah Port, making it a practical base for import, export, and industrial storage operations tied to Hamriyah's shipping activity.",
     buttonText: "Request a Hamriyah Port Storage Consultation",
     buttonLink: "/contact-us",
     backgroundImage: "/images/locations/hamriyah.jpg",
+  },
+
+  trustedSlider: {
+    title: "Used by Businesses Operating Near Hamriyah Port Sharjah",
+    description:
+      "Companies working with OSS for Hamriyah port in Sharjah include commodity trading firms, industrial equipment suppliers, oil and gas support businesses, and import-export operators who need storage close to port operations.",
   },
 
   challenge: {
@@ -26,11 +32,11 @@ const hamriyahPortSharjah = {
       {
         icon: FiClock,
         title: "Long transfer times",
-        text: "Storage located far from the port adds unnecessary transit time between vessel arrival and warehouse placemen",
+        text: "Storage located far from the port adds unnecessary transit time between vessel arrival and warehouse placement.",
       },
       {
         icon: FiShield,
-        title: "Higher transport",
+        title: "Higher transport costs",
         text: "Longer drives between storage and port facilities increase fuel and labor costs per shipment.",
       },
       {
@@ -41,7 +47,7 @@ const hamriyahPortSharjah = {
       {
         icon: FiDollarSign,
         title: "Limited flexibility for urgent cargo",
-        text: " Facilities far from the port struggle to respond quickly to time-sensitive shipments.",
+        text: "Facilities far from the port struggle to respond quickly to time-sensitive shipments.",
       },
     ],
   },
@@ -169,8 +175,8 @@ const hamriyahPortSharjah = {
   solutions: {
     eyebrow: "Tailored Solutions for Hamriyah Port Logistics",
     title: "Storage Near Hamriyah Port Configured for Five Business Sectors",
-    description:
-      "OSS operates contract logistics and storage services in Sharjah that give businesses access to enterprise-grade warehousing without the cost of buying or building their own facility. OSS is a storage and logistics company in Sharjah. Each client contract is built around a specific cargo type, storage volume, and shipping timeline.",
+    // description:
+    //   "OSS operates contract logistics and storage services in Sharjah that give businesses access to enterprise-grade warehousing without the cost of buying or building their own facility. OSS is a storage and logistics company in Sharjah. Each client contract is built around a specific cargo type, storage volume, and shipping timeline.",
 
     features: [
       {
@@ -214,8 +220,8 @@ const hamriyahPortSharjah = {
   },
 
   stats: {
-    title: "Operational Performance That Businesses Trust",
-    subtitle: "Supporting Logistics Operations Across the Region",
+    title: "Achievement Stats",
+    // subtitle: "Supporting Logistics Operations Across the Region",
 
     stats: [
       {
@@ -336,7 +342,7 @@ const hamriyahPortSharjah = {
     title: "Store Cargo Minutes from Hamriyah Port",
     description:
       "Whether you need open yard storage, port-side warehousing, or full logistics coordination near Hamriyah port in Sharjah, OSS has the facility and location to support it. Contact the OSS logistics team for a storage layout and quote.",
-    buttonText: "Contact Us Today to Discover Tailored Strategies",
+    buttonText: "Contact OSS for a Hamriyah Port Storage Quote",
     buttonLink: "/contact-us",
     backgroundImage: "/images/services/Explore-More.jpg",
   },

@@ -9,7 +9,7 @@ import FAQSection from "../../components/FAQSection";
 import CTASection from "../../components/CTASection";
 import CardsFeatures from "../../components/CardsFeatures";
 import LeftalignedCards from "../../components/LeftalignedCards";
-
+import FreeZoneFeatureSection from "../../components/FreeZoneFeatureSection";
 import {
   FiDollarSign,
   FiCalendar,
@@ -37,7 +37,9 @@ export default function SmallStorageWarehouse() {
         backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
       />
 
-      <TrustedSlider />
+      <TrustedSlider 
+      title="Small Storage Warehouse for Rent for Local and International Businesses"
+      description="Businesses renting a small storage warehouse from OSS include startups, independent trading operations, small e-commerce sellers, and companies piloting new product lines before committing to larger storage contracts."/>
 
       {/* PROBLEM SECTION */}
       <ChallengeSection
@@ -73,7 +75,7 @@ export default function SmallStorageWarehouse() {
 
       {/* SOLUTIONS */}
       <FeatureSection
-        title="Experience Tailored Storage Solutions"
+        title="We Address Your Storage Challenges"
         description="OSS addresses each of these through its small storage warehouse for rent:"
         features={[
           {
@@ -207,7 +209,7 @@ Every small storage warehouse for rent through OSS is set up around actual inven
             image: "/images/services/chart.png",
             title: "Independent Trading Firms ",
             description:
-              "small storage warehouse for rent during peak seasons, without a year-round lease.",
+              "flexible short-term storage for smaller import-export volumes.",
           },
           {
             image: "/images/services/offer.png",
@@ -219,12 +221,12 @@ Every small storage warehouse for rent through OSS is set up around actual inven
             image: "/images/services/small.png",
             title: "Seasonal Retailers",
             description:
-              "small storage warehouse for rent during peak seasons, year-round lease.",
+              "small storage warehouse for rent during peak seasons, without a year-round lease.",
           },
         ]}
       />
 
-      <FeatureSection
+      <FreeZoneFeatureSection
         // eyebrow="The OSS FZC Difference"
         title="Free Zone-Adjacent Access for Small Businesses"
         description="Small trading businesses handling international shipments still need customs-efficient storage. A small storage warehouse for rent through OSS sits close to the SAIF Zone and Hamriyah Free Zone, giving smaller operators the same duty and customs advantages available to larger clients."

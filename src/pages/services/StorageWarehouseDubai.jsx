@@ -9,7 +9,7 @@ import FAQSection from "../../components/FAQSection";
 import CTASection from "../../components/CTASection";
 import LeftalignedCards from "../../components/LeftalignedCards";
 import CardsFeatures from "../../components/CardsFeatures";
-
+import FreeZoneFeatureSection from "../../components/FreeZoneFeatureSection";
 import { FiDollarSign, FiMapPin, FiEyeOff, FiClock } from "react-icons/fi";
 
 import useMeta from "../../hooks/useMeta";
@@ -32,7 +32,10 @@ export default function StorageWarehouseDubai() {
         backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
       />
 
-      <TrustedSlider />
+      <TrustedSlider
+      title="Used by Businesses Operating Internationally and Around Dubai"
+      description="Companies using OSS as a storage warehouse in Dubai include commodity trading firms, automotive component distributors, FMCG brands, and e-commerce sellers who need reliable storage close to Dubai delivery points."/>
+ 
 
       {/* PROBLEM SECTION */}
       <ChallengeSection
@@ -220,7 +223,7 @@ Every storage warehouse contract through OSS is built around cargo type, volume,
         ]}
       />
 
-      <FeatureSection
+      <FreeZoneFeatureSection
         // eyebrow="The OSS FZC Difference"
         title="Free Zone-Adjacent Access for Dubai-Bound Trade"
         description="Businesses trading internationally through Dubai need storage that supports duty suspension and simplified customs processing. OSS's storage warehouse network sits close to the SAIF Zone and Hamriyah Free Zone, giving Dubai-focused trading firms duty-efficient storage without added customs delays."

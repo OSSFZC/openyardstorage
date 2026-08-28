@@ -9,7 +9,7 @@ import FAQSection from "../../components/FAQSection";
 import CTASection from "../../components/CTASection";
 import LeftalignedCards from "../../components/LeftalignedCards";
 import CardsFeatures from "../../components/CardsFeatures";
-
+import FreeZoneFeatureSection from "../../components/FreeZoneFeatureSection";
 import { FiMapPin, FiShield, FiTruck, FiCalendar } from "react-icons/fi";
 
 import useMeta from "../../hooks/useMeta";
@@ -32,7 +32,9 @@ export default function OpenYardStorage() {
         backgroundImage="/images/services/warehousing.jpeg"
       />
 
-      <TrustedSlider />
+      <TrustedSlider
+      title="Open Yard Storage Space in Sharjah Trusted by UAE and International Businesses"
+      description="Businesses using OSS open yard storage include construction contractors, transport companies, infrastructure developers, logistics providers, equipment rental firms, steel suppliers, and import-export businesses that require secure outdoor storage with flexible rental terms." />
 
       {/* PROBLEM SECTION */}
       <ChallengeSection
@@ -40,7 +42,7 @@ export default function OpenYardStorage() {
         title="Why Businesses Need Reliable Open Yard Storage"
         description="Many businesses handling large outdoor assets face storage challenges that impact operational efficiency and project timelines."
         description2="Common issues include"
-        rightTitle="Solutions to Your Storage Dilemmas"
+        rightTitle="Problem statements"
         rightBg="#C5F7FF"
         cards={[
           {
@@ -220,7 +222,7 @@ Each yard for rent in Sharjah is selected based on storage volume, equipment siz
         ]}
       />
 
-      <FeatureSection
+      <FreeZoneFeatureSection
         // eyebrow="The OSS FZC Difference"
         title="Convenient Access to Sharjah Free Zones"
         description="Businesses involved in international trade benefit from open yard storage space in Sharjah located near SAIF Zone and Hamriyah Free Zone. The location simplifies transportation, customs coordination, and cargo movement while reducing travel time between storage facilities and major industrial areas."
@@ -288,7 +290,7 @@ Each yard for rent in Sharjah is selected based on storage volume, equipment siz
       {/* FAQ */}
       <FAQSection
         eyebrow="FAQ"
-        title="Your Warehouse Storage Space For Rent Questions Answered"
+        title="Common Questions About Open Yard Storage for Rent in Sharjah"
         faqs={[
           {
             question: "How is pricing calculated?",

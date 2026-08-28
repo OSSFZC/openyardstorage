@@ -8,7 +8,7 @@ import DualInfoSection from "../../components/DualInfoSection";
 import FAQSection from "../../components/FAQSection";
 import CTASection from "../../components/CTASection";
 import CardsFeatures from "../../components/CardsFeatures";
-
+import FreeZoneFeatureSection from "../../components/FreeZoneFeatureSection";
 import { FiShield, FiUnlock, FiRepeat, FiDollarSign } from "react-icons/fi";
 
 import useMeta from "../../hooks/useMeta";
@@ -32,7 +32,10 @@ export default function StorageSpaceSharjah() {
         backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
       />
 
-      <TrustedSlider />
+      <TrustedSlider 
+      title="Freezone Storage Space In Sharjah Used By Trading, Manufacturing, And Retail Companies Across The Uae"
+      description="OSS storage clients include commodity trading firms, automotive component manufacturers, FMCG distributors, and import-export operators managing cross-border shipments through the UAE." />
+      
 
       {/* PROBLEM SECTION */}
       <ChallengeSection
@@ -226,7 +229,7 @@ export default function StorageSpaceSharjah() {
       />
 
       {/* /Free Zone Storage Section */}
-      <FeatureSection
+      <FreeZoneFeatureSection
         // eyebrow="The OSS FZC Difference"
         title="Free Zone Storage Access for Import-Export Businesses"
         description="Companies handling international trade need reliable Freezone Storage Space in Sharjah that supports duty suspension and simplifies customs processing. OSS facilities are located near the Sharjah International Airport Free Zone (SAIF Zone) and Hamriyah Free Zone, giving trading firms efficient, strategically positioned storage close to major shipping and logistics hubs."
@@ -234,8 +237,7 @@ export default function StorageSpaceSharjah() {
 
       {/* STATS */}
       <StatsSection
-        title="Proven Success in Numbers"
-        subtitle="Thousands of items securely stored and satisfied clients across Sharjah."
+        title="Achievement Stats"
         stats={[
           {
             value: 260000,
@@ -281,7 +283,7 @@ export default function StorageSpaceSharjah() {
             title: "About Us",
             subtitle: "Warehousing Experience Based in the UAE",
             description:
-              "OSS provides industrial storage and 3PL logistics services across the United Arab Emirates.OSS invests in facility infrastructure, digital inventory software, and trained operational staff to solve fulfillment problems for growing businesses.\n\n OSS is a storage and logistics company in Sharjah. Clients get dedicated account management, flexible storage contracts, and a logistics team focused on keeping operations running without interruption.",
+              "OSS provides industrial storage and 3PL logistics services across the United Arab Emirates. OSS invests in facility infrastructure, digital inventory software, and trained operational staff to solve fulfillment problems for growing businesses.\n\n OSS is a storage and logistics company in Sharjah. Clients get dedicated account management, flexible storage contracts, and a logistics team focused on keeping operations running without interruption.",
           },
           {
             title: "Our Team",
@@ -295,7 +297,7 @@ export default function StorageSpaceSharjah() {
       {/* FULL FAQ */}
       <FAQSection
         eyebrow="FAQ"
-        title="Your Storage Space Questions Answered"
+        title="Common Questions About Storage Space in Sharjah"
         faqs={[
           {
             question: "What cargo types can OSS store in Sharjah?",
@@ -360,7 +362,7 @@ export default function StorageSpaceSharjah() {
       <CTASection
         title="Optimize Your Storage Operations in Sharjah"
         description="Whether you need scalable B2B warehousing, real-time WMS visibility, or free zone storage access, OSS has the facility infrastructure to support it. Contact the OSS logistics team for a warehouse layout plan and quote."
-        buttonText="Contact OSS for a Cargo Service to Dubai Quote"
+        buttonText="Contact OSS for a 3PL Storage Quote"
         buttonLink="/contact-us"
         backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
       />
