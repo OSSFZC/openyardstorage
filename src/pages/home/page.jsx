@@ -301,10 +301,10 @@ export default function Page() {
               <span className="w-16 h-px bg-gray-300"></span>
             </div>
 
-            <h2 className="text-4xl font-bold">
+            <h3 className="text-4xl font-bold">
               <span className="text-red-600">Our Featured</span>{" "}
               <span className="text-gray-800">Projects</span>
-            </h2>
+            </h3>
           </div>
 
           {/* Slider */}
@@ -406,10 +406,10 @@ export default function Page() {
               <span className="w-20 h-px bg-gray-300"></span>
             </div>
 
-            <h2 className="text-4xl font-bold text-gray-800">
+            <h3 className="text-4xl font-bold text-gray-800">
               Shipping Company in UAE Built on Excellence, <br />
               <span className="text-red-600">Delivered with Precision.</span>
-            </h2>
+            </h3>
           </div>
 
           {/* Features */}
@@ -421,7 +421,7 @@ export default function Page() {
                 alt="24/7 Support"
                 className="w-12 h-12 mx-auto mb-6"
               />
-              <h4 className="font-semibold text-gray-800 mb-3">24/7 SUPPORT</h4>
+              <p className="font-semibold text-gray-800 mb-3">24/7 SUPPORT</p>
               <p className="text-sm text-gray-500 leading-relaxed">
                 OSS is available to support clients 24/7, 365 days a year. Call
                 anytime at
@@ -441,9 +441,9 @@ export default function Page() {
                 alt="Quality Assurance"
                 className="w-12 h-12 mx-auto mb-6"
               />
-              <h4 className="font-semibold text-gray-800 mb-3">
+              <p className="font-semibold text-gray-800 mb-3">
                 QUALITY ASSURANCE
-              </h4>
+              </p>
               <p className="text-sm text-gray-500 leading-relaxed">
                 OSS maintains consistent quality standards across all storage
                 and international logistics and transport operations. <br />
@@ -457,9 +457,9 @@ export default function Page() {
                 alt="Strategically Located"
                 className="w-12 h-12 mx-auto mb-6"
               />
-              <h4 className="font-semibold text-gray-800 mb-3">
+              <p className="font-semibold text-gray-800 mb-3">
                 STRATEGICALLY LOCATED
-              </h4>
+              </p>
               <p className="text-sm text-gray-500 leading-relaxed">
                 OSS facilities sit in one of the UAE's most geographically
                 convenient logistics hubs, giving clients faster access to
@@ -482,11 +482,11 @@ export default function Page() {
               <span className="w-24 h-px bg-gray-300"></span>
             </div>
 
-            <h2 className="text-4xl font-bold">
+            <h3 className="text-4xl font-bold">
               Logistics News,
               <br />
               <span className="text-red-600">Trends & Expertise</span>
-            </h2>
+            </h3>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -514,9 +514,7 @@ export default function Page() {
                     </div>
                   </div>
 
-                  <h3 className="mt-4 font-medium text-gray-700">
-                    {blog.title}
-                  </h3>
+                  <p className="mt-4 font-medium text-gray-700">{blog.title}</p>
                 </a>
               );
             })}
@@ -536,10 +534,10 @@ export default function Page() {
               <span className="w-24 h-px bg-gray-300"></span>
             </div>
 
-            <h2 className="text-4xl font-bold">
+            <h4 className="text-4xl font-bold">
               Everything You <br />
               <span className="text-red-600">Need to Know</span>
-            </h2>
+            </h4>
           </div>
 
           <div className="space-y-6">
@@ -604,11 +602,11 @@ export default function Page() {
                   <span className="w-16 h-px bg-gray-300"></span>
                 </div>
 
-                <h2 className="text-4xl font-bold text-gray-800">
+                <p className="text-4xl font-bold text-gray-800">
                   Have Questions?
                   <br />
                   <span className="text-red-600">Get in Touch!</span>
-                </h2>
+                </p>
               </div>
 
               {/* Form */}
