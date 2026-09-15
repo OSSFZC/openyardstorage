@@ -685,9 +685,9 @@ export default function Page() {
 
             {/* Content */}
             <div className="relative z-10 text-center">
-              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              <p className="text-4xl md:text-5xl font-bold text-white mb-6">
                 Grow With the Flow
-              </h2>
+              </p>
 
               <button
                 onClick={() => navigate("/contact-us")}
