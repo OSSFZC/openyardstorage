@@ -87,11 +87,11 @@ export default function Footer() {
       International Shipping Air
     </Link>
   </li>
-  <li>
+  {/* <li>
     <Link to="/services/health-care-storage-solutions" className="hover:text-red-600">
       Health Care Storage Solutions
     </Link>
-  </li>
+  </li> */}
   <li>
     <Link to="/services/logistics-transport-sharjah" className="hover:text-red-600">
       Logistics Transport Sharjah
