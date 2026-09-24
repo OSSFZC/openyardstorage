@@ -15,6 +15,7 @@ function schemaScript(schema) {
 
 function htmlForRoute(route) {
   const schema = faqSchemas[route];
+
   if (!schema) {
     return template;
   }
@@ -23,11 +24,13 @@ function htmlForRoute(route) {
 }
 
 for (const route of Object.keys(faqSchemas)) {
-  const routeDirectory = route === "/"
-    ? distDirectory
-    : path.join(distDirectory, route.replace(/^\/+|\/+$/g, ""));
+  const routeDirectory =
+    route === "/"
+      ? distDirectory
+      : path.join(distDirectory, route.replace(/^\/+|\/+$/g, ""));
 
   await fs.mkdir(routeDirectory, { recursive: true });
+
   await fs.writeFile(
     path.join(routeDirectory, "index.html"),
     htmlForRoute(route),
