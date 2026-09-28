@@ -32,9 +32,10 @@ export default function FreightForwardingManagement() {
         backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
       />
 
-      <TrustedSlider 
-      title="Used by Businesses Managing Multi-Destination Freight"
-      description="Companies relying on OSS for freight forwarding include export-focused trading firms, manufacturers with recurring overseas orders, and import-export operators who need a single partner to coordinate storage and dispatch across multiple destinations." />
+      <TrustedSlider
+        title="Used by Businesses Managing Multi-Destination Freight"
+        description="Companies relying on OSS for freight forwarding include export-focused trading firms, manufacturers with recurring overseas orders, and import-export operators who need a single partner to coordinate storage and dispatch across multiple destinations."
+      />
 
       {/* PROBLEM SECTION */}
       <ChallengeSection
@@ -146,12 +147,14 @@ export default function FreightForwardingManagement() {
           {
             title: "Cargo Consolidation and Warehousing",
             image: "/images/warehouse.png",
+            alt: "International Logistics and Transport by Open Yard Storage FZC",
             description:
               "Storage in Sharjah for businesses that need a staging point between inbound cargo and outbound dispatch.",
           },
           {
             title: "Export Documentation and Customs Support",
             image: "/images/services/bill-of-entry.jpg",
+            alt: "Forwarding Freight Companies  by Open Yard Storage FZC",
             description:
               "Paperwork and clearance handling built into the shipping process to reduce delays at the port or airport.",
           },

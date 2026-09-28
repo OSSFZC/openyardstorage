@@ -34,14 +34,14 @@ export default function InternationalShippingAir() {
         subtitle="OSS provides air freight in UAE with fast international cargo movement, connecting secure Sharjah warehousing to time-sensitive air shipments through one integrated logistics solution for efficient global distribution."
         buttonText="Request an Air Freight Quote"
         buttonLink="/contact-us"
-        backgroundImage="/images/services/freight.jpeg  "
+        backgroundImage="/images/services/freight.jpeg"
+        backgroundImageAlt="International Shipping Forwarder by Open Yard Storage FZC"
       />
 
-     <TrustedSlider
+      <TrustedSlider
         title="Used by Businesses Shipping Time-Sensitive Cargo"
         description="Companies relying on OSS for urgent air cargo include export-focused trading firms, manufacturers with time-critical overseas orders, and import-export operators who need faster transit than sea freight can offer for select shipments."
       />
-
 
       {/* PROBLEM SECTION */}
       <ChallengeSection
@@ -108,7 +108,6 @@ export default function InternationalShippingAir() {
 
       {/* SOLUTIONS */}
       <FeatureSection
-       
         eyebrow="The OSS Difference"
         title="Air Freight in UAE Built Around Speed and Storage Coordination"
         subtitle="OSS operates a service that combines warehousing with air cargo dispatch, so time-sensitive shipments don't need to move between unrelated storage and air freight providers before dispatch. Inventory can move from an OSS warehouse straight into air freight in UAE without added transfer delays.Every air cargo contract through OSS is structured around cargo type, urgency, and destination, giving businesses a faster path from storage to airport dispatch than working with disconnected vendors. This matters most for businesses with recurring urgent shipments, where consistent handling and scheduling directly affect delivery reliability."
@@ -155,36 +154,42 @@ export default function InternationalShippingAir() {
           {
             title: "Time-Sensitive Air Freight Dispatch",
             image: "/images/services/air-freight.png",
+            alt: "International Shipping Forwarder by Open Yard Storage FZC",
             description:
               "Urgent air freight in UAE for shipments where transit speed matters more than cost.",
           },
           {
             title: "Export Documentation and Customs Support",
             image: "/images/services/custom-brokerage.png",
+            alt: "International Shipping Forwarder by Open Yard Storage FZC",
             description:
               "Paperwork and clearance handling built into the shipping process to reduce delays at the destination airport.",
           },
           {
             title: "Warehouse-to-Airport Coordination",
             image: "/images/services/warehouse.png",
+            alt: "Air Freight in UAE by Open Yard Storage FZC",
             description:
               "Storage and outbound air freight are managed together, removing the need to coordinate separate providers.",
           },
           {
             title: "Full and Part Shipment Options",
             image: "/images/services/logistics.jpg",
+            alt: "International Shipping Forwarder by Open Yard Storage FZC",
             description:
               "Flexible air cargo capacity so businesses only pay for the space their shipment requires.",
           },
           {
             title: "Shipment Tracking and Reporting",
             image: "/images/services/shipment-tracking.jpg",
+            alt: "Cargo Service to Dubai by Open Yard Storage FZC",
             description:
               "Digital tracking gives exporters visibility into cargo status from dispatch through international arrival.",
           },
           {
             title: "Combined Sea and Air Coordination",
             image: "/images/services/ocean-freight.png",
+            alt: "Ship Management Companies in Sharjah by Open Yard Storage FZC",
             description:
               "Businesses can pair air freight for urgent shipments with sea freight for larger, less time-sensitive cargo under the same provider.",
           },
@@ -287,8 +292,7 @@ export default function InternationalShippingAir() {
           },
           {
             title: "Our Team",
-            subtitle:
-              "Staff Coordinating Time-Sensitive Air Shipments",
+            subtitle: "Staff Coordinating Time-Sensitive Air Shipments",
             description:
               "OSS air cargo operations are run by dispatch coordinators, documentation specialists, and warehouse technicians who manage export paperwork, loading, and scheduling for urgent shipments moving through UAE airports.",
           },
@@ -366,6 +370,7 @@ export default function InternationalShippingAir() {
         buttonText="Contact OSS for an Air Freight Quote"
         buttonLink="/contact-us"
         backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
+        backgroundImageAlt="Storage Space in Sharjah by Open Yard Storage FZC"
       />
     </>
   );

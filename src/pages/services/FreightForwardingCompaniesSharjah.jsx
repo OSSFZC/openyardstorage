@@ -32,10 +32,11 @@ export default function FreightForwardingCompaniesSharjah() {
         backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
       />
 
-      <TrustedSlider 
-      title="Trusted by Businesses Across the UAE and Worldwide"
-      description="Companies relying on OSS for storage and dispatch support include international freight forwarders, customs brokers, and freight forwarding companies that need consistent warehousing to consolidate client cargo before onward dispatch." />
-      
+      <TrustedSlider
+        title="Trusted by Businesses Across the UAE and Worldwide"
+        description="Companies relying on OSS for storage and dispatch support include international freight forwarders, customs brokers, and freight forwarding companies that need consistent warehousing to consolidate client cargo before onward dispatch."
+      />
+
       {/* PROBLEM SECTION */}
       <ChallengeSection
         // subtitle="Struggling with Inefficient Freight Management?"
@@ -150,12 +151,14 @@ What freight forwarding companies get from OSS's storage and freight coordinatio
           {
             title: "Cargo Consolidation and Warehousing",
             image: "/images/warehouse.png",
+            alt: "International Logistics and Transport by Open Yard Storage FZC",
             description:
               "Storage in Sharjah for forwarders that need a staging point between inbound client cargo and outbound dispatch.",
           },
           {
             title: "Export Documentation and Customs Support",
             image: "/images/services/bill-of-entry.jpg",
+            alt: "Forwarding Freight Companies  by Open Yard Storage FZC",
             description:
               "Paperwork and clearance handling built into the shipping process to reduce delays at the port or airport.",
           },
@@ -180,6 +183,7 @@ What freight forwarding companies get from OSS's storage and freight coordinatio
           {
             title: "Combined Sea and Air Coordination",
             image: "/images/locations/sea-freight.jpg",
+            alt: "Freight Forwarding Companies in Sharjah by Open Yard Storage FZC",
             description:
               "Freight forwarding companies can pair sea freight for bulk cargo with air freight for urgent client shipments under the same provider.",
           },

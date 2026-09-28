@@ -13,6 +13,8 @@ const shippingSharjah = {
     buttonText: "Request a Shipping and Storage Quote",
     buttonLink: "/contact-us",
     backgroundImage: "/images/locations/locations-bg.png",
+    backgroundImageAlt:
+      "Shipping Companies in Sharjah by Open Yard Storage FZC",
   },
 
   trustedSlider: {
@@ -21,12 +23,11 @@ const shippingSharjah = {
       "Companies working with OSS include commodity trading firms, industrial manufacturers, FMCG distributors, and import-export operators who chose OSS after comparing regional storage and freight providers on capacity, tracking systems, and reliability.",
   },
 
-  
-
   challenge: {
     title: "Why Choosing the Right Logistics Company in Sharjah Matters",
 
-    description: "Businesses working with the wrong logistics partner commonly run into four problems:",
+    description:
+      "Businesses working with the wrong logistics partner commonly run into four problems:",
 
     // description:
     //   "Shipping complexities in Sharjah can create significant hurdles, from unexpected delays to improper handling of your precious cargo. Many businesses grapple with navigating the complex landscape of shipping regulations, causing stress and uncertainty.",
@@ -147,36 +148,42 @@ const shippingSharjah = {
       {
         title: "Secure Commercial Warehousing",
         image: "/images/services/dispatch.jpg",
+        alt: "Shipping Cargo Services Dubai by Open Yard Storage FZC",
         description:
           "Purpose-built facilities for safely storing raw materials, finished goods, commercial inventory, and industrial equipment with secure access and efficient space utilisation.",
       },
       {
         title: "Container Destuffing and Cross-Docking",
         image: "/images/services/cross-docking.jpg",
+        alt: "Warehouse Companies in UAE by Open Yard Storage FZC",
         description:
           "Fast container unloading and cargo transfer services that minimise handling time and support smooth onward distribution across the UAE.",
       },
       {
         title: "Inland Freight and Distribution",
         image: "/images/services/land-transportation.png",
+        alt: "Hamriyah Port Sharjah by Open Yard Storage FZC",
         description:
           "Reliable transportation connecting Sharjah warehouses to delivery destinations with planned scheduling and efficient cargo movement.",
       },
       {
         title: "WMS Inventory Tracking",
         image: "/images/services/custom-brokerage.png",
+        alt: "International Shipping Forwarder by Open Yard Storage FZC",
         description:
           "Real-time inventory management using barcode tracking, stock monitoring, batch control, and accurate reporting for improved operational visibility.",
       },
       {
         title: "Customs and Documentation Support",
         image: "/images/locations/customer-support.jpg",
+        alt: "Shipping and Logistic Management by Open Yard Storage FZC",
         description:
           "Professional assistance with customs documentation and clearance processes to help reduce delays and maintain efficient cargo flow.",
       },
       {
         title: "Open Yard Storage",
         image: "/images/services/open-yard.jpg",
+        alt: "Container Logistics Transport in Sharjah by Open Yard Storage FZC",
         description:
           "Secure outdoor storage for heavy equipment, machinery, containers, and construction materials requiring flexible open-air space.",
       },
@@ -353,6 +360,8 @@ const shippingSharjah = {
     buttonText: "Contact OSS for a Storage and Shipping Quote",
     buttonLink: "/contact-us",
     backgroundImage: "/images/services/Explore-More.jpg",
+    backgroundImageAlt:
+      "Logistics Companies in Sharjah  by Open Yard Storage FZC",
   },
 };
 

@@ -34,9 +34,10 @@ export default function LogisticsTransportSharjah() {
       />
 
       <TrustedSlider
-      title="Used by Businesses Moving Goods Across the UAE"
-      description="Companies relying on OSS for transport and distribution include manufacturers with regular production output, retailers managing multi-location stock transfers, and trading firms that need scheduled inland delivery across the Emirates." />
-      
+        title="Used by Businesses Moving Goods Across the UAE"
+        description="Companies relying on OSS for transport and distribution include manufacturers with regular production output, retailers managing multi-location stock transfers, and trading firms that need scheduled inland delivery across the Emirates."
+      />
+
       {/* PROBLEM SECTION */}
       <ChallengeSection
         // subtitle="Experiencing Delays and Inefficiencies?"
@@ -107,8 +108,8 @@ export default function LogisticsTransportSharjah() {
         subtitle="OSS operates a logistics transport service in Sharjah that integrates warehousing with inland distribution, allowing cargo to move directly from storage to delivery without relying on separate storage and trucking providers. This reduces handling, improves efficiency, and keeps shipments moving on schedule. Transport solutions are planned around cargo type, delivery frequency, and destination, helping businesses maintain reliable distribution across the UAE.
 
 Fleet capacity is aligned with each client's shipping patterns, ensuring vehicles are available when inventory is ready for dispatch instead of relying on last-minute bookings. For businesses managing deliveries to multiple locations, OSS provides a single point of coordination for both storage and transport, simplifying logistics management, reducing administrative effort, and creating a more efficient supply chain from warehouse to final destination."
-description="What businesses get from OSS's transport and warehousing coordination:"       
-features={[
+        description="What businesses get from OSS's transport and warehousing coordination:"
+        features={[
           {
             image: "/images/services/tracking.png",
             title: "Barcode and RFID Tracking",
@@ -156,6 +157,7 @@ features={[
           {
             title: "On-Demand Freight Movement",
             image: "/images/services/land-transportation.png",
+            alt: "Hamriyah Port Sharjah by Open Yard Storage FZC",
             description:
               "Flexible transport services for urgent deliveries, one-off shipments, and time-sensitive stock transfers between warehouses, customers, and commercial locations.",
           },
@@ -168,6 +170,7 @@ features={[
           {
             title: "Full and Part Load Options",
             image: "/images/services/customs-inspection.jpg",
+            alt: "Logistics Transport Service in Sharjah by Open Yard Storage FZC",
             description:
               "Flexible vehicle capacity allows businesses to transport full or smaller loads while paying only for the space their cargo requires.",
           },
@@ -180,6 +183,7 @@ features={[
           {
             title: "Multi-Location Distribution Support",
             image: "/images/services/Open-yard-storage.jpeg",
+            alt: "Logistics Transport Service in Sharjah by Open Yard Storage FZC",
             description:
               "Coordinated transport for businesses delivering to multiple retail outlets, warehouses, production facilities, or customer locations across Sharjah and the UAE.",
           },

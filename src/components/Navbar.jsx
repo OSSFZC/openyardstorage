@@ -62,7 +62,7 @@ export default function Navbar() {
         <Link to="/" className="flex items-center block ml-4">
           <img
             src="/logos/oss-logo.png"
-            alt="OSS Logistics"
+            alt="Open Yard Storage LOGO for International Logistics and Transport"
             className="h-32 w-auto -mt-4 drop-shadow-sm"
           />
         </Link>

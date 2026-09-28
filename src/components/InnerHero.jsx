@@ -1,16 +1,28 @@
 export default function InnerHero({
-  eyebrow,        // 👈 NEW
+  eyebrow, // 👈 NEW
   title,
   subtitle,
   buttonText,
   buttonLink,
   backgroundImage,
+  backgroundImageAlt,
 }) {
   return (
     <section
       className="relative h-[100vh] bg-cover bg-center"
-      style={{ backgroundImage: `url(${backgroundImage})` }}
+      style={
+        backgroundImageAlt
+          ? undefined
+          : { backgroundImage: `url(${backgroundImage})` }
+      }
     >
+      {backgroundImageAlt && (
+        <img
+          src={backgroundImage.trim()}
+          alt={backgroundImageAlt}
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+      )}
       {/* Optional overlay (keep very light or remove if not needed) */}
       <div className="absolute inset-0 bg-black/20"></div>
 
@@ -19,7 +31,6 @@ export default function InnerHero({
                    flex items-center pt-36"
       >
         <div className="text-white max-w-6xl">
-
           {/* EYEBROW TEXT */}
           {eyebrow && (
             <p className="mb-4 text-sm uppercase tracking-widest text-white/70">
@@ -33,11 +44,7 @@ export default function InnerHero({
           </h1>
 
           {/* SUBTITLE */}
-          {subtitle && (
-            <p className="mt-6 text-white/80 text-lg">
-              {subtitle}
-            </p>
-          )}
+          {subtitle && <p className="mt-6 text-white/80 text-lg">{subtitle}</p>}
 
           {/* BUTTON */}
           {buttonText && (

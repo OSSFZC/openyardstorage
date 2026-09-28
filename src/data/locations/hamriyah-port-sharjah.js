@@ -136,24 +136,28 @@ const hamriyahPortSharjah = {
       {
         title: "Port-Proximity Warehousing",
         image: "/images/services/air-freight.png",
+        alt: "International Shipping Forwarder by Open Yard Storage FZC",
         description:
           "Storage positioned close to Hamriyah port in Sharjah for businesses needing fast transfer between vessel arrival and warehouse placement.",
       },
       {
         title: "Open Yard Storage",
         image: "/images/locations/open-yard.jpg",
+        alt: "Hamriyah Port Sharjah by Open Yard Storage FZC",
         description:
           "Outdoor storage for heavy equipment, pipes, and industrial materials tied to port and oil and gas operations.",
       },
       {
         title: "Cross-Docking Near the Port",
         image: "/images/services/land-transportation.png",
+        alt: "Hamriyah Port Sharjah by Open Yard Storage FZC",
         description:
           "Cargo moves from inbound port arrival directly to outbound delivery, reducing handling time.",
       },
       {
         title: "Container Handling and Cross Stuffing",
         image: "/images/services/custom-brokerage.png",
+        alt: "International Shipping Forwarder by Open Yard Storage FZC",
         description:
           " Support for container transfers and cargo consolidation close to Hamriyah Port operations.",
       },
@@ -166,6 +170,7 @@ const hamriyahPortSharjah = {
       {
         title: "Shipment Tracking",
         image: "/images/services/shipment-tracking.jpg",
+        alt: "Cargo Service to Dubai by Open Yard Storage FZC",
         description:
           "Digital tracking gives clients visibility into cargo status between OSS storage and Hamriyah Port.",
       },

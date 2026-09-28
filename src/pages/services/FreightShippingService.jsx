@@ -30,6 +30,7 @@ export default function FreightShippingService() {
         buttonText="Request a Freight Shipping Quote"
         buttonLink="/contact-us"
         backgroundImage="/images/services/sea.jpeg"
+        backgroundImageAlt="Freight Shipping Service by Open Yard Storage FZC"
       />
 
       <TrustedSlider
@@ -156,6 +157,7 @@ Every freight shipping contract through OSS is structured around cargo type, des
           {
             title: "Air Freight Coordination",
             image: "/images/locations/planes-runway.jpg",
+            alt: "Freight Shipping Service by Open Yard Storage FZC",
             description:
               "Time-sensitive freight shipping options for urgent or high-value cross-border shipments where transit speed matters more than cost.",
           },

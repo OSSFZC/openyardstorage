@@ -47,7 +47,7 @@ export default function FreeZoneFeatureSection({
               <div className="mb-4">
                 <img
                   src={item.image}
-                  alt={item.title}
+                  alt={item.alt || item.title}
                   className="w-14 h-14 object-contain mx-auto"
                 />
               </div>

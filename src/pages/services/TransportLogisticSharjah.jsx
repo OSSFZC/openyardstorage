@@ -29,13 +29,13 @@ export default function TransportLogisticSharjah() {
         buttonText="Request a Transport Logistics Quote"
         buttonLink="/contact-us"
         backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
+        backgroundImageAlt="Storage Space in Sharjah by Open Yard Storage FZC"
       />
 
       <TrustedSlider
         title="Used by Businesses Moving Cargo Across the UAE"
         description="Companies relying on OSS for transport and logistics support include commodity trading firms, industrial manufacturers, oil and gas support businesses, and import-export operators who need dependable freight movement across Sharjah and the wider UAE."
       />
-
 
       {/* PROBLEM SECTION */}
       <ChallengeSection
@@ -150,36 +150,42 @@ Each transport contract through OSS is structured around cargo type, delivery fr
           {
             title: "Scheduled Freight Dispatch",
             image: "/images/services/flexible-yard.jpg",
+            alt: "Freezone Storage Space in Sharjah by Open Yard Storage FZC",
             description:
               "Regular freight services operating on fixed schedules, helping businesses maintain reliable delivery timelines and consistent transport for recurring shipments across the UAE.",
           },
           {
             title: "On-Demand Freight Movement",
             image: "/images/services/custom-storage.jpg",
+            alt: "Storage Space in Sharjah by Open Yard Storage FZC",
             description:
               "Flexible transport solutions for urgent deliveries, one-off shipments, and time-sensitive stock transfers that require fast and dependable dispatch.",
           },
           {
             title: "Warehouse-to-Delivery Coordination",
             image: "/images/services/security.jpg",
+            alt: "Storage Space in Sharjah by Open Yard Storage FZC",
             description:
               "Integrated warehousing and freight services managed under one contract, simplifying logistics by connecting storage, handling, and final delivery.",
           },
           {
             title: "Cross-Docking and Distribution",
             image: "/images/services/cross-docking.jpg",
+            alt: "Warehouse Companies in UAE by Open Yard Storage FZC",
             description:
               "Efficient cargo transfers from inbound shipments directly to outbound vehicles, reducing storage time, minimising handling, and accelerating distribution.",
           },
           {
             title: "Full-Load and Part-Load Transport",
             image: "/images/services/maintenance.jpg",
+            alt: "Cargo Service to Dubai by Open Yard Storage FZC",
             description:
               "Scalable freight options for both full truckloads and shared-load shipments, allowing businesses to optimise transport costs.",
           },
           {
             title: "Shipment Tracking and Reporting",
             image: "/images/services/shipment-tracking.jpg",
+            alt: "Cargo Service to Dubai by Open Yard Storage FZC",
             description:
               "Digital tracking provides real-time shipment visibility, transit updates, inventory status, delivery confirmation, and detailed reporting for improved supply chain control.",
           },

@@ -32,10 +32,10 @@ export default function ChillerStorageWarehouse() {
         backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
       />
 
-      <TrustedSlider 
-      title="Used by Businesses Storing Temperature-Sensitive Goods"
-      description="Companies relying on OSS for chilled storage include food importers and distributors, pharmaceutical and healthcare suppliers, and retailers managing perishable stock that needs consistent temperature control between receiving and dispatch." />
-      
+      <TrustedSlider
+        title="Used by Businesses Storing Temperature-Sensitive Goods"
+        description="Companies relying on OSS for chilled storage include food importers and distributors, pharmaceutical and healthcare suppliers, and retailers managing perishable stock that needs consistent temperature control between receiving and dispatch."
+      />
 
       {/* PROBLEM SECTION */}
       <ChallengeSection
@@ -150,12 +150,14 @@ Every storage arrangement through OSS is structured around product type, require
           {
             title: "Temperature-Controlled Warehousing",
             image: "/images/services/controlled-temperature.jpg",
+            alt: "Chiller Storage Warehouse by Open Yard Storage FZC",
             description:
               "Dedicated chiller storage designed for perishable products requiring stable, continuously monitored temperatures to help preserve quality, freshness, and product integrity.",
           },
           {
             title: "Stock Rotation and Inventory Management",
             image: "/images/services/secure.jpg",
+            alt: "Small Storage Warehouse for Rent  by Open Yard Storage FZC",
             description:
               "FIFO inventory handling supports efficient stock rotation, helping reduce spoilage, manage shelf life, and maintain product availability.",
           },
@@ -168,6 +170,7 @@ Every storage arrangement through OSS is structured around product type, require
           {
             title: "Full and Part Pallet Storage",
             image: "/images/services/pallet.jpg",
+            alt: "Small Storage Warehouse for Rent  by Open Yard Storage FZC",
             description:
               "Flexible chilled storage options allow businesses to rent pallet positions or larger areas based on actual storage requirements.",
           },

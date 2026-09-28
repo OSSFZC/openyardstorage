@@ -149,6 +149,7 @@ Every Hamriyah free zone warehouse through OSS is set up around cargo type, trad
           {
             title: "Duty-Efficient Warehousing",
             image: "/images/services/duty-efficient-warehouse.jpg",
+            alt: "Hamriyah Free Zone Warehouse Rent by Open Yard Storage FZC",
             description:
               "A Hamriyah free zone warehouse for rent built to support duty suspension and simplified customs handling.",
           },

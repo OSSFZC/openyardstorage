@@ -30,9 +30,10 @@ export default function ContainerLogisticsTransportSharjah() {
         buttonText="Request a Container Logistics Transport Quote"
         buttonLink="/contact-us"
         backgroundImage="/images/services/containe-certification-ISO-tank-service.jpeg"
+        backgroundImageAlt="Container Shipping Services Sharjah by Open Yard Storage FZC"
       />
 
-     <TrustedSlider
+      <TrustedSlider
         title="Used by Businesses Moving Containers Through Sharjah's Ports"
         description="Companies relying on OSS for container logistics transport include commodity trading firms, industrial manufacturers, oil and gas support businesses, and import-export operators managing regular container shipments through the Emirates."
       />
@@ -157,6 +158,7 @@ Every container logistics transport contract in Sharjah is structured around car
           {
             title: "Inland Transport and Distribution",
             image: "/images/services/open-yard.jpg",
+            alt: "Container Logistics Transport in Sharjah by Open Yard Storage FZC",
             description:
               "Container logistics transport in Sharjah extends beyond the port into regional inland delivery routes.",
           },
@@ -169,6 +171,7 @@ Every container logistics transport contract in Sharjah is structured around car
           {
             title: "Full-Container and Part-Container Load Services",
             image: "/images/cargo2.jpg",
+            alt: "Container Logistics Transport in Sharjah by Open Yard Storage FZC",
             description:
               "Flexible container shipping services in Sharjah for businesses of varying shipment volumes.",
           },

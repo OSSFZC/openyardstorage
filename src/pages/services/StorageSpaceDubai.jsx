@@ -32,8 +32,9 @@ export default function StorageSpaceDubai() {
       />
 
       <TrustedSlider
-      title="Trusted by Businesses Across Dubai and the UAE"
-      description="From growing startups and established trading companies to manufacturers, distributors, and online retailers, businesses choose OSS when they need dependable storage spaces in Dubai backed by professional warehouse management, flexible rental options, and reliable logistics support."/>
+        title="Trusted by Businesses Across Dubai and the UAE"
+        description="From growing startups and established trading companies to manufacturers, distributors, and online retailers, businesses choose OSS when they need dependable storage spaces in Dubai backed by professional warehouse management, flexible rental options, and reliable logistics support."
+      />
 
       {/* PROBLEM SECTION */}
       <ChallengeSection
@@ -75,29 +76,34 @@ export default function StorageSpaceDubai() {
         features={[
           {
             image: "/images/services/grow.png",
+            alt: "Flexible storage options icon",
             title: "Flexible storage options",
             description:
               "Rent only the amount of space your inventory requires.",
           },
           {
             image: "/images/services/back-in-time.png",
+            alt: "Short and long-term storage agreements icon",
             title: "Short and long-term agreements",
             description: "Suitable for changing business demands.",
           },
           {
             image: "/images/industries/protection.png",
+            alt: "Secure warehouse environment icon",
             title: "Secure warehouse environment",
             description:
               "Monitored facilities with controlled access and modern safety systems.",
           },
           {
             image: "/images/industries/boxes.png",
+            alt: "Scalable storage solutions icon",
             title: "Scalable storage solutions",
             description:
               "Expand your storage capacity without changing providers.",
           },
           {
             image: "/images/services/logistic.png",
+            alt: "Integrated logistics support icon",
             title: "Integrated logistics support",
             description:
               "Inventory handling, loading, unloading, and warehouse management available when required.",
@@ -113,42 +119,49 @@ export default function StorageSpaceDubai() {
         features={[
           {
             image: "/images/services/stock.png",
+            alt: "Digital inventory tracking icon",
             title: "Digital inventory tracking",
             description:
               "Warehouse Management System (WMS) with barcode and RFID inventory tracking.",
           },
           {
             image: "/images/services/24-7.png",
+            alt: "Continuous security monitoring icon",
             title: "Continuous security",
             description:
               "24/7 CCTV surveillance with controlled facility access.",
           },
           {
             image: "/images/services/warehouseicon.png",
+            alt: "Experienced warehouse operations support icon",
             title: "Expert operations support",
             description:
               "Experienced warehouse professionals handling inventory safely and efficiently.",
           },
           {
             image: "/images/services/pin.png",
+            alt: "Strategic Dubai location access icon",
             title: "Strategic Dubai access",
             description:
               "Convenient access to major highways, ports, and airports for faster distribution.",
           },
           {
             image: "/images/services/small.png",
+            alt: "Configurable storage layout icon",
             title: "Configurable storage layouts",
             description:
               "Flexible configurations for pallet storage, bulk goods, cartons, machinery, and commercial inventory.",
           },
           {
             image: "/images/locations/money.png",
+            alt: "Cost-efficient storage icon",
             title: "Cost-efficient storage",
             description:
               "Every solution is designed to help businesses reduce storage costs while improving inventory visibility and operational efficiency.",
           },
           {
             image: "/images/services/speed.png",
+            alt: "Scalable storage capacity icon",
             title: "Easily scalable capacity",
             description:
               "Increase storage as your business grows without changing providers.",
@@ -163,36 +176,42 @@ export default function StorageSpaceDubai() {
         services={[
           {
             title: "General Warehouse Storage",
+            alt: "General warehouse storage facility in Dubai",
             image: "/images/services/flexible-yard.jpg",
             description:
               "Secure storage space suitable for commercial inventory, trading stock, equipment, and packaged goods.",
           },
           {
             title: "Short-Term Storage",
+            alt: "Short-term storage rental for seasonal business inventory",
             image: "/images/services/short-term.jpg",
             description:
               "Flexible rental periods for seasonal demand, temporary projects, promotions, or business expansion.",
           },
           {
             title: "Long-Term Warehouse Rental",
+            alt: "Long-term warehouse rental storage facility",
             image: "/images/services/custom-storage.jpg",
             description:
               "Reliable storage for businesses requiring permanent inventory management and distribution support.",
           },
           {
             title: "Inventory Management",
+            alt: "Warehouse inventory management and tracking system",
             image: "/images/services/security.jpg",
             description:
               "Warehouse Management System (WMS), barcode scanning, and inventory tracking improve stock accuracy and visibility.",
           },
           {
             title: "Pallet Storage",
+            alt: "Pallet storage and warehouse racking system",
             image: "/images/services/pallet.jpg",
             description:
               "Cost-effective storage charged by pallet position for businesses with lower inventory volumes.",
           },
           {
             title: "Distribution Support",
+            alt: "Distribution and shipment handling support image",
             image: "/images/services/shipment-tracking.jpg",
             description:
               "Receiving, dispatch, loading, unloading, and inventory movement managed by experienced warehouse staff.",
@@ -207,30 +226,35 @@ export default function StorageSpaceDubai() {
         features={[
           {
             image: "/images/services/cooperation.png",
+            alt: "Trading company logistics and storage image",
             title: "Trading Companies",
             description:
               "Flexible warehouse space for imported and exported products with efficient inventory handling.",
           },
           {
             image: "/images/services/online-store.png",
+            alt: "E-commerce fulfillment storage image",
             title: "E-Commerce Businesses",
             description:
               "Secure inventory storage supporting online order fulfilment and seasonal demand fluctuations.",
           },
           {
             image: "/images/locations/factory.png",
+            alt: "Manufacturing storage facility image",
             title: "Manufacturing Companies",
             description:
               "Storage for raw materials, finished products, spare parts, and production inventory.",
           },
           {
             image: "/images/services/warehouseicon.png",
+            alt: "Retail business storage image",
             title: "Retail Businesses",
             description:
               "Warehouse space that supports stock replenishment, promotional inventory, and seasonal merchandise.",
           },
           {
             image: "/images/services/truck.png",
+            alt: "Logistics and distribution storage image",
             title: "Logistics and Distribution",
             description:
               "Reliable storage facilities supporting freight consolidation, cross-docking, and supply chain operations.",

@@ -150,12 +150,14 @@ Every storage warehouse contract through OSS is built around cargo type, volume,
           {
             title: "Secure Commercial Warehousing",
             image: "/images/services/flexible-yard.jpg",
+            alt:"Freezone Storage Space in Sharjah by Open Yard Storage FZC",
             description:
               "Storage for raw materials, industrial equipment, and finished goods in reinforced, high-clearance facilities near Dubai.",
           },
           {
             title: "WMS Inventory Tracking",
             image: "/images/services/custom-storage.jpg",
+            alt:"Storage Space in Sharjah by Open Yard Storage FZC",
             description:
               "Real-time stock control through a warehouse management system with batch tracking and replenishment alerts.",
           },
@@ -168,12 +170,14 @@ Every storage warehouse contract through OSS is built around cargo type, volume,
           {
             title: "Short-Term Warehousing",
             image: "/images/services/short-term.jpg",
+            alt:"Storage Warehouse Dubai by Open Yard Storage FZC",
             description:
               "Temporary space for sudden inbound shipments or promotional inventory spikes ahead of Dubai sales periods.",
           },
           {
             title: "Cross-Docking to Dubai",
             image: "/images/services/cross-docking.jpg",
+            alt:"Warehouse Companies in UAE by Open Yard Storage FZC",
             description:
               "Cargo moves from container arrival directly to outbound delivery into Dubai, cutting storage time.",
           },

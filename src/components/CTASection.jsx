@@ -3,18 +3,28 @@ export default function CTASection({
   buttonText,
   buttonLink,
   backgroundImage,
+  backgroundImageAlt,
   description,
   overlay = true,
 }) {
   return (
     <section
       className="relative py-24 bg-center bg-cover"
-      style={{ backgroundImage: `url(${backgroundImage})` }}
+      style={
+        backgroundImageAlt
+          ? undefined
+          : { backgroundImage: `url(${backgroundImage})` }
+      }
     >
-      {/* Overlay */}
-      {overlay && (
-        <div className="absolute inset-0 bg-black/50"></div>
+      {backgroundImageAlt && (
+        <img
+          src={backgroundImage.trim()}
+          alt={backgroundImageAlt}
+          className="absolute inset-0 h-full w-full object-cover"
+        />
       )}
+      {/* Overlay */}
+      {overlay && <div className="absolute inset-0 bg-black/50"></div>}
 
       {/* Content */}
       <div className="relative z-10 max-w-6xl mx-auto px-4 text-center">
@@ -22,9 +32,7 @@ export default function CTASection({
           {title}
         </h5>
 
-        <p className="text-white text-lg mb-8">
-          {description}
-        </p>
+        <p className="text-white text-lg mb-8">{description}</p>
 
         <a
           href={buttonLink}

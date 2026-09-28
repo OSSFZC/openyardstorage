@@ -148,12 +148,14 @@ As a logistic shipping service built around container-based trade, OSS coordinat
           {
             title: "Container Destuffing and Cross-Docking",
             image: "/images/services/cross-docking.jpg",
+            alt: "Warehouse Companies in UAE by Open Yard Storage FZC",
             description:
               "Cargo moves from container arrival directly to outbound delivery, reducing storage and handling time.",
           },
           {
             title: "Sea Air Cargo & Logistics Coordination",
             image: "/images/locations/sea-freight.jpg",
+            alt: "Cargo Freight Forwarders by Open Yard Storage FZC",
             description:
               "Combined ocean and air freight management under a single logistic shipping service.",
           },
@@ -178,6 +180,7 @@ As a logistic shipping service built around container-based trade, OSS coordinat
           {
             title: "Marine Logistics Services in Sharjah",
             image: "/images/locations/marine-logistic.jpg",
+            alt: "Marine Logistics Companies Sharjah by Open Yard Storage FZC",
             description:
               "Port-side coordination connecting vessel arrival to warehouse and delivery scheduling.",
           },

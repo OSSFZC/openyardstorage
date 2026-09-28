@@ -38,8 +38,9 @@ export default function LogisticTruckCompanySharjah() {
       />
 
       <TrustedSlider
-      title="Used by Businesses Moving Cargo by Road" 
-      description="Companies relying on OSS as a logistic truck company include general trading firms, manufacturers with regular inland deliveries, and import-export operators who need dependable road transport between storage and destination points." />
+        title="Used by Businesses Moving Cargo by Road"
+        description="Companies relying on OSS as a logistic truck company include general trading firms, manufacturers with regular inland deliveries, and import-export operators who need dependable road transport between storage and destination points."
+      />
 
       {/* PROBLEM SECTION */}
       <ChallengeSection
@@ -166,12 +167,14 @@ What businesses get from OSS's trucking and warehousing coordination:`}
           {
             title: "Full and Part Truckload Options",
             image: "/images/services/cross-docking.jpg",
+            alt: "Warehouse Companies in UAE by Open Yard Storage FZC",
             description:
               "Flexible FTL and LTL solutions allow businesses to move full shipments or smaller loads while paying only for the transport capacity required.",
           },
           {
             title: "Route Documentation Support",
             image: "/images/locations/fleet-reoute.jpg",
+            alt: "Logistic Truck Company in Sharjah by Open Yard Storage FZC",
             description:
               "Transport paperwork, delivery documentation, and checkpoint requirements are managed to help minimise delays and maintain efficient road freight operations.",
           },
@@ -184,6 +187,7 @@ What businesses get from OSS's trucking and warehousing coordination:`}
           {
             title: "Recurring Delivery Scheduling",
             image: "/images/services/schedule.jpg",
+            alt: "Cargo Service to Dubai by Open Yard Storage FZC",
             description:
               "Fixed trucking schedules support regular distribution routes, ensuring predictable deliveries and reliable transport for ongoing business operations.",
           },

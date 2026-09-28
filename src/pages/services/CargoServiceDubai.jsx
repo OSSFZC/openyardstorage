@@ -149,36 +149,42 @@ OSS is a storage and logistics company based in Sharjah, and cargo movement to D
         services={[
           {
             title: "Scheduled Cargo Service to Dubai",
+            alt: "Cargo Service to Dubai by Open Yard Storage FZC",
             image: "/images/services/schedule.jpg",
             description:
               "Regular freight runs on fixed routes and timings for businesses with recurring shipment needs.",
           },
           {
             title: "On-Demand Freight Dispatch",
+            alt: "Shipping Cargo Services Dubai by Open Yard Storage FZC",
             image: "/images/services/dispatch.jpg",
             description:
               "Urgent or one-off cargo movement to Dubai for time-sensitive orders and stock transfers.",
           },
           {
             title: "Full-Load and Part-Load Shipping",
+            alt: "Freezone Storage Space in Sharjah by Open Yard Storage FZC",
             image: "/images/services/flexible-yard.jpg",
             description:
               "Flexible load options so businesses only pay for the freight capacity they use.",
           },
           {
             title: "Cross-Docking to Dubai",
+            alt: "Storage Space in Sharjah by Open Yard Storage FZC",
             image: "/images/services/custom-storage.jpg",
             description:
               "Cargo moves from inbound container arrival at Sharjah directly to outbound Dubai delivery, cutting handling time.",
           },
           {
             title: "Warehouse-to-Delivery Coordination",
+            alt: "Cargo Service to Dubai by Open Yard Storage FZC",
             image: "/images/services/maintenance.jpg",
             description:
               "Storage and cargo shipping are managed under a single contract, removing the need to coordinate separate providers.",
           },
           {
             title: "Shipment Tracking and Reporting",
+            alt: "Cargo Service to Dubai by Open Yard Storage FZC",
             image: "/images/services/shipment-tracking.jpg",
             description:
               "Digital tracking gives clients visibility into cargo location, transit status, and delivery confirmation.",

@@ -30,6 +30,7 @@ export default function StorageSpaceSharjah() {
         buttonText="Request a 3PL Storage Consultation"
         buttonLink="/contact-us"
         backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
+        alt="Storage Space in Sharjah by Open Yard Storage FZC"
       />
 
       <TrustedSlider

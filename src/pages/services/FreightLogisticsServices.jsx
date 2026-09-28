@@ -8,7 +8,7 @@ import DualInfoSection from "../../components/DualInfoSection";
 import FAQSection from "../../components/FAQSection";
 import CTASection from "../../components/CTASection";
 import LeftalignedCards from "../../components/LeftalignedCards";
-import { FiPackage, FiClock, FiFileText, FiEye} from "react-icons/fi";
+import { FiPackage, FiClock, FiFileText, FiEye } from "react-icons/fi";
 import FreeZoneFeatureSection from "../../components/FreeZoneFeatureSection";
 import useMeta from "../../hooks/useMeta";
 import CardsFeatures from "../../components/CardsFeatures";
@@ -31,10 +31,11 @@ export default function FreightLogisticsServices() {
         backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
       />
 
-      <TrustedSlider 
-      title="Used by Businesses Needing Coordinated Freight Support"
-      description="Companies relying on OSS for freight & logistics services include export-focused trading firms, manufacturers with recurring overseas and inland orders, and import-export operators who need a single provider to manage storage and dispatch across multiple transport modes." />
-      
+      <TrustedSlider
+        title="Used by Businesses Needing Coordinated Freight Support"
+        description="Companies relying on OSS for freight & logistics services include export-focused trading firms, manufacturers with recurring overseas and inland orders, and import-export operators who need a single provider to manage storage and dispatch across multiple transport modes."
+      />
+
       {/* PROBLEM SECTION */}
       <ChallengeSection
         // subtitle="Frustrated with Inefficient Logistics?"
@@ -172,12 +173,14 @@ What businesses get from OSS's freight & logistics:"
           {
             title: "Shipment Tracking and Reporting",
             image: "/images/services/shipment-tracking.jpg",
+            alt: "Cargo Service to Dubai by Open Yard Storage FZC",
             description:
               "Digital tracking provides real-time visibility into cargo status, transit progress, and delivery updates from dispatch to destination.",
           },
           {
             title: "Combined Multi-Mode Coordination",
             image: "/images/logidtics-inspiration.jpg",
+            alt: "Freight & Logistics Services by Open Yard Storage FZC",
             description:
               "Sea, air, and road freight are coordinated under one provider, allowing businesses to choose the most suitable transport solution for every shipment while simplifying logistics management.",
           },

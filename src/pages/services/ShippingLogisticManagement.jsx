@@ -151,36 +151,42 @@ Every shipping & logistic management contract through OSS is built around cargo 
           {
             title: "Centralized Freight Coordination",
             image: "/images/services/flexible-yard.jpg",
+            alt:"Freezone Storage Space in Sharjah by Open Yard Storage FZC",
             description:
               "Shipping and logistic management that combines warehousing and transport scheduling under one contract.",
           },
           {
             title: "Cross-Docking and Distribution",
             image: "/images/services/cross-docking.jpg",
+            alt:"Warehouse Companies in UAE by Open Yard Storage FZC",
             description:
               "Cargo moves from inbound arrival directly to outbound delivery, reducing storage time and handling steps.",
           },
           {
             title: "Customs and Documentation Support",
             image: "/images/locations/customer-support.jpg",
+            alt: "Shipping and Logistic Management by Open Yard Storage FZC",
             description:
               "Coordinated processing to reduce delays between clearance and delivery.",
           },
           {
             title: "Shipment Tracking and Reporting",
             image: "/images/services/shipment-tracking.jpg",
+            alt: "Cargo Service to Dubai by Open Yard Storage FZC",
             description:
               "Digital tracking gives clients visibility into cargo location and delivery status across the full logistics chain.",
           },
           {
             title: "Fleet and Route Scheduling",
             image: "/images/locations/fleet-reoute.jpg",
+            alt: "Shipping and Logistic Management by Open Yard Storage FZC",
             description:
               "Dispatch coordination for scheduled and on-demand freight movement.",
           },
           {
             title: "Inventory and Storage Integration",
             image: "/images/services/security.jpg",
+            alt: "Storage Space in Sharjah by Open Yard Storage FZC",
             description:
               "Warehousing is managed as part of the same shipping & logistic management contract, not a separate service.",
           },

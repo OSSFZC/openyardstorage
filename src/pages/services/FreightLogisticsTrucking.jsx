@@ -32,8 +32,9 @@ export default function FreightLogisticsTrucking() {
       />
 
       <TrustedSlider
-      title="Used by Businesses Moving Cargo by Road"
-      description="Companies relying on OSS for freight logistics include general trading firms, manufacturers with regular inland deliveries, and import-export operators who need dependable road transport between storage and destination points." />
+        title="Used by Businesses Moving Cargo by Road"
+        description="Companies relying on OSS for freight logistics include general trading firms, manufacturers with regular inland deliveries, and import-export operators who need dependable road transport between storage and destination points."
+      />
 
       {/* PROBLEM SECTION */}
       <ChallengeSection
@@ -146,24 +147,28 @@ Every trucking contract through OSS is structured around cargo type, delivery fr
           {
             title: "Inland and Cross-Emirate Trucking",
             image: "/images/services/inland-transport.jpg",
+            alt: "Freight Logistics Trucking by Open Yard Storage FZC",
             description:
               "Scheduled road freight services connect warehouses, ports, airports, and commercial locations across the UAE, ensuring dependable cargo movement and timely deliveries.",
           },
           {
             title: "Warehouse-to-Destination Dispatch",
             image: "/images/services/dispatch.jpg",
+            alt: "Shipping Cargo Services Dubai by Open Yard Storage FZC",
             description:
               "Integrated warehousing and outbound trucking are managed under one service, simplifying logistics and reducing coordination between multiple providers.",
           },
           {
             title: "Full and Part Truckload Options",
             image: "/images/services/import-export-customs.jpg",
+            alt: "Shipping Cargo Services Dubai by Open Yard Storage FZC",
             description:
               "Flexible transport solutions allow businesses to book full truckloads or shared capacity, paying only for the space their cargo requires.",
           },
           {
             title: "Route Documentation Support",
             image: "/images/services/hs-code-classfication.jpg",
+            alt: "Freight Logistics Trucking by Open Yard Storage FZC",
             description:
               "Transport documentation, delivery paperwork, and checkpoint requirements are coordinated to minimise delays and keep shipments moving efficiently.",
           },
@@ -176,6 +181,7 @@ Every trucking contract through OSS is structured around cargo type, delivery fr
           {
             title: "Recurring Delivery Scheduling",
             image: "/images/services/schedule.jpg",
+            alt: "Cargo Service to Dubai by Open Yard Storage FZC",
             description:
               "Fixed trucking schedules support businesses with regular delivery routes, improving reliability, planning, and operational efficiency while reducing dependence on ad hoc transport.",
           },
@@ -219,7 +225,7 @@ Every trucking contract through OSS is structured around cargo type, delivery fr
         ]}
       />
 
-      <FreeZoneFeatureSection 
+      <FreeZoneFeatureSection
         eyebrow="Free Zone Storage "
         title="Free Zone Access Supporting Freight Trucking"
         description="Businesses moving cargo by road between free zones and other destinations need customs processing that keeps pace with their delivery schedule. OSS storage sits close to the SAIF Zone and Hamriyah Free Zone, giving trucking clients duty-efficient handling built directly into the dispatch process rather than managed as a separate step."

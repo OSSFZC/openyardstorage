@@ -32,9 +32,10 @@ export default function InternationalTruckShipping() {
       />
 
       <TrustedSlider
-      title="Used by Businesses Shipping Cargo Across Borders"
-      description="Companies relying on OSS for international truck shipping include export-focused trading firms, manufacturers supplying regional markets, and import-export operators who need reliable road transit to neighboring GCC countries." />
-      
+        title="Used by Businesses Shipping Cargo Across Borders"
+        description="Companies relying on OSS for international truck shipping include export-focused trading firms, manufacturers supplying regional markets, and import-export operators who need reliable road transit to neighboring GCC countries."
+      />
+
       {/* PROBLEM SECTION */}
       <ChallengeSection
         // subtitle="Facing Roadblocks in International Truck Shipping?"
@@ -148,6 +149,7 @@ Route planning includes documentation and checkpoint requirements specific to ea
           {
             title: "Cross-Border Truck Dispatch",
             image: "/images/services/cross-border.jpg",
+            alt: "International Truck Shipping by Open Yard Storage FZC",
             description:
               "Scheduled international truck shipping for cargo moving from the UAE to GCC countries and neighbouring regional markets with dependable transit planning.",
           },
@@ -160,6 +162,7 @@ Route planning includes documentation and checkpoint requirements specific to ea
           {
             title: "Warehouse-to-Border Coordination",
             image: "/images/services/cargo-release.jpg",
+            alt: "International Truck Shipping by Open Yard Storage FZC",
             description:
               "Storage and outbound truck shipping are coordinated under one service, reducing handling and eliminating the need for multiple logistics providers.",
           },
@@ -178,6 +181,7 @@ Route planning includes documentation and checkpoint requirements specific to ea
           {
             title: "Regional and Domestic Transport Integration",
             image: "/images/services/import-export-customs.jpg",
+            alt: "Shipping Cargo Services Dubai by Open Yard Storage FZC",
             description:
               "International truck shipping can be combined with domestic transport, creating a seamless logistics solution from warehouse to destination.",
           },

@@ -38,8 +38,9 @@ export default function ForwardingFreightCompanies() {
       />
 
       <TrustedSlider
-      title="Used by Freight Forwarders and Logistics Operators"
-      description="Companies relying on OSS for storage and dispatch support include international freight forwarders, customs brokers, and forwarding freight that need consistent warehousing and cargo consolidation for client shipments." />
+        title="Used by Freight Forwarders and Logistics Operators"
+        description="Companies relying on OSS for storage and dispatch support include international freight forwarders, customs brokers, and forwarding freight that need consistent warehousing and cargo consolidation for client shipments."
+      />
 
       {/* PROBLEM SECTION */}
       <ChallengeSection
@@ -154,24 +155,28 @@ Every storage contract through OSS is structured around cargo type, shipment fre
           {
             title: "Cargo Consolidation and Warehousing",
             image: "/images/warehouse.png",
+            alt: "International Logistics and Transport by Open Yard Storage FZC",
             description:
               "Storage in Sharjah for forwarders that need a staging point between inbound client cargo and outbound dispatch.",
           },
           {
             title: "Export Documentation and Customs Support",
             image: "/images/services/bill-of-entry.jpg",
+            alt: "Forwarding Freight Companies  by Open Yard Storage FZC",
             description:
               "Paperwork and clearance handling built into the shipping process to reduce delays at the port or airport.",
           },
           {
             title: "Warehouse-to-Port Coordination",
             image: "/images/services/security.jpg",
+            alt: "Storage Space in Sharjah by Open Yard Storage FZC",
             description:
               "Storage and outbound freight are managed together, removing the need to coordinate separate providers.",
           },
           {
             title: "Full and Part Shipment Options",
             image: "/images/services/logistics.jpg",
+            alt: "International Shipping Forwarder by Open Yard Storage FZC",
             description:
               "Flexible storage and freight capacity so forwarders only pay for the space their client cargo requires.",
           },
@@ -184,6 +189,7 @@ Every storage contract through OSS is structured around cargo type, shipment fre
           {
             title: "Combined Sea and Air Coordination",
             image: "/images/services/air-freight.png",
+            alt: "International Shipping Forwarder by Open Yard Storage FZC",
             description:
               "Combined Sea and Air Coordination: Forwarding companies can pair sea freight for bulk cargo with air freight for urgent client shipments under the same provider.",
           },

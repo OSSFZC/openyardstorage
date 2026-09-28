@@ -30,6 +30,7 @@ export default function ShippingCompaniesSharjah() {
         buttonText="Request a Sharjah Shipping Quote"
         buttonLink="/contact-us"
         backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
+        backgroundImageAlt="Storage Space in Sharjah by Open Yard Storage FZC"
       />
 
       <TrustedSlider
@@ -149,36 +150,42 @@ export default function ShippingCompaniesSharjah() {
           {
             title: "Cargo Consolidation and Warehousing",
             image: "/images/services/flexible-yard.jpg",
+            alt: "Freezone Storage Space in Sharjah by Open Yard Storage FZC",
             description:
               "Storage in Sharjah for shipping companies that need a staging point between inbound cargo and outbound dispatch.",
           },
           {
             title: "Export Documentation and Customs Support",
             image: "/images/services/temporary-import-export.jpg",
+            alt: "Ship Management Companies in Sharjah by Open Yard Storage FZC",
             description:
               "Paperwork and clearance handling built into the shipping process to reduce delays at the port or airport.",
           },
           {
             title: "Warehouse-to-Port Coordination",
             image: "/images/services/security.jpg",
+            alt: "Storage Space in Sharjah by Open Yard Storage FZC",
             description:
               "Storage and outbound freight are managed together, removing the need to coordinate separate providers.",
           },
           {
             title: "Full and Part Shipment Options",
             image: "/images/services/logistics.jpg",
+            alt: "International Shipping Forwarder by Open Yard Storage FZC",
             description:
               "Flexible storage and freight capacity so shipping companies only pay for the space their cargo requires.",
           },
           {
             title: "Shipment Tracking and Reporting",
             image: "/images/services/maintenance.jpg",
+            alt: "Cargo Service to Dubai by Open Yard Storage FZC",
             description:
               "Digital tracking gives shipping companies visibility into cargo status from storage through international arrival.",
           },
           {
             title: "Combined Sea and Air Coordination",
             image: "/images/services/ocean-freight.png",
+            alt: "Ship Management Companies in Sharjah by Open Yard Storage FZC",
             description:
               "Shipping companies can pair sea freight for bulk cargo with air freight for urgent shipments under the same provider.",
           },
@@ -363,6 +370,7 @@ export default function ShippingCompaniesSharjah() {
         buttonText="Contact OSS for a Shipping Quote"
         buttonLink="/contact-us"
         backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
+        backgroundImageAlt="Storage Space in Sharjah by Open Yard Storage FZC"
       />
     </>
   );

@@ -22,6 +22,7 @@ export default function LocationTemplate({ data }) {
         buttonText={data.hero.buttonText}
         buttonLink={data.hero.buttonLink}
         backgroundImage={data.hero.backgroundImage}
+        backgroundImageAlt={data.hero.backgroundImageAlt}
         title={data.hero.title}
       />
 

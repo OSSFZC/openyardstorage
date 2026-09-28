@@ -29,13 +29,13 @@ export default function InternationalShippingForwarder() {
         buttonText="Request a Freight Forwarding Quote"
         buttonLink="/contact-us"
         backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
+        backgroundImageAlt="Storage Space in Sharjah by Open Yard Storage FZC"
       />
 
       <TrustedSlider
         title="Used by Businesses Shipping to Multiple Countries"
         description="Companies relying on OSS for cross-border freight forwarding include export-focused trading firms, manufacturers supplying overseas markets, and import-export operators managing shipment routes across several destination countries at once."
       />
-
 
       {/* PROBLEM SECTION */}
       <ChallengeSection
@@ -150,36 +150,42 @@ Every shipment coordinated through OSS is structured around cargo type, destinat
           {
             title: "Sea Freight Coordination",
             image: "/images/services/sea.jpeg",
+            alt: "Freight Shipping Service by Open Yard Storage FZC",
             description:
               "Scheduled and on-demand ocean freight connecting Sharjah's ports to international destinations across multiple regions.",
           },
           {
             title: "Air Freight Coordination",
             image: "/images/services/air-freight.png",
+            alt: "International Shipping Forwarder by Open Yard Storage FZC",
             description:
               "Time-sensitive options for urgent or high-value cross-border shipments where transit speed matters more than cost.",
           },
           {
             title: "Export Documentation and Customs Support",
             image: "/images/locations/customer-support.jpg",
+            alt: "Shipping and Logistic Management by Open Yard Storage FZC",
             description:
               "Paperwork and clearance handling built into the shipping process to reduce delays at destination ports.",
           },
           {
             title: "Warehouse-to-Port Coordination",
             image: "/images/services/logistics.jpg",
+            alt: "International Shipping Forwarder by Open Yard Storage FZC",
             description:
               "Storage and outbound freight are managed together, removing the need to coordinate separate storage and shipping providers.",
           },
           {
             title: "Full-Load and Part-Load Shipping",
             image: "/images/services/maintenance.jpg",
+            alt: "Cargo Service to Dubai by Open Yard Storage FZC",
             description:
               "Flexible freight capacity so businesses only pay for the space their shipment requires.",
           },
           {
             title: "Shipment Tracking and Reporting",
             image: "/images/services/shipment-tracking.jpg",
+            alt: "Cargo Service to Dubai by Open Yard Storage FZC",
             description:
               "Digital tracking gives exporters visibility into cargo status from dispatch through international arrival.",
           },
@@ -358,6 +364,7 @@ Every shipment coordinated through OSS is structured around cargo type, destinat
         buttonText="Contact OSS for a Freight Forwarding Quote"
         buttonLink="/contact-us"
         backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
+        backgroundImageAlt="Storage Space in Sharjah by Open Yard Storage FZC"
       />
     </>
   );

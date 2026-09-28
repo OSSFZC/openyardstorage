@@ -154,42 +154,49 @@ export default function WarehouseStorageSpace() {
           {
             title: "Compact Unit Storage",
             image: "/images/services/compact-unit.jpg",
+            alt: "Small Storage Warehouse for Rent  by Open Yard Storage FZC",
             description:
               "storage warehouse in sizes suited to startups, small trading firms, and low-volume inventory.",
           },
           {
             title: "Temperature Control Warehouse Storage",
             image: "/images/services/custom-storage.jpg",
+            alt: "Storage Space in Sharjah by Open Yard Storage FZC",
             description:
               "Climate-controlled storage options for pharmaceuticals, cosmetics, food products, electronics, and other temperature-sensitive inventory requiring stable environmental conditions.",
           },
           {
             title: "Short-Term Rental",
             image: "/images/services/short-term.jpg",
+            alt: "Storage Warehouse Dubai by Open Yard Storage FZC",
             description:
               "Month-to-month options for businesses testing new product lines or managing seasonal stock.",
           },
           {
             title: "Secure Small-Scale Warehousing",
             image: "/images/services/secure.jpg",
+            alt: "Small Storage Warehouse for Rent  by Open Yard Storage FZC",
             description:
               "Reinforced flooring, CCTV monitoring, and access control applied to smaller storage units",
           },
           {
             title: "Inventory Tracking for Small Units",
             image: "/images/services/dispatch.jpg",
+            alt: "Shipping Cargo Services Dubai by Open Yard Storage FZC",
             description:
               "WMS-based tracking so small businesses get the same visibility as larger accounts.",
           },
           {
             title: "Scalable Storage Path",
             image: "/images/services/scalable.jpg",
+            alt: "Small Storage Warehouse for Rent  by Open Yard Storage FZC",
             description:
               "A clear upgrade route from small storage to larger warehouse space as inventory grows.",
           },
           {
             title: "Pallet-Level Storage",
             image: "/images/services/pallet.jpg",
+            alt: "Small Storage Warehouse for Rent  by Open Yard Storage FZC",
             description:
               "Rent by pallet position for businesses that don't need a full warehouse unit.",
           },

@@ -21,6 +21,7 @@ const projects = [
     title: "Rig Moment Storage",
     subtitle: "",
     image: "/images/project-1.jpg",
+    alt: "International Logistics and Transport by Open Yard Storage FZC",
     slug: "weatherford-drilling-International",
   },
 ];
@@ -122,46 +123,55 @@ export default function Page() {
     {
       title: "Ship Freight",
       image: "/images/ship-s1.png",
+      alt: "Shipping Companies in UAE by Open Yard Storage FZC",
       link: "/services/freight-shipping-service",
     },
     {
       title: "Air Freight",
       image: "/images/Air-s1.png",
+      alt: "Shipping Companies in UAE by Open Yard Storage FZC",
       link: "/service/international-shipping-air",
     },
     {
       title: "Land Transport",
       image: "/images/land-transport.png",
+      alt: "Shipping Companies in UAE by Open Yard Storage FZC",
       link: "/services/freight-logistics-trucking",
     },
     {
       title: "Open Yard Storage",
       image: "/images/Open-yard-storage-s6.png",
+      alt: "Shipping Companies in UAE by Open Yard Storage FZC",
       link: "/services/logistics-transport-sharjah",
     },
     {
       title: "Customs Clearance",
       image: "/images/Customer-clearance-s3.png",
+      alt: "Shipping Companies in UAE by Open Yard Storage FZC",
       link: "/services/break-bulk-cargo-clearance",
     },
     {
       title: "Warehousing",
       image: "/images/warehousing-s7.png",
+      alt: "International Logistics and Transport by Open Yard Storage FZC",
       link: "/service/warehouse-storage-space-for-rent",
     },
     {
       title: "Cross Stuffing & Port Handling Services",
       image: "/images/container-cross-stuffing-s4.png",
+      alt: "International Logistics and Transport by Open Yard Storage FZC",
       link: "/services/container-cross-stuffing",
     },
     {
       title: "Container Certification & ISO Tank Decanting",
       image: "/images/container-certification-ISO-tank-s5.png",
+      alt: "International Logistics and Transport by Open Yard Storage FZC",
       link: "/service/container-logistics-transport-sharjah",
     },
     {
       title: "Retail Partnership & e-Retailing Solutions",
       image: "/images/retail.jpg",
+      alt: "Shipping Companies in UAE by Open Yard Storage FZC",
       link: "/services/inventory-management-solutions",
     },
   ];
@@ -211,7 +221,7 @@ export default function Page() {
           <div className="relative">
             <img
               src="/images/warehouse.png"
-              alt="Warehouse"
+              alt="International Logistics and Transport by Open Yard Storage FZC"
               className="w-full rounded-lg object-cover"
             />
 
@@ -307,7 +317,7 @@ export default function Page() {
                   {/* Image */}
                   <img
                     src={service.image}
-                    alt={service.title}
+                    alt={service.alt}
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
 
@@ -364,7 +374,7 @@ export default function Page() {
                   {/* Image */}
                   <img
                     src={item.image}
-                    alt={item.title}
+                    alt={item.alt}
                     className="w-full h-full object-cover"
                   />
 
@@ -538,7 +548,7 @@ export default function Page() {
                   <div className="relative overflow-hidden rounded-xl">
                     <img
                       src={blog.mainImage?.asset?.url}
-                      alt={blog.title}
+                      alt={`${blog.title} blog cover image`}
                       className="h-[260px] w-full object-cover group-hover:scale-105 transition"
                     />
 
@@ -710,6 +720,8 @@ export default function Page() {
         <div className="mx-auto max-w-[1400px] px-10">
           <div
             className="relative h-[300px] rounded-xl overflow-hidden flex items-center justify-center"
+            role="img"
+            aria-label="Openyard Storage cargo and logistics operations with containers and warehouse activity"
             style={{
               backgroundImage: "url('/images/Explore-More.jpg')",
               backgroundSize: "cover",

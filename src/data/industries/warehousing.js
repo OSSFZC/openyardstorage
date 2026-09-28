@@ -17,10 +17,10 @@ const warehousingData = {
   },
 
   trustedSlider: {
-  title: "Used by Businesses Across Trading, Manufacturing, and Healthcare",
-  description:
-    "OSS supports commodity trading firms, industrial manufacturers, retail distributors, and healthcare logistics providers who need warehouse companies in UAE capable of handling both standard and temperature-controlled inventory.",
-},
+    title: "Used by Businesses Across Trading, Manufacturing, and Healthcare",
+    description:
+      "OSS supports commodity trading firms, industrial manufacturers, retail distributors, and healthcare logistics providers who need warehouse companies in UAE capable of handling both standard and temperature-controlled inventory.",
+  },
 
   challenge: {
     title: "Why Generic Warehousing Fails Specialized Industries",
@@ -68,7 +68,8 @@ const warehousingData = {
       {
         image: "/images/services/tracking.png",
         title: "Barcode and RFID tracking",
-        description: "reduces manual processing errors across all industry storage zones.",
+        description:
+          "reduces manual processing errors across all industry storage zones.",
       },
       {
         image: "/images/services/logistic.png",
@@ -79,39 +80,46 @@ const warehousingData = {
       {
         image: "/images/services/track.png",
         title: "Highway access",
-        description: "proximity to the E311 and E611 corridors supports fast distribution across the UAE.",
+        description:
+          "proximity to the E311 and E611 corridors supports fast distribution across the UAE.",
       },
       {
         image: "/images/services/savings.png",
         title: "Flexible storage terms",
-        description: "monthly and multi-year contracts adjust to industry demand cycles.",
+        description:
+          "monthly and multi-year contracts adjust to industry demand cycles.",
       },
-        {
+      {
         image: "/icons/Real-time.png",
         title: "End-to-end coordination",
-        description: "inbound storage connects directly to outbound delivery for every industry served.",
+        description:
+          "inbound storage connects directly to outbound delivery for every industry served.",
       },
     ],
   },
 
   leftAlignedCards: {
     title: "Warehousing That Works Around Your Business",
-    subtitle:"OSS addresses each of these through industry-specific warehousing:",
+    subtitle:
+      "OSS addresses each of these through industry-specific warehousing:",
     features: [
       {
         image: "/images/industries/boxes.png",
         title: "Configured storage zones",
-        description: "space is set up according to cargo type, not a single generic layout.",
+        description:
+          "space is set up according to cargo type, not a single generic layout.",
       },
       {
-      image: "/images/industries/cold-storage.png",
+        image: "/images/industries/cold-storage.png",
         title: "Temperature-controlled storage",
-        description: "dedicated infrastructure supports warehouse storage of healthcare logistics products, medicines, and vaccines that require consistent cold chain conditions.",
+        description:
+          "dedicated infrastructure supports warehouse storage of healthcare logistics products, medicines, and vaccines that require consistent cold chain conditions.",
       },
       {
         image: "/images/industries/product-testing.png",
         title: "Batch and condition tracking ",
-        description: "inventory is logged with condition data to support compliance for regulated goods.",
+        description:
+          "inventory is logged with condition data to support compliance for regulated goods.",
       },
       {
         image: "/images/services/stock.png",
@@ -129,12 +137,14 @@ const warehousingData = {
       {
         title: "General Commercial Warehousing",
         image: "/images/services/flexible-yard.jpg",
+        alt: "Freezone Storage Space in Sharjah by Open Yard Storage FZC",
         description:
           "Secure storage solutions for raw materials, finished goods, industrial equipment, and commercial inventory across purpose-built warehouse facilities in the UAE.",
       },
       {
         title: "Temperature-Controlled Storage",
         image: "/images/services/custom-storage.jpg",
+        alt: "Storage Space in Sharjah by Open Yard Storage FZC",
         description:
           "Dedicated cold chain infrastructure supporting warehouse storage of healthcare logistics products, medicines, vaccines, and other temperature-sensitive goods requiring monitored conditions.",
       },
@@ -147,21 +157,24 @@ const warehousingData = {
       {
         title: "Short-Term and Seasonal Storage",
         image: "/images/services/security.jpg",
+        alt: "Storage Space in Sharjah by Open Yard Storage FZC",
         description:
           "Scalable warehouse space for peak inventory, promotional stock, seasonal demand, and temporary business storage requirements.",
       },
       {
         title: "Cross-Docking and Distribution",
         image: "/images/services/cross-docking.jpg",
+        alt: "Warehouse Companies in UAE by Open Yard Storage FZC",
         description:
           "Efficient cargo handling that transfers goods from inbound shipments directly to outbound transport, reducing storage time and improving supply chain efficiency.",
       },
       {
         title: "B2B and E-Commerce Storage",
         image: "/images/industries/b2b.jpg",
+        alt: "Warehouse Storage of Healthcare Logistics Products, Medicines, Vaccines by Open Yard Storage FZC",
         description:
           "Organised picking, packing, and inventory management solutions supporting wholesalers, retailers, distributors, and high-SKU e-commerce operations across the UAE.",
-      }
+      },
     ],
   },
 
@@ -170,39 +183,41 @@ const warehousingData = {
     features: [
       {
         image: "/images/industries/protection.png",
-            title: "Healthcare and Pharmaceutical",
-            description: "temperature-controlled zones support warehouse storage of healthcare logistics products, medicines, and vaccines under monitored conditions.",
-          },
-          {
-            image: "/images/services/delivery-truck.png",
-            title: "FMCG and General Trading",
-            description:
-              " high-density racking and picking lanes support faster product rotation.",
-          },
-          {
-            image: "/images/locations/factory.png",
-            title: "Industrial Manufacturing",
-            description: " staging areas hold raw materials and finished machinery before distribution.",
-          },
-          {
-            image: "/images/services/online-store.png",
-            title: "Retail and E-Commerce ",
-            description:
-              " space scales to handle high order volumes during peak sales periods.",
-          },
-          {
-            image: "/images/locations/construction.png",
-            title: "Construction and Infrastructure ",
-            description:
-              " open-yard and covered storage for building materials and equipment.",
-          },
-          {
-            image: "/images/services/world.png",
-            title: "Import and Export Operators",
-            description:
-              "cross-docking supports fast ocean and air freight transit.",
-          },
-        ]
+        title: "Healthcare and Pharmaceutical",
+        description:
+          "temperature-controlled zones support warehouse storage of healthcare logistics products, medicines, and vaccines under monitored conditions.",
+      },
+      {
+        image: "/images/services/delivery-truck.png",
+        title: "FMCG and General Trading",
+        description:
+          " high-density racking and picking lanes support faster product rotation.",
+      },
+      {
+        image: "/images/locations/factory.png",
+        title: "Industrial Manufacturing",
+        description:
+          " staging areas hold raw materials and finished machinery before distribution.",
+      },
+      {
+        image: "/images/services/online-store.png",
+        title: "Retail and E-Commerce ",
+        description:
+          " space scales to handle high order volumes during peak sales periods.",
+      },
+      {
+        image: "/images/locations/construction.png",
+        title: "Construction and Infrastructure ",
+        description:
+          " open-yard and covered storage for building materials and equipment.",
+      },
+      {
+        image: "/images/services/world.png",
+        title: "Import and Export Operators",
+        description:
+          "cross-docking supports fast ocean and air freight transit.",
+      },
+    ],
   },
 
   FreeZoneStorage: {
@@ -320,7 +335,7 @@ const warehousingData = {
     ],
   },
 
-   about: [
+  about: [
     {
       title: "About Us",
       subtitle: "Industry-Specific Warehousing Experience in the UAE",
