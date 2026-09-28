@@ -32,10 +32,10 @@ export default function StorageSpaceSharjah() {
         backgroundImage="/images/services/Yard-for-Rent-in-Sharjah.jpg"
       />
 
-      <TrustedSlider 
-      title="Freezone Storage Space In Sharjah Used By Trading, Manufacturing, And Retail Companies Across The Uae"
-      description="OSS storage clients include commodity trading firms, automotive component manufacturers, FMCG distributors, and import-export operators managing cross-border shipments through the UAE." />
-      
+      <TrustedSlider
+        title="Freezone Storage Space In Sharjah Used By Trading, Manufacturing, And Retail Companies Across The Uae"
+        description="OSS storage clients include commodity trading firms, automotive component manufacturers, FMCG distributors, and import-export operators managing cross-border shipments through the UAE."
+      />
 
       {/* PROBLEM SECTION */}
       <ChallengeSection
@@ -78,24 +78,28 @@ export default function StorageSpaceSharjah() {
         features={[
           {
             image: "/images/services/stock.png",
+            alt: "Freezone Storage Space in Sharjah by Open Yard Storage FZC",
             title: "Dynamic footprint allocation ",
             description:
               "pallet positions and square footage scale up or down with stock levels.",
           },
           {
             image: "/images/services/api.png",
+            alt: "Storage Space in Sharjah by Open Yard Storage FZC",
             title: "WMS digital integration",
             description:
               "SKU counts, batch numbers, and expiration dates are tracked in real time through a client portal.",
           },
           {
             image: "/images/services/insurance.png",
+            alt: "Storage & Logistics Company Sharjah by Open Yard Storage FZC",
             title: "Reduced asset risk",
             description:
               "facilities include continuous CCTV, biometric access control, and civil defense-approved fire suppression.",
           },
           {
             image: "/images/services/speed.png",
+            alt: "Fast freight handling and logistics movement icon",
             title: "Faster freight handling ",
             description:
               "double-deep racking, forklifts, and automated loading docks reduce vehicle turnaround time.",
@@ -112,34 +116,40 @@ export default function StorageSpaceSharjah() {
         features={[
           {
             image: "/images/services/grow.png",
+            alt: "Scalable pallet allocation icon",
             title: "Scalable pallet allocations",
             description: "storage footage adjusts to match import cycles.",
           },
           {
             image: "/images/services/tracking.png",
+            alt: "Storage Space in Sharjah by Open Yard Storage FZC",
             title: "Barcode and RFID tracking",
             description:
               " reduces manual processing errors in inventory logging.",
           },
           {
             image: "/icons/Regulatory-exper.png",
+            alt: "Highway access and logistics connectivity icon",
             title: "Highway access",
             description: "facilities sit near the E311 and E611 corridors",
           },
           {
             image: "/images/services/logistic.png",
+            alt: "Freezone Storage Space in Sharjah by Open Yard Storage FZC",
             title: "Trained logistics staff ",
             description:
               "supply chain coordinators, equipment operators, and inventory managers run daily operations.",
           },
           {
             image: "/icons/Real-time.png",
+            alt: "End-to-end freight management icon",
             title: "End-to-end freight management  ",
             description:
               " inbound container destuffing connects directly to outbound last-mile delivery.",
           },
           {
             image: "/images/services/24-7.png",
+            alt: "24 hour security monitoring icon",
             title: "24/7 monitoring",
             description:
               "active security teams and continuous video recording protect stored assets.",
@@ -154,36 +164,42 @@ export default function StorageSpaceSharjah() {
         services={[
           {
             title: "Secure Commercial Warehousing",
+            alt: "Freezone Storage Space in Sharjah by Open Yard Storage FZC",
             image: "/images/services/flexible-yard.jpg",
             description:
               "Storage for raw materials, industrial equipment, and finished goods in facilities with reinforced flooring, high-clearance ceilings, and environmental controls.",
           },
           {
             title: "WMS Inventory Tracking",
+            alt: "Storage Space in Sharjah by Open Yard Storage FZC",
             image: "/images/services/custom-storage.jpg",
             description:
               "Real-time stock control through a warehouse management system that tracks batch numbers, supports FIFO/LIFO methods, and sends automatic replenishment alerts.",
           },
           {
             title: "Long-Term Storage",
+            alt: "Storage Space in Sharjah by Open Yard Storage FZC",
             image: "/images/services/security.jpg",
             description:
               "Fixed pallet positions for manufacturing components, safety stock, and seasonal overstock that needs extended retention.",
           },
           {
             title: "Short-Term Warehousing",
+            alt: "Freezone Storage Space in Sharjah by Open Yard Storage FZC",
             image: "/images/services/short-warehouse.jpeg",
             description:
               " Temporary space for sudden inbound shipments, promotional inventory spikes, or cross-border transit drops.",
           },
           {
             title: "Cross-Docking and Distribution Coordination",
+            alt: "Storage & Logistics Company Sharjah by Open Yard Storage FZC",
             image: "/images/services/cross-docking.jpg",
             description:
               "Cargo moves from container arrival directly to outbound delivery, cutting storage time to under 24 hours.",
           },
           {
             title: "B2B and E-Commerce Storage",
+            alt: "B2B and e-commerce fulfillment storage area",
             image: "/images/services/logistics.jpg",
             description:
               "Dedicated picking zones and sorting stations for high-SKU inventory in fast-moving retail operations.",
@@ -197,30 +213,35 @@ export default function StorageSpaceSharjah() {
         features={[
           {
             image: "/images/services/truck.png",
+            alt: "FMCG trading goods and logistics trucks",
             title: "FMCG and General Trading",
             description:
               "high-density racking and picking lanes support faster product rotation.",
           },
           {
             image: "/images/services/industrial-park.png",
+            alt: "Industrial manufacturing and storage FZC",
             title: "Industrial Manufacturing ",
             description:
               "staging areas hold raw materials, production tools, and finished machinery before scheduled distribution.",
           },
           {
             image: "/images/services/online-store.png",
+            alt: "Storage & Logistics Company Sharjah by Open Yard Storage FZC",
             title: "Retail and E-Commerce Fulfillment",
             description:
               "space scales to handle high order volumes during peak sales periods.",
           },
           {
             image: "/images/services/engineer.png",
+            alt: "Construction materials and infrastructure storage icon",
             title: "Construction and Infrastructure ",
             description:
               " open-yard and covered storage hold building materials, machinery, and structural components.",
           },
           {
             image: "/images/services/world.png",
+            alt: "Import and export logistics icon",
             title: "Import and Export Operators ",
             description:
               "cross-docking and customs-compliant processing support fast ocean and air freight transit.",

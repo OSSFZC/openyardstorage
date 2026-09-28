@@ -29,7 +29,7 @@ export default function ServiceGridSection({
               {/* Image */}
               <img
                 src={item.image}
-                alt={item.title}
+                alt={item.alt || item.title}
                 className="w-full h-72 object-cover transition duration-700 group-hover:scale-110"
               />
 

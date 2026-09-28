@@ -45,7 +45,7 @@ export default function LeftalignedCards({
               <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-xl bg-[#F8F6F1]">
                 <img
                   src={item.image}
-                  alt={item.title}
+                  alt={item.alt || item.title}
                   className="w-8 h-8 object-contain"
                 />
               </div>

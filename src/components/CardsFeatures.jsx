@@ -38,7 +38,7 @@ export default function CardsFeatures({
               <div className="w-16 h-16 rounded-full bg-[#F5F2EA] flex items-center justify-center group-hover:bg-[#C59D5F] transition-colors duration-300">
                 <img
                   src={item.image}
-                  alt={item.title}
+                  alt={item.alt || item.title}
                   className="w-8 h-8 object-contain"
                 />
               </div>
