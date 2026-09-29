@@ -12,6 +12,7 @@ import { blogs as localBlogs } from "../../data/blogs";
 import { useEffect } from "react";
 import { client } from "../../sanityClient";
 import Hero from "../../components/Hero";
+import TestimonialsSection from "../../components/TestimonialsSection";
 import { Link } from "react-router-dom";
 import useMeta from "../../hooks/useMeta";
 import { useNavigate } from "react-router-dom";
@@ -619,6 +620,10 @@ export default function Page() {
           </div>
         </div>
       </section>
+
+      {/* TESTIMONIALS */}
+      <TestimonialsSection />
+
       <section className="bg-white py-10">
         <div className="mx-auto max-w-[1400px] px-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-stretch">
