@@ -37,6 +37,10 @@ const services = [
     link: "/services/break-bulk-cargo-clearance",
   },
   {
+    title: "Lashing & Repacking Services",
+    link: "/services/lashing-repacking-services",
+  },
+  {
     title: "Shipping Logistic Management",
     link: "/services/shipping-logistic-management",
   },

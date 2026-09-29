@@ -1,5 +1,20 @@
 import { useEffect, useRef, useState } from "react";
 
+// Stats arrive either as numbers (value: 260000, suffix: "+") or as strings
+// ("30%", "500+", "24/7", "Daily"). Split numeric strings into a number and a
+// trailing symbol so they can animate; anything else is shown as-is.
+function parseStat(value) {
+  if (typeof value === "number") return { number: value, symbol: "" };
+
+  const match = String(value)
+    .trim()
+    .match(/^(\d+(?:\.\d+)?)([%+]*)$/);
+
+  return match
+    ? { number: Number(match[1]), symbol: match[2] }
+    : { number: null, symbol: "" };
+}
+
 function Counter({
   value,
   suffix = "",
@@ -7,15 +22,18 @@ function Counter({
   decimals = 0,
   duration = 2000,
 }) {
+  const { number, symbol } = parseStat(value);
   const [count, setCount] = useState(0);
   const ref = useRef(null);
 
   useEffect(() => {
+    if (number === null) return;
+
     const element = ref.current;
 
     const startCounter = () => {
       let start = 0;
-      const end = Number(value);
+      const end = number;
       const increment = end / (duration / 16);
 
       const timer = setInterval(() => {
@@ -43,14 +61,17 @@ function Counter({
     observer.observe(element);
 
     return () => observer.disconnect();
-  }, [value, duration]);
+  }, [number, duration]);
 
   return (
     <div ref={ref} className="text-3xl md:text-4xl font-bold text-black">
-      {count.toLocaleString(undefined, {
-        minimumFractionDigits: decimals,
-        maximumFractionDigits: decimals,
-      })}
+      {number === null
+        ? value
+        : count.toLocaleString(undefined, {
+            minimumFractionDigits: decimals,
+            maximumFractionDigits: decimals,
+          })}
+      {symbol}
       {suffix}
 
       {unit && (

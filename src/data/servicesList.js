@@ -19,6 +19,7 @@ const services = [
   { name: "International Shipping Forwarder", path: "/services/international-shipping-forwarder" },
   { name: "International Truck Shipping", path: "/services/international-truck-shipping" },
   { name: "Inventory Management Solutions", path: "/services/inventory-management-solutions" },
+  { name: "Lashing & Repacking Services", path: "/services/lashing-repacking-services" },
   { name: "Logistics Transport Sharjah", path: "/services/logistics-transport-sharjah" },
   { name: "Logistic Truck Company Sharjah", path: "/service/logistic-truck-company-sharjah" },
   { name: "Marine Logistics Sharjah", path: "/service/marine-logistics-sharjah" },

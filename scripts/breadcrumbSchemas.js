@@ -143,6 +143,30 @@ export const breadcrumbSchemas = {
       }
     ]
   },
+  "/services/lashing-repacking-services": {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://www.openyardstorage.com/"
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Services",
+        item: "https://www.openyardstorage.com/services"
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: "Lashing & Repacking Services",
+        item: "https://www.openyardstorage.com/services/lashing-repacking-services"
+      }
+    ]
+  },
   "/services/shipping-logistic-management": {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",

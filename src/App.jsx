@@ -27,6 +27,7 @@ import HealthCareStorageSolutions from "./pages/services/HealthCareStorageSoluti
 import FreightShippingService from "./pages/services/FreightShippingService";
 import ContainerCrossStuffing from "./pages/services/ContainerCrossStuffing";
 import BreakBulkCargoClearance from "./pages/services/BreakBulkCargoClearance";
+import LashingRepackingServices from "./pages/services/LashingRepackingServices";
 import ShippingLogisticManagement from "./pages/services/ShippingLogisticManagement";
 import SmallStorageWarehouse from "./pages/services/SmallStorageWarehouse";
 import HamriyahWarehouse from "./pages/services/HamriyahWarehouse";
@@ -132,6 +133,10 @@ export default function App() {
         <Route
           path="/services/break-bulk-cargo-clearance"
           element={<BreakBulkCargoClearance />}
+        />
+        <Route
+          path="/services/lashing-repacking-services"
+          element={<LashingRepackingServices />}
         />
 
         <Route
