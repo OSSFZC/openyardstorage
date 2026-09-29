@@ -34,7 +34,7 @@ export default function LashingRepackingServices() {
 
       {/* SERVICES */}
       <ServiceGridSection
-        title="Our services include:"
+        title="Our services include"
         services={[
           {
             title: "Professional cargo lashing and securing",
@@ -66,7 +66,8 @@ export default function LashingRepackingServices() {
 
       {/* CTA */}
       <CTASection
-        title="With proper packing and secure lashing, we help ensure your cargo reaches its destination safely and in good condition."
+        title="Secure Your Cargo with OSS Logistics"
+        description="With proper packing and secure lashing, we help ensure your cargo reaches its destination safely and in good condition."
         buttonText="Contact Us"
         buttonLink="/contact-us"
         backgroundImage="/images/services/Explore-More.jpg"
