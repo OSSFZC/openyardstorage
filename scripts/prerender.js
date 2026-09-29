@@ -2,11 +2,15 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { faqSchemas } from "./faqSchemas.js";
+import { breadcrumbSchemas } from "./breadcrumbSchemas.js";
+import { localBusinessSchemas } from "./localBusinessSchema.js";
 
 const projectRoot = path.dirname(fileURLToPath(import.meta.url));
 const distDirectory = path.resolve(projectRoot, "../dist");
 const templatePath = path.join(distDirectory, "index.html");
 const template = await fs.readFile(templatePath, "utf8");
+
+const schemaSources = [localBusinessSchemas, breadcrumbSchemas, faqSchemas];
 
 function schemaScript(schema) {
   const json = JSON.stringify(schema).replaceAll("<", "\\u003c");
@@ -14,16 +18,22 @@ function schemaScript(schema) {
 }
 
 function htmlForRoute(route) {
-  const schema = faqSchemas[route];
+  const scripts = schemaSources
+    .map((source) => source[route])
+    .filter(Boolean)
+    .map(schemaScript)
+    .join("");
 
-  if (!schema) {
-    return template;
-  }
-
-  return template.replace("</head>", `${schemaScript(schema)}</head>`);
+  return template.replace("</head>", `${scripts}</head>`);
 }
 
-for (const route of Object.keys(faqSchemas)) {
+// Schema-free shell for every route without its own prerendered page
+// (vercel.json rewrites unmatched routes here instead of to the home page).
+await fs.writeFile(path.join(distDirectory, "app-shell.html"), template, "utf8");
+
+const routes = new Set(schemaSources.flatMap((source) => Object.keys(source)));
+
+for (const route of routes) {
   const routeDirectory =
     route === "/"
       ? distDirectory
@@ -38,4 +48,4 @@ for (const route of Object.keys(faqSchemas)) {
   );
 }
 
-console.log(`Prerendered ${Object.keys(faqSchemas).length} FAQ route(s).`);
+console.log(`Prerendered schema for ${routes.size} route(s).`);

@@ -425,7 +425,7 @@
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "/"
+      "destination": "/app-shell.html"
     }
   ]
 }
