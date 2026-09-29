@@ -133,7 +133,10 @@
     <loc>https://www.openyardstorage.com/services/ship-spare-clearance</loc>
   </url>
   <url>
-    <loc>https://openyardstorage.com/services/wooden-crating</loc>
+    <loc>https://www.openyardstorage.com/services/wooden-crating</loc>
+  </url>
+  <url>
+    <loc>https://www.openyardstorage.com/open-yard-storage-facility/</loc>
   </url>
   <url>
     <loc>https://www.openyardstorage.com/industries/medical</loc>
@@ -211,9 +214,9 @@
     <loc>https://www.openyardstorage.com/projects/warehouse-storage-space</loc>
   </url>
   <url>
-    <loc>https://openyardstorage.com/projects/apache</loc>
+    <loc>https://www.openyardstorage.com/projects/apache</loc>
   </url>
   <url>
-    <loc>https://openyardstorage.com/projects/trinidad-drilling</loc>
+    <loc>https://www.openyardstorage.com/projects/trinidad-drilling</loc>
   </url>
 </urlset>
