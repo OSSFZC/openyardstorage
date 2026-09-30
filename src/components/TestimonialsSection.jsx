@@ -2,7 +2,7 @@ import { FaStar } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 
 const GOOGLE_REVIEWS_URL =
-  "https://www.google.com/search?hl=en&q=OSS+FZC+-+Logistics&ludocid=10128169505302966901#lrd=0x3ef5f9dca6b63c8b:0x8c8e7c80f486f275,1";
+  "https://maps.app.goo.gl/KTnwMEcjfrx98GJ3A";
 
 // Top reviews from the OSS FZC - Logistics Google Business Profile.
 const testimonials = [
