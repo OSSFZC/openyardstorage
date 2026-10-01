@@ -1,10 +1,8 @@
 import InnerHero from "../../components/InnerHero";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 
 export default function Contact() {
 
-const navigate = useNavigate();
 
 const [name, setName] = useState("");
 const [email, setEmail] = useState("");
@@ -31,7 +29,7 @@ const handleSubmit = async (e) => {
   const data = await res.json();
 
   if (data.success) {
-    navigate("/thank-you");
+    window.location.assign("/thank-you"); // full load so the GTM thank-you trigger fires
   } else {
     alert("Failed to send");
   }

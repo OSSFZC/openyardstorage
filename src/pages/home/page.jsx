@@ -110,7 +110,7 @@ export default function Page() {
       const data = await res.json();
 
       if (data.success) {
-        navigate("/thank-you"); // ✅ same redirect
+        window.location.assign("/thank-you"); // full load so the GTM thank-you trigger fires
       } else {
         alert("Failed to send");
       }
