@@ -4,6 +4,10 @@ import useMeta from "../../hooks/useMeta";
 
 
 const services = [
+  {
+    title: "Open Yard Storage Facility",
+    link: "/open-yard-storage-facility",
+  },
   // {
   //   title: "Medical Equipment Healthcare Storage",
   //   link: "/services/medical-equipment-healthcare-storage",
