@@ -39,6 +39,9 @@ export default defineType({
       options: {
         hotspot: true,
       },
+      fields: [
+        defineField({name: 'alt', title: 'Alt text', type: 'string'}),
+      ],
     }),
     defineField({
       name: 'categories',

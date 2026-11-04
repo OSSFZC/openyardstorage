@@ -18,8 +18,12 @@ export default function BlogDetail() {
           _id,
           title,
           publishedAt,
-          body,
+          body[]{
+            ...,
+            _type == "image" => { ..., asset->{url} }
+          },
           mainImage{
+            alt,
             asset->{url}
           }
         }`,
@@ -68,9 +72,38 @@ export default function BlogDetail() {
       h2: ({ children }) => (
         <h2 className="text-2xl font-semibold mt-6 mb-3">{children}</h2>
       ),
+      h3: ({ children }) => (
+        <h3 className="text-xl font-semibold mt-5 mb-2">{children}</h3>
+      ),
+      h4: ({ children }) => (
+        <h4 className="text-lg font-semibold mt-4 mb-2">{children}</h4>
+      ),
       normal: ({ children }) => (
         <p className="mb-4 text-gray-700 leading-relaxed">{children}</p>
       ),
+    },
+    list: {
+      bullet: ({ children }) => (
+        <ul className="list-disc pl-6 mb-4 space-y-2 text-gray-700">{children}</ul>
+      ),
+    },
+    marks: {
+      link: ({ value, children }) => (
+        <a href={value?.href} className="text-red-600 underline hover:text-red-700">
+          {children}
+        </a>
+      ),
+    },
+    types: {
+      image: ({ value }) =>
+        value?.asset?.url ? (
+          <img
+            src={value.asset.url}
+            alt={value.alt || blog.title}
+            loading="lazy"
+            className="w-full rounded-lg my-6"
+          />
+        ) : null,
     },
   };
 
