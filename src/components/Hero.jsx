@@ -9,11 +9,11 @@ export default function Hero() {
   // ✅ Fetch blogs from Sanity
   useEffect(() => {
     client
-      .fetch(`*[_type == "post"] | order(publishedAt desc)[0...5]{
+      .fetch(`*[_type == "post"] | order(coalesce(publishedAt, _createdAt) desc)[0...5]{
         _id,
         title,
         slug,
-        publishedAt,
+        "publishedAt": coalesce(publishedAt, _createdAt),
         mainImage{
           asset->{url}
         }

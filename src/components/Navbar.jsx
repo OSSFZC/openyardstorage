@@ -1,55 +1,13 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import services from "../data/servicesList";
+import { industries, projects, locations } from "../data/navMenu";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [aboutOpen, setAboutOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const [industriesOpen, setIndustriesOpen] = useState(false);
-
-  const industries = [
-    //  { name: "Medical Equipment and Healthcare", slug: "medical" },
-    { name: "Manufacturing", slug: "manufacturing" },
-    { name: "Construction & Infrastructure", slug: "construction" },
-    //  { name: "Automotive", slug: "automotive" },
-    { name: "Oil & Gas", slug: "oilgas" },
-    //  { name: "FMCG (Fast-Moving Consumer Goods)", slug: "fmcg" },
-    //  { name: "Retail & E-commerce", slug: "retail" },
-    //  { name: "Pharmaceuticals", slug: "pharmaceuticals" },
-    { name: "Chemicals", slug: "chemicals" },
-    { name: "Metals & Scrap", slug: "metals" },
-    //  { name: "Food & Beverages", slug: "foodbeverages" },
-    { name: "Heavy Equipment", slug: "heavyequipment" },
-    { name: "Inventory Management", slug: "inventorymanagement" },
-    { name: "Offshore Logistics", slug: "offshorelogistics" },
-    { name: "Ship Spares", slug: "shipspares" },
-    { name: "Warehousing", slug: "warehousing" },
-    { name: "Distribution", slug: "distribution" },
-    { name: "Project Forwarding", slug: "projectforwarding" },
-  ];
-
-  const projects = [
-    {
-      name: "Weatherford Drilling International",
-      slug: "weatherford-drilling-international",
-    },
-    { name: "Marine Logistics Sharjah", slug: "marine-logistics-sharjah" },
-    { name: "Warehouse Storage Space", slug: "warehouse-storage-space" },
-  ];
-
-  const locations = [
-    {
-      name: "Shipping Companies in Sharjah",
-      slug: "shipping-companies-in-sharjah",
-    },
-    { name: "Hamriyah Port Sharjah", slug: "hamriyah-port-sharjah" },
-    { name: "Cargo Service To Dubai", slug: "cargo-service-to-dubai" },
-    {
-      name: "Storage Facility In Sharjah",
-      slug: "storage-facility-in-sharjah",
-    },
-  ];
 
   const [locationsOpen, setLocationsOpen] = useState(false);
 

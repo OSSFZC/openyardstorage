@@ -5,6 +5,13 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import services from "../data/servicesList";
+import {
+  aboutLinks,
+  industries,
+  locations,
+  projects,
+} from "../data/navMenu";
 
 export default function Footer() {
   const socialLinks = [
@@ -71,15 +78,16 @@ export default function Footer() {
                   Home
                 </Link>
               </li>
+              {aboutLinks.map((item) => (
+                <li key={item.path}>
+                  <Link to={item.path} className="hover:text-red-600">
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
               <li>
-                <Link to="about/our-story" className="hover:text-red-600">
-                  About
-                </Link>
-              </li>
-
-              <li>
-                <Link to="/services" className="hover:text-red-600">
-                  Services
+                <Link to="/news" className="hover:text-red-600">
+                  News & Blogs
                 </Link>
               </li>
               <li>
@@ -87,8 +95,6 @@ export default function Footer() {
                   Contact
                 </Link>
               </li>
-
-              {/* ✅ ADD HERE */}
               <li>
                 <Link to="/terms" className="hover:text-red-600">
                   Terms & Conditions
@@ -97,45 +103,23 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* SERVICES */}
+          {/* SERVICES (same list as the header menu) */}
           <div>
             <p className="text-red-600 font-semibold mb-6">Services</p>
             <ul className="space-y-3 text-gray-500 text-sm">
+              {services.slice(0, 12).map((service) => (
+                <li key={service.path}>
+                  <Link to={service.path} className="hover:text-red-600">
+                    {service.name}
+                  </Link>
+                </li>
+              ))}
               <li>
                 <Link
-                  to="/services/freight-shipping-service"
-                  className="hover:text-red-600"
+                  to="/services"
+                  className="font-semibold text-red-600 hover:text-red-700"
                 >
-                  International Shipping Air
-                </Link>
-              </li>
-              {/* <li>
-    <Link to="/services/health-care-storage-solutions" className="hover:text-red-600">
-      Health Care Storage Solutions
-    </Link>
-  </li> */}
-              <li>
-                <Link
-                  to="/services/logistics-transport-sharjah"
-                  className="hover:text-red-600"
-                >
-                  Logistics Transport Sharjah
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/services/storage-warehouse-dubai"
-                  className="hover:text-red-600"
-                >
-                  Storage Warehouse Dubai
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/services/container-logistics-transport-sharjah"
-                  className="hover:text-red-600"
-                >
-                  Container Freight Logistics
+                  View All Services →
                 </Link>
               </li>
             </ul>
@@ -156,7 +140,7 @@ export default function Footer() {
               <br />
               <span className="text-gray-500">
                 <a
-                  href="tel:>+971509322335"
+                  href="tel:+971509322335"
                   className="text-gray-500 hover:text-red-600"
                 >
                   +971 50 9322 335
@@ -174,6 +158,61 @@ export default function Footer() {
                 sales@oss-me.com
               </a>
             </p>
+          </div>
+        </div>
+
+        {/* MENU ROW: Industries / Locations / Projects */}
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-16 mt-16 pt-12 border-t border-gray-200">
+          <div className="md:col-span-2">
+            <p className="text-red-600 font-semibold mb-6">
+              Industries We Serve
+            </p>
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3 text-gray-500 text-sm">
+              {industries.map((item) => (
+                <li key={item.slug}>
+                  <Link
+                    to={`/industries/${item.slug}`}
+                    className="hover:text-red-600"
+                  >
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <p className="text-red-600 font-semibold mb-6">
+              Locations We Serve
+            </p>
+            <ul className="space-y-3 text-gray-500 text-sm">
+              {locations.map((item) => (
+                <li key={item.slug}>
+                  <Link
+                    to={`/locations/${item.slug}`}
+                    className="hover:text-red-600"
+                  >
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <p className="text-red-600 font-semibold mb-6">Projects</p>
+            <ul className="space-y-3 text-gray-500 text-sm">
+              {projects.map((item) => (
+                <li key={item.slug}>
+                  <Link
+                    to={`/projects/${item.slug}`}
+                    className="hover:text-red-600"
+                  >
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>

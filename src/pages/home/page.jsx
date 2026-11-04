@@ -57,11 +57,11 @@ export default function Page() {
   useEffect(() => {
     client
       .fetch(
-        `*[_type == "post"] | order(publishedAt desc){
+        `*[_type == "post"] | order(coalesce(publishedAt, _createdAt) desc){
       _id,
       title,
       slug,
-      publishedAt,
+      "publishedAt": coalesce(publishedAt, _createdAt),
       mainImage{
         asset->{
           url
@@ -565,6 +565,15 @@ export default function Page() {
                 </a>
               );
             })}
+          </div>
+
+          <div className="mt-12 text-center">
+            <Link
+              to="/news"
+              className="inline-flex items-center gap-2 border border-red-600 px-6 py-2 text-red-600 rounded-md hover:bg-red-600 hover:text-white transition"
+            >
+              See All Blogs <FiArrowRight />
+            </Link>
           </div>
         </div>
       </section>

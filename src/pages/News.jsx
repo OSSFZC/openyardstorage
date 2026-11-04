@@ -17,11 +17,11 @@ export default function News() {
     client
       .fetch(`
         {
-          "blogs": *[_type == "post"] | order(publishedAt desc) [${start}...${end}]{
+          "blogs": *[_type == "post"] | order(coalesce(publishedAt, _createdAt) desc) [${start}...${end}]{
             _id,
             title,
             slug,
-            publishedAt,
+            "publishedAt": coalesce(publishedAt, _createdAt),
             mainImage{
               asset->{url}
             }

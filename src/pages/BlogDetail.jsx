@@ -17,7 +17,7 @@ export default function BlogDetail() {
         `*[_type == "post" && slug.current == $slug][0]{
           _id,
           title,
-          publishedAt,
+          "publishedAt": coalesce(publishedAt, _createdAt),
           body[]{
             ...,
             _type == "image" => { ..., asset->{url} }
@@ -40,7 +40,7 @@ export default function BlogDetail() {
   useEffect(() => {
     client
       .fetch(
-        `*[_type == "post"] | order(publishedAt desc)[0...3]{
+        `*[_type == "post"] | order(coalesce(publishedAt, _createdAt) desc)[0...3]{
           _id,
           title,
           slug,
