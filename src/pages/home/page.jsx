@@ -103,6 +103,7 @@ export default function Page() {
           name,
           email,
           phone,
+          company,
           message,
         }),
       });
@@ -705,6 +706,8 @@ export default function Page() {
                   <input
                     type="text"
                     placeholder="Company"
+                    value={company}
+                    onChange={(e) => setCompany(e.target.value)}
                     className="w-full border-b border-gray-300 focus:border-red-600 outline-none pb-2"
                   />
                 </div>

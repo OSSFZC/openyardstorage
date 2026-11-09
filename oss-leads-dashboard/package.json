@@ -1,0 +1,22 @@
+{
+  "name": "oss-leads-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "description": "OSS FZC - Energy Logistics lead dashboard (Next.js, runs on Vercel)",
+  "scripts": {
+    "dev": "next dev -p 3001",
+    "build": "next build",
+    "start": "next start -p 3001"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.2.0",
+    "exceljs": "^4.4.0",
+    "jose": "^6.2.15",
+    "next": "^16.4.5",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5.15"
+  }
+}

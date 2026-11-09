@@ -27,3 +27,10 @@ dist-ssr
 .env
 .env.*
 !.env.example
+server.cjs
+
+# Not needed in the repository
+src.zip
+.next
+.data
+.vercel

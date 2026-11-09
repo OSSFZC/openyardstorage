@@ -1,4 +1,4 @@
-import { defineConfig } from 'vite'
+import { defineConfig, loadEnv } from 'vite'
 import react from '@vitejs/plugin-react'
 
 // Mirrors the 301 redirects in vercel.json (path-only, same-host redirects)
@@ -76,10 +76,52 @@ function permanentRedirects() {
   }
 }
 
-export default defineConfig({
-  plugins: [react(), permanentRedirects()],
+// Local development only: serve POST /api/send with the same api/send.js that
+// Vercel runs in production, so the contact forms work with `npm run dev`.
+// Settings come from .env.local (EMAIL_USER, EMAIL_PASS, EMAIL_TO, LEADHUB_URL).
+function localApi(mode) {
+  return {
+    name: 'local-api-send',
+    configureServer(server) {
+      const env = loadEnv(mode, process.cwd(), '')
+      for (const key of ['EMAIL_USER', 'EMAIL_PASS', 'EMAIL_TO', 'LEADHUB_URL']) {
+        if (env[key] && !process.env[key]) process.env[key] = env[key]
+      }
+      server.middlewares.use('/api/send', async (req, res, next) => {
+        if (req.method !== 'POST') return next()
+        try {
+          const chunks = []
+          for await (const chunk of req) chunks.push(chunk)
+          const request = new Request('http://localhost/api/send', {
+            method: 'POST',
+            headers: { 'content-type': 'application/json', referer: req.headers.referer || '' },
+            body: Buffer.concat(chunks).toString(),
+          })
+          const { POST } = await server.ssrLoadModule('/api/send.js')
+          const response = await POST(request)
+          res.statusCode = response.status
+          res.setHeader('Content-Type', 'application/json')
+          res.end(await response.text())
+        } catch (error) {
+          res.statusCode = 500
+          res.setHeader('Content-Type', 'application/json')
+          res.end(JSON.stringify({ success: false, error: error.message }))
+        }
+      })
+    },
+  }
+}
+
+export default defineConfig(({ mode }) => ({
+  plugins: [react(), permanentRedirects(), localApi(mode)],
   server: {
     proxy: {
+      // Lead dashboard (oss-leads-dashboard, `npm run dev` on port 3001); on Vercel see vercel.json.
+      '^/app(/|$)': {
+        target: 'http://127.0.0.1:3001',
+        changeOrigin: true,
+        ws: true, // Next.js dev live-reload; the page does not start without it
+      },
       '/sanity': {
         target: 'https://wlhjrl6.api.sanity.io',
         changeOrigin: true,
@@ -88,4 +130,4 @@ export default defineConfig({
       },
     },
   },
-})
+}))
