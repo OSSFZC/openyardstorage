@@ -3,7 +3,7 @@
  *   POST /api/lead?key=WEBHOOK_KEY   (JSON or form data)
  */
 import { timingSafeEqual } from 'node:crypto';
-import { saveLead, toFields } from '@/lib/leads';
+import { saveLead, splitSource, toFields } from '@/lib/leads';
 import { WEBHOOK_KEY } from '@/lib/config';
 
 export const dynamic = 'force-dynamic';
@@ -41,10 +41,11 @@ export async function POST(req) {
     return json({ ok: false, error: 'Could not read the submission' }, 400);
   }
 
-  const fields = toFields(data);
+  const { data: formData, source } = splitSource(data);
+  const fields = toFields(formData);
   if (!fields.length) return json({ ok: false, error: 'No fields received' }, 422);
 
   const origin = req.headers.get('origin') || req.headers.get('referer') || 'webhook';
-  const id = await saveLead(fields, origin);
+  const id = await saveLead(fields, origin, source);
   return json({ ok: true, id, duplicate: id === 0 });
 }

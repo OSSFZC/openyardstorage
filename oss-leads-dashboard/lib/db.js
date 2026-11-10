@@ -25,6 +25,19 @@ CREATE TABLE IF NOT EXISTS leads (
 );
 CREATE INDEX IF NOT EXISTS leads_received_idx ON leads (received_at DESC);
 CREATE INDEX IF NOT EXISTS leads_email_idx ON leads (email);
+ALTER TABLE leads ADD COLUMN IF NOT EXISTS utm_source TEXT;
+ALTER TABLE leads ADD COLUMN IF NOT EXISTS utm_medium TEXT;
+ALTER TABLE leads ADD COLUMN IF NOT EXISTS utm_campaign TEXT;
+ALTER TABLE leads ADD COLUMN IF NOT EXISTS utm_term TEXT;
+ALTER TABLE leads ADD COLUMN IF NOT EXISTS utm_content TEXT;
+ALTER TABLE leads ADD COLUMN IF NOT EXISTS gclid TEXT;
+ALTER TABLE leads ADD COLUMN IF NOT EXISTS referrer TEXT;
+ALTER TABLE leads ADD COLUMN IF NOT EXISTS landing_page TEXT;
+CREATE TABLE IF NOT EXISTS cache (
+  key      TEXT PRIMARY KEY,
+  json     TEXT NOT NULL,
+  saved_at TIMESTAMPTZ NOT NULL DEFAULT now()
+);
 `;
 
 async function connect() {

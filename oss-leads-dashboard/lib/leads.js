@@ -63,8 +63,56 @@ export function toFields(data) {
 
 const cut = (s, n) => (s ? String(s).slice(0, n) : null);
 
+/** Lead source keys the website sends next to the form fields (see src/lib/attribution.js). */
+export const SOURCE_KEYS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'gclid', 'referrer', 'landing_page'];
+
+/** Split the lead source keys off a submitted object: { data, source }. */
+export function splitSource(data) {
+  const rest = { ...(data || {}) };
+  const source = {};
+  for (const k of SOURCE_KEYS) {
+    const v = rest[k];
+    delete rest[k];
+    if (typeof v === 'string' && v.trim()) source[k] = v.trim().slice(0, 500);
+  }
+  return { data: rest, source };
+}
+
+const hostOf = (url) => { try { return new URL(url).hostname.replace(/^www\./, '').toLowerCase(); } catch { return ''; } };
+const SEARCH = /(^|\.)(google|bing|yahoo|duckduckgo|ecosia|yandex|baidu|search\.brave)\./;
+const SOCIAL = /(^|\.)(facebook|fb|instagram|linkedin|lnkd|twitter|t|x|youtube|tiktok|pinterest|reddit|snapchat|whatsapp|wa|threads)\.(com|co|me|net|in)$/;
+const SOCIAL_SRC = /facebook|fb|instagram|ig|linkedin|twitter|^x$|youtube|tiktok|pinterest|reddit|snapchat|whatsapp|threads/;
+
+export const CHANNELS = ['Paid', 'Organic', 'Social', 'Referral', 'Direct', 'Not tracked'];
+
+/**
+ * Marketing channel of a lead from its source columns.
+ * Leads saved before source tracking existed (no landing page) are "Not tracked".
+ */
+export function leadChannel(l) {
+  const medium = String(l.utm_medium || '').toLowerCase();
+  const src = String(l.utm_source || '').toLowerCase();
+  const host = hostOf(l.referrer);
+  if (l.gclid || /^(cpc|ppc|paid|paidsearch|paid_search|paid_social|paidsocial|display|cpm)$/.test(medium)) return 'Paid';
+  if (medium === 'organic' || (!src && SEARCH.test(host))) return 'Organic';
+  if (medium === 'social' || SOCIAL_SRC.test(src) || SOCIAL.test(host)) return 'Social';
+  if (src || host) return 'Referral';
+  if (l.landing_page) return 'Direct';
+  return 'Not tracked';
+}
+
+/** Short human description of where a lead came from (for the lead panel). */
+export function sourceSummary(l) {
+  const parts = [];
+  if (l.utm_source || l.utm_medium) parts.push([l.utm_source, l.utm_medium].filter(Boolean).join(' / '));
+  else if (l.referrer) parts.push(hostOf(l.referrer) || l.referrer);
+  if (l.utm_campaign) parts.push(`campaign "${l.utm_campaign}"`);
+  if (l.gclid) parts.push('Google Ads click');
+  return parts.join(' · ');
+}
+
 /** Store a submission. Returns the new id, or 0 if it was a duplicate. */
-export async function saveLead(fields, origin) {
+export async function saveLead(fields, origin, source = {}) {
   const lead = fieldsToLead(fields);
   const body = fields.map(([l, v]) => `${l}: ${v}`).join('\n');
   const message = lead.message || body;
@@ -79,10 +127,12 @@ export async function saveLead(fields, origin) {
   }
   const uniq = 'w:' + createHash('sha1').update(body + Math.floor(Date.now() / 60000)).digest('hex');
   const rows = await query(
-    `INSERT INTO leads (uniq, name, email, phone, company, service, subject, message, fields, origin, body)
-     VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11) ON CONFLICT (uniq) DO NOTHING RETURNING id`,
+    `INSERT INTO leads (uniq, name, email, phone, company, service, subject, message, fields, origin, body,
+       utm_source, utm_medium, utm_campaign, utm_term, utm_content, gclid, referrer, landing_page)
+     VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16,$17,$18,$19) ON CONFLICT (uniq) DO NOTHING RETURNING id`,
     [uniq, cut(lead.name, 190), cut(lead.email, 190), cut(lead.phone, 80), cut(lead.company, 190), cut(lead.service, 255),
-      lead.form_subject || 'Website form submission', message, JSON.stringify(fields), cut(origin, 255), body]
+      lead.form_subject || 'Website form submission', message, JSON.stringify(fields), cut(origin, 255), body,
+      ...SOURCE_KEYS.map((k) => cut(source[k], 500))]
   );
   return rows[0]?.id ?? 0;
 }

@@ -19,9 +19,23 @@ async function saveToLeadHub(fields) {
   return true;
 }
 
+// Lead source fields captured by src/lib/attribution.js. Passed to the dashboard only, never put in the email.
+const SOURCE_KEYS = ["utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content", "gclid", "referrer", "landing_page"];
+
+function pickSource(body) {
+  const out = {};
+  for (const k of SOURCE_KEYS) {
+    const v = body?.[k];
+    if (typeof v === "string" && v.trim()) out[k] = v.trim().slice(0, 500);
+  }
+  return out;
+}
+
 export async function POST(req) {
   try {
-    const { name, email, phone, company, message } = await req.json();
+    const body = await req.json();
+    const { name, email, phone, company, message } = body;
+    const source = pickSource(body);
     const page = req.headers.get("referer") || "";
 
     const transporter = nodemailer.createTransport({
@@ -52,7 +66,7 @@ export async function POST(req) {
     // Email the client and store the lead at the same time; one failing never blocks the other.
     const [mailResult, leadResult] = await Promise.allSettled([
       sendEmail,
-      saveToLeadHub({ name, email, phone, company, message, "Page URL": page }),
+      saveToLeadHub({ name, email, phone, company, message, "Page URL": page, ...source }),
     ]);
 
     if (mailResult.status === "rejected") console.log("MAIL ERROR:", mailResult.reason);

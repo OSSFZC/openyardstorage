@@ -1,5 +1,6 @@
 import InnerHero from "../../components/InnerHero";
 import { useState } from "react";
+import { getAttribution, trackLead } from "../../lib/attribution";
 
 export default function Contact() {
 
@@ -22,13 +23,15 @@ const handleSubmit = async (e) => {
     name,
     email,
     phone,
-    message
+    message,
+    ...getAttribution()
    })
   });
 
   const data = await res.json();
 
   if (data.success) {
+    trackLead("contact");
     window.location.assign("/thank-you"); // full load so the GTM thank-you trigger fires
   } else {
     alert("Failed to send");
