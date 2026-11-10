@@ -4,8 +4,8 @@ import { useEffect, useRef, useState } from 'react';
 const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 const fmt = (k) => { const [, m, d] = k.split('-').map(Number); return `${d} ${MON[m - 1]}`; };
 
-/** 30-day line chart (plain SVG, no library). */
-export default function Chart({ series }) {
+/** Daily line chart (plain SVG, no library). `unit` names one value in the tooltip. */
+export default function Chart({ series, unit = 'lead' }) {
   const box = useRef(null);
   const [size, setSize] = useState({ W: 0, H: 0 });
   const [hover, setHover] = useState(null);
@@ -33,7 +33,7 @@ export default function Chart({ series }) {
     const pts = vals.map((v, i) => [x(i), y(v)]);
     const line = pts.map((pt, i) => (i ? 'L' : 'M') + pt[0].toFixed(1) + ',' + pt[1].toFixed(1)).join('');
     const area = `${line}L${x(keys.length - 1)},${y(0)}L${x(0)},${y(0)}Z`;
-    const ticks = [0, 7, 14, 21, keys.length - 1];
+    const ticks = [...new Set([0, 1, 2, 3, 4].map((t) => Math.round((t * (keys.length - 1)) / 4)))];
 
     const onMove = (ev) => {
       const rect = ev.currentTarget.getBoundingClientRect();
@@ -69,7 +69,7 @@ export default function Chart({ series }) {
           )}
         </svg>
         <div className="chart-tip" style={hover ? { left: hover.px, top: hover.py, opacity: 1 } : { opacity: 0 }}>
-          {hover && <><b>{vals[hover.i]}</b> lead{vals[hover.i] === 1 ? '' : 's'} · {fmt(keys[hover.i])}</>}
+          {hover && <><b>{vals[hover.i].toLocaleString('en-US')}</b> {unit}{vals[hover.i] === 1 ? '' : 's'} · {fmt(keys[hover.i])}</>}
         </div>
       </>
     );

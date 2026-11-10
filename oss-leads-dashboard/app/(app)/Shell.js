@@ -9,6 +9,7 @@ import { withBase } from '@/lib/base';
 const NAV = [
   ['/', 'Dashboard', 'grid'],
   ['/leads', 'All Leads', 'inbox'],
+  ['/marketing', 'Marketing', 'chart'],
   ['/settings', 'Settings', 'settings'],
 ];
 

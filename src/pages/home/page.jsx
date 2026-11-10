@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { getAttribution, trackLead } from "../../lib/attribution";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
@@ -105,12 +106,14 @@ export default function Page() {
           phone,
           company,
           message,
+          ...getAttribution(),
         }),
       });
 
       const data = await res.json();
 
       if (data.success) {
+        trackLead("home");
         window.location.assign("/thank-you"); // full load so the GTM thank-you trigger fires
       } else {
         alert("Failed to send");

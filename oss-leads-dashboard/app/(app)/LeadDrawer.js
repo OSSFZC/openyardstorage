@@ -60,7 +60,10 @@ export default function LeadDrawer({ id, onClose }) {
                 <div><dt>Phone</dt><dd>{l.phone || '—'}</dd></div>
                 {l.company && <div><dt>Company</dt><dd>{l.company}</dd></div>}
                 {l.service && <div><dt>Service</dt><dd>{l.service}</dd></div>}
-                <div><dt>Source</dt><dd>Website contact form</dd></div>
+                <div><dt>Form</dt><dd>Website contact form</dd></div>
+                <div><dt>Channel</dt><dd>{l.channel}{l.sourceSummary && <small className="muted" style={{ display: 'block', fontWeight: 400 }}>{l.sourceSummary}</small>}</dd></div>
+                {l.source?.landing_page && <div><dt>Landing page</dt><dd>{l.source.landing_page}</dd></div>}
+                {l.source?.referrer && <div><dt>Referrer</dt><dd>{l.source.referrer}</dd></div>}
               </dl>
               <h4>Message</h4>
               <div className="message" style={{ whiteSpace: 'pre-wrap' }}>{l.message || '—'}</div>
