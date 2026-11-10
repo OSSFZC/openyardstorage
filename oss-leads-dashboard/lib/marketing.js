@@ -137,6 +137,7 @@ async function loadGa4(days) {
   return {
     status: 'ok',
     propertyId: GA4_PROPERTY_ID,
+    range: { startDate: ymdUTC(daysAgo(days)), endDate: ymdUTC(daysAgo(1)) },
     totals,
     daily,
     channels: gaRows(rChannels || {}, ['sessions', 'activeUsers', 'keyEvents', 'engagementRate']),
@@ -265,8 +266,15 @@ async function loadGtm() {
 
 async function loadLeads(days) {
   const rows = await query(
-    `SELECT utm_source, utm_medium, utm_campaign, gclid, referrer, landing_page, received_at >= now() - make_interval(days => $1) AS cur
-     FROM leads WHERE received_at >= now() - make_interval(days => $2)`, [days, days * 2]);
+    `SELECT utm_source, utm_medium, utm_campaign, gclid, referrer, landing_page,
+            received_at >= now() - make_interval(days => $1) AS cur,
+            to_char((received_at AT TIME ZONE $3)::date, 'YYYY-MM-DD') AS day
+     FROM leads WHERE received_at >= now() - make_interval(days => $2)`, [days, days * 2, TZ]);
+  const daily = {};
+  for (let i = days - 1; i >= 0; i--) {
+    const d = new Date(Date.now() - i * 86400000);
+    daily[new Intl.DateTimeFormat('en-CA', { timeZone: TZ }).format(d)] = 0;
+  }
   const counts = Object.fromEntries(CHANNELS.map((c) => [c, 0]));
   const campaigns = new Map();
   let total = 0, previous = 0;
@@ -274,6 +282,7 @@ async function loadLeads(days) {
     if (!r.cur) { previous++; continue; }
     total++;
     counts[leadChannel(r)]++;
+    if (r.day in daily) daily[r.day]++;
     if (r.utm_campaign) campaigns.set(r.utm_campaign, (campaigns.get(r.utm_campaign) || 0) + 1);
   }
   return {
@@ -282,6 +291,7 @@ async function loadLeads(days) {
     previous,
     change: pct(total, previous),
     channels: CHANNELS.map((label) => ({ label, leads: counts[label] })).filter((c) => c.leads > 0 || c.label !== 'Not tracked'),
+    daily: Object.entries(daily).map(([date, leads]) => ({ date, leads })),
     campaigns: [...campaigns].map(([label, leads]) => ({ label, leads })).sort((a, b) => b.leads - a.leads).slice(0, 10),
     tz: TZ,
   };
