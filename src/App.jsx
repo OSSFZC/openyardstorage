@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import CanonicalTag from "./components/CanonicalTag";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -65,6 +66,7 @@ import ThankYou from "./pages/thank-you";
 export default function App() {
   return (
     <BrowserRouter>
+      <CanonicalTag />
       <Navbar />
 
       {/* Page Content */}

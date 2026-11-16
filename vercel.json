@@ -417,8 +417,13 @@
       "statusCode": 301
     },
     {
-      "source": "/open-yard-storage-facility",
+      "source": "/open-yard-storage-facility/",
       "destination": "https://www.openyardstorage.com/open-yard-storage-facility",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/container-logistics-transport-sharjah",
+      "destination": "https://www.openyardstorage.com/service/container-logistics-transport-sharjah",
       "statusCode": 301
     }
   ],

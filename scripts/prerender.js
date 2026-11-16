@@ -4,6 +4,7 @@ import { fileURLToPath } from "node:url";
 import { faqSchemas } from "./faqSchemas.js";
 import { breadcrumbSchemas } from "./breadcrumbSchemas.js";
 import { localBusinessSchemas } from "./localBusinessSchema.js";
+import { canonicalFor, canonicalRoutes } from "../src/data/canonicalRoutes.js";
 
 const projectRoot = path.dirname(fileURLToPath(import.meta.url));
 const distDirectory = path.resolve(projectRoot, "../dist");
@@ -17,6 +18,11 @@ function schemaScript(schema) {
   return `<script type="application/ld+json">${json}</script>`;
 }
 
+function canonicalTag(route) {
+  const href = canonicalFor(route);
+  return href ? `<link rel="canonical" href="${href}" />` : "";
+}
+
 function htmlForRoute(route) {
   const scripts = schemaSources
     .map((source) => source[route])
@@ -24,14 +30,36 @@ function htmlForRoute(route) {
     .map(schemaScript)
     .join("");
 
-  return template.replace("</head>", `${scripts}</head>`);
+  return template.replace("</head>", `${canonicalTag(route)}${scripts}</head>`);
+}
+
+// Blog posts live in Sanity; fetch their slugs so every post gets a canonical in its
+// initial HTML. If Sanity can't be reached the build still succeeds (the page then
+// gets its canonical from useMeta once it loads).
+async function blogRoutes() {
+  const query = encodeURIComponent('*[_type == "post" && defined(slug.current)].slug.current');
+  try {
+    const res = await fetch(
+      `https://wlhljrl6.apicdn.sanity.io/v2023-01-01/data/query/production?query=${query}`,
+      { signal: AbortSignal.timeout(10000) },
+    );
+    const { result } = await res.json();
+    return (result || []).map((slug) => `/blogs/${slug}`);
+  } catch (error) {
+    console.warn(`Blog canonicals skipped (Sanity unreachable: ${error.message}).`);
+    return [];
+  }
 }
 
 // Schema-free shell for every route without its own prerendered page
 // (vercel.json rewrites unmatched routes here instead of to the home page).
 await fs.writeFile(path.join(distDirectory, "app-shell.html"), template, "utf8");
 
-const routes = new Set(schemaSources.flatMap((source) => Object.keys(source)));
+const routes = new Set([
+  ...schemaSources.flatMap((source) => Object.keys(source)),
+  ...canonicalRoutes,
+  ...(await blogRoutes()),
+]);
 
 for (const route of routes) {
   const routeDirectory =
@@ -48,4 +76,4 @@ for (const route of routes) {
   );
 }
 
-console.log(`Prerendered schema for ${routes.size} route(s).`);
+console.log(`Prerendered schema and canonical tags for ${routes.size} route(s).`);
