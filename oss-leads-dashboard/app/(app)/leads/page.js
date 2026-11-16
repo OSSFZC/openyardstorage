@@ -64,7 +64,7 @@ export default async function LeadsPage({ searchParams }) {
         <>
           <div className="table-wrap">
             <table className="table">
-              <thead><tr><th>Lead</th><th>Contact</th><th className="hide-md">Message</th><th>Received</th></tr></thead>
+              <thead><tr><th>Lead</th><th>Contact</th><th className="hide-md">Message</th><th>Received</th><th aria-label="Actions" /></tr></thead>
               <tbody>
                 {rows.map((l) => (
                   <tr key={l.id} data-lead={l.id}>
@@ -82,6 +82,12 @@ export default async function LeadsPage({ searchParams }) {
                     <td className="nowrap">
                       <span title={fmtDateTime(l.received_at)}>{fmtDate(l.received_at)}</span>
                       <small>{fmtTime(l.received_at)}</small>
+                    </td>
+                    <td className="row-actions">
+                      <button type="button" className="icon-btn del-btn" data-delete={l.id} data-name={l.name || l.email || 'this visitor'}
+                        title="Delete lead" aria-label={`Delete lead from ${l.name || l.email || 'unknown visitor'}`}>
+                        <Icon name="trash" />
+                      </button>
                     </td>
                   </tr>
                 ))}

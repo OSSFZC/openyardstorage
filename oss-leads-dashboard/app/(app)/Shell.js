@@ -1,6 +1,6 @@
 'use client';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { Icon } from '@/lib/icons';
 import LeadDrawer from './LeadDrawer';
@@ -15,6 +15,7 @@ const NAV = [
 
 export default function Shell({ client, children }) {
   const path = usePathname();
+  const router = useRouter();
   const [menuOpen, setMenuOpen] = useState(false);
   const [leadId, setLeadId] = useState(null);
   const [toast, setToast] = useState(null);
@@ -27,12 +28,31 @@ export default function Shell({ client, children }) {
     toastTimer.current = setTimeout(() => setToast(null), 3000);
   }, []);
 
+  // Permanently delete a lead after confirming; used by the table rows and the lead panel.
+  const deleteLead = useCallback(async (id, name) => {
+    if (!window.confirm(`Delete the lead from ${name || 'this visitor'}?\n\nThis permanently removes it from the dashboard and can't be undone.`)) return false;
+    try {
+      const r = await fetch(withBase(`/api/leads/${encodeURIComponent(id)}`), { method: 'DELETE' });
+      const data = await r.json().catch(() => ({}));
+      if (!r.ok) throw new Error(data.error || r.statusText);
+      setLeadId((cur) => (String(cur) === String(id) ? null : cur));
+      showToast('Lead deleted');
+      router.refresh();
+      return true;
+    } catch (e) {
+      showToast(`Could not delete: ${e.message}`);
+      return false;
+    }
+  }, [router, showToast]);
+
   useEffect(() => { setMenuOpen(false); }, [path]);
   useEffect(() => { document.title = `${title} · ${client} Leads`; }, [title, client]);
 
   // Page-wide behaviours for server-rendered markup: open a lead, copy boxes, auto-submit filters.
   useEffect(() => {
     const onClick = (ev) => {
+      const del = ev.target.closest('[data-delete]');
+      if (del) { deleteLead(del.dataset.delete, del.dataset.name); return; }
       if (ev.target.closest('[data-stop]')) return;
       const row = ev.target.closest('[data-lead]');
       if (row) { setLeadId(row.dataset.lead); return; }
@@ -49,7 +69,7 @@ export default function Shell({ client, children }) {
       document.removeEventListener('change', onChange);
       document.removeEventListener('keydown', onKey);
     };
-  }, [showToast]);
+  }, [showToast, deleteLead]);
 
   return (
     <>
@@ -78,7 +98,7 @@ export default function Shell({ client, children }) {
           <div className="content">{children}</div>
         </main>
       </div>
-      <LeadDrawer id={leadId} onClose={() => setLeadId(null)} />
+      <LeadDrawer id={leadId} onClose={() => setLeadId(null)} onDelete={deleteLead} />
       <div className={'toast' + (toast ? ' show' : '')}>{toast}</div>
     </>
   );

@@ -1,4 +1,4 @@
-import { one } from '@/lib/db';
+import { one, query } from '@/lib/db';
 import { leadChannel, parseFields, sourceSummary } from '@/lib/leads';
 import { isSignedIn } from '@/lib/session';
 import { fmtLong, initials } from '@/lib/time';
@@ -22,4 +22,14 @@ export async function GET(_req, { params }) {
     source: { utm_source: l.utm_source, utm_medium: l.utm_medium, utm_campaign: l.utm_campaign, utm_term: l.utm_term,
       utm_content: l.utm_content, gclid: l.gclid, referrer: l.referrer, landing_page: l.landing_page },
   });
+}
+
+// Permanently delete one lead (the Delete buttons in All Leads and the lead panel).
+export async function DELETE(_req, { params }) {
+  if (!(await isSignedIn())) return Response.json({ error: 'Not signed in' }, { status: 401 });
+  const id = Number((await params).id);
+  if (!Number.isInteger(id) || id < 1) return Response.json({ error: 'Lead not found' }, { status: 404 });
+  const rows = await query('DELETE FROM leads WHERE id = $1 RETURNING id', [id]);
+  if (!rows.length) return Response.json({ error: 'Lead not found' }, { status: 404 });
+  return Response.json({ ok: true, id });
 }
