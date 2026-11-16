@@ -587,3 +587,10 @@ pre.code { background: #1f2937; }
   .mk-k-val { font-size: 22px; }
   .mk-bars-plot { height: 140px; gap: 2px; }
 }
+
+/* Delete lead */
+.table td.row-actions { width: 1%; padding-right: 16px; text-align: right; }
+.del-btn { color: var(--muted); }
+.del-btn:hover { color: var(--brand); background: var(--brand-soft); }
+.del-btn .ic { width: 17px; height: 17px; }
+.quick-del { margin-left: auto; }

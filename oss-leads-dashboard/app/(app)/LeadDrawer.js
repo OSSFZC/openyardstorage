@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { Icon } from '@/lib/icons';
 import { withBase } from '@/lib/base';
 
-export default function LeadDrawer({ id, onClose }) {
+export default function LeadDrawer({ id, onClose, onDelete }) {
   const [state, setState] = useState({ status: 'idle' });
 
   useEffect(() => {
@@ -54,6 +54,9 @@ export default function LeadDrawer({ id, onClose }) {
                     <a className="btn" target="_blank" rel="noopener noreferrer" href={`https://wa.me/${tel.replace(/^\+/, '')}`}><span>WhatsApp</span></a>
                   </>
                 )}
+                <button type="button" className="btn btn-danger-ghost quick-del" onClick={() => onDelete?.(l.id, l.name || l.email)}>
+                  <Icon name="trash" /><span>Delete</span>
+                </button>
               </div>
               <dl className="facts">
                 <div><dt>Email</dt><dd>{l.email ? <a href={`mailto:${l.email}`}>{l.email}</a> : '—'}</dd></div>
