@@ -13,12 +13,10 @@ import FreeZoneFeatureSection from "../../components/FreeZoneFeatureSection";
 import { FiMapPin, FiShield, FiTruck, FiCalendar } from "react-icons/fi";
 
 import useMeta from "../../hooks/useMeta";
+import { pageMeta } from "../../data/pageMeta";
 
 export default function OpenYardStorage() {
-  useMeta(
-    "Open Yard Storage for Rent in Sharjah | Openyard Storage FZC",
-    "Openyard Storage FZC offers open yard storage space in Sharjah with flexible options for a yard for rent in Sharjah for containers & machinery. Get a quote!",
-  );
+  useMeta(pageMeta["/open-yard-storage-facility"].title, pageMeta["/open-yard-storage-facility"].description);
 
   return (
     <>

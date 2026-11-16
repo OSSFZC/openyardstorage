@@ -12,13 +12,11 @@ import FreeZoneFeatureSection from "../../components/FreeZoneFeatureSection";
 import { FiCalendar, FiShield, FiFileText, FiTruck } from "react-icons/fi";
 
 import useMeta from "../../hooks/useMeta";
+import { pageMeta } from "../../data/pageMeta";
 import LeftalignedCards from "../../components/LeftalignedCards";
 
 export default function ContainerLogisticsTransportSharjah() {
-  useMeta(
-    "Container Logistics Transport in Sharjah | Openyard Storage FZC",
-    "From port to destination, Openyard Storage FZC provides container shipping services in Sharjah with dependable freight solutions. Request a quote today!",
-  );
+  useMeta(pageMeta["/service/container-logistics-transport-sharjah"].title, pageMeta["/service/container-logistics-transport-sharjah"].description);
 
   return (
     <>

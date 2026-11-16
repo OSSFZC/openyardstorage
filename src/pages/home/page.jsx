@@ -16,6 +16,7 @@ import Hero from "../../components/Hero";
 import TestimonialsSection from "../../components/TestimonialsSection";
 import { Link } from "react-router-dom";
 import useMeta from "../../hooks/useMeta";
+import { pageMeta } from "../../data/pageMeta";
 import { useNavigate } from "react-router-dom";
 
 const projects = [
@@ -84,10 +85,7 @@ export default function Page() {
 
   const [activeIndex, setActiveIndex] = useState(0);
 
-  useMeta(
-    "Shipping Companies in UAE | Openyard Storage FZC Logistics ",
-    "Openyard Storage FZC is among the most trusted Shipping Companies in UAE, delivering reliable international logistics & transport solutions.Contact us today!",
-  );
+  useMeta(pageMeta["/"].title, pageMeta["/"].description);
 
   const [blogs, setBlogs] = useState([]);
 

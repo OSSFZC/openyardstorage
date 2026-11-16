@@ -1,13 +1,11 @@
 import React from "react";
 import useMeta from "../../hooks/useMeta";
+import { pageMeta } from "../../data/pageMeta";
 import { Link } from "react-router-dom";
 
 
 const Founder = () => {
-   useMeta(
-        "Leadership Message & Vision for Logistics UAE | OSS",
-        "Discover OSS leadership vision, commitment to timely delivery, and growth into a trusted logistics partner offering complete industrial solutions across UAE."
-      );
+   useMeta(pageMeta["/about/founder"].title, pageMeta["/about/founder"].description);
   return (
     <div className="w-full">
 

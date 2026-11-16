@@ -16,14 +16,12 @@ import {
 } from "react-icons/fi";
 
 import useMeta from "../../hooks/useMeta";
+import { pageMeta } from "../../data/pageMeta";
 import LeftalignedCards from "../../components/LeftalignedCards";
 import CardsFeatures from "../../components/CardsFeatures";
 
 export default function LogisticTruckCompanySharjah() {
-  useMeta(
-    "Logistic Truck Company in Sharjah | Openyard Storage FZC",
-    "Openyard Storage FZC is a trusted logistic truck company in Sharjah for reliable truck transport, warehousing, and cargo movement. Get your quote today!",
-  );
+  useMeta(pageMeta["/service/logistic-truck-company-sharjah"].title, pageMeta["/service/logistic-truck-company-sharjah"].description);
 
   return (
     <>

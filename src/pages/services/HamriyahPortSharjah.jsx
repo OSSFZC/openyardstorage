@@ -11,12 +11,10 @@ import CTASection from "../../components/CTASection";
 import { FiPackage, FiClock, FiShield, FiDollarSign } from "react-icons/fi";
 
 import useMeta from "../../hooks/useMeta";
+import { pageMeta } from "../../data/pageMeta";
 
 export default function HamriyahPortSharjah() {
-  useMeta(
-    "Top-tier Storage Solutions at Hamriyah Port Sharjah | OSS FZC",
-    "OSS FZC provides secure, efficient, and innovative storage solutions at Hamriyah Port Sharjah to optimize your operations. Contact us today.",
-  );
+  useMeta(pageMeta["/service/hamriyah-port-sharjah"].title, pageMeta["/service/hamriyah-port-sharjah"].description);
 
   return (
     <>

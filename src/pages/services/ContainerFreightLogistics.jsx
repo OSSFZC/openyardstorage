@@ -12,12 +12,10 @@ import LeftalignedCards from "../../components/LeftalignedCards";
 import { FiClock, FiMapPin, FiPackage, FiSettings } from "react-icons/fi";
 import FreeZoneFeatureSection from "../../components/FreeZoneFeatureSection";
 import useMeta from "../../hooks/useMeta";
+import { pageMeta } from "../../data/pageMeta";
 
 export default function ContainerFreightLogistics() {
-  useMeta(
-    "Container Freight Logistics in Sharjah | Openyard Storage FZC",
-    "Openyard Storage FZC delivers container freight logistics with seamless sea air cargo & logistics solutions, ensuring efficient global shipments. Enquire today!",
-  );
+  useMeta(pageMeta["/service/container-freight-logistics"].title, pageMeta["/service/container-freight-logistics"].description);
 
   return (
     <>

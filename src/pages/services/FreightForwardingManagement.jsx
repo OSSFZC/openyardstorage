@@ -12,13 +12,11 @@ import FreeZoneFeatureSection from "../../components/FreeZoneFeatureSection";
 import { FiPackage, FiClock, FiFileText, FiEye } from "react-icons/fi";
 
 import useMeta from "../../hooks/useMeta";
+import { pageMeta } from "../../data/pageMeta";
 import CardsFeatures from "../../components/CardsFeatures";
 
 export default function FreightForwardingManagement() {
-  useMeta(
-    "Freight Forwarding Management in UAE | Openyard Storage FZC",
-    "Every shipment impacts your business.Openyard Storage FZC provides freight forwarding management that reduces delays & keeps supply chains moving.Enquire today!",
-  );
+  useMeta(pageMeta["/service/freight-forwarding-management"].title, pageMeta["/service/freight-forwarding-management"].description);
 
   return (
     <>

@@ -12,13 +12,11 @@ import FreeZoneFeatureSection from "../../components/FreeZoneFeatureSection";
 import { FiClock, FiShield, FiFileText, FiDollarSign } from "react-icons/fi";
 
 import useMeta from "../../hooks/useMeta";
+import { pageMeta } from "../../data/pageMeta";
 import LeftalignedCards from "../../components/LeftalignedCards";
 
 export default function ShippingCompaniesSharjah() {
-  useMeta(
-    "Ship Management Companies in Sharjah | Openyard Storage FZC",
-    "Looking for dependable ship management companies in Sharjah? Openyard Storage FZC delivers seamless freight, logistics, and cargo solutions. Contact us today!",
-  );
+  useMeta(pageMeta["/service/shipping-companies-sharjah"].title, pageMeta["/service/shipping-companies-sharjah"].description);
 
   return (
     <>

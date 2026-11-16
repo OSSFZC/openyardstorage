@@ -18,12 +18,10 @@ import {
 } from "react-icons/fi";
 
 import useMeta from "../../hooks/useMeta";
+import { pageMeta } from "../../data/pageMeta";
 
 export default function InternationalShippingAir() {
-  useMeta(
-    "Air Freight in UAE | Openyard Storage FZC Logistics",
-    "Openyard Storage FZC simplifies global logistics with air freight in UAE and dependable international shipping air services. Talk to us today for a quote!",
-  );
+  useMeta(pageMeta["/service/international-shipping-air"].title, pageMeta["/service/international-shipping-air"].description);
 
   return (
     <>

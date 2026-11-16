@@ -11,13 +11,11 @@ import LeftalignedCards from "../../components/LeftalignedCards";
 import { FiPackage, FiClock, FiFileText, FiEye } from "react-icons/fi";
 import FreeZoneFeatureSection from "../../components/FreeZoneFeatureSection";
 import useMeta from "../../hooks/useMeta";
+import { pageMeta } from "../../data/pageMeta";
 import CardsFeatures from "../../components/CardsFeatures";
 
 export default function FreightLogisticsServices() {
-  useMeta(
-    "Freight and Logistics Services in UAE | Openyard Storage FZC",
-    "Simplify your supply chain with Openyard Storage FZC. Our freight & logistics services ensure smooth cargo movement & efficient delivery. Get a quote today!",
-  );
+  useMeta(pageMeta["/service/freight-logistics-services"].title, pageMeta["/service/freight-logistics-services"].description);
 
   return (
     <>
