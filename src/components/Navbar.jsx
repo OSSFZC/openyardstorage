@@ -65,9 +65,9 @@ export default function Navbar() {
 
           {/* SERVICES */}
           <div className="relative group">
-            <button className="flex items-center gap-1">
+            <Link to="/services" className="flex items-center gap-1">
               Services <span className="text-xs">▾</span>
-            </button>
+            </Link>
 
             <div className="absolute left-0 top-full mt-3 w-72 max-h-[420px] overflow-y-auto bg-white text-gray-800 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
               {services.slice(0, 12).map((service, i) => (
@@ -192,38 +192,35 @@ export default function Navbar() {
             )}
 
             {/* MOBILE SERVICES */}
-            <button
-              onClick={() => setServicesOpen(!servicesOpen)}
-              className="flex justify-between"
-            >
-              Services <span>{servicesOpen ? "▲" : "▼"}</span>
-            </button>
+            <div className="flex justify-between">
+              <Link to="/services" onClick={() => setOpen(false)}>
+                Services
+              </Link>
+              <button
+                onClick={() => setServicesOpen(!servicesOpen)}
+                aria-label="Show services"
+              >
+                {servicesOpen ? "▲" : "▼"}
+              </button>
+            </div>
 
             {servicesOpen && (
               <div className="ml-4 flex flex-col gap-3 text-white/80">
+                {services.slice(0, 12).map((service) => (
+                  <Link
+                    key={service.path}
+                    to={service.path}
+                    onClick={() => setOpen(false)}
+                  >
+                    {service.name}
+                  </Link>
+                ))}
                 <Link
-                  to="/services/open-yard-storage"
+                  to="/services"
                   onClick={() => setOpen(false)}
+                  className="font-semibold text-white"
                 >
-                  Open Yard Storage
-                </Link>
-                <Link
-                  to="/services/yard-for-rent-sharjah"
-                  onClick={() => setOpen(false)}
-                >
-                  Yard for Rent in Sharjah
-                </Link>
-                <Link to="/services/air-freight" onClick={() => setOpen(false)}>
-                  Air Freight
-                </Link>
-                <Link to="/services/sea-freight" onClick={() => setOpen(false)}>
-                  Sea Freight
-                </Link>
-                <Link
-                  to="/services/land-freight"
-                  onClick={() => setOpen(false)}
-                >
-                  Land Freight
+                  View All Services →
                 </Link>
               </div>
             )}
