@@ -414,6 +414,13 @@ export default function Marketing() {
         </div>
         <div className="mk-bar-r">
           {data && <span className="mk-at">{cachedAt ? `Updated ${ago(cachedAt)}` : `Updated ${ago(data.generatedAt)}`}</span>}
+          {state.status === 'ok' ? (
+            <a className="btn btn-sm" href={withBase(`/api/marketing/export?days=${days}`)} title={`Download all marketing data for the last ${days} days as an Excel sheet`}>
+              <Icon name="download" /><span>Download Excel</span>
+            </a>
+          ) : (
+            <button className="btn btn-sm" type="button" disabled><Icon name="download" /><span>Download Excel</span></button>
+          )}
           <button className={'btn btn-sm' + (refreshing ? ' mk-spin' : '')} type="button" disabled={refreshing || state.status !== 'ok'} onClick={() => load(days, true)}>
             <Icon name="refresh" /><span>{refreshing ? 'Refreshing…' : 'Refresh'}</span>
           </button>
